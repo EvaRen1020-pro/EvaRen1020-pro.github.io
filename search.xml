@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>第2篇 配置Hexo的历程和一些bug解决方案</title>
+    <url>/2020/01/28/%E7%AC%AC2%E7%AF%87%20%E9%85%8D%E7%BD%AEHexo%E7%9A%84%E5%8E%86%E7%A8%8B%E5%92%8C%E4%B8%80%E4%BA%9Bbug%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>这篇主要来讲讲我怎么入手搭建自己的Hexo博客。我主要是按照这篇教程<a href="https://sunhwee.com/posts/6e8839eb.html" target="_blank" rel="noopener">Hexo+Github博客搭建完全教程</a> 来做的，感谢<a href="https://sunhwee.com/" target="_blank" rel="noopener">洪卫</a> ，他已经写的非常详细了。
+<br>请大家按照这个教程先做下去！有遇到其他问题可以来看看我的回答，也许能帮到你哦。
+<br>我主要会补充一些这篇文章中<font color="#2e6da4">没有提到的问题和解决方案</font>。
+</p>
+
+]]></content>
+      <categories>
+        <category>软件编程</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第1篇 开门之作——小白HTML-CSS-JavaScript入门摸索历程</title>
+    <url>/2020/01/28/%E7%AC%AC1%E7%AF%87%20%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<p>
+我是一个非计算机专业的同学，不过也因为时代发展，专业需要，也会用python写一些小代码。<br>
+
+<p>平时呢热爱<strong>摄影、视频制作、还有视觉上好看的事物</strong>。</p>
+<p>我想开始学Web Design技术也主要是因为，我喜欢的一个YouTuber他的大学专业也本来是网页设计……<strong>Peter Mckinnon!</strong><br></p>
+<p>好了正式开始！</p>
+</p>
+
+<h2>1. 学习资源</h2>
+<strong>地址：</strong><u><a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web" target="_blank" rel="noopener"><strong>MDN Web Docs</strong></a><br></u>
+
+<p>这是一个<strong>非常优质</strong>、可以称之为<strong>鼻祖</strong>的<strong>Mozilla</strong>开源社区项目。它其中详细介绍了<strong>Web Design</strong>的各种基础技术知识。好好学，系统性地学，真的会有巨大的收获。<br>而且大多数内容都有中文版本。</p>
+<p><img src="../images/MDN%E6%88%AA%E5%9B%BE.PNG" alt="MDN screenshot"></p>
+<h2>2. 我的入门历程</h2>
+
+<ul>
+<li>花1-2天时间阅读、上手操作HTML部分教程：<ul>
+<li>了解<code>HTML</code>的结构<code>&lt;head&gt;,&lt;body&gt;,&lt;script&gt;</code>等；</li>
+<li>知道文本<code>&lt;p&gt;</code>(<code>&lt;h1&gt;&lt;div&gt;&lt;span&gt;</code>)、列表<code>&lt;ul&gt;&lt;ol&gt;</code>、超链接<code>&lt;a href&gt;</code>、表格<code>&lt;table&gt;</code>、表单<code>&lt;form&gt;</code>的格式、用途；</li>
+<li>接触<code>CSS</code>的样式知识；</li>
+<li>知道如何选择特定内容<code>querySelector</code>；</li>
+<li><strong>表单<code>&lt;form&gt;</code>那里创建对象响应可能有些难，不过没关系，先仿照着学下去</strong>！</li>
+</ul>
+</li>
+<li>花1天时间学习CSS部分教程：<ul>
+<li>了解<code>CSS</code>结构；</li>
+<li>知道如何选择特定部分，并修改样式；</li>
+<li>学习网页排版位置设置知识&nbsp;(<font color="#2e6da4">虽然这里我也没有好好学就跳过了</font>);</li>
+</ul>
+</li>
+<li>花3-4天时间学习JavaScript部分教程:<ul>
+<li>变量、函数、循环等编程基础与其他编程语言大同小易，这个基础应该原本就具备；</li>
+<li>学会动态操纵文档，<strong><code>DOM</code>树操作</strong>非常重要！</li>
+<li>会在浏览器<code>Console控制台</code>调试程序;</li>
+<li>控件响应事件学习,<strong>这样静态网页才能动起来</strong>；</li>
+<li><strong>其他还有更深层次的前端知识，异步处理，<code>Canvas、OpenGL</code>画图等等我先没有具体去学</strong>，<br>因为我的初衷是创建一个个人博客，就急于来自己上手尝试了。<strong>在此还是强烈建议有识之士去好好学习的。</strong></li>
+</ul>
+</li>
+</ul>
+<h2>3. 心得小结</h2>
+
+<p>虽然我自己也没有完完全全吃透<strong>MDN</strong>官方教程上的内容，但是自己这几天照着官方文档和示例去学习，主要有两大感受：</p>
+<ul>
+<li><strong>系统性</strong>！这个教程比其他网络上的博客或者一些网站更专业更全面，并且有示例源码可以仿照学习。</li>
+<li><strong>开心啊</strong>！终于自己可以看懂之前一些html网页源码内容，对于无论是<strong>爬虫、调用API、Echarts使用</strong>等等都很有帮助。</li>
+</ul>
+<p>这个教程非常棒，以后遇到很多困惑都可以再回去查，而且发现网络上很多的解决方案的原始链接都是它！快去学习一下鼻祖的<strong>MDN Web Docs</strong>吧！</p>
+]]></content>
+      <categories>
+        <category>软件编程</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>css</tag>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/01/28/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
