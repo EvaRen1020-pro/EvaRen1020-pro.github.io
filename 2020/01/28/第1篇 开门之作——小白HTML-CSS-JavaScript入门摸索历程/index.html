@@ -10,7 +10,7 @@
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
-  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="shortcut icon" href="/山.png" />
   
   
 <link rel="stylesheet" href="/css/style.css">
@@ -199,8 +199,8 @@
         el: '#vcomments',
         notify: false,
         verify: '',
-        app_id: '',
-        app_key: '',
+        app_id: '3eRew0F8C62xRnHV7HS7zPes-gzGzoHsz',
+        app_key: '1kXbH1WvIt2tvJOp8LdVaMd4',
         path: window.location.pathname,
         avatar: 'mp',
         placeholder: '给我的文章加点评论吧~',
@@ -318,6 +318,8 @@
               var startMinute = "0";
               var startSecond = "0";
               var todayYear = today.getFullYear();
+              console.log(startYear);
+              console.log(todayYear);
               var todayMonth = today.getMonth() + 1;
               var todayDate = today.getDate();
               var todayHour = today.getHours();
@@ -334,11 +336,9 @@
               var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
                       diffMinutes * minutes) / seconds);
               if (startYear == todayYear) {
-                document.getElementById("year").innerHTML = todayYear;
                 document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
                         " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
               } else {
-                document.getElementById("year").innerHTML = startYear + " - " + todayYear;
                 document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
                         " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
               }
@@ -364,7 +364,7 @@
 <nav class="navbar">
   
   <div class="logo">
-    <a href="/"><img src="/images/ayer-side.svg" alt="To the MOUNTAIIN"></a>
+    <a href="/"><img src="/images/山.svg" alt="To the MOUNTAIIN"></a>
   </div>
   
   <ul class="nav nav-main">
