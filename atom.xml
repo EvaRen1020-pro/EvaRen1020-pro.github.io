@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>To the MOUNTAIIN</title>
+  <title>To the MOUNTAIN</title>
   
   <subtitle>Learn &amp; Life</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-02T07:49:34.767Z</updated>
+  <updated>2020-02-22T07:12:42.531Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用高德开放平台API获取POI位置和路线信息</title>
+    <link href="http://yoursite.com/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/"/>
+    <id>http://yoursite.com/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/</id>
+    <published>2020-02-22T05:47:55.321Z</published>
+    <updated>2020-02-22T07:12:42.531Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;借助地图API接口，帮助我们快速获取大量的静态、动态数据是非常有效的。&lt;br&gt;这次我就来讲讲怎么利用高德开发平台API接口，获取一些设施位置和路径规划信息。&lt;/p&gt;
+&lt;p&gt;##高德开放平台&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件和编程" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    
+      <category term="API" scheme="http://yoursite.com/tags/API/"/>
+    
+      <category term="地理信息" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>下载Bing搜索界面每日高清美图方法</title>
