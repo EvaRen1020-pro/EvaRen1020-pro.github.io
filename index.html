@@ -104,7 +104,7 @@
 <h2 id="高德开放平台"><a href="#高德开放平台" class="headerlink" title="高德开放平台"></a>高德开放平台</h2><p><a href="https://lbs.amap.com/api/webservice/summary" target="_blank" rel="noopener">高德开放平台</a>可以让你自己开发的应用嵌入高德服务，使用高德在地理信息服务上的贡献。<br>因为这次我主要需要用到的是一些信息搜索，所以用的是<code>开发支持->Web服务->Web服务API</code>，其他需要移动应用开发的可以去查询<strong>开发支持</strong>下的<strong>Web端、Andriod平台、IOS平台、微信小程序</strong>等等。</p>
 
 <p>如平台的简介，它可以帮你实现搜索、路径规划、行驶距离测量等功能。</p>
-<h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h3><p>申请一个高德的适用于Web服务的<code>key</code>，之后在<code>url</code>里需要填上自己的<code>key</code>。注意个人用户每日每个key的使用次数是有限额的，超限了查询信息返回会报错，但一个人可以申请好多个。</p>
+<h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h3><p>申请一个高德的适用于Web服务的<code>key</code>，之后在<code>URL</code>里需要填上自己的<code>key</code>。注意个人用户每日每个key的使用次数是有限额的，超限了查询信息返回会报错，但一个人可以申请好多个。</p>
 
 
 <h3 id="2-根据需要填充URL关键字"><a href="#2-根据需要填充URL关键字" class="headerlink" title="2. 根据需要填充URL关键字"></a>2. 根据需要填充URL关键字</h3><p>我们这次用<code>关键字搜索</code>功能，来查询POI(point of interest)信息，以查询某一城市的机场、火车站的枢纽地理信息为例。<br>根据开发文档提供的URL示例:<code><a href="https://restapi.amap.com/v3/place/text?parameters" target="_blank" rel="noopener">https://restapi.amap.com/v3/place/text?parameters</a></code><br>我们把<code>parameters</code>替换为搜索时限定的一些关键词，并且用<code>&</code>连接不同的条件，记得替换你自己申请的key。<br>比如：<code><a href="https://restapi.amap.com/v3/place/text?keywords=火车站&amp;city=北京&amp;citylimit=true&amp;extensions=all&amp;key=你申请的key&amp;offset=20&amp;page=1" target="_blank" rel="noopener">https://restapi.amap.com/v3/place/text?keywords=火车站&amp;city=北京&amp;citylimit=true&amp;extensions=all&amp;key=你申请的key&amp;offset=20&amp;page=1</a></code></p>
@@ -128,7 +128,7 @@
 </li>
 </ul>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li>高德开发平台API会在查询一些信息时，起到很大帮助（百度开放平台API也是有相似的功能）。<br>重点要去研读一下他们提供的开发文档，并且知道<code>URL</code>的组成，这样你就可以个性化的获取你想要的信息了。</li>
+<li>高德开发平台API会在查询一些信息时，起到很大帮助（百度开放平台API也是有相似的功能）。重点要去研读一下他们提供的<strong>开发文档</strong>，并且知道<code>URL</code>的组成，这样你就可以个性化的获取你想要的信息了。</li>
 <li>更多的内容，还是需要自己去不断发掘。</li>
 </ul>
 
