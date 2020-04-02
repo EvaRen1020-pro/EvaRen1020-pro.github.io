@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    【自然语言处理】Wordcloud词云分析+LDA主题分类 |  To the MOUNTAIN
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/山.png" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="To the MOUNTAIN" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <main class="content">
+      <section class="outer">
+  <article id="post-【自然语言处理】Wordcloud词云分析+LDA主题分类" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  【自然语言处理】Wordcloud词云分析+LDA主题分类
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/" class="article-date">
+  <time datetime="2020-04-02T08:33:57.535Z" itemprop="datePublished">2020-04-02</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/">软件和编程</a>
+  </div>
+
+      
+      
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">903字</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">4分钟</span>
+        </span>
+    </span>
+</div>
+
+      
+    </div>
+    
+
+    
+    
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>最近在一门课上，老师分享了一篇关于应用自然语言处理（NLP）模型分析交通领域研究主题分类的论文，我觉得写得很好很有意思。所以，自己也进行一下尝试。<br>主要分为<strong>Wordcloud词云展示</strong>和<strong>Latent Dirichlet Allocation（LDA）模型主题分类</strong>两部分。</p>
+<p>参考文献：<a href="https://www.sciencedirect.com/science/article/pii/S0968090X17300207" target="_blank" rel="noopener">Sun, L., &amp; Yin, Y. (2017). Discovering themes and trends in transportation research using topic modeling. Transportation Research Part C: Emerging Technologies, 77, 49-66. doi:10.1016/j.trc.2017.01.013</a></p>
+<p>本次分析的是2017年至2020年发表的交通领域关于<strong>“Mobility-as-a-Service(MaaS)”</strong>的30篇论文的摘要部分。</p>
+<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/%E6%96%87%E7%8C%AE%E6%A6%82%E8%A7%88.PNG" class title="[文献展示]">
+
+<h2 id="wordcloud词云展示"><a href="#wordcloud词云展示" class="headerlink" title="wordcloud词云展示"></a>wordcloud词云展示</h2><ol>
+<li><p>首先对文本进行预处理：</p>
+<ul>
+<li>去除标点符号，按空格拆分句子<br><code>mytext=re.sub(r'[.,()]','',mytext).split(' ') #正侧表达式去除标点</code></li>
+<li>用NLTK的wordnet模块进行词形还原  <figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">from</span> <span class="string">nltk.stem import WordNetLemmatizer</span></span><br><span class="line"><span class="attr">wnl</span> = <span class="string">WordNetLemmatizer()</span></span><br><span class="line"><span class="attr">remytext</span> = <span class="string">''</span></span><br><span class="line"><span class="attr">for</span> <span class="string">i in range(len(mytext)):</span></span><br><span class="line">    <span class="meta">mytext[i]</span>=<span class="string">wnl.lemmatize(mytext[i]) #词性还原</span></span><br><span class="line">    <span class="attr">remytext</span>=<span class="string">remytext+' '+mytext[i]</span></span><br><span class="line"><span class="attr">mytext</span>=<span class="string">remytext</span></span><br></pre></td></tr></table></figure>
+<strong>注：wordnet包需要另外独自安装，不然会报如下错误：</strong><br><code>Resource wordnet not found. Please use the NLTK Downloader to obtain the resource:</code><img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E7%BC%BA%E5%A4%B1%E6%8A%A5%E9%94%99.PNG" class>
+<strong>这里补充wordnet包安装方法：</strong><br>(1) 命令行cmd打开，输入python；<br>(2) 继续输入<code>import nltk</code>和<code>nltk.download()</code>如下图所示：  <img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E4%B8%8B%E8%BD%BDcmd.PNG" class>
+(3) 可能会报错远程主机强制关闭了一个连接。<br>  解决办法：(1)连VPN (2)利用别人已经下载到本地的wordnet包,具体参照这篇博客。<a href="https://blog.csdn.net/Charchunchiu/article/details/96436736?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener">Python NLTK WordNet的在线与手动安装方法</a><br>(4) 正常情况下,弹出如下窗口，选择<code>Corpora/wordnet</code>下载即可。  <img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E4%B8%8B%E8%BD%BD%E7%95%8C%E9%9D%A2.PNG" class></li>
+<li>设置停用词<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">from</span> wordcloud import STOPWORDS<span class="comment">#导入原有的停用词包</span></span><br><span class="line">additional_stopwords=[]</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(stopwordsfile,<span class="string">'r'</span>,encoding=<span class="string">'UTF-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">line</span> <span class="keyword">in</span> f:</span><br><span class="line">        additional_stopwords.append(<span class="built_in">line</span>.<span class="built_in">replace</span>(<span class="string">"\n"</span>,<span class="string">""</span>))</span><br><span class="line">stop_words = additional_stopwords + list(STOPWORDS)<span class="comment">#额外添加自己的停用词</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>应用wordcloud包</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from wordcloud import WordCloud</span><br><span class="line">wordcloud = <span class="constructor">WordCloud(<span class="params">stopwords</span>=<span class="params">stop_words</span>,<span class="params">background_color</span>='<span class="params">white</span>',<span class="params">collocations</span>=True,<span class="params">colormap</span>='<span class="params">viridis</span>',<span class="params">width</span>=2160,<span class="params">height</span>=1080,<span class="params">max_words</span>=50,<span class="params">prefer_horizontal</span>=1)</span>.generate(mytext)</span><br><span class="line">plt.imshow(wordcloud, interpolation='bilinear')</span><br><span class="line">plt.axis(<span class="string">"off"</span>)</span><br><span class="line">plt.show<span class="literal">()</span></span><br></pre></td></tr></table></figure> 
+<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/maas%E8%AF%8D%E4%BA%91%E7%BB%93%E6%9E%9C.PNG" class title="[词云展示]">
+
+</li>
+</ol>
+<h2 id="LDA主题分类"><a href="#LDA主题分类" class="headerlink" title="LDA主题分类"></a>LDA主题分类</h2><p>这里使用<strong>sklearn</strong>的<strong>LDA</strong>包。<br>基于之前的<strong>文本预处理</strong>，还需要转换为<strong>词向量</strong>的形式，才可放入LDA模型训练。<br>具体代码如下：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text import CountVectorizer #词向量转换模块</span><br><span class="line"><span class="keyword">from</span> sklearn.decomposition import LatentDirichletAllocation as LDA</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">import time</span><br><span class="line"><span class="keyword">from</span> matplotlib.pyplot import MultipleLocator</span><br><span class="line"></span><br><span class="line"><span class="comment"># Initialise the count vectorizer with the English stop words</span></span><br><span class="line">count_vectorizer = CountVectorizer(<span class="attribute">stop_words</span>=stop_words)#这里也可以设置停用词</span><br><span class="line"><span class="comment"># Fit and transform the processed titles</span></span><br><span class="line">count_data = count_vectorizer.fit_transform(mytext)</span><br><span class="line"></span><br><span class="line">def print_topics(model, count_vectorizer, n_top_words):</span><br><span class="line">    words = count_vectorizer.get_feature_names()</span><br><span class="line">    <span class="keyword">for</span> topic_idx, topic <span class="keyword">in</span> enumerate(model.components_):</span><br><span class="line">        <span class="builtin-name">print</span>(<span class="string">"\nTopic #%d:"</span> % topic_idx)</span><br><span class="line">        <span class="builtin-name">print</span>(<span class="string">" "</span>.join([words[i]</span><br><span class="line">                        <span class="keyword">for</span> i <span class="keyword">in</span> topic.argsort()[:-n_top_words - 1:-1]]))</span><br><span class="line">n_topics = range(3,7,1)</span><br><span class="line">perplexityLst = [1.0]*len(n_topics)</span><br><span class="line"></span><br><span class="line"><span class="comment">#训练LDA并打印训练时间</span></span><br><span class="line">lda_models = []</span><br><span class="line"><span class="keyword">for</span> idx, n_topic <span class="keyword">in</span> enumerate(n_topics):</span><br><span class="line">    <span class="builtin-name">print</span>(idx,n_topic)</span><br><span class="line">    lda = LDA(<span class="attribute">n_components</span>=n_topic, <span class="attribute">max_iter</span>=2000,learning_method='batch',</span><br><span class="line"><span class="comment">#                                    perp_tol=0.1, #default</span></span><br><span class="line"><span class="comment">#                                    doc_topic_prior=1/n_topic, #default</span></span><br><span class="line"><span class="comment">#                                    topic_word_prior=1/n_topic, #default</span></span><br><span class="line">                                    <span class="attribute">verbose</span>=0)</span><br><span class="line">    t0 = time.time()</span><br><span class="line">    lda.fit(count_data)</span><br><span class="line">    perplexityLst[idx] = lda.perplexity(count_data)</span><br><span class="line">    lda_models.append(lda)</span><br><span class="line">    <span class="builtin-name">print</span> (<span class="string">"# of Topic: %d, "</span> % n_topics[idx])</span><br><span class="line">    <span class="builtin-name">print</span> (<span class="string">"done in %0.3fs, N_iter %d, "</span> % ((time.time() - t0), lda.n_iter_))</span><br><span class="line">    <span class="builtin-name">print</span> (<span class="string">"Perplexity Score %0.3f"</span> % perplexityLst[idx])</span><br><span class="line"></span><br><span class="line"><span class="comment">#打印最佳模型</span></span><br><span class="line"><span class="attribute">number_words</span>=10</span><br><span class="line">best_index = perplexityLst.index(min(perplexityLst))</span><br><span class="line">best_n_topic = n_topics[best_index]</span><br><span class="line">best_model = lda_models[best_index]</span><br><span class="line"><span class="builtin-name">print</span> (<span class="string">"Best # of Topic: "</span>, best_n_topic)</span><br><span class="line">print_topics(best_model, count_vectorizer, number_words)</span><br><span class="line"></span><br><span class="line"><span class="comment">#绘制不同主题数perplexity的不同</span></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.add_subplot(1,1,1)</span><br><span class="line">xaxis=[]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(0,len(n_topics)):</span><br><span class="line">    xaxis.append(n_topics[i])</span><br><span class="line">ax.plot(xaxis, perplexityLst)</span><br><span class="line"><span class="attribute">x_major_locator</span>=MultipleLocator(1)</span><br><span class="line">ax.set_xlabel(<span class="string">"number of topics"</span>)</span><br><span class="line">ax.set_ylabel(<span class="string">"Approximate Perplexity"</span>)</span><br><span class="line">plt.grid(<span class="literal">True</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure> 
+
+<p>最终我这里选择了分为3个主题。虽然2个的perplexity效果好一些，但我根据需要选择了3个。</p>
+<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/perplexity%E6%8C%87%E6%95%B0.PNG" class title="[perplexity指数]">
+
+<p>Topic #1: 城市系统角度<br>model city public business alliance actor efficiency factor system new<br>Topic #2: 各出行模式运营商角度<br>user time market adoption road potential intermediary car operator public<br>Topic #3: 用户出行模式选择角度<br>car public model mode bundle sharing new travel choice demand</p>
+<p>好了，这次就到这里了。具体的参数设置还是参照官方文档。</p>
+
+      
+      <!-- 打赏 -->
+      
+      <div id="reward-btn">
+        打赏
+      </div>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/" data-id="ck8ilx0qy00008wue8k758f8o"
+        class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LDA/" rel="tag">LDA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NLP/" rel="tag">NLP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Wordcloud/" rel="tag">Wordcloud</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+    
+      <a href="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">使用高德开放平台API获取POI位置和路线信息</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+  
+<!-- valine评论 -->
+<div id="vcomments-box">
+    <div id="vcomments">
+    </div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        notify: false,
+        verify: '',
+        app_id: '3eRew0F8C62xRnHV7HS7zPes-gzGzoHsz',
+        app_key: '1kXbH1WvIt2tvJOp8LdVaMd4',
+        path: window.location.pathname,
+        avatar: 'mp',
+        placeholder: '给我的文章加点评论吧~',
+        recordIP: true
+    });
+    const infoEle = document.querySelector('#vcomments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+        infoEle.childNodes.forEach(function (item) {
+            item.parentNode.removeChild(item);
+        });
+    }
+</script>
+<style>
+    #vcomments-box {
+        padding: 5px 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #vcomments-box {
+            padding: 5px 0px;
+        }
+    }
+
+    #vcomments-box #vcomments {
+        background-color: #fff;
+    }
+
+    .v .vlist .vcard .vh {
+        padding-right: 20px;
+    }
+
+    .v .vlist .vcard {
+        padding-left: 10px;
+    }
+</style>
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020
+        Eva Ren
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul class="list-inline">
+      <li>
+
+        
+        
+        <ul class="list-inline">
+<!--  <li>PV:<span id="busuanzi_value_page_pv"></span></li>-->
+<!--  <li>UV:<span id="busuanzi_value_site_uv"></span></li>-->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <li>本站总访问量 <span id="busuanzi_value_site_uv"></span>次</li>
+  <li>本页面总访问量 <span id="busuanzi_value_page_pv"></span>次</li>
+</ul>
+
+<script>
+  $(document).ready(function () {
+
+    var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+    var pvcountOffset = 0;  // 初始化首次数据
+    var uvcountOffset = 0;
+
+    function fixCount() {
+      if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+        $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+        clearInterval(int);
+      }
+      if ($("#busuanzi_container_site_pv").css("display") != "none") {
+        $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据
+        clearInterval(int); // 停止检测
+      }
+    }
+  });
+</script>
+        
+      </li>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+      <li>
+        
+          <span id="sitetime">载入运行时间...</span>
+          <script>
+            function siteTime() {
+              var seconds = 1000;
+              var minutes = seconds * 60;
+              var hours = minutes * 60;
+              var days = hours * 24;
+              var years = days * 365;
+              var today = new Date();
+              var startYear = "2020";
+              var startMonth = "1";
+              var startDate = "30";
+              var startHour = "0";
+              var startMinute = "0";
+              var startSecond = "0";
+              var todayYear = today.getFullYear();
+              console.log(startYear);
+              console.log(todayYear);
+              var todayMonth = today.getMonth() + 1;
+              var todayDate = today.getDate();
+              var todayHour = today.getHours();
+              var todayMinute = today.getMinutes();
+              var todaySecond = today.getSeconds();
+              var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+              var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+              var diff = t2 - t1;
+              var diffYears = Math.floor(diff / years);
+              var diffDays = Math.floor((diff / days) - diffYears * 365);
+              var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+              var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                      minutes);
+              var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                      diffMinutes * minutes) / seconds);
+              if (startYear == todayYear) {
+                document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                        " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+              } else {
+                document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                        " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+              }
+            }
+            setInterval(siteTime, 1000);
+          </script>
+        
+      </li>
+    </ul>
+  </div>
+
+</footer>
+
+
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </main>
+      <aside class="sidebar">
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/山.svg" alt="To the MOUNTAIN"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/">联系我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+    onClick: (e) => {
+      document.getElementById(e.target.innerText).scrollIntoView()
+      return false;
+    }
+  });
+</script>
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  </div>
+</body>
+
+</html>

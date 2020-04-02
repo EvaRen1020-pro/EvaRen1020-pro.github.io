@@ -58,6 +58,104 @@
     
     
     
+    <article id="post-【自然语言处理】Wordcloud词云分析+LDA主题分类" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/"
+    >【自然语言处理】Wordcloud词云分析+LDA主题分类</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/" class="article-date">
+  <time datetime="2020-04-02T08:33:57.535Z" itemprop="datePublished">2020-04-02</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/">软件和编程</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>最近在一门课上，老师分享了一篇关于应用自然语言处理（NLP）模型分析交通领域研究主题分类的论文，我觉得写得很好很有意思。所以，自己也进行一下尝试。<br>主要分为<strong>Wordcloud词云展示</strong>和<strong>Latent Dirichlet Allocation（LDA）模型主题分类</strong>两部分。</p>
+<p>参考文献：<a href="https://www.sciencedirect.com/science/article/pii/S0968090X17300207" target="_blank" rel="noopener">Sun, L., &amp; Yin, Y. (2017). Discovering themes and trends in transportation research using topic modeling. Transportation Research Part C: Emerging Technologies, 77, 49-66. doi:10.1016/j.trc.2017.01.013</a></p>
+<p>本次分析的是2017年至2020年发表的交通领域关于<strong>“Mobility-as-a-Service(MaaS)”</strong>的30篇论文的摘要部分。</p>
+<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/%E6%96%87%E7%8C%AE%E6%A6%82%E8%A7%88.PNG" class title="[文献展示]">
+
+<h2 id="wordcloud词云展示"><a href="#wordcloud词云展示" class="headerlink" title="wordcloud词云展示"></a>wordcloud词云展示</h2><ol>
+<li><p>首先对文本进行预处理：</p>
+<ul>
+<li>去除标点符号，按空格拆分句子<br><code>mytext=re.sub(r'[.,()]','',mytext).split(' ') #正侧表达式去除标点</code></li>
+<li>用NLTK的wordnet模块进行词形还原  <figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">from</span> <span class="string">nltk.stem import WordNetLemmatizer</span></span><br><span class="line"><span class="attr">wnl</span> = <span class="string">WordNetLemmatizer()</span></span><br><span class="line"><span class="attr">remytext</span> = <span class="string">''</span></span><br><span class="line"><span class="attr">for</span> <span class="string">i in range(len(mytext)):</span></span><br><span class="line">    <span class="meta">mytext[i]</span>=<span class="string">wnl.lemmatize(mytext[i]) #词性还原</span></span><br><span class="line">    <span class="attr">remytext</span>=<span class="string">remytext+' '+mytext[i]</span></span><br><span class="line"><span class="attr">mytext</span>=<span class="string">remytext</span></span><br></pre></td></tr></table></figure>
+<strong>注：wordnet包需要另外独自安装，不然会报如下错误：</strong><br><code>Resource wordnet not found. Please use the NLTK Downloader to obtain the resource:</code><img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E7%BC%BA%E5%A4%B1%E6%8A%A5%E9%94%99.PNG" class>
+<strong>这里补充wordnet包安装方法：</strong><br>(1) 命令行cmd打开，输入python；<br>(2) 继续输入<code>import nltk</code>和<code>nltk.download()</code>如下图所示：  <img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E4%B8%8B%E8%BD%BDcmd.PNG" class>
+(3) 可能会报错远程主机强制关闭了一个连接。<br>  解决办法：(1)连VPN (2)利用别人已经下载到本地的wordnet包,具体参照这篇博客。<a href="https://blog.csdn.net/Charchunchiu/article/details/96436736?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener">Python NLTK WordNet的在线与手动安装方法</a><br>(4) 正常情况下,弹出如下窗口，选择<code>Corpora/wordnet</code>下载即可。  <img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E4%B8%8B%E8%BD%BD%E7%95%8C%E9%9D%A2.PNG" class></li>
+<li>设置停用词<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">from</span> wordcloud import STOPWORDS<span class="comment">#导入原有的停用词包</span></span><br><span class="line">additional_stopwords=[]</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(stopwordsfile,<span class="string">'r'</span>,encoding=<span class="string">'UTF-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">line</span> <span class="keyword">in</span> f:</span><br><span class="line">        additional_stopwords.append(<span class="built_in">line</span>.<span class="built_in">replace</span>(<span class="string">"\n"</span>,<span class="string">""</span>))</span><br><span class="line">stop_words = additional_stopwords + list(STOPWORDS)<span class="comment">#额外添加自己的停用词</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>应用wordcloud包</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from wordcloud import WordCloud</span><br><span class="line">wordcloud = <span class="constructor">WordCloud(<span class="params">stopwords</span>=<span class="params">stop_words</span>,<span class="params">background_color</span>='<span class="params">white</span>',<span class="params">collocations</span>=True,<span class="params">colormap</span>='<span class="params">viridis</span>',<span class="params">width</span>=2160,<span class="params">height</span>=1080,<span class="params">max_words</span>=50,<span class="params">prefer_horizontal</span>=1)</span>.generate(mytext)</span><br><span class="line">plt.imshow(wordcloud, interpolation='bilinear')</span><br><span class="line">plt.axis(<span class="string">"off"</span>)</span><br><span class="line">plt.show<span class="literal">()</span></span><br></pre></td></tr></table></figure> 
+<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/maas%E8%AF%8D%E4%BA%91%E7%BB%93%E6%9E%9C.PNG" class title="[词云展示]">
+
+</li>
+</ol>
+<h2 id="LDA主题分类"><a href="#LDA主题分类" class="headerlink" title="LDA主题分类"></a>LDA主题分类</h2><p>这里使用<strong>sklearn</strong>的<strong>LDA</strong>包。<br>基于之前的<strong>文本预处理</strong>，还需要转换为<strong>词向量</strong>的形式，才可放入LDA模型训练。<br>具体代码如下：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text import CountVectorizer #词向量转换模块</span><br><span class="line"><span class="keyword">from</span> sklearn.decomposition import LatentDirichletAllocation as LDA</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">import time</span><br><span class="line"><span class="keyword">from</span> matplotlib.pyplot import MultipleLocator</span><br><span class="line"></span><br><span class="line"><span class="comment"># Initialise the count vectorizer with the English stop words</span></span><br><span class="line">count_vectorizer = CountVectorizer(<span class="attribute">stop_words</span>=stop_words)#这里也可以设置停用词</span><br><span class="line"><span class="comment"># Fit and transform the processed titles</span></span><br><span class="line">count_data = count_vectorizer.fit_transform(mytext)</span><br><span class="line"></span><br><span class="line">def print_topics(model, count_vectorizer, n_top_words):</span><br><span class="line">    words = count_vectorizer.get_feature_names()</span><br><span class="line">    <span class="keyword">for</span> topic_idx, topic <span class="keyword">in</span> enumerate(model.components_):</span><br><span class="line">        <span class="builtin-name">print</span>(<span class="string">"\nTopic #%d:"</span> % topic_idx)</span><br><span class="line">        <span class="builtin-name">print</span>(<span class="string">" "</span>.join([words[i]</span><br><span class="line">                        <span class="keyword">for</span> i <span class="keyword">in</span> topic.argsort()[:-n_top_words - 1:-1]]))</span><br><span class="line">n_topics = range(3,7,1)</span><br><span class="line">perplexityLst = [1.0]*len(n_topics)</span><br><span class="line"></span><br><span class="line"><span class="comment">#训练LDA并打印训练时间</span></span><br><span class="line">lda_models = []</span><br><span class="line"><span class="keyword">for</span> idx, n_topic <span class="keyword">in</span> enumerate(n_topics):</span><br><span class="line">    <span class="builtin-name">print</span>(idx,n_topic)</span><br><span class="line">    lda = LDA(<span class="attribute">n_components</span>=n_topic, <span class="attribute">max_iter</span>=2000,learning_method='batch',</span><br><span class="line"><span class="comment">#                                    perp_tol=0.1, #default</span></span><br><span class="line"><span class="comment">#                                    doc_topic_prior=1/n_topic, #default</span></span><br><span class="line"><span class="comment">#                                    topic_word_prior=1/n_topic, #default</span></span><br><span class="line">                                    <span class="attribute">verbose</span>=0)</span><br><span class="line">    t0 = time.time()</span><br><span class="line">    lda.fit(count_data)</span><br><span class="line">    perplexityLst[idx] = lda.perplexity(count_data)</span><br><span class="line">    lda_models.append(lda)</span><br><span class="line">    <span class="builtin-name">print</span> (<span class="string">"# of Topic: %d, "</span> % n_topics[idx])</span><br><span class="line">    <span class="builtin-name">print</span> (<span class="string">"done in %0.3fs, N_iter %d, "</span> % ((time.time() - t0), lda.n_iter_))</span><br><span class="line">    <span class="builtin-name">print</span> (<span class="string">"Perplexity Score %0.3f"</span> % perplexityLst[idx])</span><br><span class="line"></span><br><span class="line"><span class="comment">#打印最佳模型</span></span><br><span class="line"><span class="attribute">number_words</span>=10</span><br><span class="line">best_index = perplexityLst.index(min(perplexityLst))</span><br><span class="line">best_n_topic = n_topics[best_index]</span><br><span class="line">best_model = lda_models[best_index]</span><br><span class="line"><span class="builtin-name">print</span> (<span class="string">"Best # of Topic: "</span>, best_n_topic)</span><br><span class="line">print_topics(best_model, count_vectorizer, number_words)</span><br><span class="line"></span><br><span class="line"><span class="comment">#绘制不同主题数perplexity的不同</span></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.add_subplot(1,1,1)</span><br><span class="line">xaxis=[]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(0,len(n_topics)):</span><br><span class="line">    xaxis.append(n_topics[i])</span><br><span class="line">ax.plot(xaxis, perplexityLst)</span><br><span class="line"><span class="attribute">x_major_locator</span>=MultipleLocator(1)</span><br><span class="line">ax.set_xlabel(<span class="string">"number of topics"</span>)</span><br><span class="line">ax.set_ylabel(<span class="string">"Approximate Perplexity"</span>)</span><br><span class="line">plt.grid(<span class="literal">True</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure> 
+
+<p>最终我这里选择了分为3个主题。虽然2个的perplexity效果好一些，但我根据需要选择了3个。</p>
+<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/perplexity%E6%8C%87%E6%95%B0.PNG" class title="[perplexity指数]">
+
+<p>Topic #1: 城市系统角度<br>model city public business alliance actor efficiency factor system new<br>Topic #2: 各出行模式运营商角度<br>user time market adoption road potential intermediary car operator public<br>Topic #3: 用户出行模式选择角度<br>car public model mode bundle sharing new travel choice demand</p>
+<p>好了，这次就到这里了。具体的参数设置还是参照官方文档。</p>
+
+      
+      <!-- 打赏 -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/" data-id="ck8ilx0qy00008wue8k758f8o"
+        class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LDA/" rel="tag">LDA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NLP/" rel="tag">NLP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Wordcloud/" rel="tag">Wordcloud</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
     <article id="post-使用高德开放平台API获取POI位置和路线信息" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -137,7 +235,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/" data-id="ck6xblzim0007q8ueasbphjaq"
+      <a data-url="http://yoursite.com/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/" data-id="ck8ilx0rt000f8wueb04ia06j"
         class="article-share-link">分享</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/API/" rel="tag">API</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/" rel="tag">地理信息</a></li></ul>
@@ -218,7 +316,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/" data-id="ck6xblzhv0000q8ue63pc6bfm"
+      <a data-url="http://yoursite.com/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/" data-id="ck8ilx0rp00098wue3v5xadzk"
         class="article-share-link">分享</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BE%8E%E5%9B%BE/" rel="tag">美图</a></li></ul>
@@ -303,7 +401,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/28/%E9%85%8D%E7%BD%AEHexo%E7%9A%84%E5%8E%86%E7%A8%8B%E5%92%8C%E4%B8%80%E4%BA%9Bbug%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" data-id="ck6xblzip000dq8uea3f79jps"
+      <a data-url="http://yoursite.com/2020/01/28/%E9%85%8D%E7%BD%AEHexo%E7%9A%84%E5%8E%86%E7%A8%8B%E5%92%8C%E4%B8%80%E4%BA%9Bbug%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" data-id="ck8ilx0ru000h8wue2fj9hit2"
         class="article-share-link">分享</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul>
@@ -418,7 +516,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/" data-id="ck6xblzin0009q8ueb7cl8mna"
+      <a data-url="http://yoursite.com/2020/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/" data-id="ck8ilx0rq000b8wue0fz22dio"
         class="article-share-link">分享</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li></ul>
