@@ -58,6 +58,176 @@
     
     
     
+    <article id="post-基于多元LSTM模型的短时交通流量预测" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/"
+    >基于多元LSTM模型的短时交通流量预测</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/" class="article-date">
+  <time datetime="2020-06-15T02:19:56.658Z" itemprop="datePublished">2020-06-15</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/">软件和编程</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>正好这学期选修了一门交通流理论的课程，这里介绍一下我最后的课程论文，如何基于上一篇提到的在PeMS数据库下载到的数据，应用LSTM模型进行短时交通流量预测。</p>
+<h2 id="1-数据准备"><a href="#1-数据准备" class="headerlink" title="1. 数据准备"></a>1. 数据准备</h2><p>2019年9月1日至9月28日四周的交通流量数据，数据粒度是5分钟一统计，属性包含流率(veh/ 5 minutes)，速度(mph), 占有率(%)，重车数量(veh),重车比例(%)。</p>
+<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E6%95%B0%E6%8D%AE%E5%B1%95%E7%A4%BA.PNG" class title="[数据展示]">
+
+<h2 id="2-数据描述性统计"><a href="#2-数据描述性统计" class="headerlink" title="2. 数据描述性统计"></a>2. 数据描述性统计</h2><h3 id="1-绘制流率、速度、密度三参数基本图"><a href="#1-绘制流率、速度、密度三参数基本图" class="headerlink" title="(1) 绘制流率、速度、密度三参数基本图"></a>(1) 绘制流率、速度、密度三参数基本图</h3><img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/flow&occ.png" class title="[flow&amp;occ]">
+<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/speed&occ.png" class title="[speed&amp;occ]">
+<h3 id="2-概率密度分布"><a href="#2-概率密度分布" class="headerlink" title="(2) 概率密度分布"></a>(2) 概率密度分布</h3><p>绘制流率、速度的概率密度分布图和累积概率密度分布图。</p>
+<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E6%B5%81%E9%87%8F%E7%9A%84%E6%A6%82%E7%8E%87%E5%AF%86%E5%BA%A6%E5%88%86%E5%B8%83.png" class title="[流量的概率密度分布]">
+<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E9%80%9F%E5%BA%A6%E7%9A%84%E6%A6%82%E7%8E%87%E5%AF%86%E5%BA%A6%E5%88%86%E5%B8%83.png" class title="[速度的概率密度分布]">
+<h3 id="3-时间序列变化"><a href="#3-时间序列变化" class="headerlink" title="(3) 时间序列变化"></a>(3) 时间序列变化</h3><p>观察流量、重车分布、速度、占有率的时序变化。<br>以9月1日一天的数据为例：</p>
+<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E4%BA%A4%E9%80%9A%E6%B5%81%E4%B8%80%E5%A4%A9.png" class title="[交通流一天]">
+<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E9%80%9F%E5%BA%A6%E5%8D%A0%E6%9C%89%E7%8E%87%E4%B8%80%E5%A4%A9.png" class title="[速度占有率一天]">
+<p>所有四周的流量时间序列变化：</p>
+<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E6%B5%81%E9%87%8F.png" class title="[时间序列流量]">
+
+<h2 id="3-LSTM模型构建"><a href="#3-LSTM模型构建" class="headerlink" title="3. LSTM模型构建"></a>3. LSTM模型构建</h2><p>以前三周数据训练，最后一周数据预测。时间步设为12，即前一个小时预测下一个5分钟。<br>话不多说，直接上代码。</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br></pre></td><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing import MinMaxScaler</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection import train_test_split</span><br><span class="line"><span class="keyword">from</span> keras.preprocessing.sequence import TimeseriesGenerator</span><br><span class="line"><span class="keyword">from</span> keras.models import Sequential</span><br><span class="line"><span class="keyword">from</span> keras.layers import LSTM, Dense, Activation</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics import mean_absolute_error as mae</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics import mean_squared_error as mse</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics import r2_score</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将序列转换为监督学习问题</span></span><br><span class="line">def series_to_supervised(datasetX,datasetY,lag):</span><br><span class="line">    <span class="builtin-name">print</span>(<span class="string">'x的属性数量'</span>,datasetX.shape[1])</span><br><span class="line">    data_gen = TimeseriesGenerator(datasetX,datasetY, <span class="attribute">length</span>=lag,</span><br><span class="line">                                   <span class="attribute">batch_size</span>=1)  # length是滑lag,sampling_rate是timesteps,batch_size是y的维度</span><br><span class="line">    X_out, Y_out = data_gen[0]</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(0, len(data_gen)):</span><br><span class="line">        batch = data_gen[j]</span><br><span class="line">        x, y = batch</span><br><span class="line">        X_out = np.concatenate((X_out, x))</span><br><span class="line">        Y_out = np.concatenate((Y_out, y))</span><br><span class="line">    X_out = np.delete(X_out, 0, <span class="attribute">axis</span>=0)</span><br><span class="line">    Y_out = np.delete(Y_out, 0)</span><br><span class="line">    <span class="builtin-name">print</span>(<span class="string">'X shape'</span>,X_out.shape)</span><br><span class="line">    <span class="builtin-name">print</span>(<span class="string">'Y shape'</span>, Y_out.shape)</span><br><span class="line">    return X_out,Y_out</span><br><span class="line"></span><br><span class="line"><span class="comment"># 加载数据集</span></span><br><span class="line"><span class="attribute">path</span>=<span class="string">'.\'</span></span><br><span class="line"><span class="attribute">olddf</span>=pd.read_excel(path+'PeMS数据.xlsx',sheet_name='Sheet1')</span><br><span class="line"><span class="attribute">df</span>=olddf.copy(deep=False)</span><br><span class="line">df[<span class="string">'Flow (Veh/5 Minutes)'</span>]=df[<span class="string">'Flow (Veh/5 Minutes)'</span>].map(lambda x:3*x)#转换为veh/h/ln</span><br><span class="line"></span><br><span class="line"><span class="comment">#生成lstmX,Y</span></span><br><span class="line">input_attributes=[<span class="string">'Flow (Veh/5 Minutes)'</span>,<span class="string">'Occupancy (%)'</span>,<span class="string">'Speed (mph)'</span>,<span class="string">'Truck Prop (%)'</span>]</span><br><span class="line"><span class="attribute">datasetX</span>=df[input_attributes].values</span><br><span class="line"><span class="attribute">datasetY</span>=df[<span class="string">'Flow (Veh/5 Minutes)'</span>]</span><br><span class="line">scalerx = MinMaxScaler(feature_range=(0, 1))</span><br><span class="line">scalery = MinMaxScaler(feature_range=(0, 1))</span><br><span class="line">X_scaled = scalerx.fit_transform(datasetX)</span><br><span class="line">Y_scaled= scalery.fit_transform(np.array(datasetY).reshape(-1, 1))</span><br><span class="line">X,<span class="attribute">Y</span>=series_to_supervised(X_scaled,Y_scaled,12)#12个数据点即1小时</span><br><span class="line"></span><br><span class="line"><span class="comment">#划分训练集与测试集</span></span><br><span class="line">X_train,X_test,Y_train,Y_test= train_test_split(X,Y,<span class="attribute">test_size</span>=0.25,random_state=0)</span><br><span class="line"><span class="builtin-name">print</span>(<span class="string">'X_train shape'</span>,X_train.shape)</span><br><span class="line"><span class="builtin-name">print</span>(<span class="string">'X_test shape'</span>,X_test.shape)</span><br><span class="line"><span class="builtin-name">print</span>(<span class="string">'Y_train shape'</span>,Y_train.shape)</span><br><span class="line"><span class="builtin-name">print</span>(<span class="string">'Y_test shape'</span>,Y_test.shape)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#构建模型</span></span><br><span class="line"><span class="comment"># input_dim是输入的train_x的最后一个维度，train_x的维度为(n_samples, time_steps, input_dim)</span></span><br><span class="line">model = Sequential()</span><br><span class="line">model.<span class="builtin-name">add</span>(LSTM(30, input_shape=(X_train.shape[1], X_train.shape[2])))</span><br><span class="line">model.<span class="builtin-name">add</span>(Dense(1))</span><br><span class="line">model.<span class="builtin-name">add</span>(Activation(<span class="string">'tanh'</span>))</span><br><span class="line">model.compile(<span class="attribute">loss</span>=<span class="string">'mse'</span>, <span class="attribute">optimizer</span>=<span class="string">'adam'</span>)</span><br><span class="line"><span class="comment"># 拟合神经网络模型</span></span><br><span class="line">history = model.fit(X_train, Y_train, <span class="attribute">epochs</span>=50, <span class="attribute">batch_size</span>=64, validation_data=(X_train, Y_train), <span class="attribute">verbose</span>=2,</span><br><span class="line">                    <span class="attribute">shuffle</span>=<span class="literal">False</span>)</span><br><span class="line"><span class="comment"># 绘制训练loss数据</span></span><br><span class="line">fig1 = plt.figure()</span><br><span class="line">ax1 = fig1.add_subplot(111)</span><br><span class="line">ax1.plot(history.history[<span class="string">'loss'</span>], <span class="attribute">label</span>=<span class="string">'train'</span>)</span><br><span class="line">ax1.plot(history.history[<span class="string">'val_loss'</span>], <span class="attribute">label</span>=<span class="string">'test'</span>)</span><br><span class="line">ax1.set_ylabel(<span class="string">'Loss'</span>)</span><br><span class="line">ax1.set_xlabel(<span class="string">'Epochs'</span>)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 做出预测</span></span><br><span class="line">yhat = model.predict(X_test)</span><br><span class="line"><span class="attribute">invY_predict</span>=scalery.inverse_transform(np.array(yhat).reshape(-1,1))</span><br><span class="line"><span class="attribute">invY_test</span>=scalery.inverse_transform(np.array(Y_test).reshape(-1,1))</span><br><span class="line"></span><br><span class="line"><span class="builtin-name">print</span>(<span class="string">'lstm结果'</span>)</span><br><span class="line"><span class="builtin-name">print</span>(<span class="string">'r_square'</span>, r2_score(invY_test,invY_predict))</span><br><span class="line"><span class="builtin-name">print</span>(<span class="string">'mae'</span>, mae(invY_test,invY_predict))</span><br><span class="line"><span class="builtin-name">print</span>(<span class="string">'rmse'</span>, np.sqrt(mse(invY_test,invY_predict)))</span><br><span class="line"></span><br><span class="line">fig2 = plt.figure(figsize=(10,7) , <span class="attribute">dpi</span>=80)</span><br><span class="line">ax2 = fig2.add_subplot(111)</span><br><span class="line">ax2.plot(invY_test,<span class="attribute">color</span>=<span class="string">'blue'</span>, <span class="attribute">linestyle</span>=<span class="string">'-'</span>,label='Ground Truth<span class="string">')</span></span><br><span class="line"><span class="string">ax2.plot(invY_predict,color='</span>red<span class="string">', linestyle='</span>--<span class="string">',label='</span>LSTM Prediciton<span class="string">')</span></span><br><span class="line"><span class="string">ax2.set_ylabel('</span>Flow (veh/h/ln)<span class="string">')</span></span><br><span class="line"><span class="string">ax2.set_xlabel('</span>Date<span class="string">')</span></span><br><span class="line"><span class="string">xlabel=[]</span></span><br><span class="line"><span class="string">for i in range(22,30):</span></span><br><span class="line"><span class="string">    xlabel.append('</span>9/%d<span class="string">'%(i))</span></span><br><span class="line"><span class="string">ax2.set_xticks(range(0,2304,288))</span></span><br><span class="line"><span class="string">ax2.set_xticklabels(xlabel,rotation=90)</span></span><br><span class="line"><span class="string">plt.legend()</span></span><br><span class="line"><span class="string">plt.show()</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#绘制9/28一天的图</span></span><br><span class="line"><span class="string">fig3 = plt.figure(figsize=(10,7) , dpi=80)</span></span><br><span class="line"><span class="string">ax3 = fig3.add_subplot(111)</span></span><br><span class="line"><span class="string">ax3.plot(invY_test[-288:],color='</span>green<span class="string">', linestyle='</span>-<span class="string">',label='</span>Ground Truth<span class="string">')</span></span><br><span class="line"><span class="string">ax3.plot(invY_predict[-288:],color='</span>purple<span class="string">', linestyle='</span>--<span class="string">',label='</span>LSTM Prediciton<span class="string">')</span></span><br><span class="line"><span class="string">ax3.set_ylabel('</span>Flow (veh/h/ln)<span class="string">')</span></span><br><span class="line"><span class="string">ax3.set_xlabel('</span>Time<span class="string">')</span></span><br><span class="line"><span class="string">xlabel=[]</span></span><br><span class="line"><span class="string">for i in range(0,25):</span></span><br><span class="line"><span class="string">    xlabel.append('</span>%d:00<span class="string">'%(i))</span></span><br><span class="line"><span class="string">ax3.set_xticks(range(0,289,12))</span></span><br><span class="line"><span class="string">ax3.set_xticklabels(xlabel,rotation=90)</span></span><br><span class="line"><span class="string">plt.legend()</span></span><br><span class="line"><span class="string">plt.show()</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="结果展示："><a href="#结果展示：" class="headerlink" title="结果展示："></a>结果展示：</h3><p>最后一周所有的预测：</p>
+<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E5%85%A8%E9%83%A8%E9%A2%84%E6%B5%8B.png" class title="[全部预测]">
+<p>9月28日结果：</p>
+<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/9.28%E9%A2%84%E6%B5%8B.png" class title="[9.28预测]">
+<p>预测的效果还可以，毕竟只设置了单隐层。</p>
+
+      
+      <!-- 打赏 -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/" data-id="ckbfvdw930000q4ue3ivebb1d"
+        class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LSTM/" rel="tag">LSTM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BA%A4%E9%80%9A%E6%B5%81/" rel="tag">交通流</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag">机器学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" rel="tag">神经网络</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
+    <article id="post-下载PeMS交通流数据指南" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/"
+    >下载PeMS交通流数据指南</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/" class="article-date">
+  <time datetime="2020-06-15T01:25:29.081Z" itemprop="datePublished">2020-06-15</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/">软件和编程</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>今天给大家推荐一个开放的交通数据库，美国加州交通运输局的PeMS数据库，这里有着长达10年的高速公路检测器数据。包含流率、速度、占有率、重车比例、延误、车辆行驶里程、车辆行驶时间、交通事故等类型数据。很多学者都用这里的数据进行研究。<br>所以这里给大家介绍一下这个数据库下载数据的使用方式。</p>
+<h2 id="1-要有可以科学上网的VPN"><a href="#1-要有可以科学上网的VPN" class="headerlink" title="1. 要有可以科学上网的VPN"></a>1. 要有可以科学上网的VPN</h2><p>这个请先自行解决。</p>
+<h2 id="2-登录PeMS网站并注册账号"><a href="#2-登录PeMS网站并注册账号" class="headerlink" title="2. 登录PeMS网站并注册账号"></a>2. 登录PeMS网站并注册账号</h2><p>官方网址：<a href="http://pems.dot.ca.gov/" target="_blank" rel="noopener">http://pems.dot.ca.gov/</a><br>首页右侧有<font color="red">apply for an account</font>的链接，注册完毕后回到首页右上角登陆已通过的注册账号。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E9%A6%96%E9%A1%B5.PNG" class title="[PeMS首页]">
+
+<h2 id="3-明确要下载的数据类型：线：路段-点：检测器"><a href="#3-明确要下载的数据类型：线：路段-点：检测器" class="headerlink" title="3. 明确要下载的数据类型：线：路段|点：检测器"></a>3. 明确要下载的数据类型：线：路段|点：检测器</h2><p>登录进去后，可以看到上面有一栏<font color="blue">“Overview, Facilities&amp;Devices, Performance, Data Quality, Events”</font>，这里细分又有很多数据，大家可以自行根据需要点进去查看。<br>这里我主要介绍下载集计的交通流量、速度、占有率等交通流宏观参数数据。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.PNG" class title="[PeMS登陆后界面]">
+<p>如这张图所示，以下载某个检测器数据为例，我这里下载I5高速公路主线上编号#716895的检测器<font color="blue">Aggregates</font>集计数据。<br>然后就会跳转到这个检测器的数据，并且系统也提供了基础的数据图表供你直观观看。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/%E6%A3%80%E6%B5%8B%E5%99%A8%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B.PNG" class title="[检测器数据示例]">
+
+<h2 id="4-选择数据的属性和精度"><a href="#4-选择数据的属性和精度" class="headerlink" title="4. 选择数据的属性和精度"></a>4. 选择数据的属性和精度</h2><p>Quantity, Second Quantity:要下载的数据类型，如流量、速度、占有率等。<br>Granularity: 数据精度，月、周、日、5分钟的颗粒度。<br>另外，可以选择数据的日期覆盖时段、节假日、车道等。</p>
+<p>然后点击需要下载的数据格式，这里一般下载<font color="blue">EXPORT to.XLS</font>，比较便于后续数据分析。</p>
+<p>好了，就是这么简单，下一篇我来介绍一下我如何用这里的数据进行交通流量的时间序列建模预测。</p>
+
+      
+      <!-- 打赏 -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/" data-id="ckbfv5wso0000d8ue1owwgha1"
+        class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BA%A4%E9%80%9A%E6%B5%81/" rel="tag">交通流</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
     <article id="post-【Windows+Cygwin+Darknet+OpenCV】简易上手实现YOLOv3目标检测" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
