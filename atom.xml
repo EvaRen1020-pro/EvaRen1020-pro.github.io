@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-15T03:15:50.893Z</updated>
+  <updated>2020-11-04T02:58:53.221Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【python+geopy包】地理信息检索</title>
+    <link href="http://yoursite.com/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/"/>
+    <id>http://yoursite.com/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/</id>
+    <published>2020-11-04T01:03:12.720Z</published>
+    <updated>2020-11-04T02:58:53.221Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;之前有写过一篇用高德开放平台API接口进行POI信息获取的博客。但是有的时候检索会无法精确定位到单个所需的设施点位置，会返回很多周边的点，此时自己筛选就会有些麻烦。&lt;br&gt;这次，来介绍一个我最近发现的一个很好用的地理信息检索的python包-&lt;strong&gt;geopy&lt;/s
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件和编程" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="geopy" scheme="http://yoursite.com/tags/geopy/"/>
+    
+      <category term="地图API" scheme="http://yoursite.com/tags/%E5%9C%B0%E5%9B%BEAPI/"/>
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>基于多元LSTM模型的短时交通流量预测</title>
