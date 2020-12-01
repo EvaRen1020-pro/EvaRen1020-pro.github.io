@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-11-04T03:14:03.244Z</updated>
+  <updated>2020-11-27T13:32:27.764Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PLSQL导入excel数据方法以及txt编码转换</title>
+    <link href="http://yoursite.com/2020/11/27/PLSQL%E5%AF%BC%E5%85%A5excel%E6%95%B0%E6%8D%AE%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2020/11/27/PLSQL%E5%AF%BC%E5%85%A5excel%E6%95%B0%E6%8D%AE%E6%96%B9%E6%B3%95/</id>
+    <published>2020-11-27T13:02:43.096Z</published>
+    <updated>2020-11-27T13:32:27.764Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;把excel另存为用制表符分隔的txt文件，并确保打开编码正确，中文可以正确显示。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;然后用&lt;strong&gt;文本导入器&lt;/strong&gt;，不选&lt;strong&gt;ODBC导入器&lt;/strong&gt;，导入&lt;strong&gt;已经创建好的
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件和编程" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="sql" scheme="http://yoursite.com/tags/sql/"/>
+    
+      <category term="oracle" scheme="http://yoursite.com/tags/oracle/"/>
+    
+  </entry>
   
   <entry>
     <title>【python+geopy包】地理信息检索</title>

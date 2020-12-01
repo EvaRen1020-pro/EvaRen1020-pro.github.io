@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>PLSQL导入excel数据方法以及txt编码转换</title>
+    <url>/2020/11/27/PLSQL%E5%AF%BC%E5%85%A5excel%E6%95%B0%E6%8D%AE%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<ul>
+<li><p>把excel另存为用制表符分隔的txt文件，并确保打开编码正确，中文可以正确显示。</p>
+</li>
+<li><p>然后用<strong>文本导入器</strong>，不选<strong>ODBC导入器</strong>，导入<strong>已经创建好的有对应字段的空表中</strong>。</p>
+</li>
+<li><p>推荐<strong>Emeditor</strong>打开超大txt文件，并且实现编码转换。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>sql</tag>
+        <tag>oracle</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【python+geopy包】地理信息检索</title>
     <url>/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/</url>
     <content><![CDATA[<p>之前有写过一篇用高德开放平台API接口进行POI信息获取的博客。但是有的时候检索会无法精确定位到单个所需的设施点位置，会返回很多周边的点，此时自己筛选就会有些麻烦。<br>这次，来介绍一个我最近发现的一个很好用的地理信息检索的python包-<strong>geopy</strong>。不需要使用requests库、url，两行代码即可快速检索。</p>
