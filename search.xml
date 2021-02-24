@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【win10无Anaconda】Jupyter lab更改默认启动路径及创建桌面快捷方式</title>
+    <url>/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="【win10无Anaconda】Jupyter-lab更改默认启动路径及创建桌面快捷方式"><a href="#【win10无Anaconda】Jupyter-lab更改默认启动路径及创建桌面快捷方式" class="headerlink" title="【win10无Anaconda】Jupyter lab更改默认启动路径及创建桌面快捷方式"></a>【win10无Anaconda】Jupyter lab更改默认启动路径及创建桌面快捷方式</h1><p>每一次<strong>Jupyter lab</strong>或者<strong>Jupyter Notebook</strong>启动时都需要在命令行下跳至对应目录文件夹，再输入<code>jupyter lab</code>或者<code>jupyter notebook</code>启动是不是很麻烦？今天来记录一下两个小设置，让启动<strong>Jupyter lab</strong>直接双击桌面快捷方式图标即可。</p>
+<h2 id="1-Jupyter-lab更改默认启动路径"><a href="#1-Jupyter-lab更改默认启动路径" class="headerlink" title="1. Jupyter lab更改默认启动路径"></a>1. Jupyter lab更改默认启动路径</h2><p>已经有很多博客介绍如何更改<strong>Jupyter Notebook</strong>的默认启动路径，但是新一代的<strong>Jupyter lab</strong>似乎还没有很多帖子，我这里就来记录一下。其实与<strong>Jupyter Notebook</strong>配置类似，</p>
+<p>（1）先在<code>cmd</code>下输入:</p>
+<p><code>jupyter lab --generate-config</code></p>
+<p>生成默认配置文件。</p>
+<p>（2）找到刚刚生成的配置文件，默认存储于<code>C:\Users\你的用户\.jupyter</code>路径下，打开jupyter_lab_config.py`文件。</p>
+<p>（3）在412行左右，修改路径文件为你需要的默认启动路径。</p>
+<p>注意：使用<strong>/</strong>分隔路径，同时记得<strong>去掉前面的#号</strong>。</p>
+<img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84.PNG" class title="[修改启动路径]">
+
+<p>（4）保存退出即可。</p>
+<h2 id="2-创建-Jupyter-lab桌面快捷方式"><a href="#2-创建-Jupyter-lab桌面快捷方式" class="headerlink" title="2. 创建 Jupyter lab桌面快捷方式"></a>2. 创建 Jupyter lab桌面快捷方式</h2><p>网上我查到的都是讲解如何在<strong>Anaconda</strong>环境下创建<strong>Jupyter lab</strong>快捷方式，但是我没有装体积庞大的<strong>Anaconda</strong>。其实很简单，自己编写一个简单的<strong>bat</strong>程序，然后为其创建桌面快捷方式并且自定义图标即可。</p>
+<p>（1）创建一个记事本文件，输入：</p>
+<p><code>jupyter lab</code></p>
+<p>（2）更改记事本文件的后缀名为<code>.bat</code></p>
+<p>（3）<code>.bat</code>文件无法直接更改图标，你先将<code>bat</code>程序放到你电脑里一个安全的路径，然后右键发送到桌面快捷方式。</p>
+<p>（4）右键刚刚创建的快捷方式，点击<strong>属性</strong>，而后点击<strong>更改图标</strong>，设为你想要的图标即可。</p>
+<img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E6%9B%B4%E6%94%B9%E5%9B%BE%E6%A0%87.PNG" class title="[更改图标]">
+
+<p>（5）图标文件的后缀为<code>.ico</code>，可以下载常见的<code>.jpg,.png</code>格式图片制作。</p>
+<p>可以另存为.bmp文件再直接改后缀为.ico，不过这样图片质量损失较大。建议使用在线的.ico制作网站，上传图片转换即可。</p>
+<img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/jupyterlab.png" class title="[jupyterlab_png]">
+
+<p>（6）然后双击桌面的快捷方式，即可启动Jupyter lab啦！</p>
+<img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E5%9B%BE%E6%A0%87.PNG" class title="[图标]">]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>Jupyterlab</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>IBM Watson Studio云机器学习平台</title>
     <url>/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/</url>
     <content><![CDATA[<h1 id="IBM-Watson-Studio云机器学习平台"><a href="#IBM-Watson-Studio云机器学习平台" class="headerlink" title="IBM Watson Studio云机器学习平台"></a>IBM Watson Studio云机器学习平台</h1><p><a href="https://cloud.ibm.com/catalog/services/watson-studio?cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork-20718538-www-coursera-org-www-coursera-org&amp;cm_mmca1=000026UJ&amp;cm_mmca2=10006555&amp;cm_mmca3=M12345678&amp;cvosrc=email.Newsletter.M12345678&amp;cvo_campaign=000026U" target="_blank" rel="noopener">IBM Watson Studio</a>是IBM Cloud云服务中的一个核心平台，集成了很多人工智能工具，可以连接数据库进行云存储，创建Dashboard仪表盘，在线训练你的机器学习模型，支持Jupyter Notebook编写代码及分享，支持RStudio、SPSS Modeler等等。并且，其内置了很多已经构建好的机器学习模型，如自然语言文本分类、图像识别、深度学习模型、最优化决策。看起来就很有吸引力！</p>
@@ -8,7 +43,7 @@
 
 <img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/home_page.png" class title="[home_page]">
 
-<p>在此分享Coursera上关于简易上手使用IBM Watson Studio的<a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/FinalModule_Coursera/IBM_Watson_Setup.md.html?origin=www.coursera.org" target="_blank" rel="noopener">教程</a>，开始写你在Watson Studio上的第一段Jupyter Notebook代码。</p>
+<p>在此分享Coursera上关于简易上手使用IBM Watson Studio的<a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/FinalModule_Coursera/IBM_Watson_Setup.md.html?origin=www.coursera.org" target="_blank" rel="noopener">教程</a>，开始写你在Watson Studio上的第一段Jupyter Notebook代码吧。</p>
 <p>同时分享两则<strong>注意事项</strong>：</p>
 <ol>
 <li><p>注册账户的时候建议使用<strong>Gmail</strong>，不然很可能会注册失败。</p>

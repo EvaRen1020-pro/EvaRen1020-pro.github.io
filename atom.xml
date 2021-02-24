@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-02-23T14:40:10.007Z</updated>
+  <updated>2021-02-24T03:54:17.961Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【win10无Anaconda】Jupyter lab更改默认启动路径及创建桌面快捷方式</title>
+    <link href="http://yoursite.com/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/"/>
+    <id>http://yoursite.com/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/</id>
+    <published>2021-02-24T03:28:38.861Z</published>
+    <updated>2021-02-24T03:54:17.961Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;【win10无Anaconda】Jupyter-lab更改默认启动路径及创建桌面快捷方式&quot;&gt;&lt;a href=&quot;#【win10无Anaconda】Jupyter-lab更改默认启动路径及创建桌面快捷方式&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件和编程" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="Jupyterlab" scheme="http://yoursite.com/tags/Jupyterlab/"/>
+    
+  </entry>
+  
+  <entry>
     <title>IBM Watson Studio云机器学习平台</title>
     <link href="http://yoursite.com/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/"/>
     <id>http://yoursite.com/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/</id>
     <published>2021-02-22T14:35:06.654Z</published>
-    <updated>2021-02-23T14:40:10.007Z</updated>
+    <updated>2021-02-23T14:58:47.961Z</updated>
     
     <summary type="html">
     
