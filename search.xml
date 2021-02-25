@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>【win10无Anaconda】Jupyter lab更改默认启动路径及创建桌面快捷方式</title>
+    <title>任怡凤</title>
+    <url>/2021/02/25/%E4%BB%BB%E6%80%A1%E5%87%A4/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</title>
     <url>/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="【win10无Anaconda】Jupyter-lab更改默认启动路径及创建桌面快捷方式"><a href="#【win10无Anaconda】Jupyter-lab更改默认启动路径及创建桌面快捷方式" class="headerlink" title="【win10无Anaconda】Jupyter lab更改默认启动路径及创建桌面快捷方式"></a>【win10无Anaconda】Jupyter lab更改默认启动路径及创建桌面快捷方式</h1><p>每一次<strong>Jupyter lab</strong>或者<strong>Jupyter Notebook</strong>启动时都需要在命令行下跳至对应目录文件夹，再输入<code>jupyter lab</code>或者<code>jupyter notebook</code>启动是不是很麻烦？今天来记录一下两个小设置，让启动<strong>Jupyter lab</strong>直接双击桌面快捷方式图标即可。</p>
-<h2 id="1-Jupyter-lab更改默认启动路径"><a href="#1-Jupyter-lab更改默认启动路径" class="headerlink" title="1. Jupyter lab更改默认启动路径"></a>1. Jupyter lab更改默认启动路径</h2><p>已经有很多博客介绍如何更改<strong>Jupyter Notebook</strong>的默认启动路径，但是新一代的<strong>Jupyter lab</strong>似乎还没有很多帖子，我这里就来记录一下。其实与<strong>Jupyter Notebook</strong>配置类似，</p>
+    <content><![CDATA[<h1 id="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"><a href="#【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式" class="headerlink" title="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"></a>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</h1><p>每一次<strong>JupyterLab</strong>或者<strong>Jupyter Notebook</strong>启动时都需要在命令行下跳至对应目录文件夹，再输入<code>jupyter lab</code>或者<code>jupyter notebook</code>启动是不是很麻烦？今天来记录一下两个小设置，让启动<strong>JupyterLab</strong>直接双击桌面快捷方式图标即可。</p>
+<h2 id="1-JupyterLab更改默认启动路径"><a href="#1-JupyterLab更改默认启动路径" class="headerlink" title="1. JupyterLab更改默认启动路径"></a>1. JupyterLab更改默认启动路径</h2><p>已经有很多博客介绍如何更改<strong>Jupyter Notebook</strong>的默认启动路径，但是新一代的<strong>JupyterLab</strong>似乎还没有很多帖子，我这里就来记录一下。其实与<strong>Jupyter Notebook</strong>配置类似，</p>
 <p>（1）先在<code>cmd</code>下输入:</p>
 <p><code>jupyter lab --generate-config</code></p>
 <p>生成默认配置文件。</p>
@@ -14,7 +19,7 @@
 <img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84.PNG" class title="[修改启动路径]">
 
 <p>（4）保存退出即可。</p>
-<h2 id="2-创建-Jupyter-lab桌面快捷方式"><a href="#2-创建-Jupyter-lab桌面快捷方式" class="headerlink" title="2. 创建 Jupyter lab桌面快捷方式"></a>2. 创建 Jupyter lab桌面快捷方式</h2><p>网上我查到的都是讲解如何在<strong>Anaconda</strong>环境下创建<strong>Jupyter lab</strong>快捷方式，但是我没有装体积庞大的<strong>Anaconda</strong>。其实很简单，自己编写一个简单的<strong>bat</strong>程序，然后为其创建桌面快捷方式并且自定义图标即可。</p>
+<h2 id="2-创建-Jupyter-lab桌面快捷方式"><a href="#2-创建-Jupyter-lab桌面快捷方式" class="headerlink" title="2. 创建 Jupyter lab桌面快捷方式"></a>2. 创建 Jupyter lab桌面快捷方式</h2><p>网上我查到的都是讲解如何在<strong>Anaconda</strong>环境下创建<strong>JupyterLab</strong>快捷方式，但是我没有装体积庞大的<strong>Anaconda</strong>。其实很简单，自己编写一个简单的<strong>bat</strong>程序，然后为其创建桌面快捷方式并且自定义图标即可。</p>
 <p>（1）创建一个记事本文件，输入：</p>
 <p><code>jupyter lab</code></p>
 <p>（2）更改记事本文件的后缀名为<code>.bat</code></p>
@@ -32,7 +37,7 @@
         <category>软件和编程</category>
       </categories>
       <tags>
-        <tag>Jupyterlab</tag>
+        <tag>JupyterLab</tag>
       </tags>
   </entry>
   <entry>
