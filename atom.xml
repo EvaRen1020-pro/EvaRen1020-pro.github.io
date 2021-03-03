@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-02-25T06:44:05.598Z</updated>
+  <updated>2021-02-25T09:06:03.539Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,21 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>任怡凤</title>
-    <link href="http://yoursite.com/2021/02/25/%E4%BB%BB%E6%80%A1%E5%87%A4/"/>
-    <id>http://yoursite.com/2021/02/25/%E4%BB%BB%E6%80%A1%E5%87%A4/</id>
-    <published>2021-02-25T06:43:25.118Z</published>
-    <updated>2021-02-25T06:44:05.598Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</title>
