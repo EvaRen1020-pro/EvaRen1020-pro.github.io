@@ -22,6 +22,16 @@
   
 
   
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?157b5c8735818054d50a0a4fd001dfef";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 
 <link rel="alternate" href="/atom.xml" title="To the MOUNTAIN" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism.css" type="text/css">
@@ -83,8 +93,8 @@
 <!--  <li>PV:<span id="busuanzi_value_page_pv"></span></li>-->
 <!--  <li>UV:<span id="busuanzi_value_site_uv"></span></li>-->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <li>本站总访问量 <span id="busuanzi_value_site_uv"></span>次</li>
-  <li>本页面总访问量 <span id="busuanzi_value_page_pv"></span>次</li>
+  <li>本站总访问量<span id="busuanzi_value_site_uv"></span>人</li>
+  <li>本页面总访问量<span id="busuanzi_value_page_pv"></span>次</li>
 </ul>
 
 <script>
@@ -95,13 +105,13 @@
     var uvcountOffset = 0;
 
     function fixCount() {
+      if ($("#busuanzi_container_site_uv").css("display") != "none") {
+        $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据
+        clearInterval(int); // 停止检测
+      }
       if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
         $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
         clearInterval(int);
-      }
-      if ($("#busuanzi_container_site_pv").css("display") != "none") {
-        $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据
-        clearInterval(int); // 停止检测
       }
     }
   });
@@ -269,7 +279,7 @@
 
 <script>
   var ayerConfig = {
-    mathjax: false
+    mathjax: true
   }
 </script>
 
@@ -389,6 +399,25 @@
 </script>
 
 
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 <script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
