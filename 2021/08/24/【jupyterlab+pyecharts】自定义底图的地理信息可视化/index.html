@@ -6,7 +6,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Tag: JupyterLab |  To the MOUNTAIN
+    【jupyterlab+pyecharts】自定义底图的地理信息可视化 |  To the MOUNTAIN
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -43,55 +43,195 @@ var _hmt = _hmt || [];
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article class="articles">
+  <article id="post-【jupyterlab+pyecharts】自定义底图的地理信息可视化" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
     
-    
-    <h1 class="page-type-title">#&nbspJupyterLab</h1>
-    
-    
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2021" class="archive-year">2021</a>
-    </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/" class="archive-article-date">
-  <time datetime="2021-02-24T03:28:38.861Z" itemprop="datePublished">02/24</time>
-</a>
+    <header class="article-header">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/"
-    >【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</a
-  >
-</h2>
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  【jupyterlab+pyecharts】自定义底图的地理信息可视化
+</h1>
   
 
     </header>
     
-    
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JupyterLab/" rel="tag">JupyterLab</a></li></ul>
 
     
-  </div>
-</article>
+    <div class="article-meta">
+      <a href="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/" class="article-date">
+  <time datetime="2021-08-24T01:58:21.340Z" itemprop="datePublished">2021-08-24</time>
+</a>
       
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/">软件和编程</a>
+  </div>
+
+      
+      
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">420字</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">1分钟</span>
+        </span>
+    </span>
+</div>
+
       
     </div>
+    
+
+    
+    
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>pyecharts包官方指南：<a href="https://pyecharts.org/#/zh-cn/intro" target="_blank" rel="noopener">https://pyecharts.org/#/zh-cn/intro</a></p>
+<p><a href="https://github.com/ecomfe/echarts" target="_blank" rel="noopener">Echarts</a> 是一个由百度开源的数据可视化，凭借着良好的交互性，精巧的图表设计，得到了众多开发者的认可。而 Python 是一门富有表达力的语言，很适合用于数据处理。当数据分析遇上数据可视化时，<a href="https://github.com/pyecharts/pyecharts" target="_blank" rel="noopener">pyecharts</a> 诞生了。</p>
+<p>pyecharts原本自带的<strong>Geo()</strong>模块中中国地图的底图是全国范围的geojson文件，如果想要使用自定义区域底图，比如长三角范围内各个城市的该怎么办呢？</p>
+<p>这篇就来讲讲我怎么搞的。</p>
+<h2 id="1-下载自己所需的geojson文件"><a href="#1-下载自己所需的geojson文件" class="headerlink" title="1. 下载自己所需的geojson文件"></a>1. 下载自己所需的geojson文件</h2><p>这里推荐阿里云提供的基于高德地图的geojson文件下载地址：<a href="https://datav.aliyun.com/tools/atlas/index.html" target="_blank" rel="noopener">https://datav.aliyun.com/tools/atlas/index.html</a></p>
+<img src="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/%E9%98%BF%E9%87%8C%E4%BA%91geojson%E4%B8%8B%E8%BD%BD.PNG" class title="[阿里云geojson下载]">
+
+<p>自己可以根据需要处理数据，拼接多个geojson文件，获得自定义范围的地图底图。</p>
+<p>比如我这里合并了长三角范围内的26个城市的geojson。</p>
+<img src="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/%E5%90%88%E5%B9%B6%E5%90%8E%E7%9A%84%E9%95%BF%E4%B8%89%E8%A7%92geojson.PNG" class title="[合并后的长三角geojson]">
+
+<h2 id="2-pyecharts替换Geo-地图底图"><a href="#2-pyecharts替换Geo-地图底图" class="headerlink" title="2. pyecharts替换Geo()地图底图"></a>2. pyecharts替换Geo()地图底图</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> pyecharts<span class="token punctuation">.</span>charts <span class="token keyword">import</span> Map<span class="token punctuation">,</span>Geo
+<span class="token keyword">import</span> pyecharts<span class="token punctuation">.</span>commons<span class="token punctuation">.</span>utils
+<span class="token keyword">from</span> pyecharts<span class="token punctuation">.</span>globals <span class="token keyword">import</span> CurrentConfig<span class="token punctuation">,</span> NotebookType<span class="token punctuation">,</span>ChartType<span class="token punctuation">,</span> SymbolType
+<span class="token keyword">from</span> pyecharts <span class="token keyword">import</span> options <span class="token keyword">as</span> opts
+CurrentConfig<span class="token punctuation">.</span>NOTEBOOK_TYPE <span class="token operator">=</span> NotebookType<span class="token punctuation">.</span>JUPYTER_LAB <span class="token comment" spellcheck="true">#jupyterlab这里需要额外配置</span>
+
+<span class="token keyword">with</span> open<span class="token punctuation">(</span>path<span class="token operator">+</span><span class="token string">"geojson\长三角合并geojson.json"</span><span class="token punctuation">,</span> <span class="token string">"r"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">"utf-8"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span> <span class="token comment" spellcheck="true">#加载我们的geojson文件</span>
+    j <span class="token operator">=</span> json<span class="token punctuation">.</span>load<span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+c <span class="token operator">=</span> <span class="token punctuation">(</span>
+    Geo<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>add_js_funcs<span class="token punctuation">(</span><span class="token string">"echarts.registerMap('上海', {})"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#使用js function，将原来Geo()自带的上海地图换成我们自己的geojson文件</span>
+    <span class="token punctuation">.</span>add_schema<span class="token punctuation">(</span>maptype<span class="token operator">=</span><span class="token string">"上海"</span><span class="token punctuation">,</span>label_opts<span class="token operator">=</span>opts<span class="token punctuation">.</span>LabelOpts<span class="token punctuation">(</span>is_show<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#使用底图</span>
+<span class="token punctuation">)</span>
+c<span class="token punctuation">.</span>load_javascript<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#使其支持自定义js</span>
+c<span class="token punctuation">.</span>render_notebook<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#直接展示在jupyterlab</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<img src="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/%E9%95%BF%E4%B8%89%E8%A7%92%E5%BA%95%E5%9B%BE.PNG" class title="[长三角底图]">
+
+<h2 id="3-基于底图进行自定义展示"><a href="#3-基于底图进行自定义展示" class="headerlink" title="3. 基于底图进行自定义展示"></a>3. 基于底图进行自定义展示</h2><p>比如我这里绘制了城市间的流动线条。</p>
+<img src="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/%E9%95%BF%E4%B8%89%E8%A7%92%E5%87%BA%E8%A1%8C%E6%84%8F%E6%84%BF.gif" class title="[长三角出行意愿]">
+      
+      <!-- 打赏 -->
+      
+      <div id="reward-btn">
+        打赏
+      </div>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://evaren1020-pro.github.io/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/" data-id="ckspnhlxe00064kyp24fg4wuj"
+        class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jupyterlab/" rel="tag">jupyterlab</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pyecharts/" rel="tag">pyecharts</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9C%B0%E5%9B%BEAPI/" rel="tag">地图API</a></li></ul>
+
+    </footer>
+
   </div>
+
   
+  
+  <nav class="article-nav">
+    
+    
+      <a href="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</div>
+      </a>
+    
+  </nav>
+
+
   
 
   
+  
+<!-- valine评论 -->
+<div id="vcomments-box">
+    <div id="vcomments">
+    </div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        notify: false,
+        verify: '',
+        app_id: '3eRew0F8C62xRnHV7HS7zPes-gzGzoHsz',
+        app_key: '1kXbH1WvIt2tvJOp8LdVaMd4',
+        path: window.location.pathname,
+        avatar: 'mp',
+        placeholder: '给我的文章加点评论吧~',
+        recordIP: true
+    });
+    const infoEle = document.querySelector('#vcomments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+        infoEle.childNodes.forEach(function (item) {
+            item.parentNode.removeChild(item);
+        });
+    }
+</script>
+<style>
+    #vcomments-box {
+        padding: 5px 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #vcomments-box {
+            padding: 5px 0px;
+        }
+    }
+
+    #vcomments-box #vcomments {
+        background-color: #fff;
+    }
+
+    .v .vlist .vcard .vh {
+        padding-right: 20px;
+    }
+
+    .v .vlist .vcard {
+        padding-left: 10px;
+    }
+</style>
+
+  
+
+  
+  
+  
+
+</article>
 </section>
       <footer class="footer">
   <div class="outer">
@@ -303,6 +443,27 @@ var _hmt = _hmt || [];
 
 
 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+    onClick: (e) => {
+      document.getElementById(e.target.innerText).scrollIntoView()
+      return false;
+    }
+  });
+</script>
+
+
 <script>
   var ayerConfig = {
     mathjax: true
@@ -439,18 +600,6 @@ var _hmt = _hmt || [];
       var all = MathJax.Hub.getAllJax(), i;
       for(i=0; i < all.length; i += 1) {
           all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-  });
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-
-<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
-  </div>
-</body>
-
-</html>as-jax';
       }
   });
 </script>
