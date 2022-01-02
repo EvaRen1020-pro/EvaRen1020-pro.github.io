@@ -999,4 +999,38 @@ hexo<span class="token punctuation">.</span>extend<span class="token punctuation
         <tag>博客</tag>
       </tags>
   </entry>
+  <entry>
+    <title>arcgis中XYtoLine失败的原因及解决方案</title>
+    <url>/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h1 id="arcgis中XYtoLine失败的原因及解决方案"><a href="#arcgis中XYtoLine失败的原因及解决方案" class="headerlink" title="arcgis中XYtoLine失败的原因及解决方案"></a>arcgis中XYtoLine失败的原因及解决方案</h1><ol>
+<li>包含<strong>XY数据</strong>的<strong>csv</strong>文件需先导出为<strong>dbf</strong>格式</li>
+<li>而后再将这个<strong>dbf</strong>数据导入arcgis</li>
+<li>运行<strong>XYtoLine</strong>工具</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>arcgis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何将【geojson文件】转成【shp文件】在arcgis中使用</title>
+    <url>/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="如何将【geojson文件】转成【shp文件】在arcgis中使用"><a href="#如何将【geojson文件】转成【shp文件】在arcgis中使用" class="headerlink" title="如何将【geojson文件】转成【shp文件】在arcgis中使用"></a>如何将【geojson文件】转成【shp文件】在arcgis中使用</h1><p>当缺少中国省市对应的地图shp文件时，可以去阿里云的网站下载最新的geojson文件，再使用geopandas库转换为shp文件使用。</p>
+<h2 id="1-在阿里云geojson地图下载网站下载相应geojson文件"><a href="#1-在阿里云geojson地图下载网站下载相应geojson文件" class="headerlink" title="1. 在阿里云geojson地图下载网站下载相应geojson文件"></a>1. 在阿里云geojson地图下载网站下载相应geojson文件</h2><p><a href="http://datav.aliyun.com/portal/school/atlas/area_selector" target="_blank" rel="noopener">http://datav.aliyun.com/portal/school/atlas/area_selector</a></p>
+<h2 id="2-使用python的【geopandas】库"><a href="#2-使用python的【geopandas】库" class="headerlink" title="2. 使用python的【geopandas】库"></a>2. 使用python的【geopandas】库</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> geopandas <span class="token keyword">as</span> gdp
+
+data <span class="token operator">=</span> gdp<span class="token punctuation">.</span>read_file<span class="token punctuation">(</span><span class="token string">'\地图.json'</span><span class="token punctuation">)</span>
+data<span class="token punctuation">.</span>to_file<span class="token punctuation">(</span><span class="token string">'\地图shp'</span><span class="token punctuation">,</span> driver<span class="token operator">=</span><span class="token string">'ESRI Shapefile'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'gbk'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#地图shp是存储的文件夹名称</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="3-导入arcgis即可"><a href="#3-导入arcgis即可" class="headerlink" title="3. 导入arcgis即可"></a>3. 导入arcgis即可</h2>]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>arcgis</tag>
+      </tags>
+  </entry>
 </search>

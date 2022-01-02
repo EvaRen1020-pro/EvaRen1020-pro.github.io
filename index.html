@@ -69,6 +69,151 @@ var _hmt = _hmt || [];
     
     
     
+    <article id="post-如何将【geojson文件】转成【shp文件】在arcgis中使用" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/"
+    >如何将【geojson文件】转成【shp文件】在arcgis中使用</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/" class="article-date">
+  <time datetime="2022-01-02T12:22:51.631Z" itemprop="datePublished">2022-01-02</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/">软件和编程</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <h1 id="如何将【geojson文件】转成【shp文件】在arcgis中使用"><a href="#如何将【geojson文件】转成【shp文件】在arcgis中使用" class="headerlink" title="如何将【geojson文件】转成【shp文件】在arcgis中使用"></a>如何将【geojson文件】转成【shp文件】在arcgis中使用</h1><p>当缺少中国省市对应的地图shp文件时，可以去阿里云的网站下载最新的geojson文件，再使用geopandas库转换为shp文件使用。</p>
+<h2 id="1-在阿里云geojson地图下载网站下载相应geojson文件"><a href="#1-在阿里云geojson地图下载网站下载相应geojson文件" class="headerlink" title="1. 在阿里云geojson地图下载网站下载相应geojson文件"></a>1. 在阿里云geojson地图下载网站下载相应geojson文件</h2><p><a href="http://datav.aliyun.com/portal/school/atlas/area_selector" target="_blank" rel="noopener">http://datav.aliyun.com/portal/school/atlas/area_selector</a></p>
+<h2 id="2-使用python的【geopandas】库"><a href="#2-使用python的【geopandas】库" class="headerlink" title="2. 使用python的【geopandas】库"></a>2. 使用python的【geopandas】库</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> geopandas <span class="token keyword">as</span> gdp
+
+data <span class="token operator">=</span> gdp<span class="token punctuation">.</span>read_file<span class="token punctuation">(</span><span class="token string">'\地图.json'</span><span class="token punctuation">)</span>
+data<span class="token punctuation">.</span>to_file<span class="token punctuation">(</span><span class="token string">'\地图shp'</span><span class="token punctuation">,</span> driver<span class="token operator">=</span><span class="token string">'ESRI Shapefile'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'gbk'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#地图shp是存储的文件夹名称</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="3-导入arcgis即可"><a href="#3-导入arcgis即可" class="headerlink" title="3. 导入arcgis即可"></a>3. 导入arcgis即可</h2>
+      
+      <!-- 打赏 -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://evaren1020-pro.github.io/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/" data-id="ckxx8dwm60001psyp7nbv1knc"
+        class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/arcgis/" rel="tag">arcgis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
+    <article id="post-arcgis中XYtoLine失败的原因及解决方案" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"
+    >arcgis中XYtoLine失败的原因及解决方案</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="article-date">
+  <time datetime="2022-01-02T12:22:21.158Z" itemprop="datePublished">2022-01-02</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/">软件和编程</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <h1 id="arcgis中XYtoLine失败的原因及解决方案"><a href="#arcgis中XYtoLine失败的原因及解决方案" class="headerlink" title="arcgis中XYtoLine失败的原因及解决方案"></a>arcgis中XYtoLine失败的原因及解决方案</h1><ol>
+<li>包含<strong>XY数据</strong>的<strong>csv</strong>文件需先导出为<strong>dbf</strong>格式</li>
+<li>而后再将这个<strong>dbf</strong>数据导入arcgis</li>
+<li>运行<strong>XYtoLine</strong>工具</li>
+</ol>
+
+      
+      <!-- 打赏 -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://evaren1020-pro.github.io/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" data-id="ckxx8dwly0000psyp7ytk2m2d"
+        class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/arcgis/" rel="tag">arcgis</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
     <article id="post-【jupyterlab+pyecharts】自定义底图的地理信息可视化" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -959,369 +1104,6 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
 
 </article>
     
-    <article id="post-【Windows+Cygwin+Darknet+OpenCV】简易上手实现YOLOv3目标检测" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/"
-    >【Windows+Cygwin+Darknet+OpenCV】简易上手实现YOLOv3目标检测</a
-  >
-</h2>
-  
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" class="article-date">
-  <time datetime="2020-04-12T12:28:33.311Z" itemprop="datePublished">2020-04-12</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/">软件和编程</a>
-  </div>
-
-      
-      
-      
-    </div>
-    
-
-    
-
-    <div class="article-entry" itemprop="articleBody">
-      
-
-
-      
-
-      
-      <p><a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noopener">YOLO(You only look once)</a>是github上很火的一个目标检测算法。它的官网提供了很方便的用C语言编写的程序<strong>Darknet</strong>。<br>但是官网提供的很方便的编译方法是基于Linux和Mac系统的。我这次来讲讲我是如何在自己windows系统下配置<strong>Darknet</strong>模块的。<br><strong>注：我这次是下了Cygwin来模拟Linux系统，因为不想下体积占据几个G的Visual Studio来进行编译，Cygwin安装包本身只有1.3M大小。<br>如果有Visual Studio，可以参照<a href="https://github.com/AlexeyAB/darknet" target="_blank" rel="noopener">AlexeyAB版本</a>进行配置。</strong></p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/YOLO%E5%AE%98%E7%BD%91.png" class title="[官网图]">
-
-<h2 id="基础配置流程"><a href="#基础配置流程" class="headerlink" title="基础配置流程"></a>基础配置流程</h2><p>配置过程参照官网：<a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noopener">https://pjreddie.com/darknet/yolo/</a></p>
-<p>(1) 将github上的<a href="https://github.com/pjreddie/darknet" target="_blank" rel="noopener">https://github.com/pjreddie/darknet</a> 整个项目下载到本地电脑。<br>    注：此处建议使用下载.zip压缩包的方式，不是直接用git clone到本地文件夹，不然可能后面会遇到couldn’t open file: data/coco.names的问题。<br>(2) 切换到darknet文件夹，使用make命令编译C语言源文件。<br>此时，Windows系统下在cmd命令行会报错无法使用make命令。因为make是linux系统下编译源文件使用的命令。官网也有注明这些命令只在Linux和Mac系统上测试过，未在windows系统下测试。<br>所以，下载Cygwin软件实现在windows平台模拟linux系统操作命令，而后可以使用make命令编译源码，生成darknet.exe可执行文件。安装配置Cygwin 参照这篇博客以及其下面的问答：<a href="https://blog.csdn.net/chunleixiahe/article/details/55666792" target="_blank" rel="noopener">https://blog.csdn.net/chunleixiahe/article/details/55666792</a></p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E5%9C%A8Cygwin%E7%BC%96%E8%AF%91%E6%88%90%E5%8A%9F.png" class title="[在Cygwin编译成功]">
-<p>(3)    下载别人已训练好的yolov3.weights模型权重文件，放于darknet根目录下。<br>官网链接（下载较慢）：<a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noopener">https://pjreddie.com/darknet/yolo/</a><br>百度云链接：<a href="https://pan.baidu.com/s/1CVgvP4hQQvDNbKmXhmkxqw" target="_blank" rel="noopener">https://pan.baidu.com/s/1CVgvP4hQQvDNbKmXhmkxqw</a> 提取码：jnhn<br>(4) 使用命令./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg完成测试。因为没有配置OpenCV，图片结果不会直接显示的屏幕上，而是存于默认文件夹的根目录predictions.jpg。<br>但是此时默认的程序不会将置信度显示在图片上，只打印于命令行,图片会存于根目录下<code>predictions.jpg</code>。</p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E5%AE%98%E6%96%B9%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87%E7%BB%93%E6%9E%9C%E4%B8%8D%E5%90%AB%E7%BD%AE%E4%BF%A1%E5%BA%A6.jpg" class title="[官方测试图片结果不含置信度]">
-<p>(5) 为实现将预测的置信度显示于检测结果图片上，更改默认darknet文件夹下的<code>src/image.c</code>文件<code>draw_detections</code>函数。<br>参照：<a href="https://blog.csdn.net/qq_34795071/article/details/86665620" target="_blank" rel="noopener">https://blog.csdn.net/qq_34795071/article/details/86665620</a></p>
-<pre class="line-numbers language-python"><code class="language-python">int i<span class="token punctuation">,</span>j<span class="token punctuation">;</span>
-
-<span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> <span class="token operator">+</span><span class="token operator">+</span>i<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    char labelstr<span class="token punctuation">[</span><span class="token number">4096</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-    int <span class="token keyword">class</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-char possible<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token operator">//</span>存放检测的置信值
-    <span class="token keyword">for</span><span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> classes<span class="token punctuation">;</span> <span class="token operator">+</span><span class="token operator">+</span>j<span class="token punctuation">)</span><span class="token punctuation">{</span>
-  sprintf<span class="token punctuation">(</span>possible<span class="token punctuation">,</span><span class="token string">"%.2f"</span><span class="token punctuation">,</span>dets<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>prob<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">//</span>置信值截取小数点后两位赋给possible
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>dets<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>prob<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">></span> thresh<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">class</span> <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> names<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> possible<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">//</span>标签中加入置信值
-                <span class="token keyword">class</span> <span class="token operator">=</span> j<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-                strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> <span class="token string">", "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> names<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> possible<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">//</span>标签中加入置信值
-            <span class="token punctuation">}</span>
-            printf<span class="token punctuation">(</span><span class="token string">"%s: %.0f%%\n"</span><span class="token punctuation">,</span> names<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> dets<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>prob<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">*</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>(6) 删除掉原编译好的darknet.exe, libdarknet.a, libdarknet.so,重新使用make编译源文件，再执行上述检测语句，即可存储含有置信度的图片。</p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/dog_predictions.jpg" class title="[dog_predictions]">
-<p>(7) 若想更改检测的默认置信度，在检测命令后添加 -thresh &lt;数值&gt;。<br><code>./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg -thresh 0.4</code></p>
-<p><strong>至此已经完成了最基础的Darknet配置来实现YOLOv3算法。</strong></p>
-<h2 id="OpenCV拓展实现实时目标检测"><a href="#OpenCV拓展实现实时目标检测" class="headerlink" title="OpenCV拓展实现实时目标检测"></a>OpenCV拓展实现实时目标检测</h2><p>(1)    安装<code>OpenCV</code>，拓展可支持的图片类型，并且将结果自动弹窗显示：<br><code>OpenCV(Windows版本的即可)</code>安装完毕后，需要再次使用<code>Cygwin</code>下载<code>Linux</code>支持的<code>OpenCV</code>相应文件，并将<code>darknet</code>根目录下<code>Makefile</code>用文本打开，开头部分设为OPENCV=1,才可成功编译可支持<code>OpenCV</code>的<code>darknet.exe</code>。<br>编译完基于<code>OpenCV</code>的可执行程序后，不能如原来一样在命令行直接输入检测语句，不然会出现无法展示的报错，配置并启动<code>Xterm</code>才可以解决。</p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/opencv%E9%85%8D%E7%BD%AE%E5%90%8E%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%BC%B9%E6%A1%86%E6%8A%A5%E9%94%99.png" class title="[opencv配置后在命令行弹框报错]">
-<p>在<code>Cygwin</code>输入<code>export DISPLAY=:0.0</code>和<code>startxwin &</code>即可启动<code>Xterm</code>，然后输入相应命令，即可出现弹框，如下所示。</p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E5%9C%A8Xterm%E6%88%90%E5%8A%9F%E6%98%BE%E7%A4%BA%E8%87%B3%E7%AA%97%E5%8F%A3%E5%B1%8F%E5%B9%95.png" class title="[在Xterm成功显示至窗口屏幕]">
-<p><strong>Xterm使用两则小贴士：</strong>（1）鼠标中键实现“粘贴”；（2）ctrl+右键可以改字号。<br>(2) 参照这篇博客<a href="https://blog.csdn.net/weixin_43590290/article/details/100736307?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2
-">【python+OpenCV+YOLOv3打开笔记本摄像头模型检测】</a>的代码，使用python程序，通过OpenCV调用摄像头实现实时检测。<br>这篇文章调用的是电脑自带摄像头，我通过给安卓手机下载<strong>IP Webcam</strong>软件，实现调用手机摄像头的实时目标检测。<br>具体代码如下：</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">import</span> cv2
-<span class="token keyword">import</span> os
-
-<span class="token keyword">def</span> <span class="token function">video_demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 加载已经训练好的模型路径，可以是绝对路径或者相对路径</span>
-    weightsPath <span class="token operator">=</span> <span class="token string">"../yolov3.weights"</span>
-    configPath <span class="token operator">=</span> <span class="token string">"../cfg/yolov3.cfg"</span>
-    labelsPath <span class="token operator">=</span> <span class="token string">"../data/coco.names"</span>
-    <span class="token comment" spellcheck="true"># 初始化一些参数</span>
-    LABELS <span class="token operator">=</span> open<span class="token punctuation">(</span>labelsPath<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 物体类别</span>
-    COLORS <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> size<span class="token operator">=</span><span class="token punctuation">(</span>len<span class="token punctuation">(</span>LABELS<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token string">"uint8"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 颜色</span>
-    boxes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-    confidences <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-    classIDs <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-    net <span class="token operator">=</span> cv2<span class="token punctuation">.</span>dnn<span class="token punctuation">.</span>readNetFromDarknet<span class="token punctuation">(</span>configPath<span class="token punctuation">,</span> weightsPath<span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># 读入待检测的图像</span>
-    <span class="token comment" spellcheck="true"># 0是代表摄像头编号，只有一个的话默认为0</span>
-
-    url <span class="token operator">=</span> <span class="token string">'http://192.168.0.103:8080/video'</span><span class="token comment" spellcheck="true">##手机ip cam地址</span>
-    <span class="token comment" spellcheck="true"># url='D:\darknet-master\\airplane.avi'#本地视频</span>
-    capture <span class="token operator">=</span> cv2<span class="token punctuation">.</span>VideoCapture<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
-    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-        ref<span class="token punctuation">,</span> image <span class="token operator">=</span> capture<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
-        <span class="token punctuation">(</span>H<span class="token punctuation">,</span> W<span class="token punctuation">)</span> <span class="token operator">=</span> image<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span>
-        <span class="token comment" spellcheck="true"># 得到 YOLO需要的输出层</span>
-        ln <span class="token operator">=</span> net<span class="token punctuation">.</span>getLayerNames<span class="token punctuation">(</span><span class="token punctuation">)</span>
-        ln <span class="token operator">=</span> <span class="token punctuation">[</span>ln<span class="token punctuation">[</span>i<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> net<span class="token punctuation">.</span>getUnconnectedOutLayers<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
-        <span class="token comment" spellcheck="true"># 从输入图像构造一个blob，然后通过加载的模型，给我们提供边界框和相关概率</span>
-        blob <span class="token operator">=</span> cv2<span class="token punctuation">.</span>dnn<span class="token punctuation">.</span>blobFromImage<span class="token punctuation">(</span>image<span class="token punctuation">,</span> <span class="token number">1</span> <span class="token operator">/</span> <span class="token number">255.0</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">416</span><span class="token punctuation">,</span> <span class="token number">416</span><span class="token punctuation">)</span><span class="token punctuation">,</span> swapRB<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> crop<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
-        net<span class="token punctuation">.</span>setInput<span class="token punctuation">(</span>blob<span class="token punctuation">)</span>
-        layerOutputs <span class="token operator">=</span> net<span class="token punctuation">.</span>forward<span class="token punctuation">(</span>ln<span class="token punctuation">)</span>
-        <span class="token comment" spellcheck="true"># 在每层输出上循环</span>
-        <span class="token keyword">for</span> output <span class="token keyword">in</span> layerOutputs<span class="token punctuation">:</span>
-            <span class="token comment" spellcheck="true"># 对每个检测进行循环</span>
-            <span class="token keyword">for</span> detection <span class="token keyword">in</span> output<span class="token punctuation">:</span>
-                scores <span class="token operator">=</span> detection<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
-                classID <span class="token operator">=</span> np<span class="token punctuation">.</span>argmax<span class="token punctuation">(</span>scores<span class="token punctuation">)</span>
-                confidence <span class="token operator">=</span> scores<span class="token punctuation">[</span>classID<span class="token punctuation">]</span>
-                <span class="token comment" spellcheck="true"># 过滤掉那些置信度较小的检测结果</span>
-                <span class="token keyword">if</span> confidence <span class="token operator">></span> <span class="token number">0.5</span><span class="token punctuation">:</span>
-                    <span class="token comment" spellcheck="true"># 框后接框的宽度和高度</span>
-                    box <span class="token operator">=</span> detection<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span>W<span class="token punctuation">,</span> H<span class="token punctuation">,</span> W<span class="token punctuation">,</span> H<span class="token punctuation">]</span><span class="token punctuation">)</span>
-                    <span class="token punctuation">(</span>centerX<span class="token punctuation">,</span> centerY<span class="token punctuation">,</span> width<span class="token punctuation">,</span> height<span class="token punctuation">)</span> <span class="token operator">=</span> box<span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token string">"int"</span><span class="token punctuation">)</span>
-                    <span class="token comment" spellcheck="true"># 边框的左上角</span>
-                    x <span class="token operator">=</span> int<span class="token punctuation">(</span>centerX <span class="token operator">-</span> <span class="token punctuation">(</span>width <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-                    y <span class="token operator">=</span> int<span class="token punctuation">(</span>centerY <span class="token operator">-</span> <span class="token punctuation">(</span>height <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-                    <span class="token comment" spellcheck="true"># 更新检测出来的框</span>
-                    boxes<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> int<span class="token punctuation">(</span>width<span class="token punctuation">)</span><span class="token punctuation">,</span> int<span class="token punctuation">(</span>height<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-                    confidences<span class="token punctuation">.</span>append<span class="token punctuation">(</span>float<span class="token punctuation">(</span>confidence<span class="token punctuation">)</span><span class="token punctuation">)</span>
-                    classIDs<span class="token punctuation">.</span>append<span class="token punctuation">(</span>classID<span class="token punctuation">)</span>
-        <span class="token comment" spellcheck="true"># 极大值抑制</span>
-        idxs <span class="token operator">=</span> cv2<span class="token punctuation">.</span>dnn<span class="token punctuation">.</span>NMSBoxes<span class="token punctuation">(</span>boxes<span class="token punctuation">,</span> confidences<span class="token punctuation">,</span> <span class="token number">0.2</span><span class="token punctuation">,</span> <span class="token number">0.3</span><span class="token punctuation">)</span>
-        <span class="token keyword">if</span> len<span class="token punctuation">(</span>idxs<span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">:</span>
-            <span class="token keyword">for</span> i <span class="token keyword">in</span> idxs<span class="token punctuation">.</span>flatten<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-                <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span>boxes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> boxes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-                <span class="token punctuation">(</span>w<span class="token punctuation">,</span> h<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span>boxes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> boxes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-                <span class="token comment" spellcheck="true"># 在原图上绘制边框和类别</span>
-                color <span class="token operator">=</span> <span class="token punctuation">[</span>int<span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token keyword">for</span> c <span class="token keyword">in</span> COLORS<span class="token punctuation">[</span>classIDs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-                cv2<span class="token punctuation">.</span>rectangle<span class="token punctuation">(</span>image<span class="token punctuation">,</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>x <span class="token operator">+</span> w<span class="token punctuation">,</span> y <span class="token operator">+</span> h<span class="token punctuation">)</span><span class="token punctuation">,</span> color<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
-                text <span class="token operator">=</span> <span class="token string">"{}: {:.4f}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>LABELS<span class="token punctuation">[</span>classIDs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> confidences<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-                cv2<span class="token punctuation">.</span>putText<span class="token punctuation">(</span>image<span class="token punctuation">,</span> text<span class="token punctuation">,</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y <span class="token operator">-</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> cv2<span class="token punctuation">.</span>FONT_HERSHEY_SIMPLEX<span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">,</span> color<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
-        cv2<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span><span class="token string">"Video"</span><span class="token punctuation">,</span> image<span class="token punctuation">)</span>
-        <span class="token comment" spellcheck="true"># 等待1ms显示图像</span>
-        c <span class="token operator">=</span> cv2<span class="token punctuation">.</span>waitKey<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-        <span class="token keyword">if</span> c <span class="token operator">&amp;</span> <span class="token number">0xFF</span> <span class="token operator">==</span> ord<span class="token punctuation">(</span><span class="token string">'q'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 键盘输入英文字母q键退出视频</span>
-            <span class="token keyword">break</span>
-
-cv2<span class="token punctuation">.</span>destroyAllWindows<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 销毁所有窗口</span>
-video_demo<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>下面放一下我实时检测的画面：</p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E6%8E%A5%E5%85%A5%E6%89%8B%E6%9C%BA%E6%91%84%E5%83%8F%E5%A4%B4%E5%AE%9E%E6%97%B6%E6%A3%80%E6%B5%8B.jpg" class title="[接入手机摄像头实时检测]">
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E7%94%B5%E8%84%91%E5%AE%9E%E6%97%B6%E6%A3%80%E6%B5%8B%E7%A4%BA%E6%84%8F%E7%94%BB%E9%9D%A2.jpg" class title="[电脑实时检测示意画面]">
-
-<h2 id="配置Darknet走过的一些弯路"><a href="#配置Darknet走过的一些弯路" class="headerlink" title="配置Darknet走过的一些弯路"></a>配置Darknet走过的一些弯路</h2><p>(1)    下载CUDA实现GPU运算：<br>需要自己的显卡比较好，同时配置CUDA、CUDNN均需匹配版本号正确，这两个软件体积也特别大。配置这个很麻烦，Darknet官网也说明了这个安装很麻烦，所以不是长久专门使用，不必配置了。<br>但是没有GPU真的处理视频很卡。。。<br>(2)    一开始的make编译Makefile失败，尝试使用windows系统下的Visual Studio中的nmake等方式失败，尝试用MinGW也失败，最终使用Cygwin模拟linux成功。<br>(3) 基于已有的程序，安装完OpenCV后在模拟Linux系统下的视频流的目标侦测目前还是遇到一些问题，无法正常按帧检测，并实时在屏幕上显示检测结果。花费了2天时间进行尝试，还是没有解决这个bug，暂时放弃。有解决的朋友可以告诉我一下。<br>报错：<br><code>(darknet:3866):GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed</code></p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E8%A7%86%E9%A2%91%E6%8A%A5%E9%94%99.png" class title="[视频报错]">
-<p>所以才最后转投了python程序去调用OpenCV做视频检测，如果你只想做图片检测，按照我上面的做法没问题。<br>(4) 所以当我看到最后的别人的博客调用python程序，去查<code>src</code>的源码实现<code>YOLOv3</code>，不需要配置keras和tensorflow，其实以后自己也可以这样做。自己当初放弃<a href="https://github.com/AlexeyAB/darknet" target="_blank" rel="noopener">AlexeyAB版本</a>的python接口是因为它还是需要导入windows编译过后的<code>dll</code>模块，所以放弃。不过，有兴趣的朋友还是可以一试。</p>
-
-      
-      <!-- 打赏 -->
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://evaren1020-pro.github.io/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" data-id="ckspnmm5j0004loype1cs5s38"
-        class="article-share-link">分享</a>
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenCV/" rel="tag">OpenCV</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/YOLO/" rel="tag">YOLO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/" rel="tag">图像识别</a></li></ul>
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-
-</article>
-    
-    <article id="post-【自然语言处理】Wordcloud词云分析+LDA主题分类" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/"
-    >【自然语言处理】Wordcloud词云分析+LDA主题分类</a
-  >
-</h2>
-  
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/" class="article-date">
-  <time datetime="2020-04-02T08:33:57.535Z" itemprop="datePublished">2020-04-02</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/">软件和编程</a>
-  </div>
-
-      
-      
-      
-    </div>
-    
-
-    
-
-    <div class="article-entry" itemprop="articleBody">
-      
-
-
-      
-
-      
-      <p>最近在一门课上，老师分享了一篇关于应用自然语言处理（NLP）模型分析交通领域研究主题分类的论文，我觉得写得很好很有意思。所以，自己也进行一下尝试。<br>主要分为<strong>Wordcloud词云展示</strong>和<strong>Latent Dirichlet Allocation（LDA）模型主题分类</strong>两部分。</p>
-<p>参考文献：<a href="https://www.sciencedirect.com/science/article/pii/S0968090X17300207" target="_blank" rel="noopener">Sun, L., &amp; Yin, Y. (2017). Discovering themes and trends in transportation research using topic modeling. Transportation Research Part C: Emerging Technologies, 77, 49-66. doi:10.1016/j.trc.2017.01.013</a></p>
-<p>本次分析的是2017年至2020年发表的交通领域关于<strong>“Mobility-as-a-Service(MaaS)”</strong>的30篇论文的摘要部分。</p>
-<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/%E6%96%87%E7%8C%AE%E6%A6%82%E8%A7%88.PNG" class title="[文献展示]">
-
-<h2 id="wordcloud词云展示"><a href="#wordcloud词云展示" class="headerlink" title="wordcloud词云展示"></a>wordcloud词云展示</h2><ol>
-<li><p>首先对文本进行预处理：</p>
-<ul>
-<li><p>去除标点符号，按空格拆分句子<br><code>mytext=re.sub(r'[.,()]','',mytext).split(' ') #正侧表达式去除标点</code></p>
-</li>
-<li><p>用NLTK的wordnet模块进行词形还原</p>
-<pre class="line-numbers language-python"><code class="language-python">  <span class="token keyword">from</span> nltk<span class="token punctuation">.</span>stem <span class="token keyword">import</span> WordNetLemmatizer
-  wnl <span class="token operator">=</span> WordNetLemmatizer<span class="token punctuation">(</span><span class="token punctuation">)</span>
-  remytext <span class="token operator">=</span> <span class="token string">''</span>
-  <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>mytext<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-      mytext<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>wnl<span class="token punctuation">.</span>lemmatize<span class="token punctuation">(</span>mytext<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#词性还原</span>
-      remytext<span class="token operator">=</span>remytext<span class="token operator">+</span><span class="token string">' '</span><span class="token operator">+</span>mytext<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-  mytext<span class="token operator">=</span>remytext<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>注：wordnet包需要另外独自安装，不然会报如下错误：</strong><br><code>Resource wordnet not found. Please use the NLTK Downloader to obtain the resource:</code></p>
-<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E7%BC%BA%E5%A4%B1%E6%8A%A5%E9%94%99.PNG" class>
-<p><strong>这里补充wordnet包安装方法：</strong><br>  (1) 命令行cmd打开，输入python；<br>(2) 继续输入<code>import nltk</code>和<code>nltk.download()</code>如下图所示：</p>
-  <img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E4%B8%8B%E8%BD%BDcmd.PNG" class>
-<p>(3) 可能会报错远程主机强制关闭了一个连接。<br>  解决办法：(1)连VPN (2)利用别人已经下载到本地的wordnet包,具体参照这篇博客。<a href="https://blog.csdn.net/Charchunchiu/article/details/96436736?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener">Python NLTK WordNet的在线与手动安装方法</a><br>  (4) 正常情况下,弹出如下窗口，选择<code>Corpora/wordnet</code>下载即可。</p>
-  <img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E4%B8%8B%E8%BD%BD%E7%95%8C%E9%9D%A2.PNG" class>
-</li>
-<li><p>设置停用词</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> wordcloud <span class="token keyword">import</span> STOPWORDS<span class="token comment" spellcheck="true">#导入原有的停用词包</span>
-additional_stopwords<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">with</span> open<span class="token punctuation">(</span>stopwordsfile<span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'UTF-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
-  <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">:</span>
-      additional_stopwords<span class="token punctuation">.</span>append<span class="token punctuation">(</span>line<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">,</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-stop_words <span class="token operator">=</span> additional_stopwords <span class="token operator">+</span> list<span class="token punctuation">(</span>STOPWORDS<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#额外添加自己的停用词</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
-</li>
-<li><p>应用wordcloud包</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> wordcloud <span class="token keyword">import</span> WordCloud
-wordcloud <span class="token operator">=</span> WordCloud<span class="token punctuation">(</span>stopwords<span class="token operator">=</span>stop_words<span class="token punctuation">,</span>background_color<span class="token operator">=</span><span class="token string">'white'</span><span class="token punctuation">,</span>collocations<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>colormap<span class="token operator">=</span><span class="token string">'viridis'</span><span class="token punctuation">,</span>width<span class="token operator">=</span><span class="token number">2160</span><span class="token punctuation">,</span>height<span class="token operator">=</span><span class="token number">1080</span><span class="token punctuation">,</span>max_words<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">,</span>prefer_horizontal<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span>generate<span class="token punctuation">(</span>mytext<span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>wordcloud<span class="token punctuation">,</span> interpolation<span class="token operator">=</span><span class="token string">'bilinear'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>axis<span class="token punctuation">(</span><span class="token string">"off"</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/maas%E8%AF%8D%E4%BA%91%E7%BB%93%E6%9E%9C.PNG" class title="[词云展示]">
-
-</li>
-</ol>
-<h2 id="LDA主题分类"><a href="#LDA主题分类" class="headerlink" title="LDA主题分类"></a>LDA主题分类</h2><p>这里使用<strong>sklearn</strong>的<strong>LDA</strong>包。<br>基于之前的<strong>文本预处理</strong>，还需要转换为<strong>词向量</strong>的形式，才可放入LDA模型训练。<br>具体代码如下：</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>feature_extraction<span class="token punctuation">.</span>text <span class="token keyword">import</span> CountVectorizer <span class="token comment" spellcheck="true">#词向量转换模块</span>
-<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>decomposition <span class="token keyword">import</span> LatentDirichletAllocation <span class="token keyword">as</span> LDA
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
-<span class="token keyword">import</span> time
-<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">import</span> MultipleLocator
-
-<span class="token comment" spellcheck="true">#Initialise the count vectorizer with the English stop words</span>
-count_vectorizer <span class="token operator">=</span> CountVectorizer<span class="token punctuation">(</span>stop_words<span class="token operator">=</span>stop_words<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#这里也可以设置停用词</span>
-<span class="token comment" spellcheck="true"># Fit and transform the processed titles</span>
-count_data <span class="token operator">=</span> count_vectorizer<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>mytext<span class="token punctuation">)</span>
-
-<span class="token keyword">def</span> <span class="token function">print_topics</span><span class="token punctuation">(</span>model<span class="token punctuation">,</span> count_vectorizer<span class="token punctuation">,</span> n_top_words<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    words <span class="token operator">=</span> count_vectorizer<span class="token punctuation">.</span>get_feature_names<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token keyword">for</span> topic_idx<span class="token punctuation">,</span> topic <span class="token keyword">in</span> enumerate<span class="token punctuation">(</span>model<span class="token punctuation">.</span>components_<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nTopic #%d:"</span> <span class="token operator">%</span> topic_idx<span class="token punctuation">)</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">[</span>words<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-                        <span class="token keyword">for</span> i <span class="token keyword">in</span> topic<span class="token punctuation">.</span>argsort<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span>n_top_words <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-n_topics <span class="token operator">=</span> range<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
-perplexityLst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1.0</span><span class="token punctuation">]</span><span class="token operator">*</span>len<span class="token punctuation">(</span>n_topics<span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true">#训练LDA并打印训练时间</span>
-lda_models <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> idx<span class="token punctuation">,</span> n_topic <span class="token keyword">in</span> enumerate<span class="token punctuation">(</span>n_topics<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>idx<span class="token punctuation">,</span>n_topic<span class="token punctuation">)</span>
-    lda <span class="token operator">=</span> LDA<span class="token punctuation">(</span>n_components<span class="token operator">=</span>n_topic<span class="token punctuation">,</span> max_iter<span class="token operator">=</span><span class="token number">2000</span><span class="token punctuation">,</span>learning_method<span class="token operator">=</span><span class="token string">'batch'</span><span class="token punctuation">,</span>
-
-<span class="token comment" spellcheck="true">#                                    perp_tol=0.1, #default</span>
-
-<span class="token comment" spellcheck="true">#                                    doc_topic_prior=1/n_topic, #default</span>
-
-<span class="token comment" spellcheck="true">#                                    topic_word_prior=1/n_topic, #default</span>
-
-                                    verbose<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
-    t0 <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    lda<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>count_data<span class="token punctuation">)</span>
-    perplexityLst<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">=</span> lda<span class="token punctuation">.</span>perplexity<span class="token punctuation">(</span>count_data<span class="token punctuation">)</span>
-    lda_models<span class="token punctuation">.</span>append<span class="token punctuation">(</span>lda<span class="token punctuation">)</span>
-    <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"# of Topic: %d, "</span> <span class="token operator">%</span> n_topics<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">)</span>
-    <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"done in %0.3fs, N_iter %d, "</span> <span class="token operator">%</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> t0<span class="token punctuation">)</span><span class="token punctuation">,</span> lda<span class="token punctuation">.</span>n_iter_<span class="token punctuation">)</span><span class="token punctuation">)</span>
-    <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"Perplexity Score %0.3f"</span> <span class="token operator">%</span> perplexityLst<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true">#打印最佳模型</span>
-number_words<span class="token operator">=</span><span class="token number">10</span>
-best_index <span class="token operator">=</span> perplexityLst<span class="token punctuation">.</span>index<span class="token punctuation">(</span>min<span class="token punctuation">(</span>perplexityLst<span class="token punctuation">)</span><span class="token punctuation">)</span>
-best_n_topic <span class="token operator">=</span> n_topics<span class="token punctuation">[</span>best_index<span class="token punctuation">]</span>
-best_model <span class="token operator">=</span> lda_models<span class="token punctuation">[</span>best_index<span class="token punctuation">]</span>
-<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"Best # of Topic: "</span><span class="token punctuation">,</span> best_n_topic<span class="token punctuation">)</span>
-print_topics<span class="token punctuation">(</span>best_model<span class="token punctuation">,</span> count_vectorizer<span class="token punctuation">,</span> number_words<span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true">#绘制不同主题数perplexity的不同</span>
-fig <span class="token operator">=</span> plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span><span class="token punctuation">)</span>
-ax <span class="token operator">=</span> fig<span class="token punctuation">.</span>add_subplot<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
-xaxis<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>n_topics<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    xaxis<span class="token punctuation">.</span>append<span class="token punctuation">(</span>n_topics<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-ax<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xaxis<span class="token punctuation">,</span> perplexityLst<span class="token punctuation">)</span>
-x_major_locator<span class="token operator">=</span>MultipleLocator<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-ax<span class="token punctuation">.</span>set_xlabel<span class="token punctuation">(</span><span class="token string">"number of topics"</span><span class="token punctuation">)</span>
-ax<span class="token punctuation">.</span>set_ylabel<span class="token punctuation">(</span><span class="token string">"Approximate Perplexity"</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>grid<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>最终我这里选择了分为3个主题。虽然2个的perplexity效果好一些，但我根据需要选择了3个。</p>
-<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/perplexity%E6%8C%87%E6%95%B0.PNG" class title="[perplexity指数]">
-
-<p>Topic #1: 城市系统角度<br>model city public business alliance actor efficiency factor system new<br>Topic #2: 各出行模式运营商角度<br>user time market adoption road potential intermediary car operator public<br>Topic #3: 用户出行模式选择角度<br>car public model mode bundle sharing new travel choice demand</p>
-<p>好了，这次就到这里了。具体的参数设置还是参照官方文档。</p>
-
-      
-      <!-- 打赏 -->
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://evaren1020-pro.github.io/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/" data-id="ckspnmm7v001dloypc11t4d4i"
-        class="article-share-link">分享</a>
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LDA/" rel="tag">LDA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NLP/" rel="tag">NLP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Wordcloud/" rel="tag">Wordcloud</a></li></ul>
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-
-</article>
-    
   </article>
   
 
@@ -1339,7 +1121,7 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
     <ul class="list-inline">
       <li>
         &copy;
-        2020-2021
+        2020-2022
         Eva Ren
       </li>
       <li>

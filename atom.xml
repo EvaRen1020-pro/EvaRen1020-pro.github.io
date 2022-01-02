@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://evaren1020-pro.github.io/"/>
-  <updated>2021-08-24T03:02:32.338Z</updated>
+  <updated>2022-01-02T12:28:42.474Z</updated>
   <id>https://evaren1020-pro.github.io/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何将【geojson文件】转成【shp文件】在arcgis中使用</title>
+    <link href="https://evaren1020-pro.github.io/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/"/>
+    <id>https://evaren1020-pro.github.io/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/</id>
+    <published>2022-01-02T12:22:51.631Z</published>
+    <updated>2022-01-02T12:28:42.474Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;如何将【geojson文件】转成【shp文件】在arcgis中使用&quot;&gt;&lt;a href=&quot;#如何将【geojson文件】转成【shp文件】在arcgis中使用&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件和编程" scheme="https://evaren1020-pro.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="python" scheme="https://evaren1020-pro.github.io/tags/python/"/>
+    
+      <category term="arcgis" scheme="https://evaren1020-pro.github.io/tags/arcgis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>arcgis中XYtoLine失败的原因及解决方案</title>
+    <link href="https://evaren1020-pro.github.io/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>https://evaren1020-pro.github.io/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</id>
+    <published>2022-01-02T12:22:21.158Z</published>
+    <updated>2022-01-02T12:26:10.718Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;arcgis中XYtoLine失败的原因及解决方案&quot;&gt;&lt;a href=&quot;#arcgis中XYtoLine失败的原因及解决方案&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件和编程" scheme="https://evaren1020-pro.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="arcgis" scheme="https://evaren1020-pro.github.io/tags/arcgis/"/>
+    
+  </entry>
   
   <entry>
     <title>【jupyterlab+pyecharts】自定义底图的地理信息可视化</title>
