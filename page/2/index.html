@@ -33,9 +33,9 @@ var _hmt = _hmt || [];
 </script>
 
 
-<link rel="alternate" href="/atom.xml" title="To the MOUNTAIN" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="alternate" href="/atom.xml" title="To the MOUNTAIN" type="application/atom+xml">
+</head>
 
 </html>
 
@@ -68,6 +68,86 @@ var _hmt = _hmt || [];
     
     
     
+    
+    <article id="post-下载PeMS交通流数据指南" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/"
+    >下载PeMS交通流数据指南</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/" class="article-date">
+  <time datetime="2020-06-15T01:25:29.081Z" itemprop="datePublished">2020-06-15</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/">软件和编程</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>今天给大家推荐一个开放的交通数据库，美国加州交通运输局的PeMS数据库，这里有着长达10年的高速公路检测器数据。包含流率、速度、占有率、重车比例、延误、车辆行驶里程、车辆行驶时间、交通事故等类型数据。很多学者都用这里的数据进行研究。<br>所以这里给大家介绍一下这个数据库下载数据的使用方式。</p>
+<h2 id="1-要有可以科学上网的VPN"><a href="#1-要有可以科学上网的VPN" class="headerlink" title="1. 要有可以科学上网的VPN"></a>1. 要有可以科学上网的VPN</h2><p>这个请先自行解决。</p>
+<h2 id="2-登录PeMS网站并注册账号"><a href="#2-登录PeMS网站并注册账号" class="headerlink" title="2. 登录PeMS网站并注册账号"></a>2. 登录PeMS网站并注册账号</h2><p>官方网址：<a href="http://pems.dot.ca.gov/" target="_blank" rel="noopener">http://pems.dot.ca.gov/</a><br>首页右侧有<font color="red">apply for an account</font>的链接，注册完毕后回到首页右上角登陆已通过的注册账号。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E9%A6%96%E9%A1%B5.PNG" class title="[PeMS首页]">
+
+<h2 id="3-明确要下载的数据类型：线：路段-点：检测器"><a href="#3-明确要下载的数据类型：线：路段-点：检测器" class="headerlink" title="3. 明确要下载的数据类型：线：路段|点：检测器"></a>3. 明确要下载的数据类型：线：路段|点：检测器</h2><p>登录进去后，可以看到上面有一栏<font color="blue">“Overview, Facilities&amp;Devices, Performance, Data Quality, Events”</font>，这里细分又有很多数据，大家可以自行根据需要点进去查看。<br>这里我主要介绍下载集计的交通流量、速度、占有率等交通流宏观参数数据。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.PNG" class title="[PeMS登陆后界面]">
+<p>如这张图所示，以下载某个检测器数据为例，我这里下载I5高速公路主线上编号#716895的检测器<font color="blue">Aggregates</font>集计数据。<br>然后就会跳转到这个检测器的数据，并且系统也提供了基础的数据图表供你直观观看。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/%E6%A3%80%E6%B5%8B%E5%99%A8%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B.PNG" class title="[检测器数据示例]">
+
+<h2 id="4-选择数据的属性和精度"><a href="#4-选择数据的属性和精度" class="headerlink" title="4. 选择数据的属性和精度"></a>4. 选择数据的属性和精度</h2><p>Quantity, Second Quantity:要下载的数据类型，如流量、速度、占有率等。<br>Granularity: 数据精度，月、周、日、5分钟的颗粒度。<br>另外，可以选择数据的日期覆盖时段、节假日、车道等。</p>
+<p>然后点击需要下载的数据格式，这里一般下载<font color="blue">EXPORT to.XLS</font>，比较便于后续数据分析。</p>
+<p>好了，就是这么简单，下一篇我来介绍一下我如何用这里的数据进行交通流量的时间序列建模预测。</p>
+
+      
+      <!-- 打赏 -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://evaren1020-pro.github.io/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/" data-id="ckxx8jbvn000p6kyph7ayekwi"
+        class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BA%A4%E9%80%9A%E6%B5%81/" rel="tag">交通流</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
     
     <article id="post-【Windows+Cygwin+Darknet+OpenCV】简易上手实现YOLOv3目标检测" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
