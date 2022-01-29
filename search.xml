@@ -1,48 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>arcgis中XYtoLine失败的原因及解决方案</title>
-    <url>/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<h1 id="arcgis中XYtoLine失败的原因及解决方案"><a href="#arcgis中XYtoLine失败的原因及解决方案" class="headerlink" title="arcgis中XYtoLine失败的原因及解决方案"></a>arcgis中XYtoLine失败的原因及解决方案</h1><ol>
-<li>包含<strong>XY数据</strong>的<strong>csv</strong>文件需先导出为<strong>dbf</strong>格式</li>
-<li>而后再将这个<strong>dbf</strong>数据导入arcgis</li>
-<li>运行<strong>XYtoLine</strong>工具</li>
-</ol>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>arcgis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IBM Watson Studio云机器学习平台</title>
-    <url>/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/</url>
-    <content><![CDATA[<h1 id="IBM-Watson-Studio云机器学习平台"><a href="#IBM-Watson-Studio云机器学习平台" class="headerlink" title="IBM Watson Studio云机器学习平台"></a>IBM Watson Studio云机器学习平台</h1><p><a href="https://cloud.ibm.com/catalog/services/watson-studio?cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork-20718538-www-coursera-org-www-coursera-org&amp;cm_mmca1=000026UJ&amp;cm_mmca2=10006555&amp;cm_mmca3=M12345678&amp;cvosrc=email.Newsletter.M12345678&amp;cvo_campaign=000026U" target="_blank" rel="noopener">IBM Watson Studio</a>是IBM Cloud云服务中的一个核心平台，集成了很多人工智能工具，可以连接数据库进行云存储，创建Dashboard仪表盘，在线训练你的机器学习模型，支持Jupyter Notebook编写代码及分享，支持RStudio、SPSS Modeler等等。并且，其内置了很多已经构建好的机器学习模型，如自然语言文本分类、图像识别、深度学习模型、最优化决策。看起来就很有吸引力！</p>
-<img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/%E6%9C%8D%E5%8A%A1.PNG" class title="[服务]">
-
-<img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/home_page.png" class title="[home_page]">
-
-<p>在此分享Coursera上关于简易上手使用IBM Watson Studio的<a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/FinalModule_Coursera/IBM_Watson_Setup.md.html?origin=www.coursera.org" target="_blank" rel="noopener">教程</a>，开始写你在Watson Studio上的第一段Jupyter Notebook代码吧。</p>
-<p>同时分享两则<strong>注意事项</strong>：</p>
-<ol>
-<li><p>注册账户的时候建议使用<strong>Gmail</strong>，不然很可能会注册失败。</p>
-</li>
-<li><p>Github同步要在repository里新建<strong>master</strong>分支，不要仅有默认的<strong>main</strong>分支，不然Notebook的同步会报错。</p>
-</li>
-</ol>
-<p>IBM Cloud属实功能强大，日后有机会再进一步研究使用。</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>Machine Learning</tag>
-        <tag>IBM Cloud</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PLSQL导入excel数据方法以及txt编码转换</title>
     <url>/2020/11/27/PLSQL%E5%AF%BC%E5%85%A5excel%E6%95%B0%E6%8D%AE%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<ul>
@@ -60,136 +18,6 @@
       <tags>
         <tag>sql</tag>
         <tag>oracle</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Windows+Cygwin+Darknet+OpenCV】简易上手实现YOLOv3目标检测</title>
-    <url>/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</url>
-    <content><![CDATA[<p><a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noopener">YOLO(You only look once)</a>是github上很火的一个目标检测算法。它的官网提供了很方便的用C语言编写的程序<strong>Darknet</strong>。<br>但是官网提供的很方便的编译方法是基于Linux和Mac系统的。我这次来讲讲我是如何在自己windows系统下配置<strong>Darknet</strong>模块的。<br><strong>注：我这次是下了Cygwin来模拟Linux系统，因为不想下体积占据几个G的Visual Studio来进行编译，Cygwin安装包本身只有1.3M大小。<br>如果有Visual Studio，可以参照<a href="https://github.com/AlexeyAB/darknet" target="_blank" rel="noopener">AlexeyAB版本</a>进行配置。</strong></p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/YOLO%E5%AE%98%E7%BD%91.png" class title="[官网图]">
-
-<h2 id="基础配置流程"><a href="#基础配置流程" class="headerlink" title="基础配置流程"></a>基础配置流程</h2><p>配置过程参照官网：<a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noopener">https://pjreddie.com/darknet/yolo/</a></p>
-<p>(1) 将github上的<a href="https://github.com/pjreddie/darknet" target="_blank" rel="noopener">https://github.com/pjreddie/darknet</a> 整个项目下载到本地电脑。<br>    注：此处建议使用下载.zip压缩包的方式，不是直接用git clone到本地文件夹，不然可能后面会遇到couldn’t open file: data/coco.names的问题。<br>(2) 切换到darknet文件夹，使用make命令编译C语言源文件。<br>此时，Windows系统下在cmd命令行会报错无法使用make命令。因为make是linux系统下编译源文件使用的命令。官网也有注明这些命令只在Linux和Mac系统上测试过，未在windows系统下测试。<br>所以，下载Cygwin软件实现在windows平台模拟linux系统操作命令，而后可以使用make命令编译源码，生成darknet.exe可执行文件。安装配置Cygwin 参照这篇博客以及其下面的问答：<a href="https://blog.csdn.net/chunleixiahe/article/details/55666792" target="_blank" rel="noopener">https://blog.csdn.net/chunleixiahe/article/details/55666792</a></p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E5%9C%A8Cygwin%E7%BC%96%E8%AF%91%E6%88%90%E5%8A%9F.png" class title="[在Cygwin编译成功]">
-<p>(3)    下载别人已训练好的yolov3.weights模型权重文件，放于darknet根目录下。<br>官网链接（下载较慢）：<a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noopener">https://pjreddie.com/darknet/yolo/</a><br>百度云链接：<a href="https://pan.baidu.com/s/1CVgvP4hQQvDNbKmXhmkxqw" target="_blank" rel="noopener">https://pan.baidu.com/s/1CVgvP4hQQvDNbKmXhmkxqw</a> 提取码：jnhn<br>(4) 使用命令./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg完成测试。因为没有配置OpenCV，图片结果不会直接显示的屏幕上，而是存于默认文件夹的根目录predictions.jpg。<br>但是此时默认的程序不会将置信度显示在图片上，只打印于命令行,图片会存于根目录下<code>predictions.jpg</code>。</p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E5%AE%98%E6%96%B9%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87%E7%BB%93%E6%9E%9C%E4%B8%8D%E5%90%AB%E7%BD%AE%E4%BF%A1%E5%BA%A6.jpg" class title="[官方测试图片结果不含置信度]">
-<p>(5) 为实现将预测的置信度显示于检测结果图片上，更改默认darknet文件夹下的<code>src/image.c</code>文件<code>draw_detections</code>函数。<br>参照：<a href="https://blog.csdn.net/qq_34795071/article/details/86665620" target="_blank" rel="noopener">https://blog.csdn.net/qq_34795071/article/details/86665620</a></p>
-<pre class="line-numbers language-python"><code class="language-python">int i<span class="token punctuation">,</span>j<span class="token punctuation">;</span>
-
-<span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> <span class="token operator">+</span><span class="token operator">+</span>i<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    char labelstr<span class="token punctuation">[</span><span class="token number">4096</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-    int <span class="token keyword">class</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-char possible<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token operator">//</span>存放检测的置信值
-    <span class="token keyword">for</span><span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> classes<span class="token punctuation">;</span> <span class="token operator">+</span><span class="token operator">+</span>j<span class="token punctuation">)</span><span class="token punctuation">{</span>
-  sprintf<span class="token punctuation">(</span>possible<span class="token punctuation">,</span><span class="token string">"%.2f"</span><span class="token punctuation">,</span>dets<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>prob<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">//</span>置信值截取小数点后两位赋给possible
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>dets<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>prob<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">></span> thresh<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">class</span> <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> names<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> possible<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">//</span>标签中加入置信值
-                <span class="token keyword">class</span> <span class="token operator">=</span> j<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-                strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> <span class="token string">", "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> names<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> possible<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">//</span>标签中加入置信值
-            <span class="token punctuation">}</span>
-            printf<span class="token punctuation">(</span><span class="token string">"%s: %.0f%%\n"</span><span class="token punctuation">,</span> names<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> dets<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>prob<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">*</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>(6) 删除掉原编译好的darknet.exe, libdarknet.a, libdarknet.so,重新使用make编译源文件，再执行上述检测语句，即可存储含有置信度的图片。</p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/dog_predictions.jpg" class title="[dog_predictions]">
-<p>(7) 若想更改检测的默认置信度，在检测命令后添加 -thresh &lt;数值&gt;。<br><code>./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg -thresh 0.4</code></p>
-<p><strong>至此已经完成了最基础的Darknet配置来实现YOLOv3算法。</strong></p>
-<h2 id="OpenCV拓展实现实时目标检测"><a href="#OpenCV拓展实现实时目标检测" class="headerlink" title="OpenCV拓展实现实时目标检测"></a>OpenCV拓展实现实时目标检测</h2><p>(1)    安装<code>OpenCV</code>，拓展可支持的图片类型，并且将结果自动弹窗显示：<br><code>OpenCV(Windows版本的即可)</code>安装完毕后，需要再次使用<code>Cygwin</code>下载<code>Linux</code>支持的<code>OpenCV</code>相应文件，并将<code>darknet</code>根目录下<code>Makefile</code>用文本打开，开头部分设为OPENCV=1,才可成功编译可支持<code>OpenCV</code>的<code>darknet.exe</code>。<br>编译完基于<code>OpenCV</code>的可执行程序后，不能如原来一样在命令行直接输入检测语句，不然会出现无法展示的报错，配置并启动<code>Xterm</code>才可以解决。</p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/opencv%E9%85%8D%E7%BD%AE%E5%90%8E%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%BC%B9%E6%A1%86%E6%8A%A5%E9%94%99.png" class title="[opencv配置后在命令行弹框报错]">
-<p>在<code>Cygwin</code>输入<code>export DISPLAY=:0.0</code>和<code>startxwin &</code>即可启动<code>Xterm</code>，然后输入相应命令，即可出现弹框，如下所示。</p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E5%9C%A8Xterm%E6%88%90%E5%8A%9F%E6%98%BE%E7%A4%BA%E8%87%B3%E7%AA%97%E5%8F%A3%E5%B1%8F%E5%B9%95.png" class title="[在Xterm成功显示至窗口屏幕]">
-<p><strong>Xterm使用两则小贴士：</strong>（1）鼠标中键实现“粘贴”；（2）ctrl+右键可以改字号。<br>(2) 参照这篇博客<a href="https://blog.csdn.net/weixin_43590290/article/details/100736307?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2
-">【python+OpenCV+YOLOv3打开笔记本摄像头模型检测】</a>的代码，使用python程序，通过OpenCV调用摄像头实现实时检测。<br>这篇文章调用的是电脑自带摄像头，我通过给安卓手机下载<strong>IP Webcam</strong>软件，实现调用手机摄像头的实时目标检测。<br>具体代码如下：</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">import</span> cv2
-<span class="token keyword">import</span> os
-
-<span class="token keyword">def</span> <span class="token function">video_demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 加载已经训练好的模型路径，可以是绝对路径或者相对路径</span>
-    weightsPath <span class="token operator">=</span> <span class="token string">"../yolov3.weights"</span>
-    configPath <span class="token operator">=</span> <span class="token string">"../cfg/yolov3.cfg"</span>
-    labelsPath <span class="token operator">=</span> <span class="token string">"../data/coco.names"</span>
-    <span class="token comment" spellcheck="true"># 初始化一些参数</span>
-    LABELS <span class="token operator">=</span> open<span class="token punctuation">(</span>labelsPath<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 物体类别</span>
-    COLORS <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> size<span class="token operator">=</span><span class="token punctuation">(</span>len<span class="token punctuation">(</span>LABELS<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token string">"uint8"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 颜色</span>
-    boxes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-    confidences <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-    classIDs <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-    net <span class="token operator">=</span> cv2<span class="token punctuation">.</span>dnn<span class="token punctuation">.</span>readNetFromDarknet<span class="token punctuation">(</span>configPath<span class="token punctuation">,</span> weightsPath<span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># 读入待检测的图像</span>
-    <span class="token comment" spellcheck="true"># 0是代表摄像头编号，只有一个的话默认为0</span>
-
-    url <span class="token operator">=</span> <span class="token string">'http://192.168.0.103:8080/video'</span><span class="token comment" spellcheck="true">##手机ip cam地址</span>
-    <span class="token comment" spellcheck="true"># url='D:\darknet-master\\airplane.avi'#本地视频</span>
-    capture <span class="token operator">=</span> cv2<span class="token punctuation">.</span>VideoCapture<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
-    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-        ref<span class="token punctuation">,</span> image <span class="token operator">=</span> capture<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
-        <span class="token punctuation">(</span>H<span class="token punctuation">,</span> W<span class="token punctuation">)</span> <span class="token operator">=</span> image<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span>
-        <span class="token comment" spellcheck="true"># 得到 YOLO需要的输出层</span>
-        ln <span class="token operator">=</span> net<span class="token punctuation">.</span>getLayerNames<span class="token punctuation">(</span><span class="token punctuation">)</span>
-        ln <span class="token operator">=</span> <span class="token punctuation">[</span>ln<span class="token punctuation">[</span>i<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> net<span class="token punctuation">.</span>getUnconnectedOutLayers<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
-        <span class="token comment" spellcheck="true"># 从输入图像构造一个blob，然后通过加载的模型，给我们提供边界框和相关概率</span>
-        blob <span class="token operator">=</span> cv2<span class="token punctuation">.</span>dnn<span class="token punctuation">.</span>blobFromImage<span class="token punctuation">(</span>image<span class="token punctuation">,</span> <span class="token number">1</span> <span class="token operator">/</span> <span class="token number">255.0</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">416</span><span class="token punctuation">,</span> <span class="token number">416</span><span class="token punctuation">)</span><span class="token punctuation">,</span> swapRB<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> crop<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
-        net<span class="token punctuation">.</span>setInput<span class="token punctuation">(</span>blob<span class="token punctuation">)</span>
-        layerOutputs <span class="token operator">=</span> net<span class="token punctuation">.</span>forward<span class="token punctuation">(</span>ln<span class="token punctuation">)</span>
-        <span class="token comment" spellcheck="true"># 在每层输出上循环</span>
-        <span class="token keyword">for</span> output <span class="token keyword">in</span> layerOutputs<span class="token punctuation">:</span>
-            <span class="token comment" spellcheck="true"># 对每个检测进行循环</span>
-            <span class="token keyword">for</span> detection <span class="token keyword">in</span> output<span class="token punctuation">:</span>
-                scores <span class="token operator">=</span> detection<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
-                classID <span class="token operator">=</span> np<span class="token punctuation">.</span>argmax<span class="token punctuation">(</span>scores<span class="token punctuation">)</span>
-                confidence <span class="token operator">=</span> scores<span class="token punctuation">[</span>classID<span class="token punctuation">]</span>
-                <span class="token comment" spellcheck="true"># 过滤掉那些置信度较小的检测结果</span>
-                <span class="token keyword">if</span> confidence <span class="token operator">></span> <span class="token number">0.5</span><span class="token punctuation">:</span>
-                    <span class="token comment" spellcheck="true"># 框后接框的宽度和高度</span>
-                    box <span class="token operator">=</span> detection<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span>W<span class="token punctuation">,</span> H<span class="token punctuation">,</span> W<span class="token punctuation">,</span> H<span class="token punctuation">]</span><span class="token punctuation">)</span>
-                    <span class="token punctuation">(</span>centerX<span class="token punctuation">,</span> centerY<span class="token punctuation">,</span> width<span class="token punctuation">,</span> height<span class="token punctuation">)</span> <span class="token operator">=</span> box<span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token string">"int"</span><span class="token punctuation">)</span>
-                    <span class="token comment" spellcheck="true"># 边框的左上角</span>
-                    x <span class="token operator">=</span> int<span class="token punctuation">(</span>centerX <span class="token operator">-</span> <span class="token punctuation">(</span>width <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-                    y <span class="token operator">=</span> int<span class="token punctuation">(</span>centerY <span class="token operator">-</span> <span class="token punctuation">(</span>height <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-                    <span class="token comment" spellcheck="true"># 更新检测出来的框</span>
-                    boxes<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> int<span class="token punctuation">(</span>width<span class="token punctuation">)</span><span class="token punctuation">,</span> int<span class="token punctuation">(</span>height<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-                    confidences<span class="token punctuation">.</span>append<span class="token punctuation">(</span>float<span class="token punctuation">(</span>confidence<span class="token punctuation">)</span><span class="token punctuation">)</span>
-                    classIDs<span class="token punctuation">.</span>append<span class="token punctuation">(</span>classID<span class="token punctuation">)</span>
-        <span class="token comment" spellcheck="true"># 极大值抑制</span>
-        idxs <span class="token operator">=</span> cv2<span class="token punctuation">.</span>dnn<span class="token punctuation">.</span>NMSBoxes<span class="token punctuation">(</span>boxes<span class="token punctuation">,</span> confidences<span class="token punctuation">,</span> <span class="token number">0.2</span><span class="token punctuation">,</span> <span class="token number">0.3</span><span class="token punctuation">)</span>
-        <span class="token keyword">if</span> len<span class="token punctuation">(</span>idxs<span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">:</span>
-            <span class="token keyword">for</span> i <span class="token keyword">in</span> idxs<span class="token punctuation">.</span>flatten<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-                <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span>boxes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> boxes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-                <span class="token punctuation">(</span>w<span class="token punctuation">,</span> h<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span>boxes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> boxes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-                <span class="token comment" spellcheck="true"># 在原图上绘制边框和类别</span>
-                color <span class="token operator">=</span> <span class="token punctuation">[</span>int<span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token keyword">for</span> c <span class="token keyword">in</span> COLORS<span class="token punctuation">[</span>classIDs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-                cv2<span class="token punctuation">.</span>rectangle<span class="token punctuation">(</span>image<span class="token punctuation">,</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>x <span class="token operator">+</span> w<span class="token punctuation">,</span> y <span class="token operator">+</span> h<span class="token punctuation">)</span><span class="token punctuation">,</span> color<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
-                text <span class="token operator">=</span> <span class="token string">"{}: {:.4f}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>LABELS<span class="token punctuation">[</span>classIDs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> confidences<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-                cv2<span class="token punctuation">.</span>putText<span class="token punctuation">(</span>image<span class="token punctuation">,</span> text<span class="token punctuation">,</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y <span class="token operator">-</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> cv2<span class="token punctuation">.</span>FONT_HERSHEY_SIMPLEX<span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">,</span> color<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
-        cv2<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span><span class="token string">"Video"</span><span class="token punctuation">,</span> image<span class="token punctuation">)</span>
-        <span class="token comment" spellcheck="true"># 等待1ms显示图像</span>
-        c <span class="token operator">=</span> cv2<span class="token punctuation">.</span>waitKey<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-        <span class="token keyword">if</span> c <span class="token operator">&amp;</span> <span class="token number">0xFF</span> <span class="token operator">==</span> ord<span class="token punctuation">(</span><span class="token string">'q'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 键盘输入英文字母q键退出视频</span>
-            <span class="token keyword">break</span>
-
-cv2<span class="token punctuation">.</span>destroyAllWindows<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 销毁所有窗口</span>
-video_demo<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>下面放一下我实时检测的画面：</p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E6%8E%A5%E5%85%A5%E6%89%8B%E6%9C%BA%E6%91%84%E5%83%8F%E5%A4%B4%E5%AE%9E%E6%97%B6%E6%A3%80%E6%B5%8B.jpg" class title="[接入手机摄像头实时检测]">
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E7%94%B5%E8%84%91%E5%AE%9E%E6%97%B6%E6%A3%80%E6%B5%8B%E7%A4%BA%E6%84%8F%E7%94%BB%E9%9D%A2.jpg" class title="[电脑实时检测示意画面]">
-
-<h2 id="配置Darknet走过的一些弯路"><a href="#配置Darknet走过的一些弯路" class="headerlink" title="配置Darknet走过的一些弯路"></a>配置Darknet走过的一些弯路</h2><p>(1)    下载CUDA实现GPU运算：<br>需要自己的显卡比较好，同时配置CUDA、CUDNN均需匹配版本号正确，这两个软件体积也特别大。配置这个很麻烦，Darknet官网也说明了这个安装很麻烦，所以不是长久专门使用，不必配置了。<br>但是没有GPU真的处理视频很卡。。。<br>(2)    一开始的make编译Makefile失败，尝试使用windows系统下的Visual Studio中的nmake等方式失败，尝试用MinGW也失败，最终使用Cygwin模拟linux成功。<br>(3) 基于已有的程序，安装完OpenCV后在模拟Linux系统下的视频流的目标侦测目前还是遇到一些问题，无法正常按帧检测，并实时在屏幕上显示检测结果。花费了2天时间进行尝试，还是没有解决这个bug，暂时放弃。有解决的朋友可以告诉我一下。<br>报错：<br><code>(darknet:3866):GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed</code></p>
-<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E8%A7%86%E9%A2%91%E6%8A%A5%E9%94%99.png" class title="[视频报错]">
-<p>所以才最后转投了python程序去调用OpenCV做视频检测，如果你只想做图片检测，按照我上面的做法没问题。<br>(4) 所以当我看到最后的别人的博客调用python程序，去查<code>src</code>的源码实现<code>YOLOv3</code>，不需要配置keras和tensorflow，其实以后自己也可以这样做。自己当初放弃<a href="https://github.com/AlexeyAB/darknet" target="_blank" rel="noopener">AlexeyAB版本</a>的python接口是因为它还是需要导入windows编译过后的<code>dll</code>模块，所以放弃。不过，有兴趣的朋友还是可以一试。</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>YOLO</tag>
-        <tag>图像识别</tag>
-        <tag>OpenCV</tag>
       </tags>
   </entry>
   <entry>
@@ -233,6 +61,48 @@ c<span class="token punctuation">.</span>render_notebook<span class="token punct
         <tag>地图API</tag>
         <tag>python</tag>
         <tag>jupyterlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>arcgis中XYtoLine失败的原因及解决方案</title>
+    <url>/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h1 id="arcgis中XYtoLine失败的原因及解决方案"><a href="#arcgis中XYtoLine失败的原因及解决方案" class="headerlink" title="arcgis中XYtoLine失败的原因及解决方案"></a>arcgis中XYtoLine失败的原因及解决方案</h1><ol>
+<li>包含<strong>XY数据</strong>的<strong>csv</strong>文件需先导出为<strong>dbf</strong>格式</li>
+<li>而后再将这个<strong>dbf</strong>数据导入arcgis</li>
+<li>运行<strong>XYtoLine</strong>工具</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>arcgis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IBM Watson Studio云机器学习平台</title>
+    <url>/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/</url>
+    <content><![CDATA[<h1 id="IBM-Watson-Studio云机器学习平台"><a href="#IBM-Watson-Studio云机器学习平台" class="headerlink" title="IBM Watson Studio云机器学习平台"></a>IBM Watson Studio云机器学习平台</h1><p><a href="https://cloud.ibm.com/catalog/services/watson-studio?cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork-20718538-www-coursera-org-www-coursera-org&amp;cm_mmca1=000026UJ&amp;cm_mmca2=10006555&amp;cm_mmca3=M12345678&amp;cvosrc=email.Newsletter.M12345678&amp;cvo_campaign=000026U" target="_blank" rel="noopener">IBM Watson Studio</a>是IBM Cloud云服务中的一个核心平台，集成了很多人工智能工具，可以连接数据库进行云存储，创建Dashboard仪表盘，在线训练你的机器学习模型，支持Jupyter Notebook编写代码及分享，支持RStudio、SPSS Modeler等等。并且，其内置了很多已经构建好的机器学习模型，如自然语言文本分类、图像识别、深度学习模型、最优化决策。看起来就很有吸引力！</p>
+<img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/%E6%9C%8D%E5%8A%A1.PNG" class title="[服务]">
+
+<img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/home_page.png" class title="[home_page]">
+
+<p>在此分享Coursera上关于简易上手使用IBM Watson Studio的<a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/FinalModule_Coursera/IBM_Watson_Setup.md.html?origin=www.coursera.org" target="_blank" rel="noopener">教程</a>，开始写你在Watson Studio上的第一段Jupyter Notebook代码吧。</p>
+<p>同时分享两则<strong>注意事项</strong>：</p>
+<ol>
+<li><p>注册账户的时候建议使用<strong>Gmail</strong>，不然很可能会注册失败。</p>
+</li>
+<li><p>Github同步要在repository里新建<strong>master</strong>分支，不要仅有默认的<strong>main</strong>分支，不然Notebook的同步会报错。</p>
+</li>
+</ol>
+<p>IBM Cloud属实功能强大，日后有机会再进一步研究使用。</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>Machine Learning</tag>
+        <tag>IBM Cloud</tag>
       </tags>
   </entry>
   <entry>
@@ -290,65 +160,6 @@ location2 <span class="token operator">=</span> geolocator<span class="token pun
         <tag>地图API</tag>
         <tag>python</tag>
         <tag>geopy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</title>
-    <url>/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"><a href="#【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式" class="headerlink" title="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"></a>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</h1><p>每一次<strong>JupyterLab</strong>或者<strong>Jupyter Notebook</strong>启动时都需要在命令行下跳至对应目录文件夹，再输入<code>jupyter lab</code>或者<code>jupyter notebook</code>启动是不是很麻烦？今天来记录一下两个小设置，让启动<strong>JupyterLab</strong>直接双击桌面快捷方式图标即可。</p>
-<h2 id="1-JupyterLab更改默认启动路径"><a href="#1-JupyterLab更改默认启动路径" class="headerlink" title="1. JupyterLab更改默认启动路径"></a>1. JupyterLab更改默认启动路径</h2><p>已经有很多博客介绍如何更改<strong>Jupyter Notebook</strong>的默认启动路径，但是新一代的<strong>JupyterLab</strong>似乎还没有很多帖子，我这里就来记录一下。其实与<strong>Jupyter Notebook</strong>配置类似，</p>
-<p>（1）先在<code>cmd</code>下输入:</p>
-<p><code>jupyter lab --generate-config</code></p>
-<p>生成默认配置文件。</p>
-<p>（2）找到刚刚生成的配置文件，默认存储于<code>C:\Users\你的用户\.jupyter</code>路径下，打开jupyter_lab_config.py`文件。</p>
-<p>（3）在412行左右，修改路径文件为你需要的默认启动路径。</p>
-<p>注意：使用<strong>/</strong>分隔路径，同时记得<strong>去掉前面的#号</strong>。</p>
-<img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84.PNG" class title="[修改启动路径]">
-
-<p>（4）保存退出即可。</p>
-<h2 id="2-创建-Jupyter-lab桌面快捷方式"><a href="#2-创建-Jupyter-lab桌面快捷方式" class="headerlink" title="2. 创建 Jupyter lab桌面快捷方式"></a>2. 创建 Jupyter lab桌面快捷方式</h2><p>网上我查到的都是讲解如何在<strong>Anaconda</strong>环境下创建<strong>JupyterLab</strong>快捷方式，但是我没有装体积庞大的<strong>Anaconda</strong>。其实很简单，自己编写一个简单的<strong>bat</strong>程序，然后为其创建桌面快捷方式并且自定义图标即可。</p>
-<p>（1）创建一个记事本文件，输入：</p>
-<p><code>jupyter lab</code></p>
-<p>（2）更改记事本文件的后缀名为<code>.bat</code></p>
-<p>（3）<code>.bat</code>文件无法直接更改图标，你先将<code>bat</code>程序放到你电脑里一个安全的路径，然后右键发送到桌面快捷方式。</p>
-<p>（4）右键刚刚创建的快捷方式，点击<strong>属性</strong>，而后点击<strong>更改图标</strong>，设为你想要的图标即可。</p>
-<img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E6%9B%B4%E6%94%B9%E5%9B%BE%E6%A0%87.PNG" class title="[更改图标]">
-
-<p>（5）图标文件的后缀为<code>.ico</code>，可以下载常见的<code>.jpg,.png</code>格式图片制作。</p>
-<p>可以另存为.bmp文件再直接改后缀为.ico，不过这样图片质量损失较大。建议使用在线的.ico制作网站，上传图片转换即可。</p>
-<img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/jupyterlab.png" class title="[jupyterlab_png]">
-
-<p>（6）然后双击桌面的快捷方式，即可启动Jupyter lab啦！</p>
-<img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E5%9B%BE%E6%A0%87.PNG" class title="[图标]">]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>JupyterLab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>下载PeMS交通流数据指南</title>
-    <url>/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<p>今天给大家推荐一个开放的交通数据库，美国加州交通运输局的PeMS数据库，这里有着长达10年的高速公路检测器数据。包含流率、速度、占有率、重车比例、延误、车辆行驶里程、车辆行驶时间、交通事故等类型数据。很多学者都用这里的数据进行研究。<br>所以这里给大家介绍一下这个数据库下载数据的使用方式。</p>
-<h2 id="1-要有可以科学上网的VPN"><a href="#1-要有可以科学上网的VPN" class="headerlink" title="1. 要有可以科学上网的VPN"></a>1. 要有可以科学上网的VPN</h2><p>这个请先自行解决。</p>
-<h2 id="2-登录PeMS网站并注册账号"><a href="#2-登录PeMS网站并注册账号" class="headerlink" title="2. 登录PeMS网站并注册账号"></a>2. 登录PeMS网站并注册账号</h2><p>官方网址：<a href="http://pems.dot.ca.gov/" target="_blank" rel="noopener">http://pems.dot.ca.gov/</a><br>首页右侧有<font color="red">apply for an account</font>的链接，注册完毕后回到首页右上角登陆已通过的注册账号。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E9%A6%96%E9%A1%B5.PNG" class title="[PeMS首页]">
-
-<h2 id="3-明确要下载的数据类型：线：路段-点：检测器"><a href="#3-明确要下载的数据类型：线：路段-点：检测器" class="headerlink" title="3. 明确要下载的数据类型：线：路段|点：检测器"></a>3. 明确要下载的数据类型：线：路段|点：检测器</h2><p>登录进去后，可以看到上面有一栏<font color="blue">“Overview, Facilities&amp;Devices, Performance, Data Quality, Events”</font>，这里细分又有很多数据，大家可以自行根据需要点进去查看。<br>这里我主要介绍下载集计的交通流量、速度、占有率等交通流宏观参数数据。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.PNG" class title="[PeMS登陆后界面]">
-<p>如这张图所示，以下载某个检测器数据为例，我这里下载I5高速公路主线上编号#716895的检测器<font color="blue">Aggregates</font>集计数据。<br>然后就会跳转到这个检测器的数据，并且系统也提供了基础的数据图表供你直观观看。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/%E6%A3%80%E6%B5%8B%E5%99%A8%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B.PNG" class title="[检测器数据示例]">
-
-<h2 id="4-选择数据的属性和精度"><a href="#4-选择数据的属性和精度" class="headerlink" title="4. 选择数据的属性和精度"></a>4. 选择数据的属性和精度</h2><p>Quantity, Second Quantity:要下载的数据类型，如流量、速度、占有率等。<br>Granularity: 数据精度，月、周、日、5分钟的颗粒度。<br>另外，可以选择数据的日期覆盖时段、节假日、车道等。</p>
-<p>然后点击需要下载的数据格式，这里一般下载<font color="blue">EXPORT to.XLS</font>，比较便于后续数据分析。</p>
-<p>好了，就是这么简单，下一篇我来介绍一下我如何用这里的数据进行交通流量的时间序列建模预测。</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>交通流</tag>
       </tags>
   </entry>
   <entry>
@@ -503,6 +314,171 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
       </tags>
   </entry>
   <entry>
+    <title>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</title>
+    <url>/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"><a href="#【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式" class="headerlink" title="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"></a>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</h1><p>每一次<strong>JupyterLab</strong>或者<strong>Jupyter Notebook</strong>启动时都需要在命令行下跳至对应目录文件夹，再输入<code>jupyter lab</code>或者<code>jupyter notebook</code>启动是不是很麻烦？今天来记录一下两个小设置，让启动<strong>JupyterLab</strong>直接双击桌面快捷方式图标即可。</p>
+<h2 id="1-JupyterLab更改默认启动路径"><a href="#1-JupyterLab更改默认启动路径" class="headerlink" title="1. JupyterLab更改默认启动路径"></a>1. JupyterLab更改默认启动路径</h2><p>已经有很多博客介绍如何更改<strong>Jupyter Notebook</strong>的默认启动路径，但是新一代的<strong>JupyterLab</strong>似乎还没有很多帖子，我这里就来记录一下。其实与<strong>Jupyter Notebook</strong>配置类似，</p>
+<p>（1）先在<code>cmd</code>下输入:</p>
+<p><code>jupyter lab --generate-config</code></p>
+<p>生成默认配置文件。</p>
+<p>（2）找到刚刚生成的配置文件，默认存储于<code>C:\Users\你的用户\.jupyter</code>路径下，打开jupyter_lab_config.py`文件。</p>
+<p>（3）在412行左右，修改路径文件为你需要的默认启动路径。</p>
+<p>注意：使用<strong>/</strong>分隔路径，同时记得<strong>去掉前面的#号</strong>。</p>
+<img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84.PNG" class title="[修改启动路径]">
+
+<p>（4）保存退出即可。</p>
+<h2 id="2-创建-Jupyter-lab桌面快捷方式"><a href="#2-创建-Jupyter-lab桌面快捷方式" class="headerlink" title="2. 创建 Jupyter lab桌面快捷方式"></a>2. 创建 Jupyter lab桌面快捷方式</h2><p>网上我查到的都是讲解如何在<strong>Anaconda</strong>环境下创建<strong>JupyterLab</strong>快捷方式，但是我没有装体积庞大的<strong>Anaconda</strong>。其实很简单，自己编写一个简单的<strong>bat</strong>程序，然后为其创建桌面快捷方式并且自定义图标即可。</p>
+<p>（1）创建一个记事本文件，输入：</p>
+<p><code>jupyter lab</code></p>
+<p>（2）更改记事本文件的后缀名为<code>.bat</code></p>
+<p>（3）<code>.bat</code>文件无法直接更改图标，你先将<code>bat</code>程序放到你电脑里一个安全的路径，然后右键发送到桌面快捷方式。</p>
+<p>（4）右键刚刚创建的快捷方式，点击<strong>属性</strong>，而后点击<strong>更改图标</strong>，设为你想要的图标即可。</p>
+<img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E6%9B%B4%E6%94%B9%E5%9B%BE%E6%A0%87.PNG" class title="[更改图标]">
+
+<p>（5）图标文件的后缀为<code>.ico</code>，可以下载常见的<code>.jpg,.png</code>格式图片制作。</p>
+<p>可以另存为.bmp文件再直接改后缀为.ico，不过这样图片质量损失较大。建议使用在线的.ico制作网站，上传图片转换即可。</p>
+<img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/jupyterlab.png" class title="[jupyterlab_png]">
+
+<p>（6）然后双击桌面的快捷方式，即可启动Jupyter lab啦！</p>
+<img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E5%9B%BE%E6%A0%87.PNG" class title="[图标]">]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>JupyterLab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Windows+Cygwin+Darknet+OpenCV】简易上手实现YOLOv3目标检测</title>
+    <url>/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</url>
+    <content><![CDATA[<p><a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noopener">YOLO(You only look once)</a>是github上很火的一个目标检测算法。它的官网提供了很方便的用C语言编写的程序<strong>Darknet</strong>。<br>但是官网提供的很方便的编译方法是基于Linux和Mac系统的。我这次来讲讲我是如何在自己windows系统下配置<strong>Darknet</strong>模块的。<br><strong>注：我这次是下了Cygwin来模拟Linux系统，因为不想下体积占据几个G的Visual Studio来进行编译，Cygwin安装包本身只有1.3M大小。<br>如果有Visual Studio，可以参照<a href="https://github.com/AlexeyAB/darknet" target="_blank" rel="noopener">AlexeyAB版本</a>进行配置。</strong></p>
+<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/YOLO%E5%AE%98%E7%BD%91.png" class title="[官网图]">
+
+<h2 id="基础配置流程"><a href="#基础配置流程" class="headerlink" title="基础配置流程"></a>基础配置流程</h2><p>配置过程参照官网：<a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noopener">https://pjreddie.com/darknet/yolo/</a></p>
+<p>(1) 将github上的<a href="https://github.com/pjreddie/darknet" target="_blank" rel="noopener">https://github.com/pjreddie/darknet</a> 整个项目下载到本地电脑。<br>    注：此处建议使用下载.zip压缩包的方式，不是直接用git clone到本地文件夹，不然可能后面会遇到couldn’t open file: data/coco.names的问题。<br>(2) 切换到darknet文件夹，使用make命令编译C语言源文件。<br>此时，Windows系统下在cmd命令行会报错无法使用make命令。因为make是linux系统下编译源文件使用的命令。官网也有注明这些命令只在Linux和Mac系统上测试过，未在windows系统下测试。<br>所以，下载Cygwin软件实现在windows平台模拟linux系统操作命令，而后可以使用make命令编译源码，生成darknet.exe可执行文件。安装配置Cygwin 参照这篇博客以及其下面的问答：<a href="https://blog.csdn.net/chunleixiahe/article/details/55666792" target="_blank" rel="noopener">https://blog.csdn.net/chunleixiahe/article/details/55666792</a></p>
+<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E5%9C%A8Cygwin%E7%BC%96%E8%AF%91%E6%88%90%E5%8A%9F.png" class title="[在Cygwin编译成功]">
+<p>(3)    下载别人已训练好的yolov3.weights模型权重文件，放于darknet根目录下。<br>官网链接（下载较慢）：<a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noopener">https://pjreddie.com/darknet/yolo/</a><br>百度云链接：<a href="https://pan.baidu.com/s/1CVgvP4hQQvDNbKmXhmkxqw" target="_blank" rel="noopener">https://pan.baidu.com/s/1CVgvP4hQQvDNbKmXhmkxqw</a> 提取码：jnhn<br>(4) 使用命令./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg完成测试。因为没有配置OpenCV，图片结果不会直接显示的屏幕上，而是存于默认文件夹的根目录predictions.jpg。<br>但是此时默认的程序不会将置信度显示在图片上，只打印于命令行,图片会存于根目录下<code>predictions.jpg</code>。</p>
+<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E5%AE%98%E6%96%B9%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87%E7%BB%93%E6%9E%9C%E4%B8%8D%E5%90%AB%E7%BD%AE%E4%BF%A1%E5%BA%A6.jpg" class title="[官方测试图片结果不含置信度]">
+<p>(5) 为实现将预测的置信度显示于检测结果图片上，更改默认darknet文件夹下的<code>src/image.c</code>文件<code>draw_detections</code>函数。<br>参照：<a href="https://blog.csdn.net/qq_34795071/article/details/86665620" target="_blank" rel="noopener">https://blog.csdn.net/qq_34795071/article/details/86665620</a></p>
+<pre class="line-numbers language-python"><code class="language-python">int i<span class="token punctuation">,</span>j<span class="token punctuation">;</span>
+
+<span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> <span class="token operator">+</span><span class="token operator">+</span>i<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    char labelstr<span class="token punctuation">[</span><span class="token number">4096</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    int <span class="token keyword">class</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+char possible<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token operator">//</span>存放检测的置信值
+    <span class="token keyword">for</span><span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> classes<span class="token punctuation">;</span> <span class="token operator">+</span><span class="token operator">+</span>j<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  sprintf<span class="token punctuation">(</span>possible<span class="token punctuation">,</span><span class="token string">"%.2f"</span><span class="token punctuation">,</span>dets<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>prob<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">//</span>置信值截取小数点后两位赋给possible
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>dets<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>prob<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">></span> thresh<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">class</span> <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> names<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> possible<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">//</span>标签中加入置信值
+                <span class="token keyword">class</span> <span class="token operator">=</span> j<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> <span class="token string">", "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> names<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        strcat<span class="token punctuation">(</span>labelstr<span class="token punctuation">,</span> possible<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">//</span>标签中加入置信值
+            <span class="token punctuation">}</span>
+            printf<span class="token punctuation">(</span><span class="token string">"%s: %.0f%%\n"</span><span class="token punctuation">,</span> names<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> dets<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>prob<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">*</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>(6) 删除掉原编译好的darknet.exe, libdarknet.a, libdarknet.so,重新使用make编译源文件，再执行上述检测语句，即可存储含有置信度的图片。</p>
+<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/dog_predictions.jpg" class title="[dog_predictions]">
+<p>(7) 若想更改检测的默认置信度，在检测命令后添加 -thresh &lt;数值&gt;。<br><code>./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg -thresh 0.4</code></p>
+<p><strong>至此已经完成了最基础的Darknet配置来实现YOLOv3算法。</strong></p>
+<h2 id="OpenCV拓展实现实时目标检测"><a href="#OpenCV拓展实现实时目标检测" class="headerlink" title="OpenCV拓展实现实时目标检测"></a>OpenCV拓展实现实时目标检测</h2><p>(1)    安装<code>OpenCV</code>，拓展可支持的图片类型，并且将结果自动弹窗显示：<br><code>OpenCV(Windows版本的即可)</code>安装完毕后，需要再次使用<code>Cygwin</code>下载<code>Linux</code>支持的<code>OpenCV</code>相应文件，并将<code>darknet</code>根目录下<code>Makefile</code>用文本打开，开头部分设为OPENCV=1,才可成功编译可支持<code>OpenCV</code>的<code>darknet.exe</code>。<br>编译完基于<code>OpenCV</code>的可执行程序后，不能如原来一样在命令行直接输入检测语句，不然会出现无法展示的报错，配置并启动<code>Xterm</code>才可以解决。</p>
+<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/opencv%E9%85%8D%E7%BD%AE%E5%90%8E%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%BC%B9%E6%A1%86%E6%8A%A5%E9%94%99.png" class title="[opencv配置后在命令行弹框报错]">
+<p>在<code>Cygwin</code>输入<code>export DISPLAY=:0.0</code>和<code>startxwin &</code>即可启动<code>Xterm</code>，然后输入相应命令，即可出现弹框，如下所示。</p>
+<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E5%9C%A8Xterm%E6%88%90%E5%8A%9F%E6%98%BE%E7%A4%BA%E8%87%B3%E7%AA%97%E5%8F%A3%E5%B1%8F%E5%B9%95.png" class title="[在Xterm成功显示至窗口屏幕]">
+<p><strong>Xterm使用两则小贴士：</strong>（1）鼠标中键实现“粘贴”；（2）ctrl+右键可以改字号。<br>(2) 参照这篇博客<a href="https://blog.csdn.net/weixin_43590290/article/details/100736307?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2
+">【python+OpenCV+YOLOv3打开笔记本摄像头模型检测】</a>的代码，使用python程序，通过OpenCV调用摄像头实现实时检测。<br>这篇文章调用的是电脑自带摄像头，我通过给安卓手机下载<strong>IP Webcam</strong>软件，实现调用手机摄像头的实时目标检测。<br>具体代码如下：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> cv2
+<span class="token keyword">import</span> os
+
+<span class="token keyword">def</span> <span class="token function">video_demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># 加载已经训练好的模型路径，可以是绝对路径或者相对路径</span>
+    weightsPath <span class="token operator">=</span> <span class="token string">"../yolov3.weights"</span>
+    configPath <span class="token operator">=</span> <span class="token string">"../cfg/yolov3.cfg"</span>
+    labelsPath <span class="token operator">=</span> <span class="token string">"../data/coco.names"</span>
+    <span class="token comment" spellcheck="true"># 初始化一些参数</span>
+    LABELS <span class="token operator">=</span> open<span class="token punctuation">(</span>labelsPath<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 物体类别</span>
+    COLORS <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> size<span class="token operator">=</span><span class="token punctuation">(</span>len<span class="token punctuation">(</span>LABELS<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token string">"uint8"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 颜色</span>
+    boxes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    confidences <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    classIDs <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    net <span class="token operator">=</span> cv2<span class="token punctuation">.</span>dnn<span class="token punctuation">.</span>readNetFromDarknet<span class="token punctuation">(</span>configPath<span class="token punctuation">,</span> weightsPath<span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 读入待检测的图像</span>
+    <span class="token comment" spellcheck="true"># 0是代表摄像头编号，只有一个的话默认为0</span>
+
+    url <span class="token operator">=</span> <span class="token string">'http://192.168.0.103:8080/video'</span><span class="token comment" spellcheck="true">##手机ip cam地址</span>
+    <span class="token comment" spellcheck="true"># url='D:\darknet-master\\airplane.avi'#本地视频</span>
+    capture <span class="token operator">=</span> cv2<span class="token punctuation">.</span>VideoCapture<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        ref<span class="token punctuation">,</span> image <span class="token operator">=</span> capture<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">(</span>H<span class="token punctuation">,</span> W<span class="token punctuation">)</span> <span class="token operator">=</span> image<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span>
+        <span class="token comment" spellcheck="true"># 得到 YOLO需要的输出层</span>
+        ln <span class="token operator">=</span> net<span class="token punctuation">.</span>getLayerNames<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        ln <span class="token operator">=</span> <span class="token punctuation">[</span>ln<span class="token punctuation">[</span>i<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> net<span class="token punctuation">.</span>getUnconnectedOutLayers<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+        <span class="token comment" spellcheck="true"># 从输入图像构造一个blob，然后通过加载的模型，给我们提供边界框和相关概率</span>
+        blob <span class="token operator">=</span> cv2<span class="token punctuation">.</span>dnn<span class="token punctuation">.</span>blobFromImage<span class="token punctuation">(</span>image<span class="token punctuation">,</span> <span class="token number">1</span> <span class="token operator">/</span> <span class="token number">255.0</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">416</span><span class="token punctuation">,</span> <span class="token number">416</span><span class="token punctuation">)</span><span class="token punctuation">,</span> swapRB<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> crop<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+        net<span class="token punctuation">.</span>setInput<span class="token punctuation">(</span>blob<span class="token punctuation">)</span>
+        layerOutputs <span class="token operator">=</span> net<span class="token punctuation">.</span>forward<span class="token punctuation">(</span>ln<span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># 在每层输出上循环</span>
+        <span class="token keyword">for</span> output <span class="token keyword">in</span> layerOutputs<span class="token punctuation">:</span>
+            <span class="token comment" spellcheck="true"># 对每个检测进行循环</span>
+            <span class="token keyword">for</span> detection <span class="token keyword">in</span> output<span class="token punctuation">:</span>
+                scores <span class="token operator">=</span> detection<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+                classID <span class="token operator">=</span> np<span class="token punctuation">.</span>argmax<span class="token punctuation">(</span>scores<span class="token punctuation">)</span>
+                confidence <span class="token operator">=</span> scores<span class="token punctuation">[</span>classID<span class="token punctuation">]</span>
+                <span class="token comment" spellcheck="true"># 过滤掉那些置信度较小的检测结果</span>
+                <span class="token keyword">if</span> confidence <span class="token operator">></span> <span class="token number">0.5</span><span class="token punctuation">:</span>
+                    <span class="token comment" spellcheck="true"># 框后接框的宽度和高度</span>
+                    box <span class="token operator">=</span> detection<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span>W<span class="token punctuation">,</span> H<span class="token punctuation">,</span> W<span class="token punctuation">,</span> H<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">(</span>centerX<span class="token punctuation">,</span> centerY<span class="token punctuation">,</span> width<span class="token punctuation">,</span> height<span class="token punctuation">)</span> <span class="token operator">=</span> box<span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token string">"int"</span><span class="token punctuation">)</span>
+                    <span class="token comment" spellcheck="true"># 边框的左上角</span>
+                    x <span class="token operator">=</span> int<span class="token punctuation">(</span>centerX <span class="token operator">-</span> <span class="token punctuation">(</span>width <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                    y <span class="token operator">=</span> int<span class="token punctuation">(</span>centerY <span class="token operator">-</span> <span class="token punctuation">(</span>height <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                    <span class="token comment" spellcheck="true"># 更新检测出来的框</span>
+                    boxes<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> int<span class="token punctuation">(</span>width<span class="token punctuation">)</span><span class="token punctuation">,</span> int<span class="token punctuation">(</span>height<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                    confidences<span class="token punctuation">.</span>append<span class="token punctuation">(</span>float<span class="token punctuation">(</span>confidence<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                    classIDs<span class="token punctuation">.</span>append<span class="token punctuation">(</span>classID<span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># 极大值抑制</span>
+        idxs <span class="token operator">=</span> cv2<span class="token punctuation">.</span>dnn<span class="token punctuation">.</span>NMSBoxes<span class="token punctuation">(</span>boxes<span class="token punctuation">,</span> confidences<span class="token punctuation">,</span> <span class="token number">0.2</span><span class="token punctuation">,</span> <span class="token number">0.3</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> len<span class="token punctuation">(</span>idxs<span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> idxs<span class="token punctuation">.</span>flatten<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span>boxes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> boxes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                <span class="token punctuation">(</span>w<span class="token punctuation">,</span> h<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span>boxes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> boxes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                <span class="token comment" spellcheck="true"># 在原图上绘制边框和类别</span>
+                color <span class="token operator">=</span> <span class="token punctuation">[</span>int<span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token keyword">for</span> c <span class="token keyword">in</span> COLORS<span class="token punctuation">[</span>classIDs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                cv2<span class="token punctuation">.</span>rectangle<span class="token punctuation">(</span>image<span class="token punctuation">,</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>x <span class="token operator">+</span> w<span class="token punctuation">,</span> y <span class="token operator">+</span> h<span class="token punctuation">)</span><span class="token punctuation">,</span> color<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+                text <span class="token operator">=</span> <span class="token string">"{}: {:.4f}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>LABELS<span class="token punctuation">[</span>classIDs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> confidences<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                cv2<span class="token punctuation">.</span>putText<span class="token punctuation">(</span>image<span class="token punctuation">,</span> text<span class="token punctuation">,</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y <span class="token operator">-</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> cv2<span class="token punctuation">.</span>FONT_HERSHEY_SIMPLEX<span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">,</span> color<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+        cv2<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span><span class="token string">"Video"</span><span class="token punctuation">,</span> image<span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># 等待1ms显示图像</span>
+        c <span class="token operator">=</span> cv2<span class="token punctuation">.</span>waitKey<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> c <span class="token operator">&amp;</span> <span class="token number">0xFF</span> <span class="token operator">==</span> ord<span class="token punctuation">(</span><span class="token string">'q'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 键盘输入英文字母q键退出视频</span>
+            <span class="token keyword">break</span>
+
+cv2<span class="token punctuation">.</span>destroyAllWindows<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 销毁所有窗口</span>
+video_demo<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>下面放一下我实时检测的画面：</p>
+<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E6%8E%A5%E5%85%A5%E6%89%8B%E6%9C%BA%E6%91%84%E5%83%8F%E5%A4%B4%E5%AE%9E%E6%97%B6%E6%A3%80%E6%B5%8B.jpg" class title="[接入手机摄像头实时检测]">
+<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E7%94%B5%E8%84%91%E5%AE%9E%E6%97%B6%E6%A3%80%E6%B5%8B%E7%A4%BA%E6%84%8F%E7%94%BB%E9%9D%A2.jpg" class title="[电脑实时检测示意画面]">
+
+<h2 id="配置Darknet走过的一些弯路"><a href="#配置Darknet走过的一些弯路" class="headerlink" title="配置Darknet走过的一些弯路"></a>配置Darknet走过的一些弯路</h2><p>(1)    下载CUDA实现GPU运算：<br>需要自己的显卡比较好，同时配置CUDA、CUDNN均需匹配版本号正确，这两个软件体积也特别大。配置这个很麻烦，Darknet官网也说明了这个安装很麻烦，所以不是长久专门使用，不必配置了。<br>但是没有GPU真的处理视频很卡。。。<br>(2)    一开始的make编译Makefile失败，尝试使用windows系统下的Visual Studio中的nmake等方式失败，尝试用MinGW也失败，最终使用Cygwin模拟linux成功。<br>(3) 基于已有的程序，安装完OpenCV后在模拟Linux系统下的视频流的目标侦测目前还是遇到一些问题，无法正常按帧检测，并实时在屏幕上显示检测结果。花费了2天时间进行尝试，还是没有解决这个bug，暂时放弃。有解决的朋友可以告诉我一下。<br>报错：<br><code>(darknet:3866):GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed</code></p>
+<img src="/2020/04/12/%E3%80%90Windows+Cygwin+Darknet+OpenCV%E3%80%91%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E5%AE%9E%E7%8E%B0YOLOv3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E8%A7%86%E9%A2%91%E6%8A%A5%E9%94%99.png" class title="[视频报错]">
+<p>所以才最后转投了python程序去调用OpenCV做视频检测，如果你只想做图片检测，按照我上面的做法没问题。<br>(4) 所以当我看到最后的别人的博客调用python程序，去查<code>src</code>的源码实现<code>YOLOv3</code>，不需要配置keras和tensorflow，其实以后自己也可以这样做。自己当初放弃<a href="https://github.com/AlexeyAB/darknet" target="_blank" rel="noopener">AlexeyAB版本</a>的python接口是因为它还是需要导入windows编译过后的<code>dll</code>模块，所以放弃。不过，有兴趣的朋友还是可以一试。</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>YOLO</tag>
+        <tag>图像识别</tag>
+        <tag>OpenCV</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>动态爬取携程网机票信息</title>
     <url>/2021/01/06/%E5%8A%A8%E6%80%81%E7%88%AC%E5%8F%96%E6%90%BA%E7%A8%8B%E7%BD%91%E6%9C%BA%E7%A5%A8%E4%BF%A1%E6%81%AF/</url>
     <content><![CDATA[<p>最近在做有关交通城际出行领域的课题，需要用到一些关于机票的信息，于是就想到从携程网进行爬取相关数据。</p>
@@ -601,6 +577,30 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
         <tag>python</tag>
         <tag>selenium</tag>
         <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>下载PeMS交通流数据指南</title>
+    <url>/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<p>今天给大家推荐一个开放的交通数据库，美国加州交通运输局的PeMS数据库，这里有着长达10年的高速公路检测器数据。包含流率、速度、占有率、重车比例、延误、车辆行驶里程、车辆行驶时间、交通事故等类型数据。很多学者都用这里的数据进行研究。<br>所以这里给大家介绍一下这个数据库下载数据的使用方式。</p>
+<h2 id="1-要有可以科学上网的VPN"><a href="#1-要有可以科学上网的VPN" class="headerlink" title="1. 要有可以科学上网的VPN"></a>1. 要有可以科学上网的VPN</h2><p>这个请先自行解决。</p>
+<h2 id="2-登录PeMS网站并注册账号"><a href="#2-登录PeMS网站并注册账号" class="headerlink" title="2. 登录PeMS网站并注册账号"></a>2. 登录PeMS网站并注册账号</h2><p>官方网址：<a href="http://pems.dot.ca.gov/" target="_blank" rel="noopener">http://pems.dot.ca.gov/</a><br>首页右侧有<font color="red">apply for an account</font>的链接，注册完毕后回到首页右上角登陆已通过的注册账号。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E9%A6%96%E9%A1%B5.PNG" class title="[PeMS首页]">
+
+<h2 id="3-明确要下载的数据类型：线：路段-点：检测器"><a href="#3-明确要下载的数据类型：线：路段-点：检测器" class="headerlink" title="3. 明确要下载的数据类型：线：路段|点：检测器"></a>3. 明确要下载的数据类型：线：路段|点：检测器</h2><p>登录进去后，可以看到上面有一栏<font color="blue">“Overview, Facilities&amp;Devices, Performance, Data Quality, Events”</font>，这里细分又有很多数据，大家可以自行根据需要点进去查看。<br>这里我主要介绍下载集计的交通流量、速度、占有率等交通流宏观参数数据。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.PNG" class title="[PeMS登陆后界面]">
+<p>如这张图所示，以下载某个检测器数据为例，我这里下载I5高速公路主线上编号#716895的检测器<font color="blue">Aggregates</font>集计数据。<br>然后就会跳转到这个检测器的数据，并且系统也提供了基础的数据图表供你直观观看。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/%E6%A3%80%E6%B5%8B%E5%99%A8%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B.PNG" class title="[检测器数据示例]">
+
+<h2 id="4-选择数据的属性和精度"><a href="#4-选择数据的属性和精度" class="headerlink" title="4. 选择数据的属性和精度"></a>4. 选择数据的属性和精度</h2><p>Quantity, Second Quantity:要下载的数据类型，如流量、速度、占有率等。<br>Granularity: 数据精度，月、周、日、5分钟的颗粒度。<br>另外，可以选择数据的日期覆盖时段、节假日、车道等。</p>
+<p>然后点击需要下载的数据格式，这里一般下载<font color="blue">EXPORT to.XLS</font>，比较便于后续数据分析。</p>
+<p>好了，就是这么简单，下一篇我来介绍一下我如何用这里的数据进行交通流量的时间序列建模预测。</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>交通流</tag>
       </tags>
   </entry>
   <entry>
@@ -710,33 +710,6 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
         <tag>HTML</tag>
         <tag>API</tag>
         <tag>地理信息</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何修改python第三方库源码</title>
-    <url>/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="如何修改python第三方库源码"><a href="#如何修改python第三方库源码" class="headerlink" title="如何修改python第三方库源码"></a>如何修改python第三方库源码</h1><p>有的时候下载的第三方python库中有些参数没有开放让我们自定义调整，比如你要用那个库自带的出图，它可能又是基于matplotlib的一个函数，然后设为了默认。</p>
-<p>其实非常简单！由于Python是解释型编程语言，不需要编译，直接就能运行。</p>
-<p>以我要修改的<strong>PyALE</strong>库中的rug plot的颜色和透明度为例。</p>
-<ol>
-<li><p>找到源码位置，即/python3.7\Lib\site-packages\PyALE_src\ALE_1D.py</p>
-</li>
-<li><p>找到rug plot内置的位置，修改保存</p>
-<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/code_position.png" class title="[code_position]">
-</li>
-<li><p>修改的代码就能够在下次运行时立即生效</p>
-</li>
-</ol>
-<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/before.JPG" class title="[before]">
-
-<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/after.PNG" class title="[after]">
-
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -888,6 +861,33 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
       </tags>
   </entry>
   <entry>
+    <title>如何修改python第三方库源码</title>
+    <url>/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="如何修改python第三方库源码"><a href="#如何修改python第三方库源码" class="headerlink" title="如何修改python第三方库源码"></a>如何修改python第三方库源码</h1><p>有的时候下载的第三方python库中有些参数没有开放让我们自定义调整，比如你要用那个库自带的出图，它可能又是基于matplotlib的一个函数，然后设为了默认。</p>
+<p>其实非常简单！由于Python是解释型编程语言，不需要编译，直接就能运行。</p>
+<p>以我要修改的<strong>PyALE</strong>库中的rug plot的颜色和透明度为例。</p>
+<ol>
+<li><p>找到源码位置，即/python3.7\Lib\site-packages\PyALE_src\ALE_1D.py</p>
+</li>
+<li><p>找到rug plot内置的位置，修改保存</p>
+<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/code_position.png" class title="[code_position]">
+</li>
+<li><p>修改的代码就能够在下次运行时立即生效</p>
+</li>
+</ol>
+<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/before.JPG" class title="[before]">
+
+<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/after.PNG" class title="[after]">
+
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何将【geojson文件】转成【shp文件】在arcgis中使用</title>
     <url>/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="如何将【geojson文件】转成【shp文件】在arcgis中使用"><a href="#如何将【geojson文件】转成【shp文件】在arcgis中使用" class="headerlink" title="如何将【geojson文件】转成【shp文件】在arcgis中使用"></a>如何将【geojson文件】转成【shp文件】在arcgis中使用</h1><p>当缺少中国省市对应的地图shp文件时，可以去阿里云的网站下载最新的geojson文件，再使用geopandas库转换为shp文件使用。</p>
@@ -901,8 +901,8 @@ data<span class="token punctuation">.</span>to_file<span class="token punctuatio
         <category>软件和编程</category>
       </categories>
       <tags>
-        <tag>arcgis</tag>
         <tag>python</tag>
+        <tag>arcgis</tag>
       </tags>
   </entry>
   <entry>
@@ -964,6 +964,31 @@ data<span class="token punctuation">.</span>to_file<span class="token punctuatio
         <tag>HTML</tag>
         <tag>css</tag>
         <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>无需插件ArcGIS自定义加载连接超全WMTS底图服务</title>
+    <url>/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/</url>
+    <content><![CDATA[<p>有的时候ArcGIS使用自带的添加底图功能失灵，或者想自己额外添加在线底图，可以使用ArcGIS其自带的WMTS服务功能！</p>
+<h1 id="1-打开【catalog-GIS-Servers-Add-WMTS-Server】"><a href="#1-打开【catalog-GIS-Servers-Add-WMTS-Server】" class="headerlink" title="1. 打开【catalog-GIS Servers-Add WMTS Server】"></a>1. 打开【catalog-GIS Servers-Add WMTS Server】</h1><h1 id="2-输入http-xdc-at-map-wmts"><a href="#2-输入http-xdc-at-map-wmts" class="headerlink" title="2. 输入http://xdc.at/map/wmts/"></a>2. 输入<a href="http://xdc.at/map/wmts/" target="_blank" rel="noopener">http://xdc.at/map/wmts/</a></h1><p>这里集成了天地图、高德地图、openstreetmap、谷歌地图等等</p>
+<h1 id="3-点【Get-Layers】"><a href="#3-点【Get-Layers】" class="headerlink" title="3. 点【Get Layers】"></a>3. 点【<strong>Get Layers</strong>】</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts1.PNG" class title="[arcgis_wmts1]">
+
+<h1 id="4-双击想要的底图连接wmts服务"><a href="#4-双击想要的底图连接wmts服务" class="headerlink" title="4. 双击想要的底图连接wmts服务"></a>4. 双击想要的底图连接wmts服务</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts3.PNG" class title="[arcgis_wmts3]">
+
+<h1 id="5-把想要的底图拖到【Table-Of-Contents】"><a href="#5-把想要的底图拖到【Table-Of-Contents】" class="headerlink" title="5. 把想要的底图拖到【Table Of Contents】"></a>5. 把想要的底图拖到【Table Of Contents】</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts2.PNG" class title="[arcgis_wmts2]">
+
+<h1 id="额外附一个ArcGIS-Server服务地址"><a href="#额外附一个ArcGIS-Server服务地址" class="headerlink" title="额外附一个ArcGIS Server服务地址"></a>额外附一个ArcGIS Server服务地址</h1><p><a href="https://map.geoq.cn/arcgis/services/" target="_blank" rel="noopener">https://map.geoq.cn/arcgis/services/</a></p>
+<img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_server1.PNG" class title="[arcgis_server1]">
+
+<p>使用方式同上</p>
+<p>打开【catalog-GIS Servers-Add ArcGIS Server】</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>地图API</tag>
+        <tag>ArcGIS</tag>
       </tags>
   </entry>
   <entry>
@@ -1058,31 +1083,6 @@ hexo<span class="token punctuation">.</span>extend<span class="token punctuation
       <tags>
         <tag>Hexo</tag>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无需插件ArcGIS自定义加载连接超全WMTS底图服务</title>
-    <url>/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/</url>
-    <content><![CDATA[<p>有的时候ArcGIS使用自带的添加底图功能失灵，或者想自己额外添加在线底图，可以使用ArcGIS其自带的WMTS服务功能！</p>
-<h1 id="1-打开【catalog-GIS-Servers-Add-WMTS-Server】"><a href="#1-打开【catalog-GIS-Servers-Add-WMTS-Server】" class="headerlink" title="1. 打开【catalog-GIS Servers-Add WMTS Server】"></a>1. 打开【catalog-GIS Servers-Add WMTS Server】</h1><h1 id="2-输入http-xdc-at-map-wmts"><a href="#2-输入http-xdc-at-map-wmts" class="headerlink" title="2. 输入http://xdc.at/map/wmts/"></a>2. 输入<a href="http://xdc.at/map/wmts/" target="_blank" rel="noopener">http://xdc.at/map/wmts/</a></h1><p>这里集成了天地图、高德地图、openstreetmap、谷歌地图等等</p>
-<h1 id="3-点【Get-Layers】"><a href="#3-点【Get-Layers】" class="headerlink" title="3. 点【Get Layers】"></a>3. 点【<strong>Get Layers</strong>】</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts1.PNG" class title="[arcgis_wmts1]">
-
-<h1 id="4-双击想要的底图连接wmts服务"><a href="#4-双击想要的底图连接wmts服务" class="headerlink" title="4. 双击想要的底图连接wmts服务"></a>4. 双击想要的底图连接wmts服务</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts3.PNG" class title="[arcgis_wmts3]">
-
-<h1 id="5-把想要的底图拖到【Table-Of-Contents】"><a href="#5-把想要的底图拖到【Table-Of-Contents】" class="headerlink" title="5. 把想要的底图拖到【Table Of Contents】"></a>5. 把想要的底图拖到【Table Of Contents】</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts2.PNG" class title="[arcgis_wmts2]">
-
-<h1 id="额外附一个ArcGIS-Server服务地址"><a href="#额外附一个ArcGIS-Server服务地址" class="headerlink" title="额外附一个ArcGIS Server服务地址"></a>额外附一个ArcGIS Server服务地址</h1><p><a href="https://map.geoq.cn/arcgis/services/" target="_blank" rel="noopener">https://map.geoq.cn/arcgis/services/</a></p>
-<img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_server1.PNG" class title="[arcgis_server1]">
-
-<p>使用方式同上</p>
-<p>打开【catalog-GIS Servers-Add ArcGIS Server】</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>地图API</tag>
-        <tag>ArcGIS</tag>
       </tags>
   </entry>
 </search>
