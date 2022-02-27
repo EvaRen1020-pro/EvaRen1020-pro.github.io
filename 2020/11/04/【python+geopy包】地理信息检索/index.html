@@ -75,7 +75,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">720字</span>
+            <span class="post-count">484字</span>
         </span>
     </span>
 
@@ -84,7 +84,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">3分钟</span>
+            <span class="post-count">2分钟</span>
         </span>
     </span>
 </div>
@@ -110,12 +110,7 @@ var _hmt = _hmt || [];
       
 
       
-      <p>之前有写过一篇用高德开放平台API接口进行POI信息获取的博客。但是有的时候检索会无法精确定位到单个所需的设施点位置，会返回很多周边的点，此时自己筛选就会有些麻烦。<br>这次，来介绍一个我最近发现的一个很好用的地理信息检索的python包-<strong>geopy</strong>。不需要使用requests库、url，两行代码即可快速检索。</p>
-<p>Geopy包官方指南：<a href="https://www.osgeo.cn/geopy/" target="_blank" rel="noopener">https://www.osgeo.cn/geopy/</a></p>
-<h2 id="地理编码器"><a href="#地理编码器" class="headerlink" title="地理编码器"></a>地理编码器</h2><p>使用<code>geopy.geocoders</code>调用很多在线地图API服务（如Google地图、Bing地图、百度地图、OpenStreetMap），可以从字符串解析位置，实现经纬度查询，当然也可以逆检索。本次就以<strong>百度地图</strong>和<strong>OpenStreetMap</strong>为例，介绍使用geopy包，快速检索。</p>
-<p><strong>1.百度地图需要提前去其开放平台申请AK</strong></p>
-<p>注意申请<strong>服务端</strong>的AK</p>
-<img src="/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BEAK.png" class title="[百度地图AK]">
+      <img src="/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BEAK.png" class title="[百度地图AK]">
 
 <p><strong>2.开始地理编码</strong></p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> geopy<span class="token punctuation">.</span>geocoders <span class="token keyword">import</span> Nominatim<span class="token punctuation">,</span>BaiduV3
@@ -164,7 +159,7 @@ location2 <span class="token operator">=</span> geolocator<span class="token pun
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://evaren1020-pro.github.io/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/" data-id="ckyzuhzgw0007qoyp8f0u8eaw"
+      <a data-url="https://evaren1020-pro.github.io/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/" data-id="cl04pqso30009nkyp005m76rp"
         class="article-share-link">分享</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/geopy/" rel="tag">geopy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9C%B0%E5%9B%BEAPI/" rel="tag">地图API</a></li></ul>
