@@ -1080,4 +1080,21 @@ hexo<span class="token punctuation">.</span>extend<span class="token punctuation
         <tag>博客</tag>
       </tags>
   </entry>
+  <entry>
+    <title>plotly基础画图使用尝试</title>
+    <url>/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/</url>
+    <content><![CDATA[<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+
+<iframe width="100%" id="iframeid" scrolling="yes" height="1800" frameborder="0" src="https://nbviewer.org/github/EvaRen1020-pro/myblog_ipynb_codes/blob/main/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95.ipynb"></iframe>
+
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>jupyterlab</tag>
+        <tag>plotly</tag>
+      </tags>
+  </entry>
 </search>

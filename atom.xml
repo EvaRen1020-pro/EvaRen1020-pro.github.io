@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://evaren1020-pro.github.io/"/>
-  <updated>2022-01-29T12:59:23.702Z</updated>
+  <updated>1970-01-01T00:00:00.000Z</updated>
   <id>https://evaren1020-pro.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>plotly基础画图使用尝试</title>
+    <link href="https://evaren1020-pro.github.io/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/"/>
+    <id>https://evaren1020-pro.github.io/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/</id>
+    <published>2022-02-27T06:42:39.574Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;http://code.jquery.com/jquery-2.0.0.js&quot;&gt;&lt;/script&gt;
+
+&lt;iframe width=&quot;100%&quot; id=&quot;iframeid&quot; scrolling=&quot;yes&quot; height=&quot;1800&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件和编程" scheme="https://evaren1020-pro.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="python" scheme="https://evaren1020-pro.github.io/tags/python/"/>
+    
+      <category term="jupyterlab" scheme="https://evaren1020-pro.github.io/tags/jupyterlab/"/>
+    
+      <category term="plotly" scheme="https://evaren1020-pro.github.io/tags/plotly/"/>
+    
+  </entry>
   
   <entry>
     <title>无需插件ArcGIS自定义加载连接超全WMTS底图服务</title>
