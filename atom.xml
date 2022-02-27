@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://evaren1020-pro.github.io/"/>
-  <updated>1970-01-01T00:00:00.000Z</updated>
+  <updated>2022-02-27T11:37:28.057Z</updated>
   <id>https://evaren1020-pro.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://evaren1020-pro.github.io/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/"/>
     <id>https://evaren1020-pro.github.io/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/</id>
     <published>2022-02-27T06:42:39.574Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
+    <updated>2022-02-27T11:37:28.057Z</updated>
     
     <summary type="html">
     
@@ -41,11 +41,11 @@
       <category term="软件和编程" scheme="https://evaren1020-pro.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/"/>
     
     
-      <category term="python" scheme="https://evaren1020-pro.github.io/tags/python/"/>
+      <category term="plotly" scheme="https://evaren1020-pro.github.io/tags/plotly/"/>
     
       <category term="jupyterlab" scheme="https://evaren1020-pro.github.io/tags/jupyterlab/"/>
     
-      <category term="plotly" scheme="https://evaren1020-pro.github.io/tags/plotly/"/>
+      <category term="python" scheme="https://evaren1020-pro.github.io/tags/python/"/>
     
   </entry>
   
@@ -185,13 +185,13 @@
       <category term="软件和编程" scheme="https://evaren1020-pro.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/"/>
     
     
-      <category term="pyecharts" scheme="https://evaren1020-pro.github.io/tags/pyecharts/"/>
-    
-      <category term="地图API" scheme="https://evaren1020-pro.github.io/tags/%E5%9C%B0%E5%9B%BEAPI/"/>
+      <category term="jupyterlab" scheme="https://evaren1020-pro.github.io/tags/jupyterlab/"/>
     
       <category term="python" scheme="https://evaren1020-pro.github.io/tags/python/"/>
     
-      <category term="jupyterlab" scheme="https://evaren1020-pro.github.io/tags/jupyterlab/"/>
+      <category term="pyecharts" scheme="https://evaren1020-pro.github.io/tags/pyecharts/"/>
+    
+      <category term="地图API" scheme="https://evaren1020-pro.github.io/tags/%E5%9C%B0%E5%9B%BEAPI/"/>
     
   </entry>
   
@@ -338,9 +338,9 @@
       <category term="软件和编程" scheme="https://evaren1020-pro.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/"/>
     
     
-      <category term="地图API" scheme="https://evaren1020-pro.github.io/tags/%E5%9C%B0%E5%9B%BEAPI/"/>
-    
       <category term="python" scheme="https://evaren1020-pro.github.io/tags/python/"/>
+    
+      <category term="地图API" scheme="https://evaren1020-pro.github.io/tags/%E5%9C%B0%E5%9B%BEAPI/"/>
     
       <category term="geopy" scheme="https://evaren1020-pro.github.io/tags/geopy/"/>
     
@@ -393,7 +393,8 @@
       
         
         
-          &lt;p&gt;今天给大家推荐一个开放的交通数据库，美国加州交通运输局的PeMS数据库，这里有着长达10年的高速公路检测器数据。包含流率、速度、占有率、重车比例、延误、车辆行驶里程、车辆行驶时间、交通事故等类型数据。很多学者都用这里的数据进行研究。&lt;br&gt;所以这里给大家介绍一下这个数据库下
+          &lt;p&gt;今天给大家推荐一个开放的交通数据库，美国加州交通运输局的PeMS数据库，这里有着长达10年的高速公路检测器数据。包含流率、速度、占有率、重车比例、延误、车辆行驶里程、车辆行驶时间、交通事故等类型数据。很多学者都用这里的数据进行研究。
+所以这里给大家介绍一下这个数据库下载数据
         
       
     
@@ -451,7 +452,8 @@
       
         
         
-          &lt;p&gt;最近在一门课上，老师分享了一篇关于应用自然语言处理（NLP）模型分析交通领域研究主题分类的论文，我觉得写得很好很有意思。所以，自己也进行一下尝试。&lt;br&gt;主要分为&lt;strong&gt;Wordcloud词云展示&lt;/strong&gt;和&lt;strong&gt;Latent Dirichlet
+          &lt;p&gt;最近在一门课上，老师分享了一篇关于应用自然语言处理（NLP）模型分析交通领域研究主题分类的论文，我觉得写得很好很有意思。所以，自己也进行一下尝试。
+主要分为&lt;strong&gt;Wordcloud词云展示&lt;/strong&gt;和&lt;strong&gt;Latent Dirichlet
         
       
     
@@ -482,7 +484,8 @@
       
         
         
-          &lt;p&gt;借助地图API接口，帮助我们快速获取大量的静态、动态数据是非常有效的。&lt;br&gt;这次我就来讲讲怎么利用高德开发平台API接口，获取一些设施位置和路径规划信息。&lt;/p&gt;
+          &lt;p&gt;借助地图API接口，帮助我们快速获取大量的静态、动态数据是非常有效的。
+这次我就来讲讲怎么利用高德开发平台API接口，获取一些设施位置和路径规划信息。&lt;/p&gt;
 &lt;h2 id=&quot;高德开放平台&quot;&gt;&lt;a href=&quot;#高德开放平台&quot; class=&quot;headerlink&quot;
         
       

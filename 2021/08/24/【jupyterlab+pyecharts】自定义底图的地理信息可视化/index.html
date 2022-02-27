@@ -33,9 +33,9 @@ var _hmt = _hmt || [];
 </script>
 
 
-<link rel="alternate" href="atom.xml" title="To the MOUNTAIN" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="alternate" href="atom.xml" title="To the MOUNTAIN" type="application/atom+xml">
+</head>
 
 </html>
 
@@ -115,11 +115,11 @@ var _hmt = _hmt || [];
 <p>pyecharts原本自带的<strong>Geo()</strong>模块中中国地图的底图是全国范围的geojson文件，如果想要使用自定义区域底图，比如长三角范围内各个城市的该怎么办呢？</p>
 <p>这篇就来讲讲我怎么搞的。</p>
 <h2 id="1-下载自己所需的geojson文件"><a href="#1-下载自己所需的geojson文件" class="headerlink" title="1. 下载自己所需的geojson文件"></a>1. 下载自己所需的geojson文件</h2><p>这里推荐阿里云提供的基于高德地图的geojson文件下载地址：<a href="https://datav.aliyun.com/tools/atlas/index.html" target="_blank" rel="noopener">https://datav.aliyun.com/tools/atlas/index.html</a></p>
-<img src="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/%E9%98%BF%E9%87%8C%E4%BA%91geojson%E4%B8%8B%E8%BD%BD.PNG" class title="[阿里云geojson下载]">
+<img src="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/%E9%98%BF%E9%87%8C%E4%BA%91geojson%E4%B8%8B%E8%BD%BD.PNG" class title="[阿里云geojson下载]">
 
 <p>自己可以根据需要处理数据，拼接多个geojson文件，获得自定义范围的地图底图。</p>
 <p>比如我这里合并了长三角范围内的26个城市的geojson。</p>
-<img src="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/%E5%90%88%E5%B9%B6%E5%90%8E%E7%9A%84%E9%95%BF%E4%B8%89%E8%A7%92geojson.PNG" class title="[合并后的长三角geojson]">
+<img src="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/%E5%90%88%E5%B9%B6%E5%90%8E%E7%9A%84%E9%95%BF%E4%B8%89%E8%A7%92geojson.PNG" class title="[合并后的长三角geojson]">
 
 <h2 id="2-pyecharts替换Geo-地图底图"><a href="#2-pyecharts替换Geo-地图底图" class="headerlink" title="2. pyecharts替换Geo()地图底图"></a>2. pyecharts替换Geo()地图底图</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> pyecharts<span class="token punctuation">.</span>charts <span class="token keyword">import</span> Map<span class="token punctuation">,</span>Geo
 <span class="token keyword">import</span> pyecharts<span class="token punctuation">.</span>commons<span class="token punctuation">.</span>utils
@@ -136,10 +136,10 @@ c <span class="token operator">=</span> <span class="token punctuation">(</span>
 <span class="token punctuation">)</span>
 c<span class="token punctuation">.</span>load_javascript<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#使其支持自定义js</span>
 c<span class="token punctuation">.</span>render_notebook<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#直接展示在jupyterlab</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<img src="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/%E9%95%BF%E4%B8%89%E8%A7%92%E5%BA%95%E5%9B%BE.PNG" class title="[长三角底图]">
+<img src="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/%E9%95%BF%E4%B8%89%E8%A7%92%E5%BA%95%E5%9B%BE.PNG" class title="[长三角底图]">
 
 <h2 id="3-基于底图进行自定义展示"><a href="#3-基于底图进行自定义展示" class="headerlink" title="3. 基于底图进行自定义展示"></a>3. 基于底图进行自定义展示</h2><p>比如我这里绘制了城市间的流动线条。</p>
-<img src="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/%E9%95%BF%E4%B8%89%E8%A7%92%E5%87%BA%E8%A1%8C%E6%84%8F%E6%84%BF.gif" class title="[长三角出行意愿]">
+<img src="/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/%E9%95%BF%E4%B8%89%E8%A7%92%E5%87%BA%E8%A1%8C%E6%84%8F%E6%84%BF.gif" class title="[长三角出行意愿]">
       
       <!-- 打赏 -->
       
@@ -149,7 +149,7 @@ c<span class="token punctuation">.</span>render_notebook<span class="token punct
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://evaren1020-pro.github.io/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/" data-id="cl04pqso00006nkypfg5f3dih"
+      <a data-url="https://evaren1020-pro.github.io/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/" data-id="cl0578jfv000crsyp5ricf3cu"
         class="article-share-link">分享</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/jupyterlab/" rel="tag">jupyterlab</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/pyecharts/" rel="tag">pyecharts</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/python/" rel="tag">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E5%9C%B0%E5%9B%BEAPI/" rel="tag">地图API</a></li></ul>
