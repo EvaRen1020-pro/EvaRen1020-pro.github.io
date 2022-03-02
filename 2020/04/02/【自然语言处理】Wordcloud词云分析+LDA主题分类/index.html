@@ -75,7 +75,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">915字</span>
+            <span class="post-count">1k字</span>
         </span>
     </span>
 
@@ -114,8 +114,7 @@ var _hmt = _hmt || [];
 主要分为<strong>Wordcloud词云展示</strong>和<strong>Latent Dirichlet Allocation（LDA）模型主题分类</strong>两部分。</p>
 <p>参考文献：<a href="https://www.sciencedirect.com/science/article/pii/S0968090X17300207" target="_blank" rel="noopener">Sun, L., &amp; Yin, Y. (2017). Discovering themes and trends in transportation research using topic modeling. Transportation Research Part C: Emerging Technologies, 77, 49-66. doi:10.1016/j.trc.2017.01.013</a></p>
 <p>本次分析的是2017年至2020年发表的交通领域关于<strong>“Mobility-as-a-Service(MaaS)”</strong>的30篇论文的摘要部分。</p>
-<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/%E6%96%87%E7%8C%AE%E6%A6%82%E8%A7%88.PNG" class title="[文献展示]">
-
+<p><img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/%E6%96%87%E7%8C%AE%E6%A6%82%E8%A7%88.PNG" alt="文献展示"></p>
 <h2 id="wordcloud词云展示"><a href="#wordcloud词云展示" class="headerlink" title="wordcloud词云展示"></a>wordcloud词云展示</h2><ol>
 <li><p>首先对文本进行预处理：</p>
 <ul>
@@ -129,24 +128,25 @@ var _hmt = _hmt || [];
   <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>mytext<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
       mytext<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>wnl<span class="token punctuation">.</span>lemmatize<span class="token punctuation">(</span>mytext<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#词性还原</span>
       remytext<span class="token operator">=</span>remytext<span class="token operator">+</span><span class="token string">' '</span><span class="token operator">+</span>mytext<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-  mytext<span class="token operator">=</span>remytext<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>注：wordnet包需要另外独自安装，不然会报如下错误：</strong>
-<code>Resource wordnet not found. Please use the NLTK Downloader to obtain the resource:</code></p>
-<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E7%BC%BA%E5%A4%B1%E6%8A%A5%E9%94%99.PNG" class>
-<p><strong>这里补充wordnet包安装方法：</strong>
-  (1) 命令行cmd打开，输入python；
-(2) 继续输入<code>import nltk</code>和<code>nltk.download()</code>如下图所示：</p>
-  <img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E4%B8%8B%E8%BD%BDcmd.PNG" class>
-<p>(3) 可能会报错远程主机强制关闭了一个连接。
-  解决办法：(1)连VPN (2)利用别人已经下载到本地的wordnet包,具体参照这篇博客。<a href="https://blog.csdn.net/Charchunchiu/article/details/96436736?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener">Python NLTK WordNet的在线与手动安装方法</a>
-  (4) 正常情况下,弹出如下窗口，选择<code>Corpora/wordnet</code>下载即可。</p>
-  <img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E4%B8%8B%E8%BD%BD%E7%95%8C%E9%9D%A2.PNG" class>
+  mytext<span class="token operator">=</span>remytext
+
+<span class="token operator">&lt;</span>strong<span class="token operator">></span>注：wordnet包需要另外独自安装，不然会报如下错误：<span class="token operator">&lt;</span><span class="token operator">/</span>strong<span class="token operator">></span>`Resource wordnet <span class="token operator">not</span> found<span class="token punctuation">.</span> Please use the NLTK Downloader to obtain the resource<span class="token punctuation">:</span>`
+
+!<span class="token punctuation">[</span>wordnet缺失报错<span class="token punctuation">]</span><span class="token punctuation">(</span>【自然语言处理】Wordcloud词云分析<span class="token operator">+</span>LDA主题分类<span class="token operator">/</span>wordnet缺失报错<span class="token punctuation">.</span>PNG<span class="token punctuation">)</span>
+<span class="token operator">&lt;</span>strong<span class="token operator">></span>这里补充wordnet包安装方法：<span class="token operator">&lt;</span><span class="token operator">/</span>strong<span class="token operator">></span>
+<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> 命令行cmd打开，输入python；
+<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> 继续输入<span class="token operator">&lt;</span>code<span class="token operator">></span><span class="token keyword">import</span> nltk<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>和<span class="token operator">&lt;</span>code<span class="token operator">></span>nltk<span class="token punctuation">.</span>download<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>如下图所示：
+
+!<span class="token punctuation">[</span>wordnet下载cmd<span class="token punctuation">]</span><span class="token punctuation">(</span>【自然语言处理】Wordcloud词云分析<span class="token operator">+</span>LDA主题分类<span class="token operator">/</span>wordnet下载cmd<span class="token punctuation">.</span>PNG<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> 可能会报错远程主机强制关闭了一个连接。
+  解决办法：<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>连VPN <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>利用别人已经下载到本地的wordnet包<span class="token punctuation">,</span>具体参照这篇博客。<span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"https://blog.csdn.net/Charchunchiu/article/details/96436736?depth_1-utm_source=distribute.pc_relevant.none-task&amp;utm_source=distribute.pc_relevant.none-task"</span><span class="token operator">></span>Python NLTK WordNet的在线与手动安装方法<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span>
+<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> 正常情况下<span class="token punctuation">,</span>弹出如下窗口，选择<span class="token operator">&lt;</span>code<span class="token operator">></span>Corpora<span class="token operator">/</span>wordnet<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>下载即可。
+!<span class="token punctuation">[</span>wordnet下载界面<span class="token punctuation">]</span><span class="token punctuation">(</span>【自然语言处理】Wordcloud词云分析<span class="token operator">+</span>LDA主题分类<span class="token operator">/</span>wordnet下载界面<span class="token punctuation">.</span>PNG<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>设置停用词</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> wordcloud <span class="token keyword">import</span> STOPWORDS<span class="token comment" spellcheck="true">#导入原有的停用词包</span>
 additional_stopwords<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
 <span class="token keyword">with</span> open<span class="token punctuation">(</span>stopwordsfile<span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'UTF-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
-  <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">:</span>
+<span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">:</span>
       additional_stopwords<span class="token punctuation">.</span>append<span class="token punctuation">(</span>line<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">,</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 stop_words <span class="token operator">=</span> additional_stopwords <span class="token operator">+</span> list<span class="token punctuation">(</span>STOPWORDS<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#额外添加自己的停用词</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
@@ -158,10 +158,9 @@ wordcloud <span class="token operator">=</span> WordCloud<span class="token punc
 plt<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>wordcloud<span class="token punctuation">,</span> interpolation<span class="token operator">=</span><span class="token string">'bilinear'</span><span class="token punctuation">)</span>
 plt<span class="token punctuation">.</span>axis<span class="token punctuation">(</span><span class="token string">"off"</span><span class="token punctuation">)</span>
 plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/maas%E8%AF%8D%E4%BA%91%E7%BB%93%E6%9E%9C.PNG" class title="[词云展示]">
-
 </li>
 </ol>
+<p><img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/maas%E8%AF%8D%E4%BA%91%E7%BB%93%E6%9E%9C.PNG" alt="词云展示"></p>
 <h2 id="LDA主题分类"><a href="#LDA主题分类" class="headerlink" title="LDA主题分类"></a>LDA主题分类</h2><p>这里使用<strong>sklearn</strong>的<strong>LDA</strong>包。
 基于之前的<strong>文本预处理</strong>，还需要转换为<strong>词向量</strong>的形式，才可放入LDA模型训练。
 具体代码如下：</p>
@@ -227,8 +226,7 @@ ax<span class="token punctuation">.</span>set_ylabel<span class="token punctuati
 plt<span class="token punctuation">.</span>grid<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>最终我这里选择了分为3个主题。虽然2个的perplexity效果好一些，但我根据需要选择了3个。</p>
-<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/perplexity%E6%8C%87%E6%95%B0.PNG" class title="[perplexity指数]">
-
+<p><img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/perplexity%E6%8C%87%E6%95%B0.PNG" alt="perplexity指数"></p>
 <p>Topic #1: 城市系统角度
 model city public business alliance actor efficiency factor system new
 Topic #2: 各出行模式运营商角度
@@ -246,7 +244,7 @@ car public model mode bundle sharing new travel choice demand</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://evaren1020-pro.github.io/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/" data-id="cl09flwyj000ukkypaep46o6m"
+      <a data-url="https://evaren1020-pro.github.io/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/" data-id="cl09njzwj000ti4ypdnt791ot"
         class="article-share-link">分享</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/LDA/" rel="tag">LDA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/NLP/" rel="tag">NLP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/Wordcloud/" rel="tag">Wordcloud</a></li></ul>
