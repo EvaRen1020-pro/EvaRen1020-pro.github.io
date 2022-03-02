@@ -43,23 +43,6 @@
       </tags>
   </entry>
   <entry>
-    <title>plotly基础画图使用尝试</title>
-    <url>/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/</url>
-    <content><![CDATA[<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
-
-<iframe width="100%" id="iframeid" scrolling="yes" height="1800" frameborder="0" src="https://nbviewer.org/github/EvaRen1020-pro/myblog_ipynb_codes/blob/main/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95.ipynb"></iframe>
-
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>plotly</tag>
-        <tag>jupyterlab</tag>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo嵌入jupyter的ipynb文件</title>
     <url>/2022/02/27/hexo%E5%B5%8C%E5%85%A5jupyter%E7%9A%84ipynb%E6%96%87%E4%BB%B6/</url>
     <content><![CDATA[<h1 id="我使用的方法"><a href="#我使用的方法" class="headerlink" title="我使用的方法"></a>我使用的方法</h1><ol>
@@ -105,6 +88,23 @@
       <tags>
         <tag>sql</tag>
         <tag>oracle</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>plotly基础画图使用尝试</title>
+    <url>/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/</url>
+    <content><![CDATA[<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+
+<iframe width="100%" id="iframeid" scrolling="yes" height="1800" frameborder="0" src="https://nbviewer.org/github/EvaRen1020-pro/myblog_ipynb_codes/blob/main/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95.ipynb"></iframe>
+
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>jupyterlab</tag>
+        <tag>python</tag>
+        <tag>plotly</tag>
       </tags>
   </entry>
   <entry>
@@ -304,8 +304,11 @@ c<span class="token punctuation">.</span>render_notebook<span class="token punct
   <entry>
     <title>【python+geopy包】地理信息检索</title>
     <url>/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/</url>
-    <content><![CDATA[<p><img src="/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%5C%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BEAK.png" alt="百度地图AK.png"></p>
-<p><strong>2.开始地理编码</strong></p>
+    <content><![CDATA[<ol>
+<li><strong>注册百度AK</strong></li>
+</ol>
+<p><img src="/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%5C%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BEAK.png" alt="百度地图AK.png"></p>
+<p><strong>2.开始编码</strong></p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> geopy<span class="token punctuation">.</span>geocoders <span class="token keyword">import</span> Nominatim<span class="token punctuation">,</span>BaiduV3
 
 geolocator <span class="token operator">=</span> Nominatim<span class="token punctuation">(</span>user_agent<span class="token operator">=</span><span class="token string">"myapp"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#基于openStreetMap</span>
@@ -588,6 +591,107 @@ Granularity: 数据精度，月、周、日、5分钟的颗粒度。
       </tags>
   </entry>
   <entry>
+    <title>动态爬取携程网机票信息</title>
+    <url>/2021/01/06/%E5%8A%A8%E6%80%81%E7%88%AC%E5%8F%96%E6%90%BA%E7%A8%8B%E7%BD%91%E6%9C%BA%E7%A5%A8%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<p>最近在做有关交通城际出行领域的课题，需要用到一些关于机票的信息，于是就想到从携程网进行爬取相关数据。</p>
+<p>但是呢，携程网它的票务信息查询后是一个动态页面，需要下拉才能返回更多的查询结果。所以这需要在一般的解析静态页面的爬虫方式上，增加一个<strong>浏览器的模拟器</strong>，来模拟<strong>下拉</strong>这一行为。</p>
+<p>本次就是用到<strong>selenium</strong>这一个包的<strong>webdriver</strong>来模拟<strong>打开浏览器</strong>和<strong>下拉</strong>这一行为。</p>
+<p>话不多说，直接上代码和注释。</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+<span class="token keyword">import</span> requests
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> lxml<span class="token punctuation">.</span>html
+<span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
+
+<span class="token keyword">def</span> <span class="token function">getFlightInfo</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">,</span>date<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    url<span class="token operator">=</span><span class="token string">'https://flights.ctrip.com/itinerary/oneway/%s-%s?classType=ALL&amp;ct=1606269725709&amp;date=%s'</span><span class="token operator">%</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">,</span>date<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#携程的单程机票查询url</span>
+    <span class="token comment" spellcheck="true">#parse the html</span>
+    browser <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    browser<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#等一会儿，等信息解析</span>
+    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#模拟点击按钮</span>
+    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#多注意休息</span>
+    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'dtime-sort'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#模拟点击按时间排序按钮</span>
+    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'dtime-sort'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#再模拟一次点击按时间排序按钮，确保出发时间从早到晚排序</span>
+    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># 获取页面初始高度</span>
+    js <span class="token operator">=</span> <span class="token string">"return action=document.body.scrollHeight"</span>
+    height <span class="token operator">=</span> browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># 将滚动条调整至页面底部</span>
+    browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, document.body.scrollHeight)'</span><span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 定义初始时间戳（秒）</span>
+    t1 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 定义循环标识，用于终止while循环</span>
+    status <span class="token operator">=</span> <span class="token boolean">True</span>
+    <span class="token comment" spellcheck="true"># 重试次数</span>
+    num <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">while</span> status<span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 获取当前时间戳（秒）</span>
+        t2 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># 判断时间初始时间戳和当前时间戳相差是否大于30秒，小于30秒则下拉滚动条</span>
+        <span class="token keyword">if</span> t2 <span class="token operator">-</span> t1 <span class="token operator">&lt;</span> <span class="token number">30</span><span class="token punctuation">:</span>
+            new_height <span class="token operator">=</span> browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> new_height <span class="token operator">></span> height<span class="token punctuation">:</span>
+                time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+                browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, document.body.scrollHeight)'</span><span class="token punctuation">)</span>
+                <span class="token comment" spellcheck="true"># 重置初始页面高度</span>
+                height <span class="token operator">=</span> new_height
+                <span class="token comment" spellcheck="true"># 重置初始时间戳，重新计时</span>
+                t1 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> num <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 当超过30秒页面高度仍然没有更新时，进入重试逻辑，重试3次，每次等待30秒</span>
+            time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+            num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 超时并超过重试次数，程序结束跳出循环，并认为页面已经加载完毕！</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"滚动条已经处于页面最下方！"</span><span class="token punctuation">)</span>
+            status <span class="token operator">=</span> <span class="token boolean">False</span>
+            <span class="token comment" spellcheck="true"># 滚动条调整至页面顶部</span>
+            browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, 0)'</span><span class="token punctuation">)</span>
+            <span class="token keyword">break</span>
+
+ <span class="token comment" spellcheck="true">#要用到正则表达式</span>
+ flightnumber<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_table_header>.inb.logo>div>div>span>span>span"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系,不可以跃层查询</span>
+    departtime<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.right>div.time_box"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系</span>
+    departhub <span class="token operator">=</span> browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.right>div.airport"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 空格设置为点</span>
+    arrivetime<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.left>div.time_box"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系</span>
+    arrivehub <span class="token operator">=</span> browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.left>div.airport"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 空格设置为点</span>
+
+    flightnumberlist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> flightnumber<span class="token punctuation">]</span>
+    flightnumberlist<span class="token operator">=</span>list<span class="token punctuation">(</span>filter<span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x <span class="token operator">!=</span> <span class="token string">'共享'</span><span class="token punctuation">,</span> flightnumberlist<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#删除多余元素</span>
+    departtimelist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> departtime<span class="token punctuation">]</span>
+    departhublist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> departhub<span class="token punctuation">]</span>
+    arrivetimelist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> arrivetime<span class="token punctuation">]</span>
+    arrivehublist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> arrivehub<span class="token punctuation">]</span>
+    <span class="token keyword">return</span> flightnumberlist<span class="token punctuation">,</span>departtimelist<span class="token punctuation">,</span>departhublist<span class="token punctuation">,</span>arrivetimelist<span class="token punctuation">,</span>arrivehublist
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    date<span class="token operator">=</span><span class="token string">'2020-11-27'</span>
+    fromcity<span class="token operator">=</span><span class="token string">'bjs'</span><span class="token comment" spellcheck="true">#查询北京到上海的机票</span>
+    tocity<span class="token operator">=</span><span class="token string">'sha'</span><span class="token comment" spellcheck="true">#查询北京到上海的机票</span>
+    path <span class="token operator">=</span> <span class="token string">'\\'</span>
+    flightnumberlist<span class="token punctuation">,</span>departtimelist<span class="token punctuation">,</span>departhublist<span class="token punctuation">,</span>arrivetimelist<span class="token punctuation">,</span>arrivehublist<span class="token operator">=</span>getFlightInfo<span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span> tocity<span class="token punctuation">,</span> date<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>flightnumberlist<span class="token punctuation">)</span>
+    flightinfodict<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'flightnumber'</span><span class="token punctuation">:</span>flightnumberlist<span class="token punctuation">,</span><span class="token string">'departtime'</span><span class="token punctuation">:</span>departtimelist<span class="token punctuation">,</span><span class="token string">'departhub'</span><span class="token punctuation">:</span>departhublist<span class="token punctuation">,</span>
+                        <span class="token string">'arrivetime'</span><span class="token punctuation">:</span>arrivetimelist<span class="token punctuation">,</span><span class="token string">'arrivehub'</span><span class="token punctuation">:</span>arrivehublist<span class="token punctuation">}</span>
+    flightinfodf<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>flightinfodict<span class="token punctuation">)</span>
+    flightinfodf<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span>path<span class="token operator">+</span><span class="token string">'%s-%s航空班次信息.csv'</span><span class="token operator">%</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">)</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf_8_sig'</span><span class="token punctuation">,</span>index<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>selenium</tag>
+        <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用高德开放平台API获取POI位置和路线信息</title>
     <url>/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/</url>
     <content><![CDATA[<p>借助地图API接口，帮助我们快速获取大量的静态、动态数据是非常有效的。
@@ -710,6 +814,33 @@ Granularity: 数据精度，月、周、日、5分钟的颗粒度。
         <tag>HTML</tag>
         <tag>API</tag>
         <tag>地理信息</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何修改python第三方库源码</title>
+    <url>/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="如何修改python第三方库源码"><a href="#如何修改python第三方库源码" class="headerlink" title="如何修改python第三方库源码"></a>如何修改python第三方库源码</h1><p>有的时候下载的第三方python库中有些参数没有开放让我们自定义调整，比如你要用那个库自带的出图，它可能又是基于matplotlib的一个函数，然后设为了默认。</p>
+<p>其实非常简单！由于Python是解释型编程语言，不需要编译，直接就能运行。</p>
+<p>以我要修改的<strong>PyALE</strong>库中的rug plot的颜色和透明度为例。</p>
+<ol>
+<li><p>找到源码位置，即/python3.7\Lib\site-packages\PyALE_src\ALE_1D.py</p>
+</li>
+<li><p>找到rug plot内置的位置，修改保存</p>
+<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/code_position.png" class title="code_position.png">
+</li>
+<li><p>修改的代码就能够在下次运行时立即生效</p>
+<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/before.JPG" class title="before.JPG">
+
+</li>
+</ol>
+<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/after.PNG" class title="after.PNG">
+
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -887,197 +1018,6 @@ data<span class="token punctuation">.</span>to_file<span class="token punctuatio
       </tags>
   </entry>
   <entry>
-    <title>动态爬取携程网机票信息</title>
-    <url>/2021/01/06/%E5%8A%A8%E6%80%81%E7%88%AC%E5%8F%96%E6%90%BA%E7%A8%8B%E7%BD%91%E6%9C%BA%E7%A5%A8%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<p>最近在做有关交通城际出行领域的课题，需要用到一些关于机票的信息，于是就想到从携程网进行爬取相关数据。</p>
-<p>但是呢，携程网它的票务信息查询后是一个动态页面，需要下拉才能返回更多的查询结果。所以这需要在一般的解析静态页面的爬虫方式上，增加一个<strong>浏览器的模拟器</strong>，来模拟<strong>下拉</strong>这一行为。</p>
-<p>本次就是用到<strong>selenium</strong>这一个包的<strong>webdriver</strong>来模拟<strong>打开浏览器</strong>和<strong>下拉</strong>这一行为。</p>
-<p>话不多说，直接上代码和注释。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
-<span class="token keyword">import</span> requests
-<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
-<span class="token keyword">import</span> time
-<span class="token keyword">import</span> lxml<span class="token punctuation">.</span>html
-<span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
-
-<span class="token keyword">def</span> <span class="token function">getFlightInfo</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">,</span>date<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    url<span class="token operator">=</span><span class="token string">'https://flights.ctrip.com/itinerary/oneway/%s-%s?classType=ALL&amp;ct=1606269725709&amp;date=%s'</span><span class="token operator">%</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">,</span>date<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#携程的单程机票查询url</span>
-    <span class="token comment" spellcheck="true">#parse the html</span>
-    browser <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    browser<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
-    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#等一会儿，等信息解析</span>
-    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#模拟点击按钮</span>
-    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#多注意休息</span>
-    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'dtime-sort'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#模拟点击按时间排序按钮</span>
-    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
-    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'dtime-sort'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#再模拟一次点击按时间排序按钮，确保出发时间从早到晚排序</span>
-    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
-    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
-
-    <span class="token comment" spellcheck="true"># 获取页面初始高度</span>
-    js <span class="token operator">=</span> <span class="token string">"return action=document.body.scrollHeight"</span>
-    height <span class="token operator">=</span> browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span>
-
-    <span class="token comment" spellcheck="true"># 将滚动条调整至页面底部</span>
-    browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, document.body.scrollHeight)'</span><span class="token punctuation">)</span>
-    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># 定义初始时间戳（秒）</span>
-    t1 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># 定义循环标识，用于终止while循环</span>
-    status <span class="token operator">=</span> <span class="token boolean">True</span>
-    <span class="token comment" spellcheck="true"># 重试次数</span>
-    num <span class="token operator">=</span> <span class="token number">0</span>
-    <span class="token keyword">while</span> status<span class="token punctuation">:</span>
-        <span class="token comment" spellcheck="true"># 获取当前时间戳（秒）</span>
-        t2 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token comment" spellcheck="true"># 判断时间初始时间戳和当前时间戳相差是否大于30秒，小于30秒则下拉滚动条</span>
-        <span class="token keyword">if</span> t2 <span class="token operator">-</span> t1 <span class="token operator">&lt;</span> <span class="token number">30</span><span class="token punctuation">:</span>
-            new_height <span class="token operator">=</span> browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span>
-            <span class="token keyword">if</span> new_height <span class="token operator">></span> height<span class="token punctuation">:</span>
-                time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-                browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, document.body.scrollHeight)'</span><span class="token punctuation">)</span>
-                <span class="token comment" spellcheck="true"># 重置初始页面高度</span>
-                height <span class="token operator">=</span> new_height
-                <span class="token comment" spellcheck="true"># 重置初始时间戳，重新计时</span>
-                t1 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token keyword">elif</span> num <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 当超过30秒页面高度仍然没有更新时，进入重试逻辑，重试3次，每次等待30秒</span>
-            time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
-            num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span>
-        <span class="token keyword">else</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 超时并超过重试次数，程序结束跳出循环，并认为页面已经加载完毕！</span>
-            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"滚动条已经处于页面最下方！"</span><span class="token punctuation">)</span>
-            status <span class="token operator">=</span> <span class="token boolean">False</span>
-            <span class="token comment" spellcheck="true"># 滚动条调整至页面顶部</span>
-            browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, 0)'</span><span class="token punctuation">)</span>
-            <span class="token keyword">break</span>
-
- <span class="token comment" spellcheck="true">#要用到正则表达式</span>
- flightnumber<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_table_header>.inb.logo>div>div>span>span>span"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系,不可以跃层查询</span>
-    departtime<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.right>div.time_box"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系</span>
-    departhub <span class="token operator">=</span> browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.right>div.airport"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 空格设置为点</span>
-    arrivetime<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.left>div.time_box"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系</span>
-    arrivehub <span class="token operator">=</span> browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.left>div.airport"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 空格设置为点</span>
-
-    flightnumberlist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> flightnumber<span class="token punctuation">]</span>
-    flightnumberlist<span class="token operator">=</span>list<span class="token punctuation">(</span>filter<span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x <span class="token operator">!=</span> <span class="token string">'共享'</span><span class="token punctuation">,</span> flightnumberlist<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#删除多余元素</span>
-    departtimelist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> departtime<span class="token punctuation">]</span>
-    departhublist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> departhub<span class="token punctuation">]</span>
-    arrivetimelist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> arrivetime<span class="token punctuation">]</span>
-    arrivehublist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> arrivehub<span class="token punctuation">]</span>
-    <span class="token keyword">return</span> flightnumberlist<span class="token punctuation">,</span>departtimelist<span class="token punctuation">,</span>departhublist<span class="token punctuation">,</span>arrivetimelist<span class="token punctuation">,</span>arrivehublist
-
-<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
-    date<span class="token operator">=</span><span class="token string">'2020-11-27'</span>
-    fromcity<span class="token operator">=</span><span class="token string">'bjs'</span><span class="token comment" spellcheck="true">#查询北京到上海的机票</span>
-    tocity<span class="token operator">=</span><span class="token string">'sha'</span><span class="token comment" spellcheck="true">#查询北京到上海的机票</span>
-    path <span class="token operator">=</span> <span class="token string">'\\'</span>
-    flightnumberlist<span class="token punctuation">,</span>departtimelist<span class="token punctuation">,</span>departhublist<span class="token punctuation">,</span>arrivetimelist<span class="token punctuation">,</span>arrivehublist<span class="token operator">=</span>getFlightInfo<span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span> tocity<span class="token punctuation">,</span> date<span class="token punctuation">)</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>flightnumberlist<span class="token punctuation">)</span>
-    flightinfodict<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'flightnumber'</span><span class="token punctuation">:</span>flightnumberlist<span class="token punctuation">,</span><span class="token string">'departtime'</span><span class="token punctuation">:</span>departtimelist<span class="token punctuation">,</span><span class="token string">'departhub'</span><span class="token punctuation">:</span>departhublist<span class="token punctuation">,</span>
-                        <span class="token string">'arrivetime'</span><span class="token punctuation">:</span>arrivetimelist<span class="token punctuation">,</span><span class="token string">'arrivehub'</span><span class="token punctuation">:</span>arrivehublist<span class="token punctuation">}</span>
-    flightinfodf<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>flightinfodict<span class="token punctuation">)</span>
-    flightinfodf<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span>path<span class="token operator">+</span><span class="token string">'%s-%s航空班次信息.csv'</span><span class="token operator">%</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">)</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf_8_sig'</span><span class="token punctuation">,</span>index<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>selenium</tag>
-        <tag>爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何修改python第三方库源码</title>
-    <url>/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="如何修改python第三方库源码"><a href="#如何修改python第三方库源码" class="headerlink" title="如何修改python第三方库源码"></a>如何修改python第三方库源码</h1><p>有的时候下载的第三方python库中有些参数没有开放让我们自定义调整，比如你要用那个库自带的出图，它可能又是基于matplotlib的一个函数，然后设为了默认。</p>
-<p>其实非常简单！由于Python是解释型编程语言，不需要编译，直接就能运行。</p>
-<p>以我要修改的<strong>PyALE</strong>库中的rug plot的颜色和透明度为例。</p>
-<ol>
-<li><p>找到源码位置，即/python3.7\Lib\site-packages\PyALE_src\ALE_1D.py</p>
-</li>
-<li><p>找到rug plot内置的位置，修改保存</p>
-<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/code_position.png" class title="code_position.png">
-</li>
-<li><p>修改的代码就能够在下次运行时立即生效</p>
-<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/before.JPG" class title="before.JPG">
-
-</li>
-</ol>
-<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/after.PNG" class title="after.PNG">
-
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开门之作——小白HTML-CSS-JavaScript入门摸索历程</title>
-    <url>/2020/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/</url>
-    <content><![CDATA[<p>
-我是一个非计算机专业的同学，不过也因为时代发展，专业需要，也会用python写一些小代码。<br>
-
-</p><p>平时呢热爱<strong>摄影、视频制作、还有视觉上好看的事物</strong>。</p>
-<p>我想开始学Web Design技术也主要是因为，我喜欢的一个YouTuber他的大学专业也本来是网页设计……<strong>Peter Mckinnon!</strong><br></p>
-<p>好了正式开始！</p>
-<p></p>
-
-<h2>1. 学习资源</h2>
-<strong>地址：</strong><u><a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web" target="_blank" rel="noopener"><strong>MDN Web Docs</strong></a><br></u>
-
-<p>这是一个<strong>非常优质</strong>、可以称之为<strong>鼻祖</strong>的<strong>Mozilla</strong>开源社区项目。它其中详细介绍了<strong>Web Design</strong>的各种基础技术知识。好好学，系统性地学，真的会有巨大的收获。
-而且大多数内容都有中文版本。</p>
-<img src="/2020/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/MDN%E6%88%AA%E5%9B%BE.PNG" class title="MDN截图.PNG">
-
-<h2>2. 我的入门历程</h2>
-
-<ul>
-<li>花1-2天时间阅读、上手操作HTML部分教程：<ul>
-<li>了解<code>HTML</code>的结构<code>&lt;head&gt;,&lt;body&gt;,&lt;script&gt;</code>等；</li>
-<li>知道文本<code>&lt;p&gt;</code>(<code>&lt;h1&gt;&lt;div&gt;&lt;span&gt;</code>)、列表<code>&lt;ul&gt;&lt;ol&gt;</code>、超链接<code>&lt;a href&gt;</code>、表格<code>&lt;table&gt;</code>、表单<code>&lt;form&gt;</code>的格式、用途；</li>
-<li>接触<code>CSS</code>的样式知识；</li>
-<li>知道如何选择特定内容<code>querySelector</code>；</li>
-<li><strong>表单<code>&lt;form&gt;</code>那里创建对象响应可能有些难，不过没关系，先仿照着学下去</strong>！</li>
-</ul>
-</li>
-<li>花1天时间学习CSS部分教程：<ul>
-<li>了解<code>CSS</code>结构；</li>
-<li>知道如何选择特定部分，并修改样式；</li>
-<li>学习网页排版位置设置知识&nbsp;(<font color="#2e6da4">虽然这里我也没有好好学就跳过了</font>);</li>
-</ul>
-</li>
-<li>花3-4天时间学习JavaScript部分教程:<ul>
-<li>变量、函数、循环等编程基础与其他编程语言大同小易，这个基础应该原本就具备；</li>
-<li>学会动态操纵文档，<strong><code>DOM</code>树操作</strong>非常重要！</li>
-<li>会在浏览器<code>Console控制台</code>调试程序;</li>
-<li>控件响应事件学习,<strong>这样静态网页才能动起来</strong>；</li>
-<li><strong>其他还有更深层次的前端知识，异步处理，<code>Canvas、OpenGL</code>画图等等我先没有具体去学</strong>，
-因为我的初衷是创建一个个人博客，就急于来自己上手尝试了。<strong>在此还是强烈建议有识之士去好好学习的。</strong></li>
-</ul>
-</li>
-</ul>
-<h2>3. 心得小结</h2>
-
-<p>虽然我自己也没有完完全全吃透<strong>MDN</strong>官方教程上的内容，但是自己这几天照着官方文档和示例去学习，主要有两大感受：</p>
-<ul>
-<li><strong>系统性</strong>！这个教程比其他网络上的博客或者一些网站更专业更全面，并且有示例源码可以仿照学习。</li>
-<li><strong>开心啊</strong>！终于自己可以看懂之前一些html网页源码内容，对于无论是<strong>爬虫、调用API、Echarts使用</strong>等等都很有帮助。</li>
-</ul>
-<p>这个教程非常棒，以后遇到很多困惑都可以再回去查，而且发现网络上很多的解决方案的原始链接都是它！快去学习一下鼻祖的<strong>MDN Web Docs</strong>吧！</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-        <tag>css</tag>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>配置Hexo的历程和一些bug解决方案</title>
     <url>/2020/01/28/%E9%85%8D%E7%BD%AEHexo%E7%9A%84%E5%8E%86%E7%A8%8B%E5%92%8C%E4%B8%80%E4%BA%9Bbug%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<p>这篇主要来讲讲我怎么入手搭建自己的Hexo博客。我主要是按照这篇教程<strong><a href="https://sunhwee.com/posts/6e8839eb.html" target="_blank" rel="noopener">Hexo+Github博客搭建完全教程</a></strong>来做的，感谢<strong><a href="https://sunhwee.com/" target="_blank" rel="noopener">洪卫</a></strong> ，他已经写的非常详细了。
@@ -1207,6 +1147,69 @@ hexo<span class="token punctuation">.</span>extend<span class="token punctuation
       <tags>
         <tag>地图API</tag>
         <tag>ArcGIS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开门之作——小白HTML-CSS-JavaScript入门摸索历程</title>
+    <url>/2020/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<p>
+我是一个非计算机专业的同学，不过也因为时代发展，专业需要，也会用python写一些小代码。<br>
+
+</p><p>平时呢热爱<strong>摄影、视频制作、还有视觉上好看的事物</strong>。</p>
+<p>我想开始学Web Design技术也主要是因为，我喜欢的一个YouTuber他的大学专业也本来是网页设计……<strong>Peter Mckinnon!</strong><br></p>
+<p>好了正式开始！</p>
+<p></p>
+
+<h2>1. 学习资源</h2>
+<strong>地址：</strong><u><a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web" target="_blank" rel="noopener"><strong>MDN Web Docs</strong></a><br></u>
+
+<p>这是一个<strong>非常优质</strong>、可以称之为<strong>鼻祖</strong>的<strong>Mozilla</strong>开源社区项目。它其中详细介绍了<strong>Web Design</strong>的各种基础技术知识。好好学，系统性地学，真的会有巨大的收获。
+而且大多数内容都有中文版本。</p>
+<img src="/2020/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/MDN%E6%88%AA%E5%9B%BE.PNG" class title="MDN截图.PNG">
+
+<h2>2. 我的入门历程</h2>
+
+<ul>
+<li>花1-2天时间阅读、上手操作HTML部分教程：<ul>
+<li>了解<code>HTML</code>的结构<code>&lt;head&gt;,&lt;body&gt;,&lt;script&gt;</code>等；</li>
+<li>知道文本<code>&lt;p&gt;</code>(<code>&lt;h1&gt;&lt;div&gt;&lt;span&gt;</code>)、列表<code>&lt;ul&gt;&lt;ol&gt;</code>、超链接<code>&lt;a href&gt;</code>、表格<code>&lt;table&gt;</code>、表单<code>&lt;form&gt;</code>的格式、用途；</li>
+<li>接触<code>CSS</code>的样式知识；</li>
+<li>知道如何选择特定内容<code>querySelector</code>；</li>
+<li><strong>表单<code>&lt;form&gt;</code>那里创建对象响应可能有些难，不过没关系，先仿照着学下去</strong>！</li>
+</ul>
+</li>
+<li>花1天时间学习CSS部分教程：<ul>
+<li>了解<code>CSS</code>结构；</li>
+<li>知道如何选择特定部分，并修改样式；</li>
+<li>学习网页排版位置设置知识&nbsp;(<font color="#2e6da4">虽然这里我也没有好好学就跳过了</font>);</li>
+</ul>
+</li>
+<li>花3-4天时间学习JavaScript部分教程:<ul>
+<li>变量、函数、循环等编程基础与其他编程语言大同小易，这个基础应该原本就具备；</li>
+<li>学会动态操纵文档，<strong><code>DOM</code>树操作</strong>非常重要！</li>
+<li>会在浏览器<code>Console控制台</code>调试程序;</li>
+<li>控件响应事件学习,<strong>这样静态网页才能动起来</strong>；</li>
+<li><strong>其他还有更深层次的前端知识，异步处理，<code>Canvas、OpenGL</code>画图等等我先没有具体去学</strong>，
+因为我的初衷是创建一个个人博客，就急于来自己上手尝试了。<strong>在此还是强烈建议有识之士去好好学习的。</strong></li>
+</ul>
+</li>
+</ul>
+<h2>3. 心得小结</h2>
+
+<p>虽然我自己也没有完完全全吃透<strong>MDN</strong>官方教程上的内容，但是自己这几天照着官方文档和示例去学习，主要有两大感受：</p>
+<ul>
+<li><strong>系统性</strong>！这个教程比其他网络上的博客或者一些网站更专业更全面，并且有示例源码可以仿照学习。</li>
+<li><strong>开心啊</strong>！终于自己可以看懂之前一些html网页源码内容，对于无论是<strong>爬虫、调用API、Echarts使用</strong>等等都很有帮助。</li>
+</ul>
+<p>这个教程非常棒，以后遇到很多困惑都可以再回去查，而且发现网络上很多的解决方案的原始链接都是它！快去学习一下鼻祖的<strong>MDN Web Docs</strong>吧！</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>css</tag>
+        <tag>markdown</tag>
       </tags>
   </entry>
 </search>
