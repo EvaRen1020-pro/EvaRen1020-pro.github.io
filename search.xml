@@ -21,48 +21,6 @@
       </tags>
   </entry>
   <entry>
-    <title>IBM Watson Studio云机器学习平台</title>
-    <url>/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/</url>
-    <content><![CDATA[<h1 id="IBM-Watson-Studio云机器学习平台"><a href="#IBM-Watson-Studio云机器学习平台" class="headerlink" title="IBM Watson Studio云机器学习平台"></a>IBM Watson Studio云机器学习平台</h1><p><a href="https://cloud.ibm.com/catalog/services/watson-studio?cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork-20718538-www-coursera-org-www-coursera-org&amp;cm_mmca1=000026UJ&amp;cm_mmca2=10006555&amp;cm_mmca3=M12345678&amp;cvosrc=email.Newsletter.M12345678&amp;cvo_campaign=000026U" target="_blank" rel="noopener">IBM Watson Studio</a>是IBM Cloud云服务中的一个核心平台，集成了很多人工智能工具，可以连接数据库进行云存储，创建Dashboard仪表盘，在线训练你的机器学习模型，支持Jupyter Notebook编写代码及分享，支持RStudio、SPSS Modeler等等。并且，其内置了很多已经构建好的机器学习模型，如自然语言文本分类、图像识别、深度学习模型、最优化决策。看起来就很有吸引力！</p>
-<img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/%E6%9C%8D%E5%8A%A1.PNG" class title="[服务]">
-
-<img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/home_page.png" class title="[home_page]">
-
-<p>在此分享Coursera上关于简易上手使用IBM Watson Studio的<a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/FinalModule_Coursera/IBM_Watson_Setup.md.html?origin=www.coursera.org" target="_blank" rel="noopener">教程</a>，开始写你在Watson Studio上的第一段Jupyter Notebook代码吧。</p>
-<p>同时分享两则<strong>注意事项</strong>：</p>
-<ol>
-<li><p>注册账户的时候建议使用<strong>Gmail</strong>，不然很可能会注册失败。</p>
-</li>
-<li><p>Github同步要在repository里新建<strong>master</strong>分支，不要仅有默认的<strong>main</strong>分支，不然Notebook的同步会报错。</p>
-</li>
-</ol>
-<p>IBM Cloud属实功能强大，日后有机会再进一步研究使用。</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>Machine Learning</tag>
-        <tag>IBM Cloud</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>arcgis中XYtoLine失败的原因及解决方案</title>
-    <url>/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<h1 id="arcgis中XYtoLine失败的原因及解决方案"><a href="#arcgis中XYtoLine失败的原因及解决方案" class="headerlink" title="arcgis中XYtoLine失败的原因及解决方案"></a>arcgis中XYtoLine失败的原因及解决方案</h1><ol>
-<li>包含<strong>XY数据</strong>的<strong>csv</strong>文件需先导出为<strong>dbf</strong>格式</li>
-<li>而后再将这个<strong>dbf</strong>数据导入arcgis</li>
-<li>运行<strong>XYtoLine</strong>工具</li>
-</ol>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>arcgis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo嵌入jupyter的ipynb文件</title>
     <url>/2022/02/27/hexo%E5%B5%8C%E5%85%A5jupyter%E7%9A%84ipynb%E6%96%87%E4%BB%B6/</url>
     <content><![CDATA[<h1 id="我使用的方法"><a href="#我使用的方法" class="headerlink" title="我使用的方法"></a>我使用的方法</h1><ol>
@@ -87,23 +45,23 @@
       <tags>
         <tag>jupyterlab</tag>
         <tag>python</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
-    <title>plotly基础画图使用尝试</title>
-    <url>/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/</url>
-    <content><![CDATA[<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
-
-<iframe width="100%" id="iframeid" scrolling="yes" height="1800" frameborder="0" src="https://nbviewer.org/github/EvaRen1020-pro/myblog_ipynb_codes/blob/main/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95.ipynb"></iframe>
-
+    <title>arcgis中XYtoLine失败的原因及解决方案</title>
+    <url>/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h1 id="arcgis中XYtoLine失败的原因及解决方案"><a href="#arcgis中XYtoLine失败的原因及解决方案" class="headerlink" title="arcgis中XYtoLine失败的原因及解决方案"></a>arcgis中XYtoLine失败的原因及解决方案</h1><ol>
+<li>包含<strong>XY数据</strong>的<strong>csv</strong>文件需先导出为<strong>dbf</strong>格式</li>
+<li>而后再将这个<strong>dbf</strong>数据导入arcgis</li>
+<li>运行<strong>XYtoLine</strong>工具</li>
+</ol>
 ]]></content>
       <categories>
         <category>软件和编程</category>
       </categories>
       <tags>
-        <tag>jupyterlab</tag>
-        <tag>python</tag>
-        <tag>plotly</tag>
+        <tag>arcgis</tag>
       </tags>
   </entry>
   <entry>
@@ -150,6 +108,101 @@ c<span class="token punctuation">.</span>render_notebook<span class="token punct
       </tags>
   </entry>
   <entry>
+    <title>IBM Watson Studio云机器学习平台</title>
+    <url>/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/</url>
+    <content><![CDATA[<h1 id="IBM-Watson-Studio云机器学习平台"><a href="#IBM-Watson-Studio云机器学习平台" class="headerlink" title="IBM Watson Studio云机器学习平台"></a>IBM Watson Studio云机器学习平台</h1><p><a href="https://cloud.ibm.com/catalog/services/watson-studio?cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork-20718538-www-coursera-org-www-coursera-org&amp;cm_mmca1=000026UJ&amp;cm_mmca2=10006555&amp;cm_mmca3=M12345678&amp;cvosrc=email.Newsletter.M12345678&amp;cvo_campaign=000026U" target="_blank" rel="noopener">IBM Watson Studio</a>是IBM Cloud云服务中的一个核心平台，集成了很多人工智能工具，可以连接数据库进行云存储，创建Dashboard仪表盘，在线训练你的机器学习模型，支持Jupyter Notebook编写代码及分享，支持RStudio、SPSS Modeler等等。并且，其内置了很多已经构建好的机器学习模型，如自然语言文本分类、图像识别、深度学习模型、最优化决策。看起来就很有吸引力！</p>
+<img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/%E6%9C%8D%E5%8A%A1.PNG" class title="[服务]">
+
+<img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/home_page.png" class title="[home_page]">
+
+<p>在此分享Coursera上关于简易上手使用IBM Watson Studio的<a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/FinalModule_Coursera/IBM_Watson_Setup.md.html?origin=www.coursera.org" target="_blank" rel="noopener">教程</a>，开始写你在Watson Studio上的第一段Jupyter Notebook代码吧。</p>
+<p>同时分享两则<strong>注意事项</strong>：</p>
+<ol>
+<li><p>注册账户的时候建议使用<strong>Gmail</strong>，不然很可能会注册失败。</p>
+</li>
+<li><p>Github同步要在repository里新建<strong>master</strong>分支，不要仅有默认的<strong>main</strong>分支，不然Notebook的同步会报错。</p>
+</li>
+</ol>
+<p>IBM Cloud属实功能强大，日后有机会再进一步研究使用。</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>Machine Learning</tag>
+        <tag>IBM Cloud</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>plotly基础画图使用尝试</title>
+    <url>/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/</url>
+    <content><![CDATA[<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+
+<iframe width="100%" id="iframeid" scrolling="yes" height="1800" frameborder="0" src="https://nbviewer.org/github/EvaRen1020-pro/myblog_ipynb_codes/blob/main/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95.ipynb"></iframe>
+
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>jupyterlab</tag>
+        <tag>python</tag>
+        <tag>plotly</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【python+geopy包】地理信息检索</title>
+    <url>/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/</url>
+    <content><![CDATA[<img src="/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BEAK.png" class title="[百度地图AK]">
+
+<p><strong>2.开始地理编码</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> geopy<span class="token punctuation">.</span>geocoders <span class="token keyword">import</span> Nominatim<span class="token punctuation">,</span>BaiduV3
+
+geolocator <span class="token operator">=</span> Nominatim<span class="token punctuation">(</span>user_agent<span class="token operator">=</span><span class="token string">"myapp"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#基于openStreetMap</span>
+location <span class="token operator">=</span> geolocator<span class="token punctuation">.</span>geocode<span class="token punctuation">(</span>query<span class="token operator">=</span><span class="token string">"南京站"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>raw<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>longitude<span class="token punctuation">,</span>location<span class="token punctuation">.</span>latitude<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#WGS84坐标系</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>address<span class="token punctuation">)</span>
+
+geolocator <span class="token operator">=</span> BaiduV3<span class="token punctuation">(</span>api_key<span class="token operator">=</span><span class="token string">'输入你申请的ak'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#基于百度API构造实例</span>
+location <span class="token operator">=</span> geolocator<span class="token punctuation">.</span>geocode<span class="token punctuation">(</span>query<span class="token operator">=</span><span class="token string">"南京站"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#检索字符串</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>raw<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#返回原始信息</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>longitude<span class="token punctuation">,</span>location<span class="token punctuation">.</span>latitude<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#输出百度坐标系下经纬度坐标</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>address<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre><code>OpenStreetMap结果：
+{&#39;place_id&#39;: 304447935, &#39;licence&#39;: &#39;Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright&#39;, &#39;osm_type&#39;: &#39;node&#39;, &#39;osm_id&#39;: 8042210546, &#39;boundingbox&#39;: [&#39;32.0912644&#39;, &#39;32.0913644&#39;, &#39;118.7913084&#39;, &#39;118.7914084&#39;], &#39;lat&#39;: &#39;32.0913144&#39;, &#39;lon&#39;: &#39;118.7913584&#39;, &#39;display_name&#39;: &#39;南京站, 南京站换乘通道, 鼓楼区, 南京市, 盱眙县, 江苏省, 210037, China 中国&#39;, &#39;class&#39;: &#39;railway&#39;, &#39;type&#39;: &#39;stop&#39;, &#39;importance&#39;: 0.11100000000000002}
+(118.7913584,32.0913144)
+南京站, 南京站换乘通道, 鼓楼区, 南京市, 盱眙县, 江苏省, 210037, China 中国
+
+百度地图API结果：
+{&#39;location&#39;: {&#39;lng&#39;: 118.80371375406085, &#39;lat&#39;: 32.093502120303725}, &#39;precise&#39;: 0, &#39;confidence&#39;: 50, &#39;comprehension&#39;: 0, &#39;level&#39;: &#39;火车站&#39;}
+(118.80371375406085,32.093502120303725)
+火车站</code></pre><h2 id="计算距离"><a href="#计算距离" class="headerlink" title="计算距离"></a>计算距离</h2><p>注意，<code>geopy.distance</code>下的<code>geodestic</code>默认测算的是<strong>WGS-84</strong>坐标系下的大地距离。</p>
+<p>刚刚调用百度地图API进行的地理编码检索得到的是百度坐标系下的经纬度，需提前进行转换。</p>
+<p>这里还是直接用<strong>OpenStreetMap</strong>下的<strong>WGS-84坐标系</strong>下的经纬度作为示例。</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> geopy<span class="token punctuation">.</span>geocoders <span class="token keyword">import</span> Nominatim<span class="token comment" spellcheck="true">#经纬度检索</span>
+<span class="token keyword">from</span> geopy<span class="token punctuation">.</span>distance <span class="token keyword">import</span> geodesic<span class="token comment" spellcheck="true">#计算距离</span>
+
+geolocator <span class="token operator">=</span> Nominatim<span class="token punctuation">(</span>user_agent<span class="token operator">=</span><span class="token string">"myapp"</span><span class="token punctuation">)</span>
+location1 <span class="token operator">=</span> geolocator<span class="token punctuation">.</span>geocode<span class="token punctuation">(</span>query<span class="token operator">=</span><span class="token string">"南京站"</span><span class="token punctuation">)</span>
+location2 <span class="token operator">=</span> geolocator<span class="token punctuation">.</span>geocode<span class="token punctuation">(</span>query<span class="token operator">=</span><span class="token string">"南京禄口国际机场"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">(</span>location1<span class="token punctuation">.</span>longitude<span class="token punctuation">,</span>location1<span class="token punctuation">.</span>latitude<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">(</span>location2<span class="token punctuation">.</span>longitude<span class="token punctuation">,</span> location2<span class="token punctuation">.</span>latitude<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'两地距离%s公里'</span><span class="token operator">%</span>geodesic<span class="token punctuation">(</span><span class="token punctuation">(</span>location1<span class="token punctuation">.</span>latitude<span class="token punctuation">,</span>location1<span class="token punctuation">.</span>longitude<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>location2<span class="token punctuation">.</span>latitude<span class="token punctuation">,</span>location2<span class="token punctuation">.</span>longitude<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>km<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#可以设置单位为公里、米、英里等</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre><code>输出结果：
+(118.7913584,32.0913144)
+(118.87176715003275,31.7324679)
+两地距离40.51108155886417公里</code></pre>]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>地图API</tag>
+        <tag>geopy</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</title>
     <url>/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/</url>
     <content><![CDATA[<h1 id="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"><a href="#【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式" class="headerlink" title="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"></a>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</h1><p>每一次<strong>JupyterLab</strong>或者<strong>Jupyter Notebook</strong>启动时都需要在命令行下跳至对应目录文件夹，再输入<code>jupyter lab</code>或者<code>jupyter notebook</code>启动是不是很麻烦？今天来记录一下两个小设置，让启动<strong>JupyterLab</strong>直接双击桌面快捷方式图标即可。</p>
@@ -182,6 +235,430 @@ c<span class="token punctuation">.</span>render_notebook<span class="token punct
       </categories>
       <tags>
         <tag>JupyterLab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>下载Bing搜索界面每日高清美图方法</title>
+    <url>/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h3 id="Bing搜索的每日一图真的很好看，该如何下载呢？"><a href="#Bing搜索的每日一图真的很好看，该如何下载呢？" class="headerlink" title="Bing搜索的每日一图真的很好看，该如何下载呢？"></a><a href="https://cn.bing.com/" target="_blank" rel="noopener">Bing搜索</a>的每日一图真的很好看，该如何下载呢？</h3><ul>
+<li><p>进入Bing搜索主页</p>
+<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/Bing%E9%A6%96%E9%A1%B5.PNG" class>
+</li>
+<li><p>按<code>F12</code>打开控制台。
+在<code>Elements</code>下的<code>head</code>中找到图片链接地址。</p>
+<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/head%E9%93%BE%E6%8E%A5.PNG" class>
+<p>复制粘贴到浏览器打开，右键图片另存为即可下载<code>1920*1080</code>分辨率无水印的图。
+如果想下载更高清的<code>UHD</code>大图，将链接两处<code>1920*1080</code>的部分改为<code>UHD</code>即可。</p>
+</li>
+<li><p>如果想下载前几天的图。
+点<code>Network</code>,按<code>Ctrl+R</code>刷新页面，再点首页右下角的向左的箭头，前面图片的链接就会显示出来。
+同理复制链接粘贴打开下载。</p>
+<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/%E5%89%8D%E9%9D%A2%E9%93%BE%E6%8E%A5.PNG" class>
+</li>
+<li><p><strong>最后还是要注意，图片有版权，不能商业使用。</strong></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>视觉和摄影</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>美图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>下载PeMS交通流数据指南</title>
+    <url>/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<p>今天给大家推荐一个开放的交通数据库，美国加州交通运输局的PeMS数据库，这里有着长达10年的高速公路检测器数据。包含流率、速度、占有率、重车比例、延误、车辆行驶里程、车辆行驶时间、交通事故等类型数据。很多学者都用这里的数据进行研究。
+所以这里给大家介绍一下这个数据库下载数据的使用方式。</p>
+<h2 id="1-要有可以科学上网的VPN"><a href="#1-要有可以科学上网的VPN" class="headerlink" title="1. 要有可以科学上网的VPN"></a>1. 要有可以科学上网的VPN</h2><p>这个请先自行解决。</p>
+<h2 id="2-登录PeMS网站并注册账号"><a href="#2-登录PeMS网站并注册账号" class="headerlink" title="2. 登录PeMS网站并注册账号"></a>2. 登录PeMS网站并注册账号</h2><p>官方网址：<a href="http://pems.dot.ca.gov/" target="_blank" rel="noopener">http://pems.dot.ca.gov/</a>
+首页右侧有<font color="red">apply for an account</font>的链接，注册完毕后回到首页右上角登陆已通过的注册账号。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E9%A6%96%E9%A1%B5.PNG" class title="[PeMS首页]">
+
+<h2 id="3-明确要下载的数据类型：线：路段-点：检测器"><a href="#3-明确要下载的数据类型：线：路段-点：检测器" class="headerlink" title="3. 明确要下载的数据类型：线：路段|点：检测器"></a>3. 明确要下载的数据类型：线：路段|点：检测器</h2><p>登录进去后，可以看到上面有一栏<font color="blue">“Overview, Facilities&amp;Devices, Performance, Data Quality, Events”</font>，这里细分又有很多数据，大家可以自行根据需要点进去查看。
+这里我主要介绍下载集计的交通流量、速度、占有率等交通流宏观参数数据。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.PNG" class title="[PeMS登陆后界面]">
+<p>如这张图所示，以下载某个检测器数据为例，我这里下载I5高速公路主线上编号#716895的检测器<font color="blue">Aggregates</font>集计数据。
+然后就会跳转到这个检测器的数据，并且系统也提供了基础的数据图表供你直观观看。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/%E6%A3%80%E6%B5%8B%E5%99%A8%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B.PNG" class title="[检测器数据示例]">
+
+<h2 id="4-选择数据的属性和精度"><a href="#4-选择数据的属性和精度" class="headerlink" title="4. 选择数据的属性和精度"></a>4. 选择数据的属性和精度</h2><p>Quantity, Second Quantity:要下载的数据类型，如流量、速度、占有率等。
+Granularity: 数据精度，月、周、日、5分钟的颗粒度。
+另外，可以选择数据的日期覆盖时段、节假日、车道等。</p>
+<p>然后点击需要下载的数据格式，这里一般下载<font color="blue">EXPORT to.XLS</font>，比较便于后续数据分析。</p>
+<p>好了，就是这么简单，下一篇我来介绍一下我如何用这里的数据进行交通流量的时间序列建模预测。</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>交通流</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【自然语言处理】Wordcloud词云分析+LDA主题分类</title>
+    <url>/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/</url>
+    <content><![CDATA[<p>最近在一门课上，老师分享了一篇关于应用自然语言处理（NLP）模型分析交通领域研究主题分类的论文，我觉得写得很好很有意思。所以，自己也进行一下尝试。
+主要分为<strong>Wordcloud词云展示</strong>和<strong>Latent Dirichlet Allocation（LDA）模型主题分类</strong>两部分。</p>
+<p>参考文献：<a href="https://www.sciencedirect.com/science/article/pii/S0968090X17300207" target="_blank" rel="noopener">Sun, L., &amp; Yin, Y. (2017). Discovering themes and trends in transportation research using topic modeling. Transportation Research Part C: Emerging Technologies, 77, 49-66. doi:10.1016/j.trc.2017.01.013</a></p>
+<p>本次分析的是2017年至2020年发表的交通领域关于<strong>“Mobility-as-a-Service(MaaS)”</strong>的30篇论文的摘要部分。</p>
+<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/%E6%96%87%E7%8C%AE%E6%A6%82%E8%A7%88.PNG" class title="[文献展示]">
+
+<h2 id="wordcloud词云展示"><a href="#wordcloud词云展示" class="headerlink" title="wordcloud词云展示"></a>wordcloud词云展示</h2><ol>
+<li><p>首先对文本进行预处理：</p>
+<ul>
+<li><p>去除标点符号，按空格拆分句子
+<code>mytext=re.sub(r'[.,()]','',mytext).split(' ') #正侧表达式去除标点</code></p>
+</li>
+<li><p>用NLTK的wordnet模块进行词形还原</p>
+<pre class="line-numbers language-python"><code class="language-python">  <span class="token keyword">from</span> nltk<span class="token punctuation">.</span>stem <span class="token keyword">import</span> WordNetLemmatizer
+  wnl <span class="token operator">=</span> WordNetLemmatizer<span class="token punctuation">(</span><span class="token punctuation">)</span>
+  remytext <span class="token operator">=</span> <span class="token string">''</span>
+  <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>mytext<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+      mytext<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>wnl<span class="token punctuation">.</span>lemmatize<span class="token punctuation">(</span>mytext<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#词性还原</span>
+      remytext<span class="token operator">=</span>remytext<span class="token operator">+</span><span class="token string">' '</span><span class="token operator">+</span>mytext<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+  mytext<span class="token operator">=</span>remytext<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>注：wordnet包需要另外独自安装，不然会报如下错误：</strong>
+<code>Resource wordnet not found. Please use the NLTK Downloader to obtain the resource:</code></p>
+<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E7%BC%BA%E5%A4%B1%E6%8A%A5%E9%94%99.PNG" class>
+<p><strong>这里补充wordnet包安装方法：</strong>
+  (1) 命令行cmd打开，输入python；
+(2) 继续输入<code>import nltk</code>和<code>nltk.download()</code>如下图所示：</p>
+  <img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E4%B8%8B%E8%BD%BDcmd.PNG" class>
+<p>(3) 可能会报错远程主机强制关闭了一个连接。
+  解决办法：(1)连VPN (2)利用别人已经下载到本地的wordnet包,具体参照这篇博客。<a href="https://blog.csdn.net/Charchunchiu/article/details/96436736?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener">Python NLTK WordNet的在线与手动安装方法</a>
+  (4) 正常情况下,弹出如下窗口，选择<code>Corpora/wordnet</code>下载即可。</p>
+  <img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E4%B8%8B%E8%BD%BD%E7%95%8C%E9%9D%A2.PNG" class>
+</li>
+<li><p>设置停用词</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> wordcloud <span class="token keyword">import</span> STOPWORDS<span class="token comment" spellcheck="true">#导入原有的停用词包</span>
+additional_stopwords<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">with</span> open<span class="token punctuation">(</span>stopwordsfile<span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'UTF-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+  <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">:</span>
+      additional_stopwords<span class="token punctuation">.</span>append<span class="token punctuation">(</span>line<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">,</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+stop_words <span class="token operator">=</span> additional_stopwords <span class="token operator">+</span> list<span class="token punctuation">(</span>STOPWORDS<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#额外添加自己的停用词</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+</li>
+<li><p>应用wordcloud包</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> wordcloud <span class="token keyword">import</span> WordCloud
+wordcloud <span class="token operator">=</span> WordCloud<span class="token punctuation">(</span>stopwords<span class="token operator">=</span>stop_words<span class="token punctuation">,</span>background_color<span class="token operator">=</span><span class="token string">'white'</span><span class="token punctuation">,</span>collocations<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>colormap<span class="token operator">=</span><span class="token string">'viridis'</span><span class="token punctuation">,</span>width<span class="token operator">=</span><span class="token number">2160</span><span class="token punctuation">,</span>height<span class="token operator">=</span><span class="token number">1080</span><span class="token punctuation">,</span>max_words<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">,</span>prefer_horizontal<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span>generate<span class="token punctuation">(</span>mytext<span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>wordcloud<span class="token punctuation">,</span> interpolation<span class="token operator">=</span><span class="token string">'bilinear'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>axis<span class="token punctuation">(</span><span class="token string">"off"</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/maas%E8%AF%8D%E4%BA%91%E7%BB%93%E6%9E%9C.PNG" class title="[词云展示]">
+
+</li>
+</ol>
+<h2 id="LDA主题分类"><a href="#LDA主题分类" class="headerlink" title="LDA主题分类"></a>LDA主题分类</h2><p>这里使用<strong>sklearn</strong>的<strong>LDA</strong>包。
+基于之前的<strong>文本预处理</strong>，还需要转换为<strong>词向量</strong>的形式，才可放入LDA模型训练。
+具体代码如下：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>feature_extraction<span class="token punctuation">.</span>text <span class="token keyword">import</span> CountVectorizer <span class="token comment" spellcheck="true">#词向量转换模块</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>decomposition <span class="token keyword">import</span> LatentDirichletAllocation <span class="token keyword">as</span> LDA
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">import</span> time
+<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">import</span> MultipleLocator
+
+<span class="token comment" spellcheck="true">#Initialise the count vectorizer with the English stop words</span>
+count_vectorizer <span class="token operator">=</span> CountVectorizer<span class="token punctuation">(</span>stop_words<span class="token operator">=</span>stop_words<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#这里也可以设置停用词</span>
+<span class="token comment" spellcheck="true"># Fit and transform the processed titles</span>
+count_data <span class="token operator">=</span> count_vectorizer<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>mytext<span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">print_topics</span><span class="token punctuation">(</span>model<span class="token punctuation">,</span> count_vectorizer<span class="token punctuation">,</span> n_top_words<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    words <span class="token operator">=</span> count_vectorizer<span class="token punctuation">.</span>get_feature_names<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> topic_idx<span class="token punctuation">,</span> topic <span class="token keyword">in</span> enumerate<span class="token punctuation">(</span>model<span class="token punctuation">.</span>components_<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nTopic #%d:"</span> <span class="token operator">%</span> topic_idx<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">[</span>words<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+                        <span class="token keyword">for</span> i <span class="token keyword">in</span> topic<span class="token punctuation">.</span>argsort<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span>n_top_words <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+n_topics <span class="token operator">=</span> range<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+perplexityLst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1.0</span><span class="token punctuation">]</span><span class="token operator">*</span>len<span class="token punctuation">(</span>n_topics<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#训练LDA并打印训练时间</span>
+lda_models <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> idx<span class="token punctuation">,</span> n_topic <span class="token keyword">in</span> enumerate<span class="token punctuation">(</span>n_topics<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>idx<span class="token punctuation">,</span>n_topic<span class="token punctuation">)</span>
+    lda <span class="token operator">=</span> LDA<span class="token punctuation">(</span>n_components<span class="token operator">=</span>n_topic<span class="token punctuation">,</span> max_iter<span class="token operator">=</span><span class="token number">2000</span><span class="token punctuation">,</span>learning_method<span class="token operator">=</span><span class="token string">'batch'</span><span class="token punctuation">,</span>
+
+<span class="token comment" spellcheck="true">#                                    perp_tol=0.1, #default</span>
+
+<span class="token comment" spellcheck="true">#                                    doc_topic_prior=1/n_topic, #default</span>
+
+<span class="token comment" spellcheck="true">#                                    topic_word_prior=1/n_topic, #default</span>
+
+                                    verbose<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+    t0 <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    lda<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>count_data<span class="token punctuation">)</span>
+    perplexityLst<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">=</span> lda<span class="token punctuation">.</span>perplexity<span class="token punctuation">(</span>count_data<span class="token punctuation">)</span>
+    lda_models<span class="token punctuation">.</span>append<span class="token punctuation">(</span>lda<span class="token punctuation">)</span>
+    <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"# of Topic: %d, "</span> <span class="token operator">%</span> n_topics<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"done in %0.3fs, N_iter %d, "</span> <span class="token operator">%</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> t0<span class="token punctuation">)</span><span class="token punctuation">,</span> lda<span class="token punctuation">.</span>n_iter_<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"Perplexity Score %0.3f"</span> <span class="token operator">%</span> perplexityLst<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#打印最佳模型</span>
+number_words<span class="token operator">=</span><span class="token number">10</span>
+best_index <span class="token operator">=</span> perplexityLst<span class="token punctuation">.</span>index<span class="token punctuation">(</span>min<span class="token punctuation">(</span>perplexityLst<span class="token punctuation">)</span><span class="token punctuation">)</span>
+best_n_topic <span class="token operator">=</span> n_topics<span class="token punctuation">[</span>best_index<span class="token punctuation">]</span>
+best_model <span class="token operator">=</span> lda_models<span class="token punctuation">[</span>best_index<span class="token punctuation">]</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"Best # of Topic: "</span><span class="token punctuation">,</span> best_n_topic<span class="token punctuation">)</span>
+print_topics<span class="token punctuation">(</span>best_model<span class="token punctuation">,</span> count_vectorizer<span class="token punctuation">,</span> number_words<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#绘制不同主题数perplexity的不同</span>
+fig <span class="token operator">=</span> plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span><span class="token punctuation">)</span>
+ax <span class="token operator">=</span> fig<span class="token punctuation">.</span>add_subplot<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+xaxis<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>n_topics<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    xaxis<span class="token punctuation">.</span>append<span class="token punctuation">(</span>n_topics<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xaxis<span class="token punctuation">,</span> perplexityLst<span class="token punctuation">)</span>
+x_major_locator<span class="token operator">=</span>MultipleLocator<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>set_xlabel<span class="token punctuation">(</span><span class="token string">"number of topics"</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>set_ylabel<span class="token punctuation">(</span><span class="token string">"Approximate Perplexity"</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>grid<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>最终我这里选择了分为3个主题。虽然2个的perplexity效果好一些，但我根据需要选择了3个。</p>
+<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/perplexity%E6%8C%87%E6%95%B0.PNG" class title="[perplexity指数]">
+
+<p>Topic #1: 城市系统角度
+model city public business alliance actor efficiency factor system new
+Topic #2: 各出行模式运营商角度
+user time market adoption road potential intermediary car operator public
+Topic #3: 用户出行模式选择角度
+car public model mode bundle sharing new travel choice demand</p>
+<p>好了，这次就到这里了。具体的参数设置还是参照官方文档。</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>NLP</tag>
+        <tag>Wordcloud</tag>
+        <tag>LDA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用高德开放平台API获取POI位置和路线信息</title>
+    <url>/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<p>借助地图API接口，帮助我们快速获取大量的静态、动态数据是非常有效的。
+这次我就来讲讲怎么利用高德开发平台API接口，获取一些设施位置和路径规划信息。</p>
+<h2 id="高德开放平台"><a href="#高德开放平台" class="headerlink" title="高德开放平台"></a>高德开放平台</h2><p><a href="https://lbs.amap.com/api/webservice/summary" target="_blank" rel="noopener">高德开放平台</a>可以让你自己开发的应用嵌入高德服务，使用高德在地理信息服务上的贡献。
+因为这次我主要需要用到的是一些信息搜索，所以用的是<code>开发支持->Web服务->Web服务API</code>，其他需要移动应用开发的可以去查询<strong>开发支持</strong>下的<strong>Web端、Andriod平台、IOS平台、微信小程序</strong>等等。</p>
+<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/web_API_intro.PNG" class>
+<p>如平台的简介，它可以帮你实现搜索、路径规划、行驶距离测量等功能。</p>
+<h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h3><p>申请一个高德的适用于Web服务的<code>key</code>，之后在<code>URL</code>里需要填上自己的<code>key</code>。注意个人用户每日每个key的使用次数是有限额的，超限了查询信息返回会报错，但一个人可以申请好多个。</p>
+<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/key.PNG" class>
+
+<h3 id="2-根据需要填充URL关键字"><a href="#2-根据需要填充URL关键字" class="headerlink" title="2. 根据需要填充URL关键字"></a>2. 根据需要填充URL关键字</h3><p>我们这次用<code>关键字搜索</code>功能，来查询POI(point of interest)信息，以查询某一城市的机场、火车站的枢纽地理信息为例。
+根据开发文档提供的URL示例:<code><a href="https://restapi.amap.com/v3/place/text?parameters" target="_blank" rel="noopener">https://restapi.amap.com/v3/place/text?parameters</a></code>
+我们把<code>parameters</code>替换为搜索时限定的一些关键词，并且用<code>&</code>连接不同的条件，记得替换你自己申请的key。
+比如：<code><a href="https://restapi.amap.com/v3/place/text?keywords=火车站&amp;city=北京&amp;citylimit=true&amp;extensions=all&amp;key=你申请的key&amp;offset=20&amp;page=1" target="_blank" rel="noopener">https://restapi.amap.com/v3/place/text?keywords=火车站&amp;city=北京&amp;citylimit=true&amp;extensions=all&amp;key=你申请的key&amp;offset=20&amp;page=1</a></code></p>
+<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/keywords_search.PNG" class>
+
+<p>返回的结果，也是参照开发文档，注意弄清层级结构，即可获取对应信息，默认返回<code>json</code>格式。</p>
+<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/result_parameter.PNG" class>
+
+<p>我这里会主要想要获取经纬度信息，在<code>['pois']->['poi']->['location']</code>下面。</p>
+<h3 id="3-使用python批量访问获取结果"><a href="#3-使用python批量访问获取结果" class="headerlink" title="3. 使用python批量访问获取结果"></a>3. 使用python批量访问获取结果</h3><p>用python的<code>requests</code>库，获取访问结果，完整代码如下。这里用简单的<code>GET</code>方式填充URL的参数即可，以后自己爬其他的信息还有可能要用到<code>POST</code>方式，但以字典方式传送参数也是一样的。</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> requests
+<span class="token keyword">import</span> math
+<span class="token keyword">import</span> json
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+<span class="token keyword">def</span> <span class="token function">get_station</span><span class="token punctuation">(</span>city<span class="token punctuation">,</span>type<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 抓取场站信息</span>
+    url1 <span class="token operator">=</span> <span class="token string">"https://restapi.amap.com/v3/place/text?keywords=%s&amp;city=%s&amp;citylimit=true&amp;extensions=all&amp;key=你自己申请的key&amp;offset=20&amp;page=%d"</span><span class="token operator">%</span><span class="token punctuation">(</span>type<span class="token punctuation">,</span>city<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#查询机场和火车站的经纬度信息</span>
+    req <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url1<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 请求高德地图Place API返回数据</span>
+    content <span class="token operator">=</span> req<span class="token punctuation">.</span>content
+    data <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>content<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 将获取的信息封装为字典</span>
+    num<span class="token operator">=</span>int<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'count'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 提取场站总数</span>
+    result <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'pois'</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 提取字典中的有效信息</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>
+
+    infoDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'名称'</span><span class="token punctuation">,</span> <span class="token string">'经度'</span><span class="token punctuation">,</span> <span class="token string">'纬度'</span><span class="token punctuation">,</span> <span class="token string">'城市'</span><span class="token punctuation">,</span> <span class="token string">'类型'</span><span class="token punctuation">,</span> <span class="token string">'别名'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> num<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token comment" spellcheck="true">#返回有数据的情况下</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'%s无%s'</span><span class="token operator">%</span><span class="token punctuation">(</span>city<span class="token punctuation">,</span>type<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true">#第一次的信息别浪费了</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+        str_temp <span class="token operator">=</span> result<span class="token punctuation">[</span>i<span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 保存总数到链表第一个元素</span>
+        <span class="token keyword">if</span> len<span class="token punctuation">(</span>str_temp<span class="token punctuation">[</span><span class="token string">'alias'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            alias <span class="token operator">=</span> <span class="token string">''</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            alias <span class="token operator">=</span> str_temp<span class="token punctuation">[</span><span class="token string">'alias'</span><span class="token punctuation">]</span>
+
+        <span class="token keyword">print</span><span class="token punctuation">(</span>str_temp<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>str_temp<span class="token punctuation">[</span><span class="token string">'location'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>str_temp<span class="token punctuation">[</span><span class="token string">'location'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>str_temp<span class="token punctuation">[</span><span class="token string">'cityname'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>alias<span class="token punctuation">)</span>
+        singleinfo<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'名称'</span><span class="token punctuation">:</span>str_temp<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">'经度'</span><span class="token punctuation">:</span>str_temp<span class="token punctuation">[</span><span class="token string">'location'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">'纬度'</span><span class="token punctuation">:</span>str_temp<span class="token punctuation">[</span><span class="token string">'location'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">'城市'</span><span class="token punctuation">:</span>str_temp<span class="token punctuation">[</span><span class="token string">'cityname'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">'类型'</span><span class="token punctuation">:</span>type<span class="token punctuation">,</span><span class="token string">'别名'</span><span class="token punctuation">:</span>alias<span class="token punctuation">}</span>
+        singleinfoDf<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>singleinfo<span class="token punctuation">,</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'名称'</span><span class="token punctuation">,</span> <span class="token string">'经度'</span><span class="token punctuation">,</span> <span class="token string">'纬度'</span><span class="token punctuation">,</span> <span class="token string">'城市'</span><span class="token punctuation">,</span><span class="token string">'类型'</span><span class="token punctuation">,</span><span class="token string">'别名'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>index <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        infoDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>infoDf<span class="token punctuation">,</span> singleinfoDf<span class="token punctuation">]</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> ignore_index<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+    totalpage<span class="token operator">=</span>math<span class="token punctuation">.</span>ceil<span class="token punctuation">(</span>num<span class="token operator">/</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#每一页显示20条数据，算好页数</span>
+    <span class="token keyword">if</span> totalpage <span class="token operator">></span><span class="token number">1</span> <span class="token punctuation">:</span>
+        <span class="token keyword">for</span> n <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span>totalpage<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token comment" spellcheck="true">#从第2页起</span>
+            url2 <span class="token operator">=</span> <span class="token string">"https://restapi.amap.com/v3/place/text?keywords=%s&amp;city=%s&amp;citylimit=true&amp;extensions=all&amp;key=e3bc4d79724c51578f54e141d4085394&amp;offset=20&amp;page=%d"</span><span class="token operator">%</span><span class="token punctuation">(</span>type<span class="token punctuation">,</span>city<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#查询机场和火车站的经纬度信息</span>
+            req <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url2<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 请求高德地图Place API返回数据</span>
+            content <span class="token operator">=</span> req<span class="token punctuation">.</span>content
+            data <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>content<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 将获取的信息封装为字典</span>
+            result <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'pois'</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 提取字典中的有效信息</span>
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+                str_temp <span class="token operator">=</span> result<span class="token punctuation">[</span>i<span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 保存总数到链表第一个元素</span>
+                <span class="token keyword">if</span> len<span class="token punctuation">(</span>str_temp<span class="token punctuation">[</span><span class="token string">'alias'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span>
+                    alias<span class="token operator">=</span><span class="token string">''</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    alias<span class="token operator">=</span>str_temp<span class="token punctuation">[</span><span class="token string">'alias'</span><span class="token punctuation">]</span>
+                singleinfo <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'名称'</span><span class="token punctuation">:</span> str_temp<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'经度'</span><span class="token punctuation">:</span> str_temp<span class="token punctuation">[</span><span class="token string">'location'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                              <span class="token string">'纬度'</span><span class="token punctuation">:</span> str_temp<span class="token punctuation">[</span><span class="token string">'location'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'城市'</span><span class="token punctuation">:</span> str_temp<span class="token punctuation">[</span><span class="token string">'cityname'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">'类型'</span><span class="token punctuation">:</span>type<span class="token punctuation">,</span> <span class="token string">'别名'</span><span class="token punctuation">:</span> alias<span class="token punctuation">}</span>
+                singleinfoDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>singleinfo<span class="token punctuation">,</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'名称'</span><span class="token punctuation">,</span> <span class="token string">'经度'</span><span class="token punctuation">,</span> <span class="token string">'纬度'</span><span class="token punctuation">,</span> <span class="token string">'城市'</span><span class="token punctuation">,</span><span class="token string">'类型'</span><span class="token punctuation">,</span><span class="token string">'别名'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>index <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                infoDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>infoDf<span class="token punctuation">,</span>singleinfoDf<span class="token punctuation">]</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>ignore_index<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> infoDf
+
+<span class="token keyword">def</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 开始抓取文件</span>
+    citylist<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'石家庄'</span><span class="token punctuation">,</span><span class="token string">'唐山'</span><span class="token punctuation">,</span><span class="token string">'邯郸'</span><span class="token punctuation">,</span><span class="token string">'保定'</span><span class="token punctuation">,</span><span class="token string">'沧州'</span><span class="token punctuation">,</span><span class="token string">'邢台'</span><span class="token punctuation">,</span><span class="token string">'廊坊'</span><span class="token punctuation">,</span><span class="token string">'承德'</span><span class="token punctuation">,</span><span class="token string">'张家口'</span><span class="token punctuation">,</span><span class="token string">'衡水'</span><span class="token punctuation">,</span><span class="token string">'秦皇岛'</span><span class="token punctuation">]</span><span class="token comment" spellcheck="true">#,'张家口','衡水','秦皇岛'</span>
+    typelist<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'机场'</span><span class="token punctuation">,</span><span class="token string">'火车站'</span><span class="token punctuation">]</span>
+    whole_info <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'名称'</span><span class="token punctuation">,</span> <span class="token string">'经度'</span><span class="token punctuation">,</span> <span class="token string">'纬度'</span><span class="token punctuation">,</span> <span class="token string">'城市'</span><span class="token punctuation">,</span><span class="token string">'类型'</span><span class="token punctuation">,</span><span class="token string">'别名'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> cityname <span class="token keyword">in</span> citylist<span class="token punctuation">:</span>
+        <span class="token keyword">for</span> type <span class="token keyword">in</span> typelist<span class="token punctuation">:</span>
+            info <span class="token operator">=</span> get_station<span class="token punctuation">(</span>cityname<span class="token punctuation">,</span>type<span class="token punctuation">)</span>
+            whole_info<span class="token operator">=</span>  pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>whole_info<span class="token punctuation">,</span>info<span class="token punctuation">]</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>ignore_index<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+    whole_info<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'/京津冀机场火车站信息.csv'</span><span class="token punctuation">,</span>index<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf_8_sig'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    run<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>类似地，大家可以参照以上代码，去查询一下餐厅、公交站等其他设施的信息。</strong></p>
+<h3 id="获取路径规划信息"><a href="#获取路径规划信息" class="headerlink" title="*获取路径规划信息"></a>*获取路径规划信息</h3><p>刚才是介绍如何用<code>关键字搜索</code>功能，进行一些POI点的信息查询。现在做一些稍微复杂一点点的更深入的查询。
+查询两个点之间的不同交通方式的路径规划信息，比如<strong>驾车路线、耗时、距离，公交的路线、耗时、花费</strong>等。
+此时查询<a href="https://lbs.amap.com/api/webservice/guide/api/direction" target="_blank" rel="noopener">路径规划</a>的对应开发文档。</p>
+<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/route_planning.PNG" class>
+
+<ul>
+<li><p>驾车路径规划
+同理，弄清URL需要填充的参数。
+<code><a href="https://restapi.amap.com/v3/direction/driving?parameters" target="_blank" rel="noopener">https://restapi.amap.com/v3/direction/driving?parameters</a></code>
+我的示例:<code><a href="https://restapi.amap.com/v3/direction/driving?origin=116.603039,40.080525&amp;destination=116.427694,39.902779&amp;strategy=10&amp;output=json&amp;extensions=all&amp;key=你申请的key" target="_blank" rel="noopener">https://restapi.amap.com/v3/direction/driving?origin=116.603039,40.080525&amp;destination=116.427694,39.902779&amp;strategy=10&amp;output=json&amp;extensions=all&amp;key=你申请的key</a></code>
+我这里就是用刚才查询到的北京首都国际机场的经纬度和北京站的经纬度，查询其之间的驾车路径策略。
+然后可以请求访问<code>URL</code>，获取很多有用的信息，驾车路线、耗时、距离，乃至具体的导航方案、道路的红绿灯情况等等。</p>
+</li>
+<li><p>公交路径规划
+<code><a href="https://restapi.amap.com/v3/direction/transit/integrated?parameters" target="_blank" rel="noopener">https://restapi.amap.com/v3/direction/transit/integrated?parameters</a></code>
+我的示例:<code><a href="https://restapi.amap.com/v3/direction/transit/integrated?origin=116.603039,40.080525&amp;destination=116.427694,39.902779&amp;city=北京&amp;strategy=0&amp;output=json&amp;extensions=all&amp;key=你申请的key" target="_blank" rel="noopener">https://restapi.amap.com/v3/direction/transit/integrated?origin=116.603039,40.080525&amp;destination=116.427694,39.902779&amp;city=北京&amp;strategy=0&amp;output=json&amp;extensions=all&amp;key=你申请的key</a></code>
+相似地查询公交策略，这里你可以选择根据不同策略，返回不同地路线，比如换乘最少、耗时最短等等。</p>
+</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>高德开发平台API会在查询一些信息时，起到很大帮助（百度开放平台API也是有相似的功能）。重点要去研读一下他们提供的<strong>开发文档</strong>，并且知道<code>URL</code>的组成，这样你就可以个性化的获取你想要的信息了。</li>
+<li>更多的内容，还是需要自己去不断发掘。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>API</tag>
+        <tag>地理信息</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>动态爬取携程网机票信息</title>
+    <url>/2021/01/06/%E5%8A%A8%E6%80%81%E7%88%AC%E5%8F%96%E6%90%BA%E7%A8%8B%E7%BD%91%E6%9C%BA%E7%A5%A8%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<p>最近在做有关交通城际出行领域的课题，需要用到一些关于机票的信息，于是就想到从携程网进行爬取相关数据。</p>
+<p>但是呢，携程网它的票务信息查询后是一个动态页面，需要下拉才能返回更多的查询结果。所以这需要在一般的解析静态页面的爬虫方式上，增加一个<strong>浏览器的模拟器</strong>，来模拟<strong>下拉</strong>这一行为。</p>
+<p>本次就是用到<strong>selenium</strong>这一个包的<strong>webdriver</strong>来模拟<strong>打开浏览器</strong>和<strong>下拉</strong>这一行为。</p>
+<p>话不多说，直接上代码和注释。</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+<span class="token keyword">import</span> requests
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> lxml<span class="token punctuation">.</span>html
+<span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
+
+<span class="token keyword">def</span> <span class="token function">getFlightInfo</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">,</span>date<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    url<span class="token operator">=</span><span class="token string">'https://flights.ctrip.com/itinerary/oneway/%s-%s?classType=ALL&amp;ct=1606269725709&amp;date=%s'</span><span class="token operator">%</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">,</span>date<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#携程的单程机票查询url</span>
+    <span class="token comment" spellcheck="true">#parse the html</span>
+    browser <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    browser<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#等一会儿，等信息解析</span>
+    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#模拟点击按钮</span>
+    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#多注意休息</span>
+    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'dtime-sort'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#模拟点击按时间排序按钮</span>
+    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'dtime-sort'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#再模拟一次点击按时间排序按钮，确保出发时间从早到晚排序</span>
+    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># 获取页面初始高度</span>
+    js <span class="token operator">=</span> <span class="token string">"return action=document.body.scrollHeight"</span>
+    height <span class="token operator">=</span> browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># 将滚动条调整至页面底部</span>
+    browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, document.body.scrollHeight)'</span><span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 定义初始时间戳（秒）</span>
+    t1 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 定义循环标识，用于终止while循环</span>
+    status <span class="token operator">=</span> <span class="token boolean">True</span>
+    <span class="token comment" spellcheck="true"># 重试次数</span>
+    num <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">while</span> status<span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 获取当前时间戳（秒）</span>
+        t2 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># 判断时间初始时间戳和当前时间戳相差是否大于30秒，小于30秒则下拉滚动条</span>
+        <span class="token keyword">if</span> t2 <span class="token operator">-</span> t1 <span class="token operator">&lt;</span> <span class="token number">30</span><span class="token punctuation">:</span>
+            new_height <span class="token operator">=</span> browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> new_height <span class="token operator">></span> height<span class="token punctuation">:</span>
+                time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+                browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, document.body.scrollHeight)'</span><span class="token punctuation">)</span>
+                <span class="token comment" spellcheck="true"># 重置初始页面高度</span>
+                height <span class="token operator">=</span> new_height
+                <span class="token comment" spellcheck="true"># 重置初始时间戳，重新计时</span>
+                t1 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> num <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 当超过30秒页面高度仍然没有更新时，进入重试逻辑，重试3次，每次等待30秒</span>
+            time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+            num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 超时并超过重试次数，程序结束跳出循环，并认为页面已经加载完毕！</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"滚动条已经处于页面最下方！"</span><span class="token punctuation">)</span>
+            status <span class="token operator">=</span> <span class="token boolean">False</span>
+            <span class="token comment" spellcheck="true"># 滚动条调整至页面顶部</span>
+            browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, 0)'</span><span class="token punctuation">)</span>
+            <span class="token keyword">break</span>
+
+ <span class="token comment" spellcheck="true">#要用到正则表达式</span>
+ flightnumber<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_table_header>.inb.logo>div>div>span>span>span"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系,不可以跃层查询</span>
+    departtime<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.right>div.time_box"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系</span>
+    departhub <span class="token operator">=</span> browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.right>div.airport"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 空格设置为点</span>
+    arrivetime<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.left>div.time_box"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系</span>
+    arrivehub <span class="token operator">=</span> browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.left>div.airport"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 空格设置为点</span>
+
+    flightnumberlist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> flightnumber<span class="token punctuation">]</span>
+    flightnumberlist<span class="token operator">=</span>list<span class="token punctuation">(</span>filter<span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x <span class="token operator">!=</span> <span class="token string">'共享'</span><span class="token punctuation">,</span> flightnumberlist<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#删除多余元素</span>
+    departtimelist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> departtime<span class="token punctuation">]</span>
+    departhublist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> departhub<span class="token punctuation">]</span>
+    arrivetimelist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> arrivetime<span class="token punctuation">]</span>
+    arrivehublist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> arrivehub<span class="token punctuation">]</span>
+    <span class="token keyword">return</span> flightnumberlist<span class="token punctuation">,</span>departtimelist<span class="token punctuation">,</span>departhublist<span class="token punctuation">,</span>arrivetimelist<span class="token punctuation">,</span>arrivehublist
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    date<span class="token operator">=</span><span class="token string">'2020-11-27'</span>
+    fromcity<span class="token operator">=</span><span class="token string">'bjs'</span><span class="token comment" spellcheck="true">#查询北京到上海的机票</span>
+    tocity<span class="token operator">=</span><span class="token string">'sha'</span><span class="token comment" spellcheck="true">#查询北京到上海的机票</span>
+    path <span class="token operator">=</span> <span class="token string">'\\'</span>
+    flightnumberlist<span class="token punctuation">,</span>departtimelist<span class="token punctuation">,</span>departhublist<span class="token punctuation">,</span>arrivetimelist<span class="token punctuation">,</span>arrivehublist<span class="token operator">=</span>getFlightInfo<span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span> tocity<span class="token punctuation">,</span> date<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>flightnumberlist<span class="token punctuation">)</span>
+    flightinfodict<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'flightnumber'</span><span class="token punctuation">:</span>flightnumberlist<span class="token punctuation">,</span><span class="token string">'departtime'</span><span class="token punctuation">:</span>departtimelist<span class="token punctuation">,</span><span class="token string">'departhub'</span><span class="token punctuation">:</span>departhublist<span class="token punctuation">,</span>
+                        <span class="token string">'arrivetime'</span><span class="token punctuation">:</span>arrivetimelist<span class="token punctuation">,</span><span class="token string">'arrivehub'</span><span class="token punctuation">:</span>arrivehublist<span class="token punctuation">}</span>
+    flightinfodf<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>flightinfodict<span class="token punctuation">)</span>
+    flightinfodf<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span>path<span class="token operator">+</span><span class="token string">'%s-%s航空班次信息.csv'</span><span class="token operator">%</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">)</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf_8_sig'</span><span class="token punctuation">,</span>index<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>selenium</tag>
+        <tag>爬虫</tag>
       </tags>
   </entry>
   <entry>
@@ -340,482 +817,6 @@ video_demo<span class="token punctuation">(</span><span class="token punctuation
       </tags>
   </entry>
   <entry>
-    <title>【python+geopy包】地理信息检索</title>
-    <url>/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/</url>
-    <content><![CDATA[<img src="/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BEAK.png" class title="[百度地图AK]">
-
-<p><strong>2.开始地理编码</strong></p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> geopy<span class="token punctuation">.</span>geocoders <span class="token keyword">import</span> Nominatim<span class="token punctuation">,</span>BaiduV3
-
-geolocator <span class="token operator">=</span> Nominatim<span class="token punctuation">(</span>user_agent<span class="token operator">=</span><span class="token string">"myapp"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#基于openStreetMap</span>
-location <span class="token operator">=</span> geolocator<span class="token punctuation">.</span>geocode<span class="token punctuation">(</span>query<span class="token operator">=</span><span class="token string">"南京站"</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>raw<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>longitude<span class="token punctuation">,</span>location<span class="token punctuation">.</span>latitude<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#WGS84坐标系</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>address<span class="token punctuation">)</span>
-
-geolocator <span class="token operator">=</span> BaiduV3<span class="token punctuation">(</span>api_key<span class="token operator">=</span><span class="token string">'输入你申请的ak'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#基于百度API构造实例</span>
-location <span class="token operator">=</span> geolocator<span class="token punctuation">.</span>geocode<span class="token punctuation">(</span>query<span class="token operator">=</span><span class="token string">"南京站"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#检索字符串</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>raw<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#返回原始信息</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>longitude<span class="token punctuation">,</span>location<span class="token punctuation">.</span>latitude<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#输出百度坐标系下经纬度坐标</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>address<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre><code>OpenStreetMap结果：
-{&#39;place_id&#39;: 304447935, &#39;licence&#39;: &#39;Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright&#39;, &#39;osm_type&#39;: &#39;node&#39;, &#39;osm_id&#39;: 8042210546, &#39;boundingbox&#39;: [&#39;32.0912644&#39;, &#39;32.0913644&#39;, &#39;118.7913084&#39;, &#39;118.7914084&#39;], &#39;lat&#39;: &#39;32.0913144&#39;, &#39;lon&#39;: &#39;118.7913584&#39;, &#39;display_name&#39;: &#39;南京站, 南京站换乘通道, 鼓楼区, 南京市, 盱眙县, 江苏省, 210037, China 中国&#39;, &#39;class&#39;: &#39;railway&#39;, &#39;type&#39;: &#39;stop&#39;, &#39;importance&#39;: 0.11100000000000002}
-(118.7913584,32.0913144)
-南京站, 南京站换乘通道, 鼓楼区, 南京市, 盱眙县, 江苏省, 210037, China 中国
-
-百度地图API结果：
-{&#39;location&#39;: {&#39;lng&#39;: 118.80371375406085, &#39;lat&#39;: 32.093502120303725}, &#39;precise&#39;: 0, &#39;confidence&#39;: 50, &#39;comprehension&#39;: 0, &#39;level&#39;: &#39;火车站&#39;}
-(118.80371375406085,32.093502120303725)
-火车站</code></pre><h2 id="计算距离"><a href="#计算距离" class="headerlink" title="计算距离"></a>计算距离</h2><p>注意，<code>geopy.distance</code>下的<code>geodestic</code>默认测算的是<strong>WGS-84</strong>坐标系下的大地距离。</p>
-<p>刚刚调用百度地图API进行的地理编码检索得到的是百度坐标系下的经纬度，需提前进行转换。</p>
-<p>这里还是直接用<strong>OpenStreetMap</strong>下的<strong>WGS-84坐标系</strong>下的经纬度作为示例。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> geopy<span class="token punctuation">.</span>geocoders <span class="token keyword">import</span> Nominatim<span class="token comment" spellcheck="true">#经纬度检索</span>
-<span class="token keyword">from</span> geopy<span class="token punctuation">.</span>distance <span class="token keyword">import</span> geodesic<span class="token comment" spellcheck="true">#计算距离</span>
-
-geolocator <span class="token operator">=</span> Nominatim<span class="token punctuation">(</span>user_agent<span class="token operator">=</span><span class="token string">"myapp"</span><span class="token punctuation">)</span>
-location1 <span class="token operator">=</span> geolocator<span class="token punctuation">.</span>geocode<span class="token punctuation">(</span>query<span class="token operator">=</span><span class="token string">"南京站"</span><span class="token punctuation">)</span>
-location2 <span class="token operator">=</span> geolocator<span class="token punctuation">.</span>geocode<span class="token punctuation">(</span>query<span class="token operator">=</span><span class="token string">"南京禄口国际机场"</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">(</span>location1<span class="token punctuation">.</span>longitude<span class="token punctuation">,</span>location1<span class="token punctuation">.</span>latitude<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">(</span>location2<span class="token punctuation">.</span>longitude<span class="token punctuation">,</span> location2<span class="token punctuation">.</span>latitude<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'两地距离%s公里'</span><span class="token operator">%</span>geodesic<span class="token punctuation">(</span><span class="token punctuation">(</span>location1<span class="token punctuation">.</span>latitude<span class="token punctuation">,</span>location1<span class="token punctuation">.</span>longitude<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>location2<span class="token punctuation">.</span>latitude<span class="token punctuation">,</span>location2<span class="token punctuation">.</span>longitude<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>km<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#可以设置单位为公里、米、英里等</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre><code>输出结果：
-(118.7913584,32.0913144)
-(118.87176715003275,31.7324679)
-两地距离40.51108155886417公里</code></pre>]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>地图API</tag>
-        <tag>geopy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【自然语言处理】Wordcloud词云分析+LDA主题分类</title>
-    <url>/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/</url>
-    <content><![CDATA[<p>最近在一门课上，老师分享了一篇关于应用自然语言处理（NLP）模型分析交通领域研究主题分类的论文，我觉得写得很好很有意思。所以，自己也进行一下尝试。
-主要分为<strong>Wordcloud词云展示</strong>和<strong>Latent Dirichlet Allocation（LDA）模型主题分类</strong>两部分。</p>
-<p>参考文献：<a href="https://www.sciencedirect.com/science/article/pii/S0968090X17300207" target="_blank" rel="noopener">Sun, L., &amp; Yin, Y. (2017). Discovering themes and trends in transportation research using topic modeling. Transportation Research Part C: Emerging Technologies, 77, 49-66. doi:10.1016/j.trc.2017.01.013</a></p>
-<p>本次分析的是2017年至2020年发表的交通领域关于<strong>“Mobility-as-a-Service(MaaS)”</strong>的30篇论文的摘要部分。</p>
-<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/%E6%96%87%E7%8C%AE%E6%A6%82%E8%A7%88.PNG" class title="[文献展示]">
-
-<h2 id="wordcloud词云展示"><a href="#wordcloud词云展示" class="headerlink" title="wordcloud词云展示"></a>wordcloud词云展示</h2><ol>
-<li><p>首先对文本进行预处理：</p>
-<ul>
-<li><p>去除标点符号，按空格拆分句子
-<code>mytext=re.sub(r'[.,()]','',mytext).split(' ') #正侧表达式去除标点</code></p>
-</li>
-<li><p>用NLTK的wordnet模块进行词形还原</p>
-<pre class="line-numbers language-python"><code class="language-python">  <span class="token keyword">from</span> nltk<span class="token punctuation">.</span>stem <span class="token keyword">import</span> WordNetLemmatizer
-  wnl <span class="token operator">=</span> WordNetLemmatizer<span class="token punctuation">(</span><span class="token punctuation">)</span>
-  remytext <span class="token operator">=</span> <span class="token string">''</span>
-  <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>mytext<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-      mytext<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>wnl<span class="token punctuation">.</span>lemmatize<span class="token punctuation">(</span>mytext<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#词性还原</span>
-      remytext<span class="token operator">=</span>remytext<span class="token operator">+</span><span class="token string">' '</span><span class="token operator">+</span>mytext<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-  mytext<span class="token operator">=</span>remytext<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>注：wordnet包需要另外独自安装，不然会报如下错误：</strong>
-<code>Resource wordnet not found. Please use the NLTK Downloader to obtain the resource:</code></p>
-<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E7%BC%BA%E5%A4%B1%E6%8A%A5%E9%94%99.PNG" class>
-<p><strong>这里补充wordnet包安装方法：</strong>
-  (1) 命令行cmd打开，输入python；
-(2) 继续输入<code>import nltk</code>和<code>nltk.download()</code>如下图所示：</p>
-  <img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E4%B8%8B%E8%BD%BDcmd.PNG" class>
-<p>(3) 可能会报错远程主机强制关闭了一个连接。
-  解决办法：(1)连VPN (2)利用别人已经下载到本地的wordnet包,具体参照这篇博客。<a href="https://blog.csdn.net/Charchunchiu/article/details/96436736?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener">Python NLTK WordNet的在线与手动安装方法</a>
-  (4) 正常情况下,弹出如下窗口，选择<code>Corpora/wordnet</code>下载即可。</p>
-  <img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/wordnet%E4%B8%8B%E8%BD%BD%E7%95%8C%E9%9D%A2.PNG" class>
-</li>
-<li><p>设置停用词</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> wordcloud <span class="token keyword">import</span> STOPWORDS<span class="token comment" spellcheck="true">#导入原有的停用词包</span>
-additional_stopwords<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">with</span> open<span class="token punctuation">(</span>stopwordsfile<span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'UTF-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
-  <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">:</span>
-      additional_stopwords<span class="token punctuation">.</span>append<span class="token punctuation">(</span>line<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">,</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-stop_words <span class="token operator">=</span> additional_stopwords <span class="token operator">+</span> list<span class="token punctuation">(</span>STOPWORDS<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#额外添加自己的停用词</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
-</li>
-<li><p>应用wordcloud包</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> wordcloud <span class="token keyword">import</span> WordCloud
-wordcloud <span class="token operator">=</span> WordCloud<span class="token punctuation">(</span>stopwords<span class="token operator">=</span>stop_words<span class="token punctuation">,</span>background_color<span class="token operator">=</span><span class="token string">'white'</span><span class="token punctuation">,</span>collocations<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>colormap<span class="token operator">=</span><span class="token string">'viridis'</span><span class="token punctuation">,</span>width<span class="token operator">=</span><span class="token number">2160</span><span class="token punctuation">,</span>height<span class="token operator">=</span><span class="token number">1080</span><span class="token punctuation">,</span>max_words<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">,</span>prefer_horizontal<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span>generate<span class="token punctuation">(</span>mytext<span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>wordcloud<span class="token punctuation">,</span> interpolation<span class="token operator">=</span><span class="token string">'bilinear'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>axis<span class="token punctuation">(</span><span class="token string">"off"</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/maas%E8%AF%8D%E4%BA%91%E7%BB%93%E6%9E%9C.PNG" class title="[词云展示]">
-
-</li>
-</ol>
-<h2 id="LDA主题分类"><a href="#LDA主题分类" class="headerlink" title="LDA主题分类"></a>LDA主题分类</h2><p>这里使用<strong>sklearn</strong>的<strong>LDA</strong>包。
-基于之前的<strong>文本预处理</strong>，还需要转换为<strong>词向量</strong>的形式，才可放入LDA模型训练。
-具体代码如下：</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>feature_extraction<span class="token punctuation">.</span>text <span class="token keyword">import</span> CountVectorizer <span class="token comment" spellcheck="true">#词向量转换模块</span>
-<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>decomposition <span class="token keyword">import</span> LatentDirichletAllocation <span class="token keyword">as</span> LDA
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
-<span class="token keyword">import</span> time
-<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">import</span> MultipleLocator
-
-<span class="token comment" spellcheck="true">#Initialise the count vectorizer with the English stop words</span>
-count_vectorizer <span class="token operator">=</span> CountVectorizer<span class="token punctuation">(</span>stop_words<span class="token operator">=</span>stop_words<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#这里也可以设置停用词</span>
-<span class="token comment" spellcheck="true"># Fit and transform the processed titles</span>
-count_data <span class="token operator">=</span> count_vectorizer<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>mytext<span class="token punctuation">)</span>
-
-<span class="token keyword">def</span> <span class="token function">print_topics</span><span class="token punctuation">(</span>model<span class="token punctuation">,</span> count_vectorizer<span class="token punctuation">,</span> n_top_words<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    words <span class="token operator">=</span> count_vectorizer<span class="token punctuation">.</span>get_feature_names<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token keyword">for</span> topic_idx<span class="token punctuation">,</span> topic <span class="token keyword">in</span> enumerate<span class="token punctuation">(</span>model<span class="token punctuation">.</span>components_<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nTopic #%d:"</span> <span class="token operator">%</span> topic_idx<span class="token punctuation">)</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">[</span>words<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-                        <span class="token keyword">for</span> i <span class="token keyword">in</span> topic<span class="token punctuation">.</span>argsort<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span>n_top_words <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-n_topics <span class="token operator">=</span> range<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
-perplexityLst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1.0</span><span class="token punctuation">]</span><span class="token operator">*</span>len<span class="token punctuation">(</span>n_topics<span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true">#训练LDA并打印训练时间</span>
-lda_models <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> idx<span class="token punctuation">,</span> n_topic <span class="token keyword">in</span> enumerate<span class="token punctuation">(</span>n_topics<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>idx<span class="token punctuation">,</span>n_topic<span class="token punctuation">)</span>
-    lda <span class="token operator">=</span> LDA<span class="token punctuation">(</span>n_components<span class="token operator">=</span>n_topic<span class="token punctuation">,</span> max_iter<span class="token operator">=</span><span class="token number">2000</span><span class="token punctuation">,</span>learning_method<span class="token operator">=</span><span class="token string">'batch'</span><span class="token punctuation">,</span>
-
-<span class="token comment" spellcheck="true">#                                    perp_tol=0.1, #default</span>
-
-<span class="token comment" spellcheck="true">#                                    doc_topic_prior=1/n_topic, #default</span>
-
-<span class="token comment" spellcheck="true">#                                    topic_word_prior=1/n_topic, #default</span>
-
-                                    verbose<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
-    t0 <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    lda<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>count_data<span class="token punctuation">)</span>
-    perplexityLst<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">=</span> lda<span class="token punctuation">.</span>perplexity<span class="token punctuation">(</span>count_data<span class="token punctuation">)</span>
-    lda_models<span class="token punctuation">.</span>append<span class="token punctuation">(</span>lda<span class="token punctuation">)</span>
-    <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"# of Topic: %d, "</span> <span class="token operator">%</span> n_topics<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">)</span>
-    <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"done in %0.3fs, N_iter %d, "</span> <span class="token operator">%</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> t0<span class="token punctuation">)</span><span class="token punctuation">,</span> lda<span class="token punctuation">.</span>n_iter_<span class="token punctuation">)</span><span class="token punctuation">)</span>
-    <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"Perplexity Score %0.3f"</span> <span class="token operator">%</span> perplexityLst<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true">#打印最佳模型</span>
-number_words<span class="token operator">=</span><span class="token number">10</span>
-best_index <span class="token operator">=</span> perplexityLst<span class="token punctuation">.</span>index<span class="token punctuation">(</span>min<span class="token punctuation">(</span>perplexityLst<span class="token punctuation">)</span><span class="token punctuation">)</span>
-best_n_topic <span class="token operator">=</span> n_topics<span class="token punctuation">[</span>best_index<span class="token punctuation">]</span>
-best_model <span class="token operator">=</span> lda_models<span class="token punctuation">[</span>best_index<span class="token punctuation">]</span>
-<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"Best # of Topic: "</span><span class="token punctuation">,</span> best_n_topic<span class="token punctuation">)</span>
-print_topics<span class="token punctuation">(</span>best_model<span class="token punctuation">,</span> count_vectorizer<span class="token punctuation">,</span> number_words<span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true">#绘制不同主题数perplexity的不同</span>
-fig <span class="token operator">=</span> plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span><span class="token punctuation">)</span>
-ax <span class="token operator">=</span> fig<span class="token punctuation">.</span>add_subplot<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
-xaxis<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>n_topics<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    xaxis<span class="token punctuation">.</span>append<span class="token punctuation">(</span>n_topics<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-ax<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xaxis<span class="token punctuation">,</span> perplexityLst<span class="token punctuation">)</span>
-x_major_locator<span class="token operator">=</span>MultipleLocator<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-ax<span class="token punctuation">.</span>set_xlabel<span class="token punctuation">(</span><span class="token string">"number of topics"</span><span class="token punctuation">)</span>
-ax<span class="token punctuation">.</span>set_ylabel<span class="token punctuation">(</span><span class="token string">"Approximate Perplexity"</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>grid<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>最终我这里选择了分为3个主题。虽然2个的perplexity效果好一些，但我根据需要选择了3个。</p>
-<img src="/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/perplexity%E6%8C%87%E6%95%B0.PNG" class title="[perplexity指数]">
-
-<p>Topic #1: 城市系统角度
-model city public business alliance actor efficiency factor system new
-Topic #2: 各出行模式运营商角度
-user time market adoption road potential intermediary car operator public
-Topic #3: 用户出行模式选择角度
-car public model mode bundle sharing new travel choice demand</p>
-<p>好了，这次就到这里了。具体的参数设置还是参照官方文档。</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>NLP</tag>
-        <tag>Wordcloud</tag>
-        <tag>LDA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>下载Bing搜索界面每日高清美图方法</title>
-    <url>/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h3 id="Bing搜索的每日一图真的很好看，该如何下载呢？"><a href="#Bing搜索的每日一图真的很好看，该如何下载呢？" class="headerlink" title="Bing搜索的每日一图真的很好看，该如何下载呢？"></a><a href="https://cn.bing.com/" target="_blank" rel="noopener">Bing搜索</a>的每日一图真的很好看，该如何下载呢？</h3><ul>
-<li><p>进入Bing搜索主页</p>
-<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/Bing%E9%A6%96%E9%A1%B5.PNG" class>
-</li>
-<li><p>按<code>F12</code>打开控制台。
-在<code>Elements</code>下的<code>head</code>中找到图片链接地址。</p>
-<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/head%E9%93%BE%E6%8E%A5.PNG" class>
-<p>复制粘贴到浏览器打开，右键图片另存为即可下载<code>1920*1080</code>分辨率无水印的图。
-如果想下载更高清的<code>UHD</code>大图，将链接两处<code>1920*1080</code>的部分改为<code>UHD</code>即可。</p>
-</li>
-<li><p>如果想下载前几天的图。
-点<code>Network</code>,按<code>Ctrl+R</code>刷新页面，再点首页右下角的向左的箭头，前面图片的链接就会显示出来。
-同理复制链接粘贴打开下载。</p>
-<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/%E5%89%8D%E9%9D%A2%E9%93%BE%E6%8E%A5.PNG" class>
-</li>
-<li><p><strong>最后还是要注意，图片有版权，不能商业使用。</strong></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>视觉和摄影</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-        <tag>美图</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>下载PeMS交通流数据指南</title>
-    <url>/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<p>今天给大家推荐一个开放的交通数据库，美国加州交通运输局的PeMS数据库，这里有着长达10年的高速公路检测器数据。包含流率、速度、占有率、重车比例、延误、车辆行驶里程、车辆行驶时间、交通事故等类型数据。很多学者都用这里的数据进行研究。
-所以这里给大家介绍一下这个数据库下载数据的使用方式。</p>
-<h2 id="1-要有可以科学上网的VPN"><a href="#1-要有可以科学上网的VPN" class="headerlink" title="1. 要有可以科学上网的VPN"></a>1. 要有可以科学上网的VPN</h2><p>这个请先自行解决。</p>
-<h2 id="2-登录PeMS网站并注册账号"><a href="#2-登录PeMS网站并注册账号" class="headerlink" title="2. 登录PeMS网站并注册账号"></a>2. 登录PeMS网站并注册账号</h2><p>官方网址：<a href="http://pems.dot.ca.gov/" target="_blank" rel="noopener">http://pems.dot.ca.gov/</a>
-首页右侧有<font color="red">apply for an account</font>的链接，注册完毕后回到首页右上角登陆已通过的注册账号。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E9%A6%96%E9%A1%B5.PNG" class title="[PeMS首页]">
-
-<h2 id="3-明确要下载的数据类型：线：路段-点：检测器"><a href="#3-明确要下载的数据类型：线：路段-点：检测器" class="headerlink" title="3. 明确要下载的数据类型：线：路段|点：检测器"></a>3. 明确要下载的数据类型：线：路段|点：检测器</h2><p>登录进去后，可以看到上面有一栏<font color="blue">“Overview, Facilities&amp;Devices, Performance, Data Quality, Events”</font>，这里细分又有很多数据，大家可以自行根据需要点进去查看。
-这里我主要介绍下载集计的交通流量、速度、占有率等交通流宏观参数数据。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.PNG" class title="[PeMS登陆后界面]">
-<p>如这张图所示，以下载某个检测器数据为例，我这里下载I5高速公路主线上编号#716895的检测器<font color="blue">Aggregates</font>集计数据。
-然后就会跳转到这个检测器的数据，并且系统也提供了基础的数据图表供你直观观看。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/%E6%A3%80%E6%B5%8B%E5%99%A8%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B.PNG" class title="[检测器数据示例]">
-
-<h2 id="4-选择数据的属性和精度"><a href="#4-选择数据的属性和精度" class="headerlink" title="4. 选择数据的属性和精度"></a>4. 选择数据的属性和精度</h2><p>Quantity, Second Quantity:要下载的数据类型，如流量、速度、占有率等。
-Granularity: 数据精度，月、周、日、5分钟的颗粒度。
-另外，可以选择数据的日期覆盖时段、节假日、车道等。</p>
-<p>然后点击需要下载的数据格式，这里一般下载<font color="blue">EXPORT to.XLS</font>，比较便于后续数据分析。</p>
-<p>好了，就是这么简单，下一篇我来介绍一下我如何用这里的数据进行交通流量的时间序列建模预测。</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>交通流</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>动态爬取携程网机票信息</title>
-    <url>/2021/01/06/%E5%8A%A8%E6%80%81%E7%88%AC%E5%8F%96%E6%90%BA%E7%A8%8B%E7%BD%91%E6%9C%BA%E7%A5%A8%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<p>最近在做有关交通城际出行领域的课题，需要用到一些关于机票的信息，于是就想到从携程网进行爬取相关数据。</p>
-<p>但是呢，携程网它的票务信息查询后是一个动态页面，需要下拉才能返回更多的查询结果。所以这需要在一般的解析静态页面的爬虫方式上，增加一个<strong>浏览器的模拟器</strong>，来模拟<strong>下拉</strong>这一行为。</p>
-<p>本次就是用到<strong>selenium</strong>这一个包的<strong>webdriver</strong>来模拟<strong>打开浏览器</strong>和<strong>下拉</strong>这一行为。</p>
-<p>话不多说，直接上代码和注释。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
-<span class="token keyword">import</span> requests
-<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
-<span class="token keyword">import</span> time
-<span class="token keyword">import</span> lxml<span class="token punctuation">.</span>html
-<span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
-
-<span class="token keyword">def</span> <span class="token function">getFlightInfo</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">,</span>date<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    url<span class="token operator">=</span><span class="token string">'https://flights.ctrip.com/itinerary/oneway/%s-%s?classType=ALL&amp;ct=1606269725709&amp;date=%s'</span><span class="token operator">%</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">,</span>date<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#携程的单程机票查询url</span>
-    <span class="token comment" spellcheck="true">#parse the html</span>
-    browser <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    browser<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
-    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#等一会儿，等信息解析</span>
-    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#模拟点击按钮</span>
-    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#多注意休息</span>
-    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'dtime-sort'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#模拟点击按时间排序按钮</span>
-    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
-    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'dtime-sort'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#再模拟一次点击按时间排序按钮，确保出发时间从早到晚排序</span>
-    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
-    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
-
-    <span class="token comment" spellcheck="true"># 获取页面初始高度</span>
-    js <span class="token operator">=</span> <span class="token string">"return action=document.body.scrollHeight"</span>
-    height <span class="token operator">=</span> browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span>
-
-    <span class="token comment" spellcheck="true"># 将滚动条调整至页面底部</span>
-    browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, document.body.scrollHeight)'</span><span class="token punctuation">)</span>
-    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># 定义初始时间戳（秒）</span>
-    t1 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># 定义循环标识，用于终止while循环</span>
-    status <span class="token operator">=</span> <span class="token boolean">True</span>
-    <span class="token comment" spellcheck="true"># 重试次数</span>
-    num <span class="token operator">=</span> <span class="token number">0</span>
-    <span class="token keyword">while</span> status<span class="token punctuation">:</span>
-        <span class="token comment" spellcheck="true"># 获取当前时间戳（秒）</span>
-        t2 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token comment" spellcheck="true"># 判断时间初始时间戳和当前时间戳相差是否大于30秒，小于30秒则下拉滚动条</span>
-        <span class="token keyword">if</span> t2 <span class="token operator">-</span> t1 <span class="token operator">&lt;</span> <span class="token number">30</span><span class="token punctuation">:</span>
-            new_height <span class="token operator">=</span> browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span>
-            <span class="token keyword">if</span> new_height <span class="token operator">></span> height<span class="token punctuation">:</span>
-                time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-                browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, document.body.scrollHeight)'</span><span class="token punctuation">)</span>
-                <span class="token comment" spellcheck="true"># 重置初始页面高度</span>
-                height <span class="token operator">=</span> new_height
-                <span class="token comment" spellcheck="true"># 重置初始时间戳，重新计时</span>
-                t1 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token keyword">elif</span> num <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 当超过30秒页面高度仍然没有更新时，进入重试逻辑，重试3次，每次等待30秒</span>
-            time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
-            num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span>
-        <span class="token keyword">else</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 超时并超过重试次数，程序结束跳出循环，并认为页面已经加载完毕！</span>
-            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"滚动条已经处于页面最下方！"</span><span class="token punctuation">)</span>
-            status <span class="token operator">=</span> <span class="token boolean">False</span>
-            <span class="token comment" spellcheck="true"># 滚动条调整至页面顶部</span>
-            browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, 0)'</span><span class="token punctuation">)</span>
-            <span class="token keyword">break</span>
-
- <span class="token comment" spellcheck="true">#要用到正则表达式</span>
- flightnumber<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_table_header>.inb.logo>div>div>span>span>span"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系,不可以跃层查询</span>
-    departtime<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.right>div.time_box"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系</span>
-    departhub <span class="token operator">=</span> browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.right>div.airport"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 空格设置为点</span>
-    arrivetime<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.left>div.time_box"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系</span>
-    arrivehub <span class="token operator">=</span> browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.left>div.airport"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 空格设置为点</span>
-
-    flightnumberlist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> flightnumber<span class="token punctuation">]</span>
-    flightnumberlist<span class="token operator">=</span>list<span class="token punctuation">(</span>filter<span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x <span class="token operator">!=</span> <span class="token string">'共享'</span><span class="token punctuation">,</span> flightnumberlist<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#删除多余元素</span>
-    departtimelist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> departtime<span class="token punctuation">]</span>
-    departhublist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> departhub<span class="token punctuation">]</span>
-    arrivetimelist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> arrivetime<span class="token punctuation">]</span>
-    arrivehublist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> arrivehub<span class="token punctuation">]</span>
-    <span class="token keyword">return</span> flightnumberlist<span class="token punctuation">,</span>departtimelist<span class="token punctuation">,</span>departhublist<span class="token punctuation">,</span>arrivetimelist<span class="token punctuation">,</span>arrivehublist
-
-<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
-    date<span class="token operator">=</span><span class="token string">'2020-11-27'</span>
-    fromcity<span class="token operator">=</span><span class="token string">'bjs'</span><span class="token comment" spellcheck="true">#查询北京到上海的机票</span>
-    tocity<span class="token operator">=</span><span class="token string">'sha'</span><span class="token comment" spellcheck="true">#查询北京到上海的机票</span>
-    path <span class="token operator">=</span> <span class="token string">'\\'</span>
-    flightnumberlist<span class="token punctuation">,</span>departtimelist<span class="token punctuation">,</span>departhublist<span class="token punctuation">,</span>arrivetimelist<span class="token punctuation">,</span>arrivehublist<span class="token operator">=</span>getFlightInfo<span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span> tocity<span class="token punctuation">,</span> date<span class="token punctuation">)</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>flightnumberlist<span class="token punctuation">)</span>
-    flightinfodict<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'flightnumber'</span><span class="token punctuation">:</span>flightnumberlist<span class="token punctuation">,</span><span class="token string">'departtime'</span><span class="token punctuation">:</span>departtimelist<span class="token punctuation">,</span><span class="token string">'departhub'</span><span class="token punctuation">:</span>departhublist<span class="token punctuation">,</span>
-                        <span class="token string">'arrivetime'</span><span class="token punctuation">:</span>arrivetimelist<span class="token punctuation">,</span><span class="token string">'arrivehub'</span><span class="token punctuation">:</span>arrivehublist<span class="token punctuation">}</span>
-    flightinfodf<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>flightinfodict<span class="token punctuation">)</span>
-    flightinfodf<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span>path<span class="token operator">+</span><span class="token string">'%s-%s航空班次信息.csv'</span><span class="token operator">%</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">)</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf_8_sig'</span><span class="token punctuation">,</span>index<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>selenium</tag>
-        <tag>爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用高德开放平台API获取POI位置和路线信息</title>
-    <url>/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<p>借助地图API接口，帮助我们快速获取大量的静态、动态数据是非常有效的。
-这次我就来讲讲怎么利用高德开发平台API接口，获取一些设施位置和路径规划信息。</p>
-<h2 id="高德开放平台"><a href="#高德开放平台" class="headerlink" title="高德开放平台"></a>高德开放平台</h2><p><a href="https://lbs.amap.com/api/webservice/summary" target="_blank" rel="noopener">高德开放平台</a>可以让你自己开发的应用嵌入高德服务，使用高德在地理信息服务上的贡献。
-因为这次我主要需要用到的是一些信息搜索，所以用的是<code>开发支持->Web服务->Web服务API</code>，其他需要移动应用开发的可以去查询<strong>开发支持</strong>下的<strong>Web端、Andriod平台、IOS平台、微信小程序</strong>等等。</p>
-<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/web_API_intro.PNG" class>
-<p>如平台的简介，它可以帮你实现搜索、路径规划、行驶距离测量等功能。</p>
-<h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h3><p>申请一个高德的适用于Web服务的<code>key</code>，之后在<code>URL</code>里需要填上自己的<code>key</code>。注意个人用户每日每个key的使用次数是有限额的，超限了查询信息返回会报错，但一个人可以申请好多个。</p>
-<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/key.PNG" class>
-
-<h3 id="2-根据需要填充URL关键字"><a href="#2-根据需要填充URL关键字" class="headerlink" title="2. 根据需要填充URL关键字"></a>2. 根据需要填充URL关键字</h3><p>我们这次用<code>关键字搜索</code>功能，来查询POI(point of interest)信息，以查询某一城市的机场、火车站的枢纽地理信息为例。
-根据开发文档提供的URL示例:<code><a href="https://restapi.amap.com/v3/place/text?parameters" target="_blank" rel="noopener">https://restapi.amap.com/v3/place/text?parameters</a></code>
-我们把<code>parameters</code>替换为搜索时限定的一些关键词，并且用<code>&</code>连接不同的条件，记得替换你自己申请的key。
-比如：<code><a href="https://restapi.amap.com/v3/place/text?keywords=火车站&amp;city=北京&amp;citylimit=true&amp;extensions=all&amp;key=你申请的key&amp;offset=20&amp;page=1" target="_blank" rel="noopener">https://restapi.amap.com/v3/place/text?keywords=火车站&amp;city=北京&amp;citylimit=true&amp;extensions=all&amp;key=你申请的key&amp;offset=20&amp;page=1</a></code></p>
-<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/keywords_search.PNG" class>
-
-<p>返回的结果，也是参照开发文档，注意弄清层级结构，即可获取对应信息，默认返回<code>json</code>格式。</p>
-<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/result_parameter.PNG" class>
-
-<p>我这里会主要想要获取经纬度信息，在<code>['pois']->['poi']->['location']</code>下面。</p>
-<h3 id="3-使用python批量访问获取结果"><a href="#3-使用python批量访问获取结果" class="headerlink" title="3. 使用python批量访问获取结果"></a>3. 使用python批量访问获取结果</h3><p>用python的<code>requests</code>库，获取访问结果，完整代码如下。这里用简单的<code>GET</code>方式填充URL的参数即可，以后自己爬其他的信息还有可能要用到<code>POST</code>方式，但以字典方式传送参数也是一样的。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> requests
-<span class="token keyword">import</span> math
-<span class="token keyword">import</span> json
-<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
-
-<span class="token keyword">def</span> <span class="token function">get_station</span><span class="token punctuation">(</span>city<span class="token punctuation">,</span>type<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 抓取场站信息</span>
-    url1 <span class="token operator">=</span> <span class="token string">"https://restapi.amap.com/v3/place/text?keywords=%s&amp;city=%s&amp;citylimit=true&amp;extensions=all&amp;key=你自己申请的key&amp;offset=20&amp;page=%d"</span><span class="token operator">%</span><span class="token punctuation">(</span>type<span class="token punctuation">,</span>city<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#查询机场和火车站的经纬度信息</span>
-    req <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url1<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 请求高德地图Place API返回数据</span>
-    content <span class="token operator">=</span> req<span class="token punctuation">.</span>content
-    data <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>content<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 将获取的信息封装为字典</span>
-    num<span class="token operator">=</span>int<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'count'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 提取场站总数</span>
-    result <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'pois'</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 提取字典中的有效信息</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>
-
-    infoDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'名称'</span><span class="token punctuation">,</span> <span class="token string">'经度'</span><span class="token punctuation">,</span> <span class="token string">'纬度'</span><span class="token punctuation">,</span> <span class="token string">'城市'</span><span class="token punctuation">,</span> <span class="token string">'类型'</span><span class="token punctuation">,</span> <span class="token string">'别名'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-    <span class="token keyword">if</span> num<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token comment" spellcheck="true">#返回有数据的情况下</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'%s无%s'</span><span class="token operator">%</span><span class="token punctuation">(</span>city<span class="token punctuation">,</span>type<span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-    <span class="token comment" spellcheck="true">#第一次的信息别浪费了</span>
-    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
-        str_temp <span class="token operator">=</span> result<span class="token punctuation">[</span>i<span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 保存总数到链表第一个元素</span>
-        <span class="token keyword">if</span> len<span class="token punctuation">(</span>str_temp<span class="token punctuation">[</span><span class="token string">'alias'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
-            alias <span class="token operator">=</span> <span class="token string">''</span>
-        <span class="token keyword">else</span><span class="token punctuation">:</span>
-            alias <span class="token operator">=</span> str_temp<span class="token punctuation">[</span><span class="token string">'alias'</span><span class="token punctuation">]</span>
-
-        <span class="token keyword">print</span><span class="token punctuation">(</span>str_temp<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>str_temp<span class="token punctuation">[</span><span class="token string">'location'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>str_temp<span class="token punctuation">[</span><span class="token string">'location'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>str_temp<span class="token punctuation">[</span><span class="token string">'cityname'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>alias<span class="token punctuation">)</span>
-        singleinfo<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'名称'</span><span class="token punctuation">:</span>str_temp<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">'经度'</span><span class="token punctuation">:</span>str_temp<span class="token punctuation">[</span><span class="token string">'location'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">'纬度'</span><span class="token punctuation">:</span>str_temp<span class="token punctuation">[</span><span class="token string">'location'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">'城市'</span><span class="token punctuation">:</span>str_temp<span class="token punctuation">[</span><span class="token string">'cityname'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">'类型'</span><span class="token punctuation">:</span>type<span class="token punctuation">,</span><span class="token string">'别名'</span><span class="token punctuation">:</span>alias<span class="token punctuation">}</span>
-        singleinfoDf<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>singleinfo<span class="token punctuation">,</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'名称'</span><span class="token punctuation">,</span> <span class="token string">'经度'</span><span class="token punctuation">,</span> <span class="token string">'纬度'</span><span class="token punctuation">,</span> <span class="token string">'城市'</span><span class="token punctuation">,</span><span class="token string">'类型'</span><span class="token punctuation">,</span><span class="token string">'别名'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>index <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-        infoDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>infoDf<span class="token punctuation">,</span> singleinfoDf<span class="token punctuation">]</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> ignore_index<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
-
-    totalpage<span class="token operator">=</span>math<span class="token punctuation">.</span>ceil<span class="token punctuation">(</span>num<span class="token operator">/</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#每一页显示20条数据，算好页数</span>
-    <span class="token keyword">if</span> totalpage <span class="token operator">></span><span class="token number">1</span> <span class="token punctuation">:</span>
-        <span class="token keyword">for</span> n <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span>totalpage<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token comment" spellcheck="true">#从第2页起</span>
-            url2 <span class="token operator">=</span> <span class="token string">"https://restapi.amap.com/v3/place/text?keywords=%s&amp;city=%s&amp;citylimit=true&amp;extensions=all&amp;key=e3bc4d79724c51578f54e141d4085394&amp;offset=20&amp;page=%d"</span><span class="token operator">%</span><span class="token punctuation">(</span>type<span class="token punctuation">,</span>city<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#查询机场和火车站的经纬度信息</span>
-            req <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url2<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 请求高德地图Place API返回数据</span>
-            content <span class="token operator">=</span> req<span class="token punctuation">.</span>content
-            data <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>content<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 将获取的信息封装为字典</span>
-            result <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'pois'</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 提取字典中的有效信息</span>
-            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-                <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
-                str_temp <span class="token operator">=</span> result<span class="token punctuation">[</span>i<span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 保存总数到链表第一个元素</span>
-                <span class="token keyword">if</span> len<span class="token punctuation">(</span>str_temp<span class="token punctuation">[</span><span class="token string">'alias'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span>
-                    alias<span class="token operator">=</span><span class="token string">''</span>
-                <span class="token keyword">else</span><span class="token punctuation">:</span>
-                    alias<span class="token operator">=</span>str_temp<span class="token punctuation">[</span><span class="token string">'alias'</span><span class="token punctuation">]</span>
-                singleinfo <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'名称'</span><span class="token punctuation">:</span> str_temp<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'经度'</span><span class="token punctuation">:</span> str_temp<span class="token punctuation">[</span><span class="token string">'location'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-                              <span class="token string">'纬度'</span><span class="token punctuation">:</span> str_temp<span class="token punctuation">[</span><span class="token string">'location'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'城市'</span><span class="token punctuation">:</span> str_temp<span class="token punctuation">[</span><span class="token string">'cityname'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">'类型'</span><span class="token punctuation">:</span>type<span class="token punctuation">,</span> <span class="token string">'别名'</span><span class="token punctuation">:</span> alias<span class="token punctuation">}</span>
-                singleinfoDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>singleinfo<span class="token punctuation">,</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'名称'</span><span class="token punctuation">,</span> <span class="token string">'经度'</span><span class="token punctuation">,</span> <span class="token string">'纬度'</span><span class="token punctuation">,</span> <span class="token string">'城市'</span><span class="token punctuation">,</span><span class="token string">'类型'</span><span class="token punctuation">,</span><span class="token string">'别名'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>index <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-                infoDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>infoDf<span class="token punctuation">,</span>singleinfoDf<span class="token punctuation">]</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>ignore_index<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
-
-    <span class="token keyword">return</span> infoDf
-
-<span class="token keyword">def</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 开始抓取文件</span>
-    citylist<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'石家庄'</span><span class="token punctuation">,</span><span class="token string">'唐山'</span><span class="token punctuation">,</span><span class="token string">'邯郸'</span><span class="token punctuation">,</span><span class="token string">'保定'</span><span class="token punctuation">,</span><span class="token string">'沧州'</span><span class="token punctuation">,</span><span class="token string">'邢台'</span><span class="token punctuation">,</span><span class="token string">'廊坊'</span><span class="token punctuation">,</span><span class="token string">'承德'</span><span class="token punctuation">,</span><span class="token string">'张家口'</span><span class="token punctuation">,</span><span class="token string">'衡水'</span><span class="token punctuation">,</span><span class="token string">'秦皇岛'</span><span class="token punctuation">]</span><span class="token comment" spellcheck="true">#,'张家口','衡水','秦皇岛'</span>
-    typelist<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'机场'</span><span class="token punctuation">,</span><span class="token string">'火车站'</span><span class="token punctuation">]</span>
-    whole_info <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'名称'</span><span class="token punctuation">,</span> <span class="token string">'经度'</span><span class="token punctuation">,</span> <span class="token string">'纬度'</span><span class="token punctuation">,</span> <span class="token string">'城市'</span><span class="token punctuation">,</span><span class="token string">'类型'</span><span class="token punctuation">,</span><span class="token string">'别名'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-    <span class="token keyword">for</span> cityname <span class="token keyword">in</span> citylist<span class="token punctuation">:</span>
-        <span class="token keyword">for</span> type <span class="token keyword">in</span> typelist<span class="token punctuation">:</span>
-            info <span class="token operator">=</span> get_station<span class="token punctuation">(</span>cityname<span class="token punctuation">,</span>type<span class="token punctuation">)</span>
-            whole_info<span class="token operator">=</span>  pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>whole_info<span class="token punctuation">,</span>info<span class="token punctuation">]</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>ignore_index<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
-
-    whole_info<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'/京津冀机场火车站信息.csv'</span><span class="token punctuation">,</span>index<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf_8_sig'</span><span class="token punctuation">)</span>
-
-<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
-    run<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>类似地，大家可以参照以上代码，去查询一下餐厅、公交站等其他设施的信息。</strong></p>
-<h3 id="获取路径规划信息"><a href="#获取路径规划信息" class="headerlink" title="*获取路径规划信息"></a>*获取路径规划信息</h3><p>刚才是介绍如何用<code>关键字搜索</code>功能，进行一些POI点的信息查询。现在做一些稍微复杂一点点的更深入的查询。
-查询两个点之间的不同交通方式的路径规划信息，比如<strong>驾车路线、耗时、距离，公交的路线、耗时、花费</strong>等。
-此时查询<a href="https://lbs.amap.com/api/webservice/guide/api/direction" target="_blank" rel="noopener">路径规划</a>的对应开发文档。</p>
-<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/route_planning.PNG" class>
-
-<ul>
-<li><p>驾车路径规划
-同理，弄清URL需要填充的参数。
-<code><a href="https://restapi.amap.com/v3/direction/driving?parameters" target="_blank" rel="noopener">https://restapi.amap.com/v3/direction/driving?parameters</a></code>
-我的示例:<code><a href="https://restapi.amap.com/v3/direction/driving?origin=116.603039,40.080525&amp;destination=116.427694,39.902779&amp;strategy=10&amp;output=json&amp;extensions=all&amp;key=你申请的key" target="_blank" rel="noopener">https://restapi.amap.com/v3/direction/driving?origin=116.603039,40.080525&amp;destination=116.427694,39.902779&amp;strategy=10&amp;output=json&amp;extensions=all&amp;key=你申请的key</a></code>
-我这里就是用刚才查询到的北京首都国际机场的经纬度和北京站的经纬度，查询其之间的驾车路径策略。
-然后可以请求访问<code>URL</code>，获取很多有用的信息，驾车路线、耗时、距离，乃至具体的导航方案、道路的红绿灯情况等等。</p>
-</li>
-<li><p>公交路径规划
-<code><a href="https://restapi.amap.com/v3/direction/transit/integrated?parameters" target="_blank" rel="noopener">https://restapi.amap.com/v3/direction/transit/integrated?parameters</a></code>
-我的示例:<code><a href="https://restapi.amap.com/v3/direction/transit/integrated?origin=116.603039,40.080525&amp;destination=116.427694,39.902779&amp;city=北京&amp;strategy=0&amp;output=json&amp;extensions=all&amp;key=你申请的key" target="_blank" rel="noopener">https://restapi.amap.com/v3/direction/transit/integrated?origin=116.603039,40.080525&amp;destination=116.427694,39.902779&amp;city=北京&amp;strategy=0&amp;output=json&amp;extensions=all&amp;key=你申请的key</a></code>
-相似地查询公交策略，这里你可以选择根据不同策略，返回不同地路线，比如换乘最少、耗时最短等等。</p>
-</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li>高德开发平台API会在查询一些信息时，起到很大帮助（百度开放平台API也是有相似的功能）。重点要去研读一下他们提供的<strong>开发文档</strong>，并且知道<code>URL</code>的组成，这样你就可以个性化的获取你想要的信息了。</li>
-<li>更多的内容，还是需要自己去不断发掘。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-        <tag>API</tag>
-        <tag>地理信息</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于多元LSTM模型的短时交通流量预测</title>
     <url>/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/</url>
     <content><![CDATA[<p>正好这学期选修了一门交通流理论的课程，这里介绍一下我最后的课程论文，如何基于上一篇提到的在PeMS数据库下载到的数据，应用LSTM模型进行短时交通流量预测。</p>
@@ -966,6 +967,24 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
       </tags>
   </entry>
   <entry>
+    <title>如何将【geojson文件】转成【shp文件】在arcgis中使用</title>
+    <url>/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="如何将【geojson文件】转成【shp文件】在arcgis中使用"><a href="#如何将【geojson文件】转成【shp文件】在arcgis中使用" class="headerlink" title="如何将【geojson文件】转成【shp文件】在arcgis中使用"></a>如何将【geojson文件】转成【shp文件】在arcgis中使用</h1><p>当缺少中国省市对应的地图shp文件时，可以去阿里云的网站下载最新的geojson文件，再使用geopandas库转换为shp文件使用。</p>
+<h2 id="1-在阿里云geojson地图下载网站下载相应geojson文件"><a href="#1-在阿里云geojson地图下载网站下载相应geojson文件" class="headerlink" title="1. 在阿里云geojson地图下载网站下载相应geojson文件"></a>1. 在阿里云geojson地图下载网站下载相应geojson文件</h2><p><a href="http://datav.aliyun.com/portal/school/atlas/area_selector" target="_blank" rel="noopener">http://datav.aliyun.com/portal/school/atlas/area_selector</a></p>
+<h2 id="2-使用python的【geopandas】库"><a href="#2-使用python的【geopandas】库" class="headerlink" title="2. 使用python的【geopandas】库"></a>2. 使用python的【geopandas】库</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> geopandas <span class="token keyword">as</span> gdp
+
+data <span class="token operator">=</span> gdp<span class="token punctuation">.</span>read_file<span class="token punctuation">(</span><span class="token string">'\地图.json'</span><span class="token punctuation">)</span>
+data<span class="token punctuation">.</span>to_file<span class="token punctuation">(</span><span class="token string">'\地图shp'</span><span class="token punctuation">,</span> driver<span class="token operator">=</span><span class="token string">'ESRI Shapefile'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'gbk'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#地图shp是存储的文件夹名称</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="3-导入arcgis即可"><a href="#3-导入arcgis即可" class="headerlink" title="3. 导入arcgis即可"></a>3. 导入arcgis即可</h2>]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>arcgis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何修改python第三方库源码</title>
     <url>/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/</url>
     <content><![CDATA[<h1 id="如何修改python第三方库源码"><a href="#如何修改python第三方库源码" class="headerlink" title="如何修改python第三方库源码"></a>如何修改python第三方库源码</h1><p>有的时候下载的第三方python库中有些参数没有开放让我们自定义调整，比如你要用那个库自带的出图，它可能又是基于matplotlib的一个函数，然后设为了默认。</p>
@@ -989,24 +1008,6 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
         <category>软件和编程</category>
       </categories>
       <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何将【geojson文件】转成【shp文件】在arcgis中使用</title>
-    <url>/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="如何将【geojson文件】转成【shp文件】在arcgis中使用"><a href="#如何将【geojson文件】转成【shp文件】在arcgis中使用" class="headerlink" title="如何将【geojson文件】转成【shp文件】在arcgis中使用"></a>如何将【geojson文件】转成【shp文件】在arcgis中使用</h1><p>当缺少中国省市对应的地图shp文件时，可以去阿里云的网站下载最新的geojson文件，再使用geopandas库转换为shp文件使用。</p>
-<h2 id="1-在阿里云geojson地图下载网站下载相应geojson文件"><a href="#1-在阿里云geojson地图下载网站下载相应geojson文件" class="headerlink" title="1. 在阿里云geojson地图下载网站下载相应geojson文件"></a>1. 在阿里云geojson地图下载网站下载相应geojson文件</h2><p><a href="http://datav.aliyun.com/portal/school/atlas/area_selector" target="_blank" rel="noopener">http://datav.aliyun.com/portal/school/atlas/area_selector</a></p>
-<h2 id="2-使用python的【geopandas】库"><a href="#2-使用python的【geopandas】库" class="headerlink" title="2. 使用python的【geopandas】库"></a>2. 使用python的【geopandas】库</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> geopandas <span class="token keyword">as</span> gdp
-
-data <span class="token operator">=</span> gdp<span class="token punctuation">.</span>read_file<span class="token punctuation">(</span><span class="token string">'\地图.json'</span><span class="token punctuation">)</span>
-data<span class="token punctuation">.</span>to_file<span class="token punctuation">(</span><span class="token string">'\地图shp'</span><span class="token punctuation">,</span> driver<span class="token operator">=</span><span class="token string">'ESRI Shapefile'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'gbk'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#地图shp是存储的文件夹名称</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="3-导入arcgis即可"><a href="#3-导入arcgis即可" class="headerlink" title="3. 导入arcgis即可"></a>3. 导入arcgis即可</h2>]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>arcgis</tag>
         <tag>python</tag>
       </tags>
   </entry>
