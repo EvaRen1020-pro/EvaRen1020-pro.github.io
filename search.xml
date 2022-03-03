@@ -47,20 +47,31 @@
       </tags>
   </entry>
   <entry>
-    <title>plotly基础画图使用尝试</title>
-    <url>/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/</url>
-    <content><![CDATA[<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
-
-<iframe width="100%" id="iframeid" scrolling="yes" height="1800" frameborder="0" src="https://nbviewer.org/github/EvaRen1020-pro/myblog_ipynb_codes/blob/main/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95.ipynb"></iframe>
-
+    <title>hexo嵌入jupyter的ipynb文件</title>
+    <url>/2022/02/27/hexo%E5%B5%8C%E5%85%A5jupyter%E7%9A%84ipynb%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<h1 id="我使用的方法"><a href="#我使用的方法" class="headerlink" title="我使用的方法"></a>我使用的方法</h1><ol>
+<li><p>将<code>ipynb</code>文件上传至<code>github</code>的仓库</p>
+</li>
+<li><p>导入<a href="https://nbviewer.org/" target="_blank" rel="noopener">nbviewer</a>，生成在线链接</p>
+</li>
+<li><p>再使用<code>iframe</code>嵌入</p>
+<p>效果见<a href="https://evaren1020-pro.github.io/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/">plotly基础画图使用尝试</a></p>
+</li>
+</ol>
+<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ol>
+<li>页面高度设定了一个固定值，不能自适应，会出现嵌套的滑轮。</li>
+<li>头尾会有nbviewer的水印，比较丑。</li>
+</ol>
+<h1 id="另外的方法"><a href="#另外的方法" class="headerlink" title="另外的方法"></a>另外的方法</h1><p>使用 <code>hexo-jupyter-notebook</code>包，但是我一直似乎路径设置的不对，一直有报错，就暂时放弃。</p>
+<p>网上也有很多参考，可以去查询尝试。</p>
 ]]></content>
       <categories>
         <category>软件和编程</category>
       </categories>
       <tags>
-        <tag>plotly</tag>
         <tag>jupyterlab</tag>
         <tag>python</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -233,34 +244,6 @@ video_demo<span class="token punctuation">(</span><span class="token punctuation
       </tags>
   </entry>
   <entry>
-    <title>hexo嵌入jupyter的ipynb文件</title>
-    <url>/2022/02/27/hexo%E5%B5%8C%E5%85%A5jupyter%E7%9A%84ipynb%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<h1 id="我使用的方法"><a href="#我使用的方法" class="headerlink" title="我使用的方法"></a>我使用的方法</h1><ol>
-<li><p>将<code>ipynb</code>文件上传至<code>github</code>的仓库</p>
-</li>
-<li><p>导入<a href="https://nbviewer.org/" target="_blank" rel="noopener">nbviewer</a>，生成在线链接</p>
-</li>
-<li><p>再使用<code>iframe</code>嵌入</p>
-<p>效果见<a href="https://evaren1020-pro.github.io/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/">plotly基础画图使用尝试</a></p>
-</li>
-</ol>
-<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ol>
-<li>页面高度设定了一个固定值，不能自适应，会出现嵌套的滑轮。</li>
-<li>头尾会有nbviewer的水印，比较丑。</li>
-</ol>
-<h1 id="另外的方法"><a href="#另外的方法" class="headerlink" title="另外的方法"></a>另外的方法</h1><p>使用 <code>hexo-jupyter-notebook</code>包，但是我一直似乎路径设置的不对，一直有报错，就暂时放弃。</p>
-<p>网上也有很多参考，可以去查询尝试。</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>jupyterlab</tag>
-        <tag>python</tag>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【jupyterlab+pyecharts】自定义底图的地理信息可视化</title>
     <url>/2021/08/24/%E3%80%90jupyterlab+pyecharts%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%95%E5%9B%BE%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96/</url>
     <content><![CDATA[<p>pyecharts包官方指南：<a href="https://pyecharts.org/#/zh-cn/intro" target="_blank" rel="noopener">https://pyecharts.org/#/zh-cn/intro</a></p>
@@ -299,39 +282,6 @@ c<span class="token punctuation">.</span>render_notebook<span class="token punct
         <tag>python</tag>
         <tag>pyecharts</tag>
         <tag>地图API</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</title>
-    <url>/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"><a href="#【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式" class="headerlink" title="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"></a>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</h1><p>每一次<strong>JupyterLab</strong>或者<strong>Jupyter Notebook</strong>启动时都需要在命令行下跳至对应目录文件夹，再输入<code>jupyter lab</code>或者<code>jupyter notebook</code>启动是不是很麻烦？今天来记录一下两个小设置，让启动<strong>JupyterLab</strong>直接双击桌面快捷方式图标即可。</p>
-<h2 id="1-JupyterLab更改默认启动路径"><a href="#1-JupyterLab更改默认启动路径" class="headerlink" title="1. JupyterLab更改默认启动路径"></a>1. JupyterLab更改默认启动路径</h2><p>已经有很多博客介绍如何更改<strong>Jupyter Notebook</strong>的默认启动路径，但是新一代的<strong>JupyterLab</strong>似乎还没有很多帖子，我这里就来记录一下。其实与<strong>Jupyter Notebook</strong>配置类似，</p>
-<p>（1）先在<code>cmd</code>下输入:</p>
-<p><code>jupyter lab --generate-config</code></p>
-<p>生成默认配置文件。</p>
-<p>（2）找到刚刚生成的配置文件，默认存储于<code>C:\Users\你的用户\.jupyter</code>路径下，打开jupyter_lab_config.py`文件。</p>
-<p>（3）在412行左右，修改路径文件为你需要的默认启动路径。</p>
-<p>注意：使用<strong>/</strong>分隔路径，同时记得<strong>去掉前面的#号</strong>。</p>
-<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84.png" alt="修改启动路径"></p>
-<p>（4）保存退出即可。</p>
-<h2 id="2-创建-Jupyter-lab桌面快捷方式"><a href="#2-创建-Jupyter-lab桌面快捷方式" class="headerlink" title="2. 创建 Jupyter lab桌面快捷方式"></a>2. 创建 Jupyter lab桌面快捷方式</h2><p>网上我查到的都是讲解如何在<strong>Anaconda</strong>环境下创建<strong>JupyterLab</strong>快捷方式，但是我没有装体积庞大的<strong>Anaconda</strong>。其实很简单，自己编写一个简单的<strong>bat</strong>程序，然后为其创建桌面快捷方式并且自定义图标即可。</p>
-<p>（1）创建一个记事本文件，输入：</p>
-<p><code>jupyter lab</code></p>
-<p>（2）更改记事本文件的后缀名为<code>.bat</code></p>
-<p>（3）<code>.bat</code>文件无法直接更改图标，你先将<code>bat</code>程序放到你电脑里一个安全的路径，然后右键发送到桌面快捷方式。</p>
-<p>（4）右键刚刚创建的快捷方式，点击<strong>属性</strong>，而后点击<strong>更改图标</strong>，设为你想要的图标即可。</p>
-<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E6%9B%B4%E6%94%B9%E5%9B%BE%E6%A0%87.png" alt="更改图标"></p>
-<p>（5）图标文件的后缀为<code>.ico</code>，可以下载常见的<code>.jpg,.png</code>格式图片制作。</p>
-<p>可以另存为.bmp文件再直接改后缀为.ico，不过这样图片质量损失较大。建议使用在线的.ico制作网站，上传图片转换即可。</p>
-<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/jupyterlab.png" alt="jupyterlab_png"></p>
-<p>（6）然后双击桌面的快捷方式，即可启动Jupyter lab啦！</p>
-<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E5%9B%BE%E6%A0%87.png" alt="图标"></p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>JupyterLab</tag>
       </tags>
   </entry>
   <entry>
@@ -386,6 +336,56 @@ location2 <span class="token operator">=</span> geolocator<span class="token pun
         <tag>python</tag>
         <tag>地图API</tag>
         <tag>geopy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</title>
+    <url>/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"><a href="#【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式" class="headerlink" title="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"></a>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</h1><p>每一次<strong>JupyterLab</strong>或者<strong>Jupyter Notebook</strong>启动时都需要在命令行下跳至对应目录文件夹，再输入<code>jupyter lab</code>或者<code>jupyter notebook</code>启动是不是很麻烦？今天来记录一下两个小设置，让启动<strong>JupyterLab</strong>直接双击桌面快捷方式图标即可。</p>
+<h2 id="1-JupyterLab更改默认启动路径"><a href="#1-JupyterLab更改默认启动路径" class="headerlink" title="1. JupyterLab更改默认启动路径"></a>1. JupyterLab更改默认启动路径</h2><p>已经有很多博客介绍如何更改<strong>Jupyter Notebook</strong>的默认启动路径，但是新一代的<strong>JupyterLab</strong>似乎还没有很多帖子，我这里就来记录一下。其实与<strong>Jupyter Notebook</strong>配置类似，</p>
+<p>（1）先在<code>cmd</code>下输入:</p>
+<p><code>jupyter lab --generate-config</code></p>
+<p>生成默认配置文件。</p>
+<p>（2）找到刚刚生成的配置文件，默认存储于<code>C:\Users\你的用户\.jupyter</code>路径下，打开jupyter_lab_config.py`文件。</p>
+<p>（3）在412行左右，修改路径文件为你需要的默认启动路径。</p>
+<p>注意：使用<strong>/</strong>分隔路径，同时记得<strong>去掉前面的#号</strong>。</p>
+<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84.png" alt="修改启动路径"></p>
+<p>（4）保存退出即可。</p>
+<h2 id="2-创建-Jupyter-lab桌面快捷方式"><a href="#2-创建-Jupyter-lab桌面快捷方式" class="headerlink" title="2. 创建 Jupyter lab桌面快捷方式"></a>2. 创建 Jupyter lab桌面快捷方式</h2><p>网上我查到的都是讲解如何在<strong>Anaconda</strong>环境下创建<strong>JupyterLab</strong>快捷方式，但是我没有装体积庞大的<strong>Anaconda</strong>。其实很简单，自己编写一个简单的<strong>bat</strong>程序，然后为其创建桌面快捷方式并且自定义图标即可。</p>
+<p>（1）创建一个记事本文件，输入：</p>
+<p><code>jupyter lab</code></p>
+<p>（2）更改记事本文件的后缀名为<code>.bat</code></p>
+<p>（3）<code>.bat</code>文件无法直接更改图标，你先将<code>bat</code>程序放到你电脑里一个安全的路径，然后右键发送到桌面快捷方式。</p>
+<p>（4）右键刚刚创建的快捷方式，点击<strong>属性</strong>，而后点击<strong>更改图标</strong>，设为你想要的图标即可。</p>
+<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E6%9B%B4%E6%94%B9%E5%9B%BE%E6%A0%87.png" alt="更改图标"></p>
+<p>（5）图标文件的后缀为<code>.ico</code>，可以下载常见的<code>.jpg,.png</code>格式图片制作。</p>
+<p>可以另存为.bmp文件再直接改后缀为.ico，不过这样图片质量损失较大。建议使用在线的.ico制作网站，上传图片转换即可。</p>
+<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/jupyterlab.png" alt="jupyterlab_png"></p>
+<p>（6）然后双击桌面的快捷方式，即可启动Jupyter lab啦！</p>
+<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E5%9B%BE%E6%A0%87.png" alt="图标"></p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>JupyterLab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>plotly基础画图使用尝试</title>
+    <url>/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/</url>
+    <content><![CDATA[<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+
+<iframe width="100%" id="iframeid" scrolling="yes" height="1800" frameborder="0" src="https://nbviewer.org/github/EvaRen1020-pro/myblog_ipynb_codes/blob/main/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95.ipynb"></iframe>
+
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>jupyterlab</tag>
+        <tag>python</tag>
+        <tag>plotly</tag>
       </tags>
   </entry>
   <entry>
@@ -560,37 +560,6 @@ car public model mode bundle sharing new travel choice demand</p>
       </tags>
   </entry>
   <entry>
-    <title>下载PeMS交通流数据指南</title>
-    <url>/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<p>今天给大家推荐一个开放的交通数据库，美国加州交通运输局的PeMS数据库，这里有着长达10年的高速公路检测器数据。包含流率、速度、占有率、重车比例、延误、车辆行驶里程、车辆行驶时间、交通事故等类型数据。很多学者都用这里的数据进行研究。
-所以这里给大家介绍一下这个数据库下载数据的使用方式。</p>
-<h2 id="1-要有可以科学上网的VPN"><a href="#1-要有可以科学上网的VPN" class="headerlink" title="1. 要有可以科学上网的VPN"></a>1. 要有可以科学上网的VPN</h2><p>这个请先自行解决。</p>
-<h2 id="2-登录PeMS网站并注册账号"><a href="#2-登录PeMS网站并注册账号" class="headerlink" title="2. 登录PeMS网站并注册账号"></a>2. 登录PeMS网站并注册账号</h2><p>官方网址：<a href="http://pems.dot.ca.gov/" target="_blank" rel="noopener">http://pems.dot.ca.gov/</a>
-首页右侧有<font color="red">apply for an account</font>的链接，注册完毕后回到首页右上角登陆已通过的注册账号。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E9%A6%96%E9%A1%B5.PNG" class title="PeMS首页.PNG">
-
-<h2 id="3-明确要下载的数据类型：线：路段-点：检测器"><a href="#3-明确要下载的数据类型：线：路段-点：检测器" class="headerlink" title="3. 明确要下载的数据类型：线：路段|点：检测器"></a>3. 明确要下载的数据类型：线：路段|点：检测器</h2><p>登录进去后，可以看到上面有一栏<font color="blue">“Overview, Facilities&amp;Devices, Performance, Data Quality, Events”</font>，这里细分又有很多数据，大家可以自行根据需要点进去查看。
-这里我主要介绍下载集计的交通流量、速度、占有率等交通流宏观参数数据。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.PNG" class title="PeMS登陆后界面.PNG">
-
-<p>如这张图所示，以下载某个检测器数据为例，我这里下载I5高速公路主线上编号#716895的检测器<font color="blue">Aggregates</font>集计数据。
-然后就会跳转到这个检测器的数据，并且系统也提供了基础的数据图表供你直观观看。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/%E6%A3%80%E6%B5%8B%E5%99%A8%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B.PNG" class title="检测器数据示例.PNG">
-
-<h2 id="4-选择数据的属性和精度"><a href="#4-选择数据的属性和精度" class="headerlink" title="4. 选择数据的属性和精度"></a>4. 选择数据的属性和精度</h2><p>Quantity, Second Quantity:要下载的数据类型，如流量、速度、占有率等。
-Granularity: 数据精度，月、周、日、5分钟的颗粒度。
-另外，可以选择数据的日期覆盖时段、节假日、车道等。</p>
-<p>然后点击需要下载的数据格式，这里一般下载<font color="blue">EXPORT to.XLS</font>，比较便于后续数据分析。</p>
-<p>好了，就是这么简单，下一篇我来介绍一下我如何用这里的数据进行交通流量的时间序列建模预测。</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>交通流</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用高德开放平台API获取POI位置和路线信息</title>
     <url>/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/</url>
     <content><![CDATA[<p>借助地图API接口，帮助我们快速获取大量的静态、动态数据是非常有效的。
@@ -713,6 +682,37 @@ Granularity: 数据精度，月、周、日、5分钟的颗粒度。
         <tag>HTML</tag>
         <tag>API</tag>
         <tag>地理信息</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>下载PeMS交通流数据指南</title>
+    <url>/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<p>今天给大家推荐一个开放的交通数据库，美国加州交通运输局的PeMS数据库，这里有着长达10年的高速公路检测器数据。包含流率、速度、占有率、重车比例、延误、车辆行驶里程、车辆行驶时间、交通事故等类型数据。很多学者都用这里的数据进行研究。
+所以这里给大家介绍一下这个数据库下载数据的使用方式。</p>
+<h2 id="1-要有可以科学上网的VPN"><a href="#1-要有可以科学上网的VPN" class="headerlink" title="1. 要有可以科学上网的VPN"></a>1. 要有可以科学上网的VPN</h2><p>这个请先自行解决。</p>
+<h2 id="2-登录PeMS网站并注册账号"><a href="#2-登录PeMS网站并注册账号" class="headerlink" title="2. 登录PeMS网站并注册账号"></a>2. 登录PeMS网站并注册账号</h2><p>官方网址：<a href="http://pems.dot.ca.gov/" target="_blank" rel="noopener">http://pems.dot.ca.gov/</a>
+首页右侧有<font color="red">apply for an account</font>的链接，注册完毕后回到首页右上角登陆已通过的注册账号。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E9%A6%96%E9%A1%B5.PNG" class title="PeMS首页.PNG">
+
+<h2 id="3-明确要下载的数据类型：线：路段-点：检测器"><a href="#3-明确要下载的数据类型：线：路段-点：检测器" class="headerlink" title="3. 明确要下载的数据类型：线：路段|点：检测器"></a>3. 明确要下载的数据类型：线：路段|点：检测器</h2><p>登录进去后，可以看到上面有一栏<font color="blue">“Overview, Facilities&amp;Devices, Performance, Data Quality, Events”</font>，这里细分又有很多数据，大家可以自行根据需要点进去查看。
+这里我主要介绍下载集计的交通流量、速度、占有率等交通流宏观参数数据。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.PNG" class title="PeMS登陆后界面.PNG">
+
+<p>如这张图所示，以下载某个检测器数据为例，我这里下载I5高速公路主线上编号#716895的检测器<font color="blue">Aggregates</font>集计数据。
+然后就会跳转到这个检测器的数据，并且系统也提供了基础的数据图表供你直观观看。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/%E6%A3%80%E6%B5%8B%E5%99%A8%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B.PNG" class title="检测器数据示例.PNG">
+
+<h2 id="4-选择数据的属性和精度"><a href="#4-选择数据的属性和精度" class="headerlink" title="4. 选择数据的属性和精度"></a>4. 选择数据的属性和精度</h2><p>Quantity, Second Quantity:要下载的数据类型，如流量、速度、占有率等。
+Granularity: 数据精度，月、周、日、5分钟的颗粒度。
+另外，可以选择数据的日期覆盖时段、节假日、车道等。</p>
+<p>然后点击需要下载的数据格式，这里一般下载<font color="blue">EXPORT to.XLS</font>，比较便于后续数据分析。</p>
+<p>好了，就是这么简单，下一篇我来介绍一下我如何用这里的数据进行交通流量的时间序列建模预测。</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>交通流</tag>
       </tags>
   </entry>
   <entry>
@@ -841,6 +841,87 @@ Granularity: 数据精度，月、周、日、5分钟的颗粒度。
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何将【geojson文件】转成【shp文件】在arcgis中使用</title>
+    <url>/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="如何将【geojson文件】转成【shp文件】在arcgis中使用"><a href="#如何将【geojson文件】转成【shp文件】在arcgis中使用" class="headerlink" title="如何将【geojson文件】转成【shp文件】在arcgis中使用"></a>如何将【geojson文件】转成【shp文件】在arcgis中使用</h1><p>当缺少中国省市对应的地图shp文件时，可以去阿里云的网站下载最新的geojson文件，再使用geopandas库转换为shp文件使用。</p>
+<h2 id="1-在阿里云geojson地图下载网站下载相应geojson文件"><a href="#1-在阿里云geojson地图下载网站下载相应geojson文件" class="headerlink" title="1. 在阿里云geojson地图下载网站下载相应geojson文件"></a>1. 在阿里云geojson地图下载网站下载相应geojson文件</h2><p><a href="http://datav.aliyun.com/portal/school/atlas/area_selector" target="_blank" rel="noopener">http://datav.aliyun.com/portal/school/atlas/area_selector</a></p>
+<h2 id="2-使用python的【geopandas】库"><a href="#2-使用python的【geopandas】库" class="headerlink" title="2. 使用python的【geopandas】库"></a>2. 使用python的【geopandas】库</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> geopandas <span class="token keyword">as</span> gdp
+
+data <span class="token operator">=</span> gdp<span class="token punctuation">.</span>read_file<span class="token punctuation">(</span><span class="token string">'\地图.json'</span><span class="token punctuation">)</span>
+data<span class="token punctuation">.</span>to_file<span class="token punctuation">(</span><span class="token string">'\地图shp'</span><span class="token punctuation">,</span> driver<span class="token operator">=</span><span class="token string">'ESRI Shapefile'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'gbk'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#地图shp是存储的文件夹名称</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="3-导入arcgis即可"><a href="#3-导入arcgis即可" class="headerlink" title="3. 导入arcgis即可"></a>3. 导入arcgis即可</h2>]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>arcgis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开门之作——小白HTML-CSS-JavaScript入门摸索历程</title>
+    <url>/2020/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<p>
+我是一个非计算机专业的同学，不过也因为时代发展，专业需要，也会用python写一些小代码。<br>
+
+</p><p>平时呢热爱<strong>摄影、视频制作、还有视觉上好看的事物</strong>。</p>
+<p>我想开始学Web Design技术也主要是因为，我喜欢的一个YouTuber他的大学专业也本来是网页设计……<strong>Peter Mckinnon!</strong><br></p>
+<p>好了正式开始！</p>
+<p></p>
+
+<h2>1. 学习资源</h2>
+<strong>地址：</strong><u><a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web" target="_blank" rel="noopener"><strong>MDN Web Docs</strong></a><br></u>
+
+<p>这是一个<strong>非常优质</strong>、可以称之为<strong>鼻祖</strong>的<strong>Mozilla</strong>开源社区项目。它其中详细介绍了<strong>Web Design</strong>的各种基础技术知识。好好学，系统性地学，真的会有巨大的收获。
+而且大多数内容都有中文版本。</p>
+<img src="/2020/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/MDN%E6%88%AA%E5%9B%BE.PNG" class title="MDN截图.PNG">
+
+<h2>2. 我的入门历程</h2>
+
+<ul>
+<li>花1-2天时间阅读、上手操作HTML部分教程：<ul>
+<li>了解<code>HTML</code>的结构<code>&lt;head&gt;,&lt;body&gt;,&lt;script&gt;</code>等；</li>
+<li>知道文本<code>&lt;p&gt;</code>(<code>&lt;h1&gt;&lt;div&gt;&lt;span&gt;</code>)、列表<code>&lt;ul&gt;&lt;ol&gt;</code>、超链接<code>&lt;a href&gt;</code>、表格<code>&lt;table&gt;</code>、表单<code>&lt;form&gt;</code>的格式、用途；</li>
+<li>接触<code>CSS</code>的样式知识；</li>
+<li>知道如何选择特定内容<code>querySelector</code>；</li>
+<li><strong>表单<code>&lt;form&gt;</code>那里创建对象响应可能有些难，不过没关系，先仿照着学下去</strong>！</li>
+</ul>
+</li>
+<li>花1天时间学习CSS部分教程：<ul>
+<li>了解<code>CSS</code>结构；</li>
+<li>知道如何选择特定部分，并修改样式；</li>
+<li>学习网页排版位置设置知识&nbsp;(<font color="#2e6da4">虽然这里我也没有好好学就跳过了</font>);</li>
+</ul>
+</li>
+<li>花3-4天时间学习JavaScript部分教程:<ul>
+<li>变量、函数、循环等编程基础与其他编程语言大同小易，这个基础应该原本就具备；</li>
+<li>学会动态操纵文档，<strong><code>DOM</code>树操作</strong>非常重要！</li>
+<li>会在浏览器<code>Console控制台</code>调试程序;</li>
+<li>控件响应事件学习,<strong>这样静态网页才能动起来</strong>；</li>
+<li><strong>其他还有更深层次的前端知识，异步处理，<code>Canvas、OpenGL</code>画图等等我先没有具体去学</strong>，
+因为我的初衷是创建一个个人博客，就急于来自己上手尝试了。<strong>在此还是强烈建议有识之士去好好学习的。</strong></li>
+</ul>
+</li>
+</ul>
+<h2>3. 心得小结</h2>
+
+<p>虽然我自己也没有完完全全吃透<strong>MDN</strong>官方教程上的内容，但是自己这几天照着官方文档和示例去学习，主要有两大感受：</p>
+<ul>
+<li><strong>系统性</strong>！这个教程比其他网络上的博客或者一些网站更专业更全面，并且有示例源码可以仿照学习。</li>
+<li><strong>开心啊</strong>！终于自己可以看懂之前一些html网页源码内容，对于无论是<strong>爬虫、调用API、Echarts使用</strong>等等都很有帮助。</li>
+</ul>
+<p>这个教程非常棒，以后遇到很多困惑都可以再回去查，而且发现网络上很多的解决方案的原始链接都是它！快去学习一下鼻祖的<strong>MDN Web Docs</strong>吧！</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>css</tag>
+        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -997,87 +1078,6 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
         <tag>LSTM</tag>
         <tag>神经网络</tag>
         <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何将【geojson文件】转成【shp文件】在arcgis中使用</title>
-    <url>/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="如何将【geojson文件】转成【shp文件】在arcgis中使用"><a href="#如何将【geojson文件】转成【shp文件】在arcgis中使用" class="headerlink" title="如何将【geojson文件】转成【shp文件】在arcgis中使用"></a>如何将【geojson文件】转成【shp文件】在arcgis中使用</h1><p>当缺少中国省市对应的地图shp文件时，可以去阿里云的网站下载最新的geojson文件，再使用geopandas库转换为shp文件使用。</p>
-<h2 id="1-在阿里云geojson地图下载网站下载相应geojson文件"><a href="#1-在阿里云geojson地图下载网站下载相应geojson文件" class="headerlink" title="1. 在阿里云geojson地图下载网站下载相应geojson文件"></a>1. 在阿里云geojson地图下载网站下载相应geojson文件</h2><p><a href="http://datav.aliyun.com/portal/school/atlas/area_selector" target="_blank" rel="noopener">http://datav.aliyun.com/portal/school/atlas/area_selector</a></p>
-<h2 id="2-使用python的【geopandas】库"><a href="#2-使用python的【geopandas】库" class="headerlink" title="2. 使用python的【geopandas】库"></a>2. 使用python的【geopandas】库</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> geopandas <span class="token keyword">as</span> gdp
-
-data <span class="token operator">=</span> gdp<span class="token punctuation">.</span>read_file<span class="token punctuation">(</span><span class="token string">'\地图.json'</span><span class="token punctuation">)</span>
-data<span class="token punctuation">.</span>to_file<span class="token punctuation">(</span><span class="token string">'\地图shp'</span><span class="token punctuation">,</span> driver<span class="token operator">=</span><span class="token string">'ESRI Shapefile'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'gbk'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#地图shp是存储的文件夹名称</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="3-导入arcgis即可"><a href="#3-导入arcgis即可" class="headerlink" title="3. 导入arcgis即可"></a>3. 导入arcgis即可</h2>]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>arcgis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开门之作——小白HTML-CSS-JavaScript入门摸索历程</title>
-    <url>/2020/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/</url>
-    <content><![CDATA[<p>
-我是一个非计算机专业的同学，不过也因为时代发展，专业需要，也会用python写一些小代码。<br>
-
-</p><p>平时呢热爱<strong>摄影、视频制作、还有视觉上好看的事物</strong>。</p>
-<p>我想开始学Web Design技术也主要是因为，我喜欢的一个YouTuber他的大学专业也本来是网页设计……<strong>Peter Mckinnon!</strong><br></p>
-<p>好了正式开始！</p>
-<p></p>
-
-<h2>1. 学习资源</h2>
-<strong>地址：</strong><u><a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web" target="_blank" rel="noopener"><strong>MDN Web Docs</strong></a><br></u>
-
-<p>这是一个<strong>非常优质</strong>、可以称之为<strong>鼻祖</strong>的<strong>Mozilla</strong>开源社区项目。它其中详细介绍了<strong>Web Design</strong>的各种基础技术知识。好好学，系统性地学，真的会有巨大的收获。
-而且大多数内容都有中文版本。</p>
-<img src="/2020/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/MDN%E6%88%AA%E5%9B%BE.PNG" class title="MDN截图.PNG">
-
-<h2>2. 我的入门历程</h2>
-
-<ul>
-<li>花1-2天时间阅读、上手操作HTML部分教程：<ul>
-<li>了解<code>HTML</code>的结构<code>&lt;head&gt;,&lt;body&gt;,&lt;script&gt;</code>等；</li>
-<li>知道文本<code>&lt;p&gt;</code>(<code>&lt;h1&gt;&lt;div&gt;&lt;span&gt;</code>)、列表<code>&lt;ul&gt;&lt;ol&gt;</code>、超链接<code>&lt;a href&gt;</code>、表格<code>&lt;table&gt;</code>、表单<code>&lt;form&gt;</code>的格式、用途；</li>
-<li>接触<code>CSS</code>的样式知识；</li>
-<li>知道如何选择特定内容<code>querySelector</code>；</li>
-<li><strong>表单<code>&lt;form&gt;</code>那里创建对象响应可能有些难，不过没关系，先仿照着学下去</strong>！</li>
-</ul>
-</li>
-<li>花1天时间学习CSS部分教程：<ul>
-<li>了解<code>CSS</code>结构；</li>
-<li>知道如何选择特定部分，并修改样式；</li>
-<li>学习网页排版位置设置知识&nbsp;(<font color="#2e6da4">虽然这里我也没有好好学就跳过了</font>);</li>
-</ul>
-</li>
-<li>花3-4天时间学习JavaScript部分教程:<ul>
-<li>变量、函数、循环等编程基础与其他编程语言大同小易，这个基础应该原本就具备；</li>
-<li>学会动态操纵文档，<strong><code>DOM</code>树操作</strong>非常重要！</li>
-<li>会在浏览器<code>Console控制台</code>调试程序;</li>
-<li>控件响应事件学习,<strong>这样静态网页才能动起来</strong>；</li>
-<li><strong>其他还有更深层次的前端知识，异步处理，<code>Canvas、OpenGL</code>画图等等我先没有具体去学</strong>，
-因为我的初衷是创建一个个人博客，就急于来自己上手尝试了。<strong>在此还是强烈建议有识之士去好好学习的。</strong></li>
-</ul>
-</li>
-</ul>
-<h2>3. 心得小结</h2>
-
-<p>虽然我自己也没有完完全全吃透<strong>MDN</strong>官方教程上的内容，但是自己这几天照着官方文档和示例去学习，主要有两大感受：</p>
-<ul>
-<li><strong>系统性</strong>！这个教程比其他网络上的博客或者一些网站更专业更全面，并且有示例源码可以仿照学习。</li>
-<li><strong>开心啊</strong>！终于自己可以看懂之前一些html网页源码内容，对于无论是<strong>爬虫、调用API、Echarts使用</strong>等等都很有帮助。</li>
-</ul>
-<p>这个教程非常棒，以后遇到很多困惑都可以再回去查，而且发现网络上很多的解决方案的原始链接都是它！快去学习一下鼻祖的<strong>MDN Web Docs</strong>吧！</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-        <tag>css</tag>
-        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>

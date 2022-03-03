@@ -72,11 +72,11 @@
       <category term="软件和编程" scheme="https://evaren1020-pro.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%BC%96%E7%A8%8B/"/>
     
     
-      <category term="plotly" scheme="https://evaren1020-pro.github.io/tags/plotly/"/>
-    
       <category term="jupyterlab" scheme="https://evaren1020-pro.github.io/tags/jupyterlab/"/>
     
       <category term="python" scheme="https://evaren1020-pro.github.io/tags/python/"/>
+    
+      <category term="plotly" scheme="https://evaren1020-pro.github.io/tags/plotly/"/>
     
   </entry>
   
