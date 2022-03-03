@@ -27,6 +27,26 @@
       </tags>
   </entry>
   <entry>
+    <title>PLSQL导入excel数据方法以及txt编码转换</title>
+    <url>/2020/11/27/PLSQL%E5%AF%BC%E5%85%A5excel%E6%95%B0%E6%8D%AE%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<ul>
+<li><p>把excel另存为用制表符分隔的txt文件，并确保打开编码正确，中文可以正确显示。</p>
+</li>
+<li><p>然后用<strong>文本导入器</strong>，不选<strong>ODBC导入器</strong>，导入<strong>已经创建好的有对应字段的空表中</strong>。</p>
+</li>
+<li><p>推荐<strong>Emeditor</strong>打开超大txt文件，并且实现编码转换。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>sql</tag>
+        <tag>oracle</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>arcgis中XYtoLine失败的原因及解决方案</title>
     <url>/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<h1 id="arcgis中XYtoLine失败的原因及解决方案"><a href="#arcgis中XYtoLine失败的原因及解决方案" class="headerlink" title="arcgis中XYtoLine失败的原因及解决方案"></a>arcgis中XYtoLine失败的原因及解决方案</h1><ol>
@@ -68,26 +88,6 @@
         <tag>jupyterlab</tag>
         <tag>python</tag>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PLSQL导入excel数据方法以及txt编码转换</title>
-    <url>/2020/11/27/PLSQL%E5%AF%BC%E5%85%A5excel%E6%95%B0%E6%8D%AE%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<ul>
-<li><p>把excel另存为用制表符分隔的txt文件，并确保打开编码正确，中文可以正确显示。</p>
-</li>
-<li><p>然后用<strong>文本导入器</strong>，不选<strong>ODBC导入器</strong>，导入<strong>已经创建好的有对应字段的空表中</strong>。</p>
-</li>
-<li><p>推荐<strong>Emeditor</strong>打开超大txt文件，并且实现编码转换。</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>sql</tag>
-        <tag>oracle</tag>
       </tags>
   </entry>
   <entry>
@@ -389,40 +389,6 @@ location2 <span class="token operator">=</span> geolocator<span class="token pun
       </tags>
   </entry>
   <entry>
-    <title>下载Bing搜索界面每日高清美图方法</title>
-    <url>/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h3 id="Bing搜索的每日一图真的很好看，该如何下载呢？"><a href="#Bing搜索的每日一图真的很好看，该如何下载呢？" class="headerlink" title="Bing搜索的每日一图真的很好看，该如何下载呢？"></a><a href="https://cn.bing.com/" target="_blank" rel="noopener">Bing搜索</a>的每日一图真的很好看，该如何下载呢？</h3><ul>
-<li><p>进入Bing搜索主页</p>
-<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/Bing%E9%A6%96%E9%A1%B5.PNG" class title="Bing首页.PNG">
-</li>
-<li><p>按<code>F12</code>打开控制台。
-在<code>Elements</code>下的<code>head</code>中找到图片链接地址。</p>
-</li>
-</ul>
-<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/head%E9%93%BE%E6%8E%A5.PNG" class title="head链接.PNG">
-
-<ul>
-<li><p>复制粘贴到浏览器打开，右键图片另存为即可下载<code>1920*1080</code>分辨率无水印的图。
-如果想下载更高清的<code>UHD</code>大图，将链接两处<code>1920*1080</code>的部分改为<code>UHD</code>即可。</p>
-</li>
-<li><p>如果想下载前几天的图。
-点<code>Network</code>,按<code>Ctrl+R</code>刷新页面，再点首页右下角的向左的箭头，前面图片的链接就会显示出来。
-同理复制链接粘贴打开下载。</p>
-<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/%E5%89%8D%E9%9D%A2%E9%93%BE%E6%8E%A5.PNG" class title="前面链接.PNG">
-</li>
-<li><p><strong>最后还是要注意，图片有版权，不能商业使用。</strong></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>视觉和摄影</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-        <tag>美图</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【自然语言处理】Wordcloud词云分析+LDA主题分类</title>
     <url>/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/</url>
     <content><![CDATA[<p>最近在一门课上，老师分享了一篇关于应用自然语言处理（NLP）模型分析交通领域研究主题分类的论文，我觉得写得很好很有意思。所以，自己也进行一下尝试。
@@ -560,34 +526,37 @@ car public model mode bundle sharing new travel choice demand</p>
       </tags>
   </entry>
   <entry>
-    <title>下载PeMS交通流数据指南</title>
-    <url>/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<p>今天给大家推荐一个开放的交通数据库，美国加州交通运输局的PeMS数据库，这里有着长达10年的高速公路检测器数据。包含流率、速度、占有率、重车比例、延误、车辆行驶里程、车辆行驶时间、交通事故等类型数据。很多学者都用这里的数据进行研究。
-所以这里给大家介绍一下这个数据库下载数据的使用方式。</p>
-<h2 id="1-要有可以科学上网的VPN"><a href="#1-要有可以科学上网的VPN" class="headerlink" title="1. 要有可以科学上网的VPN"></a>1. 要有可以科学上网的VPN</h2><p>这个请先自行解决。</p>
-<h2 id="2-登录PeMS网站并注册账号"><a href="#2-登录PeMS网站并注册账号" class="headerlink" title="2. 登录PeMS网站并注册账号"></a>2. 登录PeMS网站并注册账号</h2><p>官方网址：<a href="http://pems.dot.ca.gov/" target="_blank" rel="noopener">http://pems.dot.ca.gov/</a>
-首页右侧有<font color="red">apply for an account</font>的链接，注册完毕后回到首页右上角登陆已通过的注册账号。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E9%A6%96%E9%A1%B5.PNG" class title="PeMS首页.PNG">
+    <title>下载Bing搜索界面每日高清美图方法</title>
+    <url>/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h3 id="Bing搜索的每日一图真的很好看，该如何下载呢？"><a href="#Bing搜索的每日一图真的很好看，该如何下载呢？" class="headerlink" title="Bing搜索的每日一图真的很好看，该如何下载呢？"></a><a href="https://cn.bing.com/" target="_blank" rel="noopener">Bing搜索</a>的每日一图真的很好看，该如何下载呢？</h3><ul>
+<li><p>进入Bing搜索主页</p>
+<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/Bing%E9%A6%96%E9%A1%B5.PNG" class title="Bing首页.PNG">
+</li>
+<li><p>按<code>F12</code>打开控制台。
+在<code>Elements</code>下的<code>head</code>中找到图片链接地址。</p>
+</li>
+</ul>
+<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/head%E9%93%BE%E6%8E%A5.PNG" class title="head链接.PNG">
 
-<h2 id="3-明确要下载的数据类型：线：路段-点：检测器"><a href="#3-明确要下载的数据类型：线：路段-点：检测器" class="headerlink" title="3. 明确要下载的数据类型：线：路段|点：检测器"></a>3. 明确要下载的数据类型：线：路段|点：检测器</h2><p>登录进去后，可以看到上面有一栏<font color="blue">“Overview, Facilities&amp;Devices, Performance, Data Quality, Events”</font>，这里细分又有很多数据，大家可以自行根据需要点进去查看。
-这里我主要介绍下载集计的交通流量、速度、占有率等交通流宏观参数数据。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.PNG" class title="PeMS登陆后界面.PNG">
-
-<p>如这张图所示，以下载某个检测器数据为例，我这里下载I5高速公路主线上编号#716895的检测器<font color="blue">Aggregates</font>集计数据。
-然后就会跳转到这个检测器的数据，并且系统也提供了基础的数据图表供你直观观看。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/%E6%A3%80%E6%B5%8B%E5%99%A8%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B.PNG" class title="检测器数据示例.PNG">
-
-<h2 id="4-选择数据的属性和精度"><a href="#4-选择数据的属性和精度" class="headerlink" title="4. 选择数据的属性和精度"></a>4. 选择数据的属性和精度</h2><p>Quantity, Second Quantity:要下载的数据类型，如流量、速度、占有率等。
-Granularity: 数据精度，月、周、日、5分钟的颗粒度。
-另外，可以选择数据的日期覆盖时段、节假日、车道等。</p>
-<p>然后点击需要下载的数据格式，这里一般下载<font color="blue">EXPORT to.XLS</font>，比较便于后续数据分析。</p>
-<p>好了，就是这么简单，下一篇我来介绍一下我如何用这里的数据进行交通流量的时间序列建模预测。</p>
+<ul>
+<li><p>复制粘贴到浏览器打开，右键图片另存为即可下载<code>1920*1080</code>分辨率无水印的图。
+如果想下载更高清的<code>UHD</code>大图，将链接两处<code>1920*1080</code>的部分改为<code>UHD</code>即可。</p>
+</li>
+<li><p>如果想下载前几天的图。
+点<code>Network</code>,按<code>Ctrl+R</code>刷新页面，再点首页右下角的向左的箭头，前面图片的链接就会显示出来。
+同理复制链接粘贴打开下载。</p>
+<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/%E5%89%8D%E9%9D%A2%E9%93%BE%E6%8E%A5.PNG" class title="前面链接.PNG">
+</li>
+<li><p><strong>最后还是要注意，图片有版权，不能商业使用。</strong></p>
+</li>
+</ul>
 ]]></content>
       <categories>
-        <category>软件和编程</category>
+        <category>视觉和摄影</category>
       </categories>
       <tags>
-        <tag>交通流</tag>
+        <tag>HTML</tag>
+        <tag>美图</tag>
       </tags>
   </entry>
   <entry>
@@ -713,6 +682,37 @@ Granularity: 数据精度，月、周、日、5分钟的颗粒度。
         <tag>HTML</tag>
         <tag>API</tag>
         <tag>地理信息</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>下载PeMS交通流数据指南</title>
+    <url>/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<p>今天给大家推荐一个开放的交通数据库，美国加州交通运输局的PeMS数据库，这里有着长达10年的高速公路检测器数据。包含流率、速度、占有率、重车比例、延误、车辆行驶里程、车辆行驶时间、交通事故等类型数据。很多学者都用这里的数据进行研究。
+所以这里给大家介绍一下这个数据库下载数据的使用方式。</p>
+<h2 id="1-要有可以科学上网的VPN"><a href="#1-要有可以科学上网的VPN" class="headerlink" title="1. 要有可以科学上网的VPN"></a>1. 要有可以科学上网的VPN</h2><p>这个请先自行解决。</p>
+<h2 id="2-登录PeMS网站并注册账号"><a href="#2-登录PeMS网站并注册账号" class="headerlink" title="2. 登录PeMS网站并注册账号"></a>2. 登录PeMS网站并注册账号</h2><p>官方网址：<a href="http://pems.dot.ca.gov/" target="_blank" rel="noopener">http://pems.dot.ca.gov/</a>
+首页右侧有<font color="red">apply for an account</font>的链接，注册完毕后回到首页右上角登陆已通过的注册账号。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E9%A6%96%E9%A1%B5.PNG" class title="PeMS首页.PNG">
+
+<h2 id="3-明确要下载的数据类型：线：路段-点：检测器"><a href="#3-明确要下载的数据类型：线：路段-点：检测器" class="headerlink" title="3. 明确要下载的数据类型：线：路段|点：检测器"></a>3. 明确要下载的数据类型：线：路段|点：检测器</h2><p>登录进去后，可以看到上面有一栏<font color="blue">“Overview, Facilities&amp;Devices, Performance, Data Quality, Events”</font>，这里细分又有很多数据，大家可以自行根据需要点进去查看。
+这里我主要介绍下载集计的交通流量、速度、占有率等交通流宏观参数数据。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.PNG" class title="PeMS登陆后界面.PNG">
+
+<p>如这张图所示，以下载某个检测器数据为例，我这里下载I5高速公路主线上编号#716895的检测器<font color="blue">Aggregates</font>集计数据。
+然后就会跳转到这个检测器的数据，并且系统也提供了基础的数据图表供你直观观看。</p>
+<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/%E6%A3%80%E6%B5%8B%E5%99%A8%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B.PNG" class title="检测器数据示例.PNG">
+
+<h2 id="4-选择数据的属性和精度"><a href="#4-选择数据的属性和精度" class="headerlink" title="4. 选择数据的属性和精度"></a>4. 选择数据的属性和精度</h2><p>Quantity, Second Quantity:要下载的数据类型，如流量、速度、占有率等。
+Granularity: 数据精度，月、周、日、5分钟的颗粒度。
+另外，可以选择数据的日期覆盖时段、节假日、车道等。</p>
+<p>然后点击需要下载的数据格式，这里一般下载<font color="blue">EXPORT to.XLS</font>，比较便于后续数据分析。</p>
+<p>好了，就是这么简单，下一篇我来介绍一下我如何用这里的数据进行交通流量的时间序列建模预测。</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>交通流</tag>
       </tags>
   </entry>
   <entry>
@@ -1081,6 +1081,31 @@ data<span class="token punctuation">.</span>to_file<span class="token punctuatio
       </tags>
   </entry>
   <entry>
+    <title>无需插件ArcGIS自定义加载连接超全WMTS底图服务</title>
+    <url>/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/</url>
+    <content><![CDATA[<p>有的时候ArcGIS使用自带的添加底图功能失灵，或者想自己额外添加在线底图，可以使用ArcGIS其自带的WMTS服务功能！</p>
+<h1 id="1-打开【catalog-GIS-Servers-Add-WMTS-Server】"><a href="#1-打开【catalog-GIS-Servers-Add-WMTS-Server】" class="headerlink" title="1. 打开【catalog-GIS Servers-Add WMTS Server】"></a>1. 打开【catalog-GIS Servers-Add WMTS Server】</h1><h1 id="2-输入http-xdc-at-map-wmts"><a href="#2-输入http-xdc-at-map-wmts" class="headerlink" title="2. 输入http://xdc.at/map/wmts/"></a>2. 输入<a href="http://xdc.at/map/wmts/" target="_blank" rel="noopener">http://xdc.at/map/wmts/</a></h1><p>这里集成了天地图、高德地图、openstreetmap、谷歌地图等等</p>
+<h1 id="3-点【Get-Layers】"><a href="#3-点【Get-Layers】" class="headerlink" title="3. 点【Get Layers】"></a>3. 点【<strong>Get Layers</strong>】</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts1.PNG" class title="arcgis_wmts1.PNG">
+
+<h1 id="4-双击想要的底图连接wmts服务"><a href="#4-双击想要的底图连接wmts服务" class="headerlink" title="4. 双击想要的底图连接wmts服务"></a>4. 双击想要的底图连接wmts服务</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts3.PNG" class title="arcgis_wmts3.PNG">
+
+<h1 id="5-把想要的底图拖到【Table-Of-Contents】"><a href="#5-把想要的底图拖到【Table-Of-Contents】" class="headerlink" title="5. 把想要的底图拖到【Table Of Contents】"></a>5. 把想要的底图拖到【Table Of Contents】</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts2.PNG" class title="arcgis_wmts2.PNG">
+
+<h1 id="额外附一个ArcGIS-Server服务地址"><a href="#额外附一个ArcGIS-Server服务地址" class="headerlink" title="额外附一个ArcGIS Server服务地址"></a>额外附一个ArcGIS Server服务地址</h1><p><a href="https://map.geoq.cn/arcgis/services/" target="_blank" rel="noopener">https://map.geoq.cn/arcgis/services/</a></p>
+<img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts1.PNG" class title="arcgis_wmts1.PNG">
+
+<p>使用方式同上</p>
+<p>打开【catalog-GIS Servers-Add ArcGIS Server】</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>地图API</tag>
+        <tag>ArcGIS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>配置Hexo的历程和一些bug解决方案</title>
     <url>/2020/01/28/%E9%85%8D%E7%BD%AEHexo%E7%9A%84%E5%8E%86%E7%A8%8B%E5%92%8C%E4%B8%80%E4%BA%9Bbug%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<p>这篇主要来讲讲我怎么入手搭建自己的Hexo博客。我主要是按照这篇教程<strong><a href="https://sunhwee.com/posts/6e8839eb.html" target="_blank" rel="noopener">Hexo+Github博客搭建完全教程</a></strong>来做的，感谢<strong><a href="https://sunhwee.com/" target="_blank" rel="noopener">洪卫</a></strong> ，他已经写的非常详细了。
@@ -1185,31 +1210,6 @@ hexo<span class="token punctuation">.</span>extend<span class="token punctuation
       <tags>
         <tag>Hexo</tag>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无需插件ArcGIS自定义加载连接超全WMTS底图服务</title>
-    <url>/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/</url>
-    <content><![CDATA[<p>有的时候ArcGIS使用自带的添加底图功能失灵，或者想自己额外添加在线底图，可以使用ArcGIS其自带的WMTS服务功能！</p>
-<h1 id="1-打开【catalog-GIS-Servers-Add-WMTS-Server】"><a href="#1-打开【catalog-GIS-Servers-Add-WMTS-Server】" class="headerlink" title="1. 打开【catalog-GIS Servers-Add WMTS Server】"></a>1. 打开【catalog-GIS Servers-Add WMTS Server】</h1><h1 id="2-输入http-xdc-at-map-wmts"><a href="#2-输入http-xdc-at-map-wmts" class="headerlink" title="2. 输入http://xdc.at/map/wmts/"></a>2. 输入<a href="http://xdc.at/map/wmts/" target="_blank" rel="noopener">http://xdc.at/map/wmts/</a></h1><p>这里集成了天地图、高德地图、openstreetmap、谷歌地图等等</p>
-<h1 id="3-点【Get-Layers】"><a href="#3-点【Get-Layers】" class="headerlink" title="3. 点【Get Layers】"></a>3. 点【<strong>Get Layers</strong>】</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts1.PNG" class title="arcgis_wmts1.PNG">
-
-<h1 id="4-双击想要的底图连接wmts服务"><a href="#4-双击想要的底图连接wmts服务" class="headerlink" title="4. 双击想要的底图连接wmts服务"></a>4. 双击想要的底图连接wmts服务</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts3.PNG" class title="arcgis_wmts3.PNG">
-
-<h1 id="5-把想要的底图拖到【Table-Of-Contents】"><a href="#5-把想要的底图拖到【Table-Of-Contents】" class="headerlink" title="5. 把想要的底图拖到【Table Of Contents】"></a>5. 把想要的底图拖到【Table Of Contents】</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts2.PNG" class title="arcgis_wmts2.PNG">
-
-<h1 id="额外附一个ArcGIS-Server服务地址"><a href="#额外附一个ArcGIS-Server服务地址" class="headerlink" title="额外附一个ArcGIS Server服务地址"></a>额外附一个ArcGIS Server服务地址</h1><p><a href="https://map.geoq.cn/arcgis/services/" target="_blank" rel="noopener">https://map.geoq.cn/arcgis/services/</a></p>
-<img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts1.PNG" class title="arcgis_wmts1.PNG">
-
-<p>使用方式同上</p>
-<p>打开【catalog-GIS Servers-Add ArcGIS Server】</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>地图API</tag>
-        <tag>ArcGIS</tag>
       </tags>
   </entry>
 </search>
