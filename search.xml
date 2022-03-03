@@ -24,10 +24,8 @@
     <title>IBM Watson Studio云机器学习平台</title>
     <url>/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/</url>
     <content><![CDATA[<h1 id="IBM-Watson-Studio云机器学习平台"><a href="#IBM-Watson-Studio云机器学习平台" class="headerlink" title="IBM Watson Studio云机器学习平台"></a>IBM Watson Studio云机器学习平台</h1><p><a href="https://cloud.ibm.com/catalog/services/watson-studio?cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork-20718538-www-coursera-org-www-coursera-org&amp;cm_mmca1=000026UJ&amp;cm_mmca2=10006555&amp;cm_mmca3=M12345678&amp;cvosrc=email.Newsletter.M12345678&amp;cvo_campaign=000026U" target="_blank" rel="noopener">IBM Watson Studio</a>是IBM Cloud云服务中的一个核心平台，集成了很多人工智能工具，可以连接数据库进行云存储，创建Dashboard仪表盘，在线训练你的机器学习模型，支持Jupyter Notebook编写代码及分享，支持RStudio、SPSS Modeler等等。并且，其内置了很多已经构建好的机器学习模型，如自然语言文本分类、图像识别、深度学习模型、最优化决策。看起来就很有吸引力！</p>
-<img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/%E6%9C%8D%E5%8A%A1.PNG" class title="服务.PNG">
-
-<img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/home_page.png" class title="home_page.png">
-
+<p><img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/%E6%9C%8D%E5%8A%A1.PNG" alt="服务.PNG"></p>
+<p><img src="/2021/02/22/IBM%20Watson%20Studio%E4%BA%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/home_page.png" alt="home_page.png"></p>
 <p>在此分享Coursera上关于简易上手使用IBM Watson Studio的<a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/FinalModule_Coursera/IBM_Watson_Setup.md.html?origin=www.coursera.org" target="_blank" rel="noopener">教程</a>，开始写你在Watson Studio上的第一段Jupyter Notebook代码吧。</p>
 <p>同时分享两则<strong>注意事项</strong>：</p>
 <ol>
@@ -263,10 +261,8 @@ video_demo<span class="token punctuation">(</span><span class="token punctuation
   <entry>
     <title>【python+geopy包】地理信息检索</title>
     <url>/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/</url>
-    <content><![CDATA[<ol>
-<li><strong>注册百度AK</strong></li>
-</ol>
-<p><img src="/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%5C%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BEAK.png" alt="百度地图AK.png"></p>
+    <content><![CDATA[<p><strong>1. 注册百度AK</strong></p>
+<p><img src="/2020/11/04/%E3%80%90python+geopy%E5%8C%85%E3%80%91%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BEAK.png" alt="百度地图AK.png"></p>
 <p><strong>2.开始编码</strong></p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> geopy<span class="token punctuation">.</span>geocoders <span class="token keyword">import</span> Nominatim<span class="token punctuation">,</span>BaiduV3
 
@@ -530,22 +526,19 @@ car public model mode bundle sharing new travel choice demand</p>
     <url>/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h3 id="Bing搜索的每日一图真的很好看，该如何下载呢？"><a href="#Bing搜索的每日一图真的很好看，该如何下载呢？" class="headerlink" title="Bing搜索的每日一图真的很好看，该如何下载呢？"></a><a href="https://cn.bing.com/" target="_blank" rel="noopener">Bing搜索</a>的每日一图真的很好看，该如何下载呢？</h3><ul>
 <li><p>进入Bing搜索主页</p>
-<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/Bing%E9%A6%96%E9%A1%B5.PNG" class title="Bing首页.PNG">
+<p><img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/Bing%E9%A6%96%E9%A1%B5.PNG" alt="Bing首页.PNG"></p>
 </li>
 <li><p>按<code>F12</code>打开控制台。
 在<code>Elements</code>下的<code>head</code>中找到图片链接地址。</p>
+<p><img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/head%E9%93%BE%E6%8E%A5.PNG" alt="head链接.PNG"></p>
 </li>
-</ul>
-<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/head%E9%93%BE%E6%8E%A5.PNG" class title="head链接.PNG">
-
-<ul>
 <li><p>复制粘贴到浏览器打开，右键图片另存为即可下载<code>1920*1080</code>分辨率无水印的图。
 如果想下载更高清的<code>UHD</code>大图，将链接两处<code>1920*1080</code>的部分改为<code>UHD</code>即可。</p>
 </li>
 <li><p>如果想下载前几天的图。
 点<code>Network</code>,按<code>Ctrl+R</code>刷新页面，再点首页右下角的向左的箭头，前面图片的链接就会显示出来。
 同理复制链接粘贴打开下载。</p>
-<img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/%E5%89%8D%E9%9D%A2%E9%93%BE%E6%8E%A5.PNG" class title="前面链接.PNG">
+<p><img src="/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/%E5%89%8D%E9%9D%A2%E9%93%BE%E6%8E%A5.PNG" alt="前面链接.PNG"></p>
 </li>
 <li><p><strong>最后还是要注意，图片有版权，不能商业使用。</strong></p>
 </li>
@@ -566,21 +559,17 @@ car public model mode bundle sharing new travel choice demand</p>
 这次我就来讲讲怎么利用高德开发平台API接口，获取一些设施位置和路径规划信息。</p>
 <h2 id="高德开放平台"><a href="#高德开放平台" class="headerlink" title="高德开放平台"></a>高德开放平台</h2><p><a href="https://lbs.amap.com/api/webservice/summary" target="_blank" rel="noopener">高德开放平台</a>可以让你自己开发的应用嵌入高德服务，使用高德在地理信息服务上的贡献。
 因为这次我主要需要用到的是一些信息搜索，所以用的是<code>开发支持->Web服务->Web服务API</code>，其他需要移动应用开发的可以去查询<strong>开发支持</strong>下的<strong>Web端、Andriod平台、IOS平台、微信小程序</strong>等等。</p>
-<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/web_API_intro.PNG" class title="web_API_intro.PNG">
-
+<p><img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/web_API_intro.PNG" alt="web_API_intro.PNG"></p>
 <p>如平台的简介，它可以帮你实现搜索、路径规划、行驶距离测量等功能。</p>
 <h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h3><p>申请一个高德的适用于Web服务的<code>key</code>，之后在<code>URL</code>里需要填上自己的<code>key</code>。注意个人用户每日每个key的使用次数是有限额的，超限了查询信息返回会报错，但一个人可以申请好多个。</p>
-<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/key.PNG" class title="key.PNG">
-
+<p><img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/key.PNG" alt="key.PNG"></p>
 <h3 id="2-根据需要填充URL关键字"><a href="#2-根据需要填充URL关键字" class="headerlink" title="2. 根据需要填充URL关键字"></a>2. 根据需要填充URL关键字</h3><p>我们这次用<code>关键字搜索</code>功能，来查询POI(point of interest)信息，以查询某一城市的机场、火车站的枢纽地理信息为例。
 根据开发文档提供的URL示例:<code><a href="https://restapi.amap.com/v3/place/text?parameters" target="_blank" rel="noopener">https://restapi.amap.com/v3/place/text?parameters</a></code>
 我们把<code>parameters</code>替换为搜索时限定的一些关键词，并且用<code>&</code>连接不同的条件，记得替换你自己申请的key。
 比如：<code><a href="https://restapi.amap.com/v3/place/text?keywords=火车站&amp;city=北京&amp;citylimit=true&amp;extensions=all&amp;key=你申请的key&amp;offset=20&amp;page=1" target="_blank" rel="noopener">https://restapi.amap.com/v3/place/text?keywords=火车站&amp;city=北京&amp;citylimit=true&amp;extensions=all&amp;key=你申请的key&amp;offset=20&amp;page=1</a></code></p>
-<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/keywords_search.PNG" class title="keywords_search.PNG">
-
+<p><img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/keywords_search.PNG" alt="keywords_search.PNG"></p>
 <p>返回的结果，也是参照开发文档，注意弄清层级结构，即可获取对应信息，默认返回<code>json</code>格式。</p>
-<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/result_parameter.PNG" class title="result_parameter.PNG">
-
+<p><img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/result_parameter.PNG" alt="result_parameter.PNG"></p>
 <p>我这里会主要想要获取经纬度信息，在<code>['pois']->['poi']->['location']</code>下面。</p>
 <h3 id="3-使用python批量访问获取结果"><a href="#3-使用python批量访问获取结果" class="headerlink" title="3. 使用python批量访问获取结果"></a>3. 使用python批量访问获取结果</h3><p>用python的<code>requests</code>库，获取访问结果，完整代码如下。这里用简单的<code>GET</code>方式填充URL的参数即可，以后自己爬其他的信息还有可能要用到<code>POST</code>方式，但以字典方式传送参数也是一样的。</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> requests
@@ -654,8 +643,7 @@ car public model mode bundle sharing new travel choice demand</p>
 <h3 id="获取路径规划信息"><a href="#获取路径规划信息" class="headerlink" title="*获取路径规划信息"></a>*获取路径规划信息</h3><p>刚才是介绍如何用<code>关键字搜索</code>功能，进行一些POI点的信息查询。现在做一些稍微复杂一点点的更深入的查询。
 查询两个点之间的不同交通方式的路径规划信息，比如<strong>驾车路线、耗时、距离，公交的路线、耗时、花费</strong>等。
 此时查询<a href="https://lbs.amap.com/api/webservice/guide/api/direction" target="_blank" rel="noopener">路径规划</a>的对应开发文档。</p>
-<img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/route_planning.PNG" class title="route_planning.PNG">
-
+<p><img src="/2020/02/22/%E4%BD%BF%E7%94%A8%E9%AB%98%E5%BE%B7%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0API%E8%8E%B7%E5%8F%96POI%E4%BD%8D%E7%BD%AE%E5%92%8C%E8%B7%AF%E7%BA%BF%E4%BF%A1%E6%81%AF/route_planning.PNG" alt="route_planning.PNG"></p>
 <ul>
 <li><p>驾车路径规划
 同理，弄清URL需要填充的参数。
@@ -692,16 +680,13 @@ car public model mode bundle sharing new travel choice demand</p>
 <h2 id="1-要有可以科学上网的VPN"><a href="#1-要有可以科学上网的VPN" class="headerlink" title="1. 要有可以科学上网的VPN"></a>1. 要有可以科学上网的VPN</h2><p>这个请先自行解决。</p>
 <h2 id="2-登录PeMS网站并注册账号"><a href="#2-登录PeMS网站并注册账号" class="headerlink" title="2. 登录PeMS网站并注册账号"></a>2. 登录PeMS网站并注册账号</h2><p>官方网址：<a href="http://pems.dot.ca.gov/" target="_blank" rel="noopener">http://pems.dot.ca.gov/</a>
 首页右侧有<font color="red">apply for an account</font>的链接，注册完毕后回到首页右上角登陆已通过的注册账号。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E9%A6%96%E9%A1%B5.PNG" class title="PeMS首页.PNG">
-
+<p><img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E9%A6%96%E9%A1%B5.PNG" alt="PeMS首页.PNG"></p>
 <h2 id="3-明确要下载的数据类型：线：路段-点：检测器"><a href="#3-明确要下载的数据类型：线：路段-点：检测器" class="headerlink" title="3. 明确要下载的数据类型：线：路段|点：检测器"></a>3. 明确要下载的数据类型：线：路段|点：检测器</h2><p>登录进去后，可以看到上面有一栏<font color="blue">“Overview, Facilities&amp;Devices, Performance, Data Quality, Events”</font>，这里细分又有很多数据，大家可以自行根据需要点进去查看。
 这里我主要介绍下载集计的交通流量、速度、占有率等交通流宏观参数数据。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.PNG" class title="PeMS登陆后界面.PNG">
-
+<p><img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/PeMS%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.PNG" alt="PeMS登陆后界面.PNG"></p>
 <p>如这张图所示，以下载某个检测器数据为例，我这里下载I5高速公路主线上编号#716895的检测器<font color="blue">Aggregates</font>集计数据。
 然后就会跳转到这个检测器的数据，并且系统也提供了基础的数据图表供你直观观看。</p>
-<img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/%E6%A3%80%E6%B5%8B%E5%99%A8%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B.PNG" class title="检测器数据示例.PNG">
-
+<p><img src="/2020/06/15/%E4%B8%8B%E8%BD%BDPeMS%E4%BA%A4%E9%80%9A%E6%B5%81%E6%95%B0%E6%8D%AE%E6%8C%87%E5%8D%97/%E6%A3%80%E6%B5%8B%E5%99%A8%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B.PNG" alt="检测器数据示例.PNG"></p>
 <h2 id="4-选择数据的属性和精度"><a href="#4-选择数据的属性和精度" class="headerlink" title="4. 选择数据的属性和精度"></a>4. 选择数据的属性和精度</h2><p>Quantity, Second Quantity:要下载的数据类型，如流量、速度、占有率等。
 Granularity: 数据精度，月、周、日、5分钟的颗粒度。
 另外，可以选择数据的日期覆盖时段、节假日、车道等。</p>
@@ -826,15 +811,13 @@ Granularity: 数据精度，月、周、日、5分钟的颗粒度。
 <li><p>找到源码位置，即/python3.7\Lib\site-packages\PyALE_src\ALE_1D.py</p>
 </li>
 <li><p>找到rug plot内置的位置，修改保存</p>
-<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/code_position.png" class title="code_position.png">
+<p><img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/code_position.png" alt="code_position.png"></p>
 </li>
 <li><p>修改的代码就能够在下次运行时立即生效</p>
-<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/before.JPG" class title="before.JPG">
-
+<p><img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/before.JPG" alt="before.JPG"></p>
+<p><img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/after.PNG" alt="after.PNG"></p>
 </li>
 </ol>
-<img src="/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/after.PNG" class title="after.PNG">
-
 ]]></content>
       <categories>
         <category>软件和编程</category>
@@ -859,8 +842,7 @@ Granularity: 数据精度，月、周、日、5分钟的颗粒度。
 
 <p>这是一个<strong>非常优质</strong>、可以称之为<strong>鼻祖</strong>的<strong>Mozilla</strong>开源社区项目。它其中详细介绍了<strong>Web Design</strong>的各种基础技术知识。好好学，系统性地学，真的会有巨大的收获。
 而且大多数内容都有中文版本。</p>
-<img src="/2020/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/MDN%E6%88%AA%E5%9B%BE.PNG" class title="MDN截图.PNG">
-
+<p><img src="/2020/01/28/%E5%BC%80%E9%97%A8%E4%B9%8B%E4%BD%9C%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BDHTML-CSS-JavaScript%E5%85%A5%E9%97%A8%E6%91%B8%E7%B4%A2%E5%8E%86%E7%A8%8B/MDN%E6%88%AA%E5%9B%BE.PNG" alt="MDN截图.PNG"></p>
 <h2>2. 我的入门历程</h2>
 
 <ul>
@@ -929,26 +911,18 @@ data<span class="token punctuation">.</span>to_file<span class="token punctuatio
     <url>/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/</url>
     <content><![CDATA[<p>正好这学期选修了一门交通流理论的课程，这里介绍一下我最后的课程论文，如何基于上一篇提到的在PeMS数据库下载到的数据，应用LSTM模型进行短时交通流量预测。</p>
 <h2 id="1-数据准备"><a href="#1-数据准备" class="headerlink" title="1. 数据准备"></a>1. 数据准备</h2><p>2019年9月1日至9月28日四周的交通流量数据，数据粒度是5分钟一统计，属性包含流率(veh/ 5 minutes),速度(mph),占有率(%),重车比例(%)。</p>
-<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E6%95%B0%E6%8D%AE%E5%B1%95%E7%A4%BA.PNG" class title="数据展示.PNG">
-
-<h2 id="2-数据描述性统计"><a href="#2-数据描述性统计" class="headerlink" title="2. 数据描述性统计"></a>2. 数据描述性统计</h2><h3 id="1-绘制流率、速度、密度三参数基本图"><a href="#1-绘制流率、速度、密度三参数基本图" class="headerlink" title="(1) 绘制流率、速度、密度三参数基本图"></a>(1) 绘制流率、速度、密度三参数基本图</h3><img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/flow&occ.png" class title="flow&amp;occ.png">
-
-<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/speed&occ.png" class title="speed&amp;occ.png">
-
+<p><img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E6%95%B0%E6%8D%AE%E5%B1%95%E7%A4%BA.PNG" alt="数据展示.PNG"></p>
+<h2 id="2-数据描述性统计"><a href="#2-数据描述性统计" class="headerlink" title="2. 数据描述性统计"></a>2. 数据描述性统计</h2><h3 id="1-绘制流率、速度、密度三参数基本图"><a href="#1-绘制流率、速度、密度三参数基本图" class="headerlink" title="(1) 绘制流率、速度、密度三参数基本图"></a>(1) 绘制流率、速度、密度三参数基本图</h3><p><img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/flow&occ.png" alt="flow&amp;occ.png"></p>
+<p><img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/speed&occ.png" alt="speed&amp;occ.png"></p>
 <h3 id="2-概率密度分布"><a href="#2-概率密度分布" class="headerlink" title="(2) 概率密度分布"></a>(2) 概率密度分布</h3><p>绘制流率、速度的概率密度分布图和累积概率密度分布图。</p>
-<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E6%B5%81%E9%87%8F%E7%9A%84%E6%A6%82%E7%8E%87%E5%AF%86%E5%BA%A6%E5%88%86%E5%B8%83.png" class title="流量的概率密度分布.png">
-
-<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E9%80%9F%E5%BA%A6%E7%9A%84%E6%A6%82%E7%8E%87%E5%AF%86%E5%BA%A6%E5%88%86%E5%B8%83.png" class title="速度的概率密度分布.png">
-
+<p><img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E6%B5%81%E9%87%8F%E7%9A%84%E6%A6%82%E7%8E%87%E5%AF%86%E5%BA%A6%E5%88%86%E5%B8%83.png" alt="流量的概率密度分布.png"></p>
+<p><img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E9%80%9F%E5%BA%A6%E7%9A%84%E6%A6%82%E7%8E%87%E5%AF%86%E5%BA%A6%E5%88%86%E5%B8%83.png" alt="速度的概率密度分布.png"></p>
 <h3 id="3-时间序列变化"><a href="#3-时间序列变化" class="headerlink" title="(3) 时间序列变化"></a>(3) 时间序列变化</h3><p>观察流量、重车分布、速度、占有率的时序变化。
 以9月1日一天的数据为例：</p>
-<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E4%BA%A4%E9%80%9A%E6%B5%81%E4%B8%80%E5%A4%A9.png" class title="交通流一天.png">
-
-<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E9%80%9F%E5%BA%A6%E5%8D%A0%E6%9C%89%E7%8E%87%E4%B8%80%E5%A4%A9.png" class title="速度占有率一天.png">
-
+<p><img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E4%BA%A4%E9%80%9A%E6%B5%81%E4%B8%80%E5%A4%A9.png" alt="交通流一天.png"></p>
+<p><img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E9%80%9F%E5%BA%A6%E5%8D%A0%E6%9C%89%E7%8E%87%E4%B8%80%E5%A4%A9.png" alt="速度占有率一天.png"></p>
 <p>所有四周的流量时间序列变化：</p>
-<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E6%B5%81%E9%87%8F.png" class title="时间序列流量.png">
-
+<p><img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E6%B5%81%E9%87%8F.png" alt="时间序列流量.png"></p>
 <h2 id="3-LSTM模型构建"><a href="#3-LSTM模型构建" class="headerlink" title="3. LSTM模型构建"></a>3. LSTM模型构建</h2><p>以前三周数据训练，最后一周数据预测。时间步设为12，即前一个小时预测下一个5分钟。
 话不多说，直接上代码。</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
@@ -1065,10 +1039,10 @@ ax3<span class="token punctuation">.</span>set_xticklabels<span class="token pun
 plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span>
 plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="结果展示："><a href="#结果展示：" class="headerlink" title="结果展示："></a>结果展示：</h3><p>最后一周所有的预测：</p>
-<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E5%85%A8%E9%83%A8%E9%A2%84%E6%B5%8B.png" class title="全部预测.png">
-<p>9月28日结果：</p>
-<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/9.28%E9%A2%84%E6%B5%8B.png" class title="9.28预测.png">
-<p>预测的效果还可以，毕竟只设置了单隐层。</p>
+<p><img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/%E5%85%A8%E9%83%A8%E9%A2%84%E6%B5%8B.png" alt="全部预测.png">
+9月28日结果：
+<img src="/2020/06/15/%E5%9F%BA%E4%BA%8E%E5%A4%9A%E5%85%83LSTM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%AD%E6%97%B6%E4%BA%A4%E9%80%9A%E6%B5%81%E9%87%8F%E9%A2%84%E6%B5%8B/9.28%E9%A2%84%E6%B5%8B.png" alt="9.28预测.png">
+预测的效果还可以，毕竟只设置了单隐层。</p>
 ]]></content>
       <categories>
         <category>软件和编程</category>
@@ -1190,7 +1164,7 @@ hexo<span class="token punctuation">.</span>extend<span class="token punctuation
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li><p>然后将所引用的图片放在<code>_posts</code>下与文章同名文件夹下</p>
-<img src="/2020/01/28/%E9%85%8D%E7%BD%AEHexo%E7%9A%84%E5%8E%86%E7%A8%8B%E5%92%8C%E4%B8%80%E4%BA%9Bbug%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/01/28/%E9%85%8D%E7%BD%AEHexo%E7%9A%84%E5%8E%86%E7%A8%8B%E5%92%8C%E4%B8%80%E4%BA%9Bbug%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E7%A4%BA%E4%BE%8B%E6%88%AA%E5%9B%BE.PNG" class title="文件路径示例截图.PNG">
+<p><img src="/2020/01/28/%E9%85%8D%E7%BD%AEHexo%E7%9A%84%E5%8E%86%E7%A8%8B%E5%92%8C%E4%B8%80%E4%BA%9Bbug%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E7%A4%BA%E4%BE%8B%E6%88%AA%E5%9B%BE.PNG" alt="文件路径示例截图.PNG"></p>
 </li>
 <li><p>用hexo语法，如我的示例引用：</p>
 <pre><code><font color="white"> {% asset_img 文件路径示例截图.PNG %}</font></code></pre></li>
