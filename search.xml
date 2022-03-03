@@ -27,6 +27,22 @@
       </tags>
   </entry>
   <entry>
+    <title>arcgis中XYtoLine失败的原因及解决方案</title>
+    <url>/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h1 id="arcgis中XYtoLine失败的原因及解决方案"><a href="#arcgis中XYtoLine失败的原因及解决方案" class="headerlink" title="arcgis中XYtoLine失败的原因及解决方案"></a>arcgis中XYtoLine失败的原因及解决方案</h1><ol>
+<li>包含<strong>XY数据</strong>的<strong>csv</strong>文件需先导出为<strong>dbf</strong>格式</li>
+<li>而后再将这个<strong>dbf</strong>数据导入arcgis</li>
+<li>运行<strong>XYtoLine</strong>工具</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>arcgis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PLSQL导入excel数据方法以及txt编码转换</title>
     <url>/2020/11/27/PLSQL%E5%AF%BC%E5%85%A5excel%E6%95%B0%E6%8D%AE%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<ul>
@@ -47,19 +63,20 @@
       </tags>
   </entry>
   <entry>
-    <title>arcgis中XYtoLine失败的原因及解决方案</title>
-    <url>/2022/01/02/arcgis%E4%B8%ADXYtoLine%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<h1 id="arcgis中XYtoLine失败的原因及解决方案"><a href="#arcgis中XYtoLine失败的原因及解决方案" class="headerlink" title="arcgis中XYtoLine失败的原因及解决方案"></a>arcgis中XYtoLine失败的原因及解决方案</h1><ol>
-<li>包含<strong>XY数据</strong>的<strong>csv</strong>文件需先导出为<strong>dbf</strong>格式</li>
-<li>而后再将这个<strong>dbf</strong>数据导入arcgis</li>
-<li>运行<strong>XYtoLine</strong>工具</li>
-</ol>
+    <title>plotly基础画图使用尝试</title>
+    <url>/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/</url>
+    <content><![CDATA[<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+
+<iframe width="100%" id="iframeid" scrolling="yes" height="1800" frameborder="0" src="https://nbviewer.org/github/EvaRen1020-pro/myblog_ipynb_codes/blob/main/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95.ipynb"></iframe>
+
 ]]></content>
       <categories>
         <category>软件和编程</category>
       </categories>
       <tags>
-        <tag>arcgis</tag>
+        <tag>plotly</tag>
+        <tag>jupyterlab</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -88,23 +105,6 @@
         <tag>jupyterlab</tag>
         <tag>python</tag>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>plotly基础画图使用尝试</title>
-    <url>/2022/02/27/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/</url>
-    <content><![CDATA[<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
-
-<iframe width="100%" id="iframeid" scrolling="yes" height="1800" frameborder="0" src="https://nbviewer.org/github/EvaRen1020-pro/myblog_ipynb_codes/blob/main/plotly%E5%9F%BA%E7%A1%80%E7%94%BB%E5%9B%BE%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95.ipynb"></iframe>
-
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>jupyterlab</tag>
-        <tag>python</tag>
-        <tag>plotly</tag>
       </tags>
   </entry>
   <entry>
@@ -356,6 +356,39 @@ location2 <span class="token operator">=</span> geolocator<span class="token pun
       </tags>
   </entry>
   <entry>
+    <title>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</title>
+    <url>/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"><a href="#【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式" class="headerlink" title="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"></a>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</h1><p>每一次<strong>JupyterLab</strong>或者<strong>Jupyter Notebook</strong>启动时都需要在命令行下跳至对应目录文件夹，再输入<code>jupyter lab</code>或者<code>jupyter notebook</code>启动是不是很麻烦？今天来记录一下两个小设置，让启动<strong>JupyterLab</strong>直接双击桌面快捷方式图标即可。</p>
+<h2 id="1-JupyterLab更改默认启动路径"><a href="#1-JupyterLab更改默认启动路径" class="headerlink" title="1. JupyterLab更改默认启动路径"></a>1. JupyterLab更改默认启动路径</h2><p>已经有很多博客介绍如何更改<strong>Jupyter Notebook</strong>的默认启动路径，但是新一代的<strong>JupyterLab</strong>似乎还没有很多帖子，我这里就来记录一下。其实与<strong>Jupyter Notebook</strong>配置类似，</p>
+<p>（1）先在<code>cmd</code>下输入:</p>
+<p><code>jupyter lab --generate-config</code></p>
+<p>生成默认配置文件。</p>
+<p>（2）找到刚刚生成的配置文件，默认存储于<code>C:\Users\你的用户\.jupyter</code>路径下，打开jupyter_lab_config.py`文件。</p>
+<p>（3）在412行左右，修改路径文件为你需要的默认启动路径。</p>
+<p>注意：使用<strong>/</strong>分隔路径，同时记得<strong>去掉前面的#号</strong>。</p>
+<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84.PNG" alt="修改启动路径"></p>
+<p>（4）保存退出即可。</p>
+<h2 id="2-创建-Jupyter-lab桌面快捷方式"><a href="#2-创建-Jupyter-lab桌面快捷方式" class="headerlink" title="2. 创建 Jupyter lab桌面快捷方式"></a>2. 创建 Jupyter lab桌面快捷方式</h2><p>网上我查到的都是讲解如何在<strong>Anaconda</strong>环境下创建<strong>JupyterLab</strong>快捷方式，但是我没有装体积庞大的<strong>Anaconda</strong>。其实很简单，自己编写一个简单的<strong>bat</strong>程序，然后为其创建桌面快捷方式并且自定义图标即可。</p>
+<p>（1）创建一个记事本文件，输入：</p>
+<p><code>jupyter lab</code></p>
+<p>（2）更改记事本文件的后缀名为<code>.bat</code></p>
+<p>（3）<code>.bat</code>文件无法直接更改图标，你先将<code>bat</code>程序放到你电脑里一个安全的路径，然后右键发送到桌面快捷方式。</p>
+<p>（4）右键刚刚创建的快捷方式，点击<strong>属性</strong>，而后点击<strong>更改图标</strong>，设为你想要的图标即可。</p>
+<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E6%9B%B4%E6%94%B9%E5%9B%BE%E6%A0%87.PNG" alt="更改图标"></p>
+<p>（5）图标文件的后缀为<code>.ico</code>，可以下载常见的<code>.jpg,.png</code>格式图片制作。</p>
+<p>可以另存为.bmp文件再直接改后缀为.ico，不过这样图片质量损失较大。建议使用在线的.ico制作网站，上传图片转换即可。</p>
+<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/jupyterlab.png" alt="jupyterlab_png"></p>
+<p>（6）然后双击桌面的快捷方式，即可启动Jupyter lab啦！</p>
+<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E5%9B%BE%E6%A0%87.PNG" alt="图标"></p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>JupyterLab</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【自然语言处理】Wordcloud词云分析+LDA主题分类</title>
     <url>/2020/04/02/%E3%80%90%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91Wordcloud%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90+LDA%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/</url>
     <content><![CDATA[<p>最近在一门课上，老师分享了一篇关于应用自然语言处理（NLP）模型分析交通领域研究主题分类的论文，我觉得写得很好很有意思。所以，自己也进行一下尝试。
@@ -493,39 +526,6 @@ car public model mode bundle sharing new travel choice demand</p>
       </tags>
   </entry>
   <entry>
-    <title>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</title>
-    <url>/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"><a href="#【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式" class="headerlink" title="【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式"></a>【win10无Anaconda】JupyterLab更改默认启动路径及创建桌面快捷方式</h1><p>每一次<strong>JupyterLab</strong>或者<strong>Jupyter Notebook</strong>启动时都需要在命令行下跳至对应目录文件夹，再输入<code>jupyter lab</code>或者<code>jupyter notebook</code>启动是不是很麻烦？今天来记录一下两个小设置，让启动<strong>JupyterLab</strong>直接双击桌面快捷方式图标即可。</p>
-<h2 id="1-JupyterLab更改默认启动路径"><a href="#1-JupyterLab更改默认启动路径" class="headerlink" title="1. JupyterLab更改默认启动路径"></a>1. JupyterLab更改默认启动路径</h2><p>已经有很多博客介绍如何更改<strong>Jupyter Notebook</strong>的默认启动路径，但是新一代的<strong>JupyterLab</strong>似乎还没有很多帖子，我这里就来记录一下。其实与<strong>Jupyter Notebook</strong>配置类似，</p>
-<p>（1）先在<code>cmd</code>下输入:</p>
-<p><code>jupyter lab --generate-config</code></p>
-<p>生成默认配置文件。</p>
-<p>（2）找到刚刚生成的配置文件，默认存储于<code>C:\Users\你的用户\.jupyter</code>路径下，打开jupyter_lab_config.py`文件。</p>
-<p>（3）在412行左右，修改路径文件为你需要的默认启动路径。</p>
-<p>注意：使用<strong>/</strong>分隔路径，同时记得<strong>去掉前面的#号</strong>。</p>
-<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84.PNG" alt="修改启动路径"></p>
-<p>（4）保存退出即可。</p>
-<h2 id="2-创建-Jupyter-lab桌面快捷方式"><a href="#2-创建-Jupyter-lab桌面快捷方式" class="headerlink" title="2. 创建 Jupyter lab桌面快捷方式"></a>2. 创建 Jupyter lab桌面快捷方式</h2><p>网上我查到的都是讲解如何在<strong>Anaconda</strong>环境下创建<strong>JupyterLab</strong>快捷方式，但是我没有装体积庞大的<strong>Anaconda</strong>。其实很简单，自己编写一个简单的<strong>bat</strong>程序，然后为其创建桌面快捷方式并且自定义图标即可。</p>
-<p>（1）创建一个记事本文件，输入：</p>
-<p><code>jupyter lab</code></p>
-<p>（2）更改记事本文件的后缀名为<code>.bat</code></p>
-<p>（3）<code>.bat</code>文件无法直接更改图标，你先将<code>bat</code>程序放到你电脑里一个安全的路径，然后右键发送到桌面快捷方式。</p>
-<p>（4）右键刚刚创建的快捷方式，点击<strong>属性</strong>，而后点击<strong>更改图标</strong>，设为你想要的图标即可。</p>
-<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E6%9B%B4%E6%94%B9%E5%9B%BE%E6%A0%87.PNG" alt="更改图标"></p>
-<p>（5）图标文件的后缀为<code>.ico</code>，可以下载常见的<code>.jpg,.png</code>格式图片制作。</p>
-<p>可以另存为.bmp文件再直接改后缀为.ico，不过这样图片质量损失较大。建议使用在线的.ico制作网站，上传图片转换即可。</p>
-<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/jupyterlab.png" alt="jupyterlab_png"></p>
-<p>（6）然后双击桌面的快捷方式，即可启动Jupyter lab啦！</p>
-<p><img src="/2021/02/24/%E3%80%90%E6%97%A0Anaconda%E3%80%91Jupyterlab%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E8%B7%AF%E5%BE%84%E5%8F%8A%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/%E5%9B%BE%E6%A0%87.PNG" alt="图标"></p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>JupyterLab</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>下载Bing搜索界面每日高清美图方法</title>
     <url>/2020/02/02/%E4%B8%8B%E8%BD%BDBing%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2%E6%AF%8F%E6%97%A5%E9%AB%98%E6%B8%85%E7%BE%8E%E5%9B%BE%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h3 id="Bing搜索的每日一图真的很好看，该如何下载呢？"><a href="#Bing搜索的每日一图真的很好看，该如何下载呢？" class="headerlink" title="Bing搜索的每日一图真的很好看，该如何下载呢？"></a><a href="https://cn.bing.com/" target="_blank" rel="noopener">Bing搜索</a>的每日一图真的很好看，该如何下载呢？</h3><ul>
@@ -588,107 +588,6 @@ Granularity: 数据精度，月、周、日、5分钟的颗粒度。
       </categories>
       <tags>
         <tag>交通流</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>动态爬取携程网机票信息</title>
-    <url>/2021/01/06/%E5%8A%A8%E6%80%81%E7%88%AC%E5%8F%96%E6%90%BA%E7%A8%8B%E7%BD%91%E6%9C%BA%E7%A5%A8%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<p>最近在做有关交通城际出行领域的课题，需要用到一些关于机票的信息，于是就想到从携程网进行爬取相关数据。</p>
-<p>但是呢，携程网它的票务信息查询后是一个动态页面，需要下拉才能返回更多的查询结果。所以这需要在一般的解析静态页面的爬虫方式上，增加一个<strong>浏览器的模拟器</strong>，来模拟<strong>下拉</strong>这一行为。</p>
-<p>本次就是用到<strong>selenium</strong>这一个包的<strong>webdriver</strong>来模拟<strong>打开浏览器</strong>和<strong>下拉</strong>这一行为。</p>
-<p>话不多说，直接上代码和注释。</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
-<span class="token keyword">import</span> requests
-<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
-<span class="token keyword">import</span> time
-<span class="token keyword">import</span> lxml<span class="token punctuation">.</span>html
-<span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
-
-<span class="token keyword">def</span> <span class="token function">getFlightInfo</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">,</span>date<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    url<span class="token operator">=</span><span class="token string">'https://flights.ctrip.com/itinerary/oneway/%s-%s?classType=ALL&amp;ct=1606269725709&amp;date=%s'</span><span class="token operator">%</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">,</span>date<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#携程的单程机票查询url</span>
-    <span class="token comment" spellcheck="true">#parse the html</span>
-    browser <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    browser<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
-    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#等一会儿，等信息解析</span>
-    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#模拟点击按钮</span>
-    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#多注意休息</span>
-    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'dtime-sort'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#模拟点击按时间排序按钮</span>
-    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
-    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'dtime-sort'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#再模拟一次点击按时间排序按钮，确保出发时间从早到晚排序</span>
-    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
-    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
-
-    <span class="token comment" spellcheck="true"># 获取页面初始高度</span>
-    js <span class="token operator">=</span> <span class="token string">"return action=document.body.scrollHeight"</span>
-    height <span class="token operator">=</span> browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span>
-
-    <span class="token comment" spellcheck="true"># 将滚动条调整至页面底部</span>
-    browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, document.body.scrollHeight)'</span><span class="token punctuation">)</span>
-    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># 定义初始时间戳（秒）</span>
-    t1 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># 定义循环标识，用于终止while循环</span>
-    status <span class="token operator">=</span> <span class="token boolean">True</span>
-    <span class="token comment" spellcheck="true"># 重试次数</span>
-    num <span class="token operator">=</span> <span class="token number">0</span>
-    <span class="token keyword">while</span> status<span class="token punctuation">:</span>
-        <span class="token comment" spellcheck="true"># 获取当前时间戳（秒）</span>
-        t2 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token comment" spellcheck="true"># 判断时间初始时间戳和当前时间戳相差是否大于30秒，小于30秒则下拉滚动条</span>
-        <span class="token keyword">if</span> t2 <span class="token operator">-</span> t1 <span class="token operator">&lt;</span> <span class="token number">30</span><span class="token punctuation">:</span>
-            new_height <span class="token operator">=</span> browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span>
-            <span class="token keyword">if</span> new_height <span class="token operator">></span> height<span class="token punctuation">:</span>
-                time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-                browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, document.body.scrollHeight)'</span><span class="token punctuation">)</span>
-                <span class="token comment" spellcheck="true"># 重置初始页面高度</span>
-                height <span class="token operator">=</span> new_height
-                <span class="token comment" spellcheck="true"># 重置初始时间戳，重新计时</span>
-                t1 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token keyword">elif</span> num <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 当超过30秒页面高度仍然没有更新时，进入重试逻辑，重试3次，每次等待30秒</span>
-            time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
-            num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span>
-        <span class="token keyword">else</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 超时并超过重试次数，程序结束跳出循环，并认为页面已经加载完毕！</span>
-            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"滚动条已经处于页面最下方！"</span><span class="token punctuation">)</span>
-            status <span class="token operator">=</span> <span class="token boolean">False</span>
-            <span class="token comment" spellcheck="true"># 滚动条调整至页面顶部</span>
-            browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, 0)'</span><span class="token punctuation">)</span>
-            <span class="token keyword">break</span>
-
- <span class="token comment" spellcheck="true">#要用到正则表达式</span>
- flightnumber<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_table_header>.inb.logo>div>div>span>span>span"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系,不可以跃层查询</span>
-    departtime<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.right>div.time_box"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系</span>
-    departhub <span class="token operator">=</span> browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.right>div.airport"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 空格设置为点</span>
-    arrivetime<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.left>div.time_box"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系</span>
-    arrivehub <span class="token operator">=</span> browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.left>div.airport"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 空格设置为点</span>
-
-    flightnumberlist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> flightnumber<span class="token punctuation">]</span>
-    flightnumberlist<span class="token operator">=</span>list<span class="token punctuation">(</span>filter<span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x <span class="token operator">!=</span> <span class="token string">'共享'</span><span class="token punctuation">,</span> flightnumberlist<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#删除多余元素</span>
-    departtimelist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> departtime<span class="token punctuation">]</span>
-    departhublist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> departhub<span class="token punctuation">]</span>
-    arrivetimelist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> arrivetime<span class="token punctuation">]</span>
-    arrivehublist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> arrivehub<span class="token punctuation">]</span>
-    <span class="token keyword">return</span> flightnumberlist<span class="token punctuation">,</span>departtimelist<span class="token punctuation">,</span>departhublist<span class="token punctuation">,</span>arrivetimelist<span class="token punctuation">,</span>arrivehublist
-
-<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
-    date<span class="token operator">=</span><span class="token string">'2020-11-27'</span>
-    fromcity<span class="token operator">=</span><span class="token string">'bjs'</span><span class="token comment" spellcheck="true">#查询北京到上海的机票</span>
-    tocity<span class="token operator">=</span><span class="token string">'sha'</span><span class="token comment" spellcheck="true">#查询北京到上海的机票</span>
-    path <span class="token operator">=</span> <span class="token string">'\\'</span>
-    flightnumberlist<span class="token punctuation">,</span>departtimelist<span class="token punctuation">,</span>departhublist<span class="token punctuation">,</span>arrivetimelist<span class="token punctuation">,</span>arrivehublist<span class="token operator">=</span>getFlightInfo<span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span> tocity<span class="token punctuation">,</span> date<span class="token punctuation">)</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>flightnumberlist<span class="token punctuation">)</span>
-    flightinfodict<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'flightnumber'</span><span class="token punctuation">:</span>flightnumberlist<span class="token punctuation">,</span><span class="token string">'departtime'</span><span class="token punctuation">:</span>departtimelist<span class="token punctuation">,</span><span class="token string">'departhub'</span><span class="token punctuation">:</span>departhublist<span class="token punctuation">,</span>
-                        <span class="token string">'arrivetime'</span><span class="token punctuation">:</span>arrivetimelist<span class="token punctuation">,</span><span class="token string">'arrivehub'</span><span class="token punctuation">:</span>arrivehublist<span class="token punctuation">}</span>
-    flightinfodf<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>flightinfodict<span class="token punctuation">)</span>
-    flightinfodf<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span>path<span class="token operator">+</span><span class="token string">'%s-%s航空班次信息.csv'</span><span class="token operator">%</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">)</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf_8_sig'</span><span class="token punctuation">,</span>index<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>selenium</tag>
-        <tag>爬虫</tag>
       </tags>
   </entry>
   <entry>
@@ -814,6 +713,107 @@ Granularity: 数据精度，月、周、日、5分钟的颗粒度。
         <tag>HTML</tag>
         <tag>API</tag>
         <tag>地理信息</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>动态爬取携程网机票信息</title>
+    <url>/2021/01/06/%E5%8A%A8%E6%80%81%E7%88%AC%E5%8F%96%E6%90%BA%E7%A8%8B%E7%BD%91%E6%9C%BA%E7%A5%A8%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<p>最近在做有关交通城际出行领域的课题，需要用到一些关于机票的信息，于是就想到从携程网进行爬取相关数据。</p>
+<p>但是呢，携程网它的票务信息查询后是一个动态页面，需要下拉才能返回更多的查询结果。所以这需要在一般的解析静态页面的爬虫方式上，增加一个<strong>浏览器的模拟器</strong>，来模拟<strong>下拉</strong>这一行为。</p>
+<p>本次就是用到<strong>selenium</strong>这一个包的<strong>webdriver</strong>来模拟<strong>打开浏览器</strong>和<strong>下拉</strong>这一行为。</p>
+<p>话不多说，直接上代码和注释。</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+<span class="token keyword">import</span> requests
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> lxml<span class="token punctuation">.</span>html
+<span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
+
+<span class="token keyword">def</span> <span class="token function">getFlightInfo</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">,</span>date<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    url<span class="token operator">=</span><span class="token string">'https://flights.ctrip.com/itinerary/oneway/%s-%s?classType=ALL&amp;ct=1606269725709&amp;date=%s'</span><span class="token operator">%</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">,</span>date<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#携程的单程机票查询url</span>
+    <span class="token comment" spellcheck="true">#parse the html</span>
+    browser <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    browser<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#等一会儿，等信息解析</span>
+    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#模拟点击按钮</span>
+    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#多注意休息</span>
+    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'dtime-sort'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#模拟点击按时间排序按钮</span>
+    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+    browser<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'dtime-sort'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#再模拟一次点击按时间排序按钮，确保出发时间从早到晚排序</span>
+    browser<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># 获取页面初始高度</span>
+    js <span class="token operator">=</span> <span class="token string">"return action=document.body.scrollHeight"</span>
+    height <span class="token operator">=</span> browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># 将滚动条调整至页面底部</span>
+    browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, document.body.scrollHeight)'</span><span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 定义初始时间戳（秒）</span>
+    t1 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 定义循环标识，用于终止while循环</span>
+    status <span class="token operator">=</span> <span class="token boolean">True</span>
+    <span class="token comment" spellcheck="true"># 重试次数</span>
+    num <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">while</span> status<span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 获取当前时间戳（秒）</span>
+        t2 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># 判断时间初始时间戳和当前时间戳相差是否大于30秒，小于30秒则下拉滚动条</span>
+        <span class="token keyword">if</span> t2 <span class="token operator">-</span> t1 <span class="token operator">&lt;</span> <span class="token number">30</span><span class="token punctuation">:</span>
+            new_height <span class="token operator">=</span> browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> new_height <span class="token operator">></span> height<span class="token punctuation">:</span>
+                time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+                browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, document.body.scrollHeight)'</span><span class="token punctuation">)</span>
+                <span class="token comment" spellcheck="true"># 重置初始页面高度</span>
+                height <span class="token operator">=</span> new_height
+                <span class="token comment" spellcheck="true"># 重置初始时间戳，重新计时</span>
+                t1 <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> num <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 当超过30秒页面高度仍然没有更新时，进入重试逻辑，重试3次，每次等待30秒</span>
+            time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+            num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 超时并超过重试次数，程序结束跳出循环，并认为页面已经加载完毕！</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"滚动条已经处于页面最下方！"</span><span class="token punctuation">)</span>
+            status <span class="token operator">=</span> <span class="token boolean">False</span>
+            <span class="token comment" spellcheck="true"># 滚动条调整至页面顶部</span>
+            browser<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollTo(0, 0)'</span><span class="token punctuation">)</span>
+            <span class="token keyword">break</span>
+
+ <span class="token comment" spellcheck="true">#要用到正则表达式</span>
+ flightnumber<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_table_header>.inb.logo>div>div>span>span>span"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系,不可以跃层查询</span>
+    departtime<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.right>div.time_box"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系</span>
+    departhub <span class="token operator">=</span> browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.right>div.airport"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 空格设置为点</span>
+    arrivetime<span class="token operator">=</span>browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.left>div.time_box"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#空格设置为点,>层级关系</span>
+    arrivehub <span class="token operator">=</span> browser<span class="token punctuation">.</span>find_elements_by_css_selector<span class="token punctuation">(</span><span class="token string">".search_box.search_box_tag.search_box_light.Label_Flight>div>div>.inb.left>div.airport"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 空格设置为点</span>
+
+    flightnumberlist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> flightnumber<span class="token punctuation">]</span>
+    flightnumberlist<span class="token operator">=</span>list<span class="token punctuation">(</span>filter<span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x <span class="token operator">!=</span> <span class="token string">'共享'</span><span class="token punctuation">,</span> flightnumberlist<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#删除多余元素</span>
+    departtimelist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> departtime<span class="token punctuation">]</span>
+    departhublist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> departhub<span class="token punctuation">]</span>
+    arrivetimelist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> arrivetime<span class="token punctuation">]</span>
+    arrivehublist<span class="token operator">=</span><span class="token punctuation">[</span>content<span class="token punctuation">.</span>text <span class="token keyword">for</span> content <span class="token keyword">in</span> arrivehub<span class="token punctuation">]</span>
+    <span class="token keyword">return</span> flightnumberlist<span class="token punctuation">,</span>departtimelist<span class="token punctuation">,</span>departhublist<span class="token punctuation">,</span>arrivetimelist<span class="token punctuation">,</span>arrivehublist
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    date<span class="token operator">=</span><span class="token string">'2020-11-27'</span>
+    fromcity<span class="token operator">=</span><span class="token string">'bjs'</span><span class="token comment" spellcheck="true">#查询北京到上海的机票</span>
+    tocity<span class="token operator">=</span><span class="token string">'sha'</span><span class="token comment" spellcheck="true">#查询北京到上海的机票</span>
+    path <span class="token operator">=</span> <span class="token string">'\\'</span>
+    flightnumberlist<span class="token punctuation">,</span>departtimelist<span class="token punctuation">,</span>departhublist<span class="token punctuation">,</span>arrivetimelist<span class="token punctuation">,</span>arrivehublist<span class="token operator">=</span>getFlightInfo<span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span> tocity<span class="token punctuation">,</span> date<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>flightnumberlist<span class="token punctuation">)</span>
+    flightinfodict<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'flightnumber'</span><span class="token punctuation">:</span>flightnumberlist<span class="token punctuation">,</span><span class="token string">'departtime'</span><span class="token punctuation">:</span>departtimelist<span class="token punctuation">,</span><span class="token string">'departhub'</span><span class="token punctuation">:</span>departhublist<span class="token punctuation">,</span>
+                        <span class="token string">'arrivetime'</span><span class="token punctuation">:</span>arrivetimelist<span class="token punctuation">,</span><span class="token string">'arrivehub'</span><span class="token punctuation">:</span>arrivehublist<span class="token punctuation">}</span>
+    flightinfodf<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>flightinfodict<span class="token punctuation">)</span>
+    flightinfodf<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span>path<span class="token operator">+</span><span class="token string">'%s-%s航空班次信息.csv'</span><span class="token operator">%</span><span class="token punctuation">(</span>fromcity<span class="token punctuation">,</span>tocity<span class="token punctuation">)</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf_8_sig'</span><span class="token punctuation">,</span>index<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>selenium</tag>
+        <tag>爬虫</tag>
       </tags>
   </entry>
   <entry>
@@ -973,6 +973,24 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
       </tags>
   </entry>
   <entry>
+    <title>如何将【geojson文件】转成【shp文件】在arcgis中使用</title>
+    <url>/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="如何将【geojson文件】转成【shp文件】在arcgis中使用"><a href="#如何将【geojson文件】转成【shp文件】在arcgis中使用" class="headerlink" title="如何将【geojson文件】转成【shp文件】在arcgis中使用"></a>如何将【geojson文件】转成【shp文件】在arcgis中使用</h1><p>当缺少中国省市对应的地图shp文件时，可以去阿里云的网站下载最新的geojson文件，再使用geopandas库转换为shp文件使用。</p>
+<h2 id="1-在阿里云geojson地图下载网站下载相应geojson文件"><a href="#1-在阿里云geojson地图下载网站下载相应geojson文件" class="headerlink" title="1. 在阿里云geojson地图下载网站下载相应geojson文件"></a>1. 在阿里云geojson地图下载网站下载相应geojson文件</h2><p><a href="http://datav.aliyun.com/portal/school/atlas/area_selector" target="_blank" rel="noopener">http://datav.aliyun.com/portal/school/atlas/area_selector</a></p>
+<h2 id="2-使用python的【geopandas】库"><a href="#2-使用python的【geopandas】库" class="headerlink" title="2. 使用python的【geopandas】库"></a>2. 使用python的【geopandas】库</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> geopandas <span class="token keyword">as</span> gdp
+
+data <span class="token operator">=</span> gdp<span class="token punctuation">.</span>read_file<span class="token punctuation">(</span><span class="token string">'\地图.json'</span><span class="token punctuation">)</span>
+data<span class="token punctuation">.</span>to_file<span class="token punctuation">(</span><span class="token string">'\地图shp'</span><span class="token punctuation">,</span> driver<span class="token operator">=</span><span class="token string">'ESRI Shapefile'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'gbk'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#地图shp是存储的文件夹名称</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="3-导入arcgis即可"><a href="#3-导入arcgis即可" class="headerlink" title="3. 导入arcgis即可"></a>3. 导入arcgis即可</h2>]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>arcgis</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何修改python第三方库源码</title>
     <url>/2022/01/17/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%BA%90%E7%A0%81/</url>
     <content><![CDATA[<h1 id="如何修改python第三方库源码"><a href="#如何修改python第三方库源码" class="headerlink" title="如何修改python第三方库源码"></a>如何修改python第三方库源码</h1><p>有的时候下载的第三方python库中有些参数没有开放让我们自定义调整，比如你要用那个库自带的出图，它可能又是基于matplotlib的一个函数，然后设为了默认。</p>
@@ -997,6 +1015,27 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>无需插件ArcGIS自定义加载连接超全WMTS底图服务</title>
+    <url>/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/</url>
+    <content><![CDATA[<p>有的时候ArcGIS使用自带的添加底图功能失灵，或者想自己额外添加在线底图，可以使用ArcGIS其自带的WMTS服务功能！</p>
+<h1 id="1-打开【catalog-GIS-Servers-Add-WMTS-Server】"><a href="#1-打开【catalog-GIS-Servers-Add-WMTS-Server】" class="headerlink" title="1. 打开【catalog-GIS Servers-Add WMTS Server】"></a>1. 打开【catalog-GIS Servers-Add WMTS Server】</h1><h1 id="2-输入http-xdc-at-map-wmts"><a href="#2-输入http-xdc-at-map-wmts" class="headerlink" title="2. 输入http://xdc.at/map/wmts/"></a>2. 输入<a href="http://xdc.at/map/wmts/" target="_blank" rel="noopener">http://xdc.at/map/wmts/</a></h1><p>这里集成了天地图、高德地图、openstreetmap、谷歌地图等等</p>
+<h1 id="3-点【Get-Layers】"><a href="#3-点【Get-Layers】" class="headerlink" title="3. 点【Get Layers】"></a>3. 点【<strong>Get Layers</strong>】</h1><p><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts1.PNG" alt="arcgis_wmts1"></p>
+<h1 id="4-双击想要的底图连接wmts服务"><a href="#4-双击想要的底图连接wmts服务" class="headerlink" title="4. 双击想要的底图连接wmts服务"></a>4. 双击想要的底图连接wmts服务</h1><p><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts3.PNG" alt="arcgis_wmts3"></p>
+<h1 id="5-把想要的底图拖到【Table-Of-Contents】"><a href="#5-把想要的底图拖到【Table-Of-Contents】" class="headerlink" title="5. 把想要的底图拖到【Table Of Contents】"></a>5. 把想要的底图拖到【Table Of Contents】</h1><p><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts2.PNG" alt="arcgis_wmts2"></p>
+<h1 id="额外附一个ArcGIS-Server服务地址"><a href="#额外附一个ArcGIS-Server服务地址" class="headerlink" title="额外附一个ArcGIS Server服务地址"></a>额外附一个ArcGIS Server服务地址</h1><p><a href="https://map.geoq.cn/arcgis/services/" target="_blank" rel="noopener">https://map.geoq.cn/arcgis/services/</a></p>
+<p><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_server1.PNG" alt="arcgis_server1"></p>
+<p>使用方式同上</p>
+<p>打开【catalog-GIS Servers-Add ArcGIS Server】</p>
+]]></content>
+      <categories>
+        <category>软件和编程</category>
+      </categories>
+      <tags>
+        <tag>地图API</tag>
+        <tag>ArcGIS</tag>
       </tags>
   </entry>
   <entry>
@@ -1060,24 +1099,6 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
         <tag>HTML</tag>
         <tag>css</tag>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何将【geojson文件】转成【shp文件】在arcgis中使用</title>
-    <url>/2022/01/02/%E5%A6%82%E4%BD%95%E5%B0%86%E3%80%90geojson%E6%96%87%E4%BB%B6%E3%80%91%E8%BD%AC%E6%88%90%E3%80%90shp%E6%96%87%E4%BB%B6%E3%80%91%E5%9C%A8arcgis%E4%B8%AD%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="如何将【geojson文件】转成【shp文件】在arcgis中使用"><a href="#如何将【geojson文件】转成【shp文件】在arcgis中使用" class="headerlink" title="如何将【geojson文件】转成【shp文件】在arcgis中使用"></a>如何将【geojson文件】转成【shp文件】在arcgis中使用</h1><p>当缺少中国省市对应的地图shp文件时，可以去阿里云的网站下载最新的geojson文件，再使用geopandas库转换为shp文件使用。</p>
-<h2 id="1-在阿里云geojson地图下载网站下载相应geojson文件"><a href="#1-在阿里云geojson地图下载网站下载相应geojson文件" class="headerlink" title="1. 在阿里云geojson地图下载网站下载相应geojson文件"></a>1. 在阿里云geojson地图下载网站下载相应geojson文件</h2><p><a href="http://datav.aliyun.com/portal/school/atlas/area_selector" target="_blank" rel="noopener">http://datav.aliyun.com/portal/school/atlas/area_selector</a></p>
-<h2 id="2-使用python的【geopandas】库"><a href="#2-使用python的【geopandas】库" class="headerlink" title="2. 使用python的【geopandas】库"></a>2. 使用python的【geopandas】库</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> geopandas <span class="token keyword">as</span> gdp
-
-data <span class="token operator">=</span> gdp<span class="token punctuation">.</span>read_file<span class="token punctuation">(</span><span class="token string">'\地图.json'</span><span class="token punctuation">)</span>
-data<span class="token punctuation">.</span>to_file<span class="token punctuation">(</span><span class="token string">'\地图shp'</span><span class="token punctuation">,</span> driver<span class="token operator">=</span><span class="token string">'ESRI Shapefile'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'gbk'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#地图shp是存储的文件夹名称</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="3-导入arcgis即可"><a href="#3-导入arcgis即可" class="headerlink" title="3. 导入arcgis即可"></a>3. 导入arcgis即可</h2>]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>arcgis</tag>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -1185,29 +1206,6 @@ hexo<span class="token punctuation">.</span>extend<span class="token punctuation
       <tags>
         <tag>Hexo</tag>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无需插件ArcGIS自定义加载连接超全WMTS底图服务</title>
-    <url>/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/</url>
-    <content><![CDATA[<p>有的时候ArcGIS使用自带的添加底图功能失灵，或者想自己额外添加在线底图，可以使用ArcGIS其自带的WMTS服务功能！</p>
-<h1 id="1-打开【catalog-GIS-Servers-Add-WMTS-Server】"><a href="#1-打开【catalog-GIS-Servers-Add-WMTS-Server】" class="headerlink" title="1. 打开【catalog-GIS Servers-Add WMTS Server】"></a>1. 打开【catalog-GIS Servers-Add WMTS Server】</h1><h1 id="2-输入http-xdc-at-map-wmts"><a href="#2-输入http-xdc-at-map-wmts" class="headerlink" title="2. 输入http://xdc.at/map/wmts/"></a>2. 输入<a href="http://xdc.at/map/wmts/" target="_blank" rel="noopener">http://xdc.at/map/wmts/</a></h1><p>这里集成了天地图、高德地图、openstreetmap、谷歌地图等等</p>
-<h1 id="3-点【Get-Layers】"><a href="#3-点【Get-Layers】" class="headerlink" title="3. 点【Get Layers】"></a>3. 点【<strong>Get Layers</strong>】</h1><p><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts1.PNG" alt="arcgis_wmts1"></p>
-<h1 id="4-双击想要的底图连接wmts服务"><a href="#4-双击想要的底图连接wmts服务" class="headerlink" title="4. 双击想要的底图连接wmts服务"></a>4. 双击想要的底图连接wmts服务</h1><p><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts3.PNG" alt="arcgis_wmts3"></p>
-<h1 id="5-把想要的底图拖到【Table-Of-Contents】"><a href="#5-把想要的底图拖到【Table-Of-Contents】" class="headerlink" title="5. 把想要的底图拖到【Table Of Contents】"></a>5. 把想要的底图拖到【Table Of Contents】</h1><img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts2.PNG" class title="arcgis_wmts2">
-
-<h1 id="额外附一个ArcGIS-Server服务地址"><a href="#额外附一个ArcGIS-Server服务地址" class="headerlink" title="额外附一个ArcGIS Server服务地址"></a>额外附一个ArcGIS Server服务地址</h1><p><a href="https://map.geoq.cn/arcgis/services/" target="_blank" rel="noopener">https://map.geoq.cn/arcgis/services/</a></p>
-<img src="/2022/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/01/29/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6ArcGIS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5WMTS%E5%BA%95%E5%9B%BE%E6%9C%8D%E5%8A%A1/arcgis_wmts1.PNG" class title="arcgis_wmts1">
-
-<p>使用方式同上</p>
-<p>打开【catalog-GIS Servers-Add ArcGIS Server】</p>
-]]></content>
-      <categories>
-        <category>软件和编程</category>
-      </categories>
-      <tags>
-        <tag>地图API</tag>
-        <tag>ArcGIS</tag>
       </tags>
   </entry>
 </search>
